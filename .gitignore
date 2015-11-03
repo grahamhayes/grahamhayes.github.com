@@ -1,0 +1,4 @@
+.venv
+graham.hayes.ie/output
+graham.hayes.ie/cache
+*.pyc
