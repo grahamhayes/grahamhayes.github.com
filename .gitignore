@@ -2,3 +2,4 @@
 graham.hayes.ie/output
 graham.hayes.ie/cache
 *.pyc
+graham.hayes.ie/.doit.db
