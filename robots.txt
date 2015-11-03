@@ -1,0 +1,4 @@
+Sitemap: http://graham.hayes.ie/sitemapindex.xml
+
+User-Agent: *
+Host: graham.hayes.ie
