@@ -6,6 +6,7 @@
 .. link:
 .. description: My overview of Tokyo, and what happened at the Mitaka Design Summit
 .. type: text
+.. previewimage: https://upload.wikimedia.org/wikipedia/commons/7/70/Ginza_at_Night,_Tokyo.jpg
 
 .. image:: https://upload.wikimedia.org/wikipedia/commons/7/70/Ginza_at_Night,_Tokyo.jpg
 

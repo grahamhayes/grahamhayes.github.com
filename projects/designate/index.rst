@@ -4,7 +4,7 @@
 .. description: DNSaaS for OpenStack
 .. status: 5
 .. link: https://wiki.openstack.org/wiki/Designate
-.. logo https://wiki.openstack.org/w/images/f/fc/Logo-designate.png
+.. logo: https://wiki.openstack.org/w/images/f/fc/Logo-designate.png
 .. github: https://github.com/openstack/designate
 .. bugtracker: https://bugs.launchpad.net/designate/
 .. role: Project Technical Lead
