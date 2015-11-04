@@ -128,14 +128,18 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("/archive.html", "Archive"),
-        ("/categories/", "Tags"),
-        ("/rss.xml", "RSS feed"),
-    ),
+        ('/', 'Home', 'icon-home'),
+        ('/archive.html', 'Archives', 'icon-folder-open-alt'),
+        ('/categories', 'Tags', 'icon-tags'),
+        ('/rss.xml', 'RSS', 'icon-rss'),
+        ('https://twitter.com/grahamhayes', 'My Twitter', 'icon-twitter'),
+        ('https://github.com/grahamhayes', 'My Github', 'icon-github'),
+    )
 }
 
+
 # Name of the theme to use.
-THEME = "bootstrap3"
+THEME = "zen-jinja"
 
 # Primary color of your theme. This will be used to customize your theme and
 # auto-generate related colors in POSTS_SECTION_COLORS. Must be a HEX value.
@@ -712,7 +716,7 @@ IMAGE_FOLDERS = {'images': 'images'}
 # vs
 # xcode
 # This list MAY be incomplete since pygments adds styles every now and then.
-# CODE_COLOR_SCHEME = 'default'
+CODE_COLOR_SCHEME = 'monokai'
 
 # If you use 'site-reveal' theme you can select several subthemes
 # THEME_REVEAL_CONFIG_SUBTHEME = 'sky'
@@ -808,7 +812,7 @@ COMMENT_SYSTEM = "disqus"
 # depends on what comment system you use. The default is
 # "nikolademo" which is a test account for Disqus. More information
 # is in the manual.
-COMMENT_SYSTEM_ID = ""
+COMMENT_SYSTEM_ID = "grahamhayesie"
 
 # Enable annotations using annotateit.org?
 # If set to False, you can still enable them for individual posts and pages
@@ -1087,18 +1091,18 @@ UNSLUGIFY_TITLES = True
 # Uncomment and modify to following lines to match your accounts.
 # Images displayed come from the `previewimage` meta tag.
 # You can specify the card type by using the `card` parameter in TWITTER_CARD.
-# TWITTER_CARD = {
-#     # 'use_twitter_cards': True,  # enable Twitter Cards
-#     # 'card': 'summary',          # Card type, you can also use 'summary_large_image',
-#                                   # see https://dev.twitter.com/cards/types
-#     # 'site': '@website',         # twitter nick for the website
-#     # 'creator': '@username',     # Username for the content creator / author.
-# }
+TWITTER_CARD = {
+    'use_twitter_cards': True,  # enable Twitter Cards
+    'card': 'summary',          # Card type, you can also use 'summary_large_image',
+                                # see https://dev.twitter.com/cards/types
+    'site': '@grahamhayes',         # twitter nick for the website
+    'creator': '@grahamhayes',     # Username for the content creator / author.
+}
 
 # If webassets is installed, bundle JS and CSS into single files to make
 # site loading faster in a HTTP/1.1 environment but is not recommended for
 # HTTP/2.0 when caching is used. Defaults to True.
-# USE_BUNDLES = True
+USE_BUNDLES = True
 
 # Plugins you don't want to use. Be careful :-)
 # DISABLED_PLUGINS = ["render_galleries"]
