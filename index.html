@@ -15,14 +15,111 @@ article: http://ogp.me/ns/article#
 </head>
 <body>
     <section class="social"><ul>
-<img style="border-radius: 50%; margin-left: auto; margin-right: auto; display: block; margin-bottom: 20px" width="80" height="80" src="images/me.jpg"><li><a href="." title="Home"><i class="icon-home"></i></a></li>
+<a href="stories/about-me"><img style="border-radius: 50%; margin-left: auto; margin-right: auto; display: block; margin-bottom: 20px" width="80" height="80" src="images/me.jpg"></a>
+                    <li><a href="." title="Home"><i class="icon-home"></i></a></li>
             <li><a href="archive.html" title="Archives"><i class="icon-folder-open-alt"></i></a></li>
             <li><a href="categories" title="Tags"><i class="icon-tags"></i></a></li>
+            <li><a href="projects" title="Projects"><i class="icon-briefcase"></i></a></li>
+            <li><a href="stories/about-me" title="About Me"><i class="icon-info"></i></a></li>
             <li><a href="rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
             <li><a href="https://twitter.com/grahamhayes" title="My Twitter"><i class="icon-twitter"></i></a></li>
             <li><a href="https://github.com/grahamhayes" title="My Github"><i class="icon-github"></i></a></li>
 
         </ul></section><section class="page-content"><div class="content" rel="main">
+        <div class="post">
+            <h1 class="title"><a href="posts/openstack-summit-designate-report/">OpenStack Summit - Designate Report</a></h1>
+            <div class="meta">
+                <div class="authordate">
+                    <time class="timeago" datetime="2015-11-04T21:18:41+00:00">2015-11-04 21:18</time>
+</div>
+                <div class="stats">
+                                <a href="posts/openstack-summit-designate-report/#disqus_thread" data-disqus-identifier="cache/posts/openstack-summit-designate-report.html">Comments</a>
+
+
+                </div>
+                        <div itemprop="keywords" class="tags">
+        <ul>
+        Tags : 
+           <li><a class="tag p-category" href="categories/openstack/" rel="tag">openstack</a></li>
+           <li><a class="tag p-category" href="categories/summit/" rel="tag">summit</a></li>
+           <li><a class="tag p-category" href="categories/tokyo/" rel="tag">tokyo</a></li>
+           <li><a class="tag p-category" href="categories/travel/" rel="tag">travel</a></li>
+        </ul>
+</div>
+
+            </div>
+            <div class="body">
+                <div>
+<p>Where to start?</p>
+<div class="section" id="tokyo">
+<h2>Tokyo</h2>
+<p>Oh, what a place. I thought I was ready for the experience, but this city has
+to be visited to understand. From the 2 or 3 different metro systems that snake
+across the city, to the 9 story electronics stores, it is something else.</p>
+<p>Living in a city that has 3 metro lines that don't actually connect it was a nice
+change to be able to get reliable public transport :).</p>
+</div>
+<div class="section" id="design-summit">
+<h2>Design Summit</h2>
+<p>This was a much more relaxed summit for Designate. We had done a huge amount of
+work in Vancouver, and we were nailing down details and doing cross project work.</p>
+<p>We got a few major features discussed, and laid out our priorities for the next cycle.</p>
+<p>We decided on the following:</p>
+<ol class="arabic simple">
+<li>Nova / Neutron Integration</li>
+<li>Pool Scheduler</li>
+<li>Pool Configuration migration to database</li>
+<li>IXFR (Incremental Zone Transfer)</li>
+<li>ALIAS Record type (Allows for CNAME like records at the root of a DNS Zone)</li>
+<li>DNSSEC (this may drag on for a cycle or two)</li>
+</ol>
+<div class="section" id="nova-neutron-integration">
+<h3>Nova &amp; Neutron Integration</h3>
+<p>This is progressing pretty well, and Miguel Lavalle has patches up for this. He,
+Kiall Mac Innes and Carl Baldwin demoed this in a session on the Thursday. If
+you are interested in the idea, it is definitely worth a watch <a class="reference external" href="http://https://www.youtube.com/watch?v=AZbiARM9FPM">here</a></p>
+</div>
+<div class="section" id="pool-scheduler">
+<h3>Pool Scheduler</h3>
+<p>A vital piece of the pools re architecture that needs to be finished out.
+There is no great debate on what we need, and I have taken on the task of
+finishing this out.</p>
+</div>
+<div class="section" id="pool-configuration-migration-to-database">
+<h3>Pool Configuration migration to database</h3>
+<p>Are current configuration file format is quite complex, and moving it to an API
+allows us to iterate on it much quicker, while reducing the complexity of the
+config file. I recently had to write an ansible play to write out this file, and
+it was not fun.</p>
+<p>Kiall had a patch up, so we should be able to continue based on that.</p>
+</div>
+<div class="section" id="ixfr">
+<h3>IXFR</h3>
+<p>There was quite a lot of discussion on how this will be implemented, both in the
+work session, and the 1/2 day session on the Friday. Tim Simmons has stepped up,
+to continue the work on this.</p>
+</div>
+<div class="section" id="alias">
+<h3>ALIAS</h3>
+<p>This is quite a sort after feature - but is quite complex to implement.
+The DNS RFCs explicitly ban this behavior, so we have to work the solution
+around them. Eric Larson has been doing quite a lot of work on this in Liberty,
+and is going to continue in Mitaka.</p>
+</div>
+<div class="section" id="dnssec">
+<h3>DNSSEC</h3>
+<p>This is a feature that we have been looking at for a while, but we started to plan
+out our roadmap for it recently.</p>
+<p>We (I) am allergic to storing private encryption keys in Designate, so we had a
+good conversation with Barbican about implementing a signing endpoint that we would
+post a hash to. This work is on me to now drive for Mitaka, so we can consume it in N.</p>
+<p>There is some raw notes in the <a class="reference external" href="https://etherpad.openstack.org/p/mitaka-designate-summit-roadmap">etherpad</a> and I expect we will soon be seeing
+specs building out of them.</p>
+</div>
+</div>
+</div>
+            </div>
+        </div>
         <div class="post">
             <h1 class="title"><a href="posts/starting-blogging-again/">Starting Blogging (Again)</a></h1>
             <div class="meta">

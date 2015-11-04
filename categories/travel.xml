@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>graham.hayes.ie</title><link>http://graham.hayes.ie/</link><description>Weird (sometimes incoherent) rambling of a developer.</description><atom:link href="http://graham.hayes.ie/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 04 Nov 2015 23:04:20 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>OpenStack Summit - Designate Report</title><link>http://graham.hayes.ie/posts/openstack-summit-designate-report/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;p&gt;Where to start?&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>graham.hayes.ie (travel)</title><link>http://graham.hayes.ie/</link><description></description><atom:link href="http://graham.hayes.ie/categories/travel.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 04 Nov 2015 23:04:20 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>OpenStack Summit - Designate Report</title><link>http://graham.hayes.ie/posts/openstack-summit-designate-report/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;p&gt;Where to start?&lt;/p&gt;
 &lt;div class="section" id="tokyo"&gt;
 &lt;h2&gt;Tokyo&lt;/h2&gt;
 &lt;p&gt;Oh, what a place. I thought I was ready for the experience, but this city has
@@ -65,11 +65,4 @@ post a hash to. This work is on me to now drive for Mitaka, so we can consume it
 &lt;p&gt;There is some raw notes in the &lt;a class="reference external" href="https://etherpad.openstack.org/p/mitaka-designate-summit-roadmap"&gt;etherpad&lt;/a&gt; and I expect we will soon be seeing
 specs building out of them.&lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>openstack</category><category>summit</category><category>tokyo</category><category>travel</category><guid>http://graham.hayes.ie/posts/openstack-summit-designate-report/</guid><pubDate>Wed, 04 Nov 2015 21:18:41 GMT</pubDate></item><item><title>Starting Blogging (Again)</title><link>http://graham.hayes.ie/posts/starting-blogging-again/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;p&gt;Having taken a year or two hiatus on blogging, I have decided to give it
-another shot.&lt;/p&gt;
-&lt;p&gt;A lot has happened since then, and recently I have started to do more and more
-work in upstream OpenStack. Starting as a PTL I thought it might be useful to
-have somewhere for me to rant, rave, and generally explain my (admittedly from
-time to time bizarre) thought process.&lt;/p&gt;
-&lt;p&gt;I reckon there will be flurries of activity here, followed by silence, but we
-shall see what happens in time :)&lt;/p&gt;&lt;/div&gt;</description><category>intro</category><category>welcome</category><guid>http://graham.hayes.ie/posts/starting-blogging-again/</guid><pubDate>Wed, 04 Nov 2015 21:12:13 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;&lt;/div&gt;</description><category>openstack</category><category>summit</category><category>tokyo</category><category>travel</category><guid>http://graham.hayes.ie/posts/openstack-summit-designate-report/</guid><pubDate>Wed, 04 Nov 2015 21:18:41 GMT</pubDate></item></channel></rss>
