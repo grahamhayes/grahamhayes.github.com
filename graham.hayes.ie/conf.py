@@ -131,6 +131,8 @@ NAVIGATION_LINKS = {
         ('/', 'Home', 'icon-home'),
         ('/archive.html', 'Archives', 'icon-folder-open-alt'),
         ('/categories', 'Tags', 'icon-tags'),
+        ('/projects', 'Projects', 'icon-briefcase'),
+        ('/stories/about-me', 'About Me', 'icon-info'),
         ('/rss.xml', 'RSS', 'icon-rss'),
         ('https://twitter.com/grahamhayes', 'My Twitter', 'icon-twitter'),
         ('https://github.com/grahamhayes', 'My Github', 'icon-github'),
@@ -177,7 +179,10 @@ POSTS = (
 PAGES = (
     ("stories/*.rst", "stories", "story.tmpl"),
     ("stories/*.txt", "stories", "story.tmpl"),
+    ("projects/*.rst", "projects", "project.tmpl"),
 )
+
+PROJECT_PATH = 'projects'
 
 
 # Below this point, everything is optional
@@ -1093,7 +1098,7 @@ UNSLUGIFY_TITLES = True
 # You can specify the card type by using the `card` parameter in TWITTER_CARD.
 TWITTER_CARD = {
     'use_twitter_cards': True,  # enable Twitter Cards
-    'card': 'summary',          # Card type, you can also use 'summary_large_image',
+    'card': 'summary_large_image',          # Card type, you can also use 'summary_large_image',
                                 # see https://dev.twitter.com/cards/types
     'site': '@grahamhayes',         # twitter nick for the website
     'creator': '@grahamhayes',     # Username for the content creator / author.
