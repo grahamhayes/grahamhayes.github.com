@@ -10,6 +10,8 @@
 
 .. image:: https://upload.wikimedia.org/wikipedia/commons/7/70/Ginza_at_Night,_Tokyo.jpg
 
+[1]_
+
 Tokyo
 =====
 
@@ -89,5 +91,7 @@ post a hash to. This work is on me to now drive for Mitaka, so we can consume it
 There is some raw notes in the `etherpad`_ and I expect we will soon be seeing
 specs building out of them.
 
+
+.. [1] By Francisco Diez (Flickr: Ginza at Night, Tokyo) [CC BY 2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons
 .. _etherpad: https://etherpad.openstack.org/p/mitaka-designate-summit-roadmap
 .. _here: http://https://www.youtube.com/watch?v=AZbiARM9FPM
