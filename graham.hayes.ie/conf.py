@@ -1098,7 +1098,7 @@ UNSLUGIFY_TITLES = True
 # You can specify the card type by using the `card` parameter in TWITTER_CARD.
 TWITTER_CARD = {
     'use_twitter_cards': True,  # enable Twitter Cards
-    'card': 'summary_large_image',          # Card type, you can also use 'summary_large_image',
+    'card': 'summary',          # Card type, you can also use 'summary_large_image',
                                 # see https://dev.twitter.com/cards/types
     'site': '@grahamhayes',         # twitter nick for the website
     'creator': '@grahamhayes',     # Username for the content creator / author.
