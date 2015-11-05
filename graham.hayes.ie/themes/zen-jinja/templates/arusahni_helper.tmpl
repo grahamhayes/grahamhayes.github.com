@@ -181,6 +181,8 @@ lang="{{ lang }}">
     {% endif %}
     {% if post.previewimage %}
     <meta name="twitter:image" content="{{ post['previewimage'] }}">
+    {% else %}
+    <meta name="twitter:image" content="http://graham.hayes.ie/images/me.jpg">
     {% endif %}
 {% endif %}
 {% endmacro %}
