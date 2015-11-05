@@ -165,3 +165,22 @@ lang="{{ lang }}">
         <a href="{{ post.source_link() }}" id="sourcelink">{{ messages("Source") }}</a>
     {% endif %}
 {% endmacro %}
+
+{% macro rich_twitter_card_information(post) %}
+{% if twitter_card and twitter_card['use_twitter_cards'] %}
+    <meta name="twitter:card" content="{{ twitter_card.get('card', 'summary')|e }}">
+    {% if 'site:id' in twitter_card %}
+    <meta name="twitter:site:id" content="{{ twitter_card['site:id'] }}">
+    {% elif 'site' in twitter_card %}
+    <meta name="twitter:site" content="{{ twitter_card['site'] }}">
+    {% endif %}
+    {% if 'creator:id' in twitter_card %}
+    <meta name="twitter:creator:id" content="{{ twitter_card['creator:id'] }}">
+    {% elif 'creator' in twitter_card %}
+    <meta name="twitter:creator" content="{{ twitter_card['creator'] }}">
+    {% endif %}
+    {% if post.previewimage %}
+    <meta name="twitter:image" content="{{ post['previewimage'] }}">
+    {% endif %}
+{% endif %}
+{% endmacro %}

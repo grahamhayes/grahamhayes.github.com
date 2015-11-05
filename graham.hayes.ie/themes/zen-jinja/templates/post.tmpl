@@ -11,7 +11,7 @@
     {% endif %}
     <meta name="author" content="{{ post.author() }}">
     {{ helper.open_graph_metadata(post) }}
-    {{ helper.twitter_card_information(post) }}
+    {{ arusahni.rich_twitter_card_information(post) }}
     {{ helper.meta_translations(post) }}
 {% endblock %}
 
