@@ -132,6 +132,7 @@ NAVIGATION_LINKS = {
         ('/archive.html', 'Archives', 'icon-folder-open-alt'),
         ('/categories', 'Tags', 'icon-tags'),
         ('/projects', 'Projects', 'icon-briefcase'),
+        ('/talks', 'Talks', 'icon-microphone'),
         ('/stories/about-me', 'About Me', 'icon-info'),
         ('/rss.xml', 'RSS', 'icon-rss'),
         ('https://twitter.com/grahamhayes', 'My Twitter', 'icon-twitter'),
@@ -180,6 +181,7 @@ PAGES = (
     ("stories/*.rst", "stories", "story.tmpl"),
     ("stories/*.txt", "stories", "story.tmpl"),
     ("projects/*.rst", "projects", "project.tmpl"),
+    ("talks/*.rst", "talks", "talk.tmpl"),
 )
 
 PROJECT_PATH = 'projects'
