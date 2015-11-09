@@ -1,0 +1,11 @@
+Currently Designate is undergoing a code freeze to allow us re-factor the code base,
+as announced here: - http://lists.openstack.org/pipermail/openstack-dev/2015-October/077442.html
+
+All code that is not in the "the-big-rename" topic will be getting this procedural -2.
+
+More information can be found here: - http://graham.hayes.ie/posts/the-big-rename/
+
+On Friday 2015-11-13 this -2 will be removed, and code review as normal will continue.
+
+This re-factor will break the majority of patches that are outstanding, and you may need to manually 
+rebase your patch when we remove the -2.
