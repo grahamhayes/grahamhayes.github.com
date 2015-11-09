@@ -15,7 +15,7 @@
  </url>
  <url>
   <loc>http://graham.hayes.ie/archive.html</loc>
-  <lastmod>2015-11-09T20:05:00Z</lastmod>
+  <lastmod>2015-11-09T20:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/</loc>
@@ -71,27 +71,23 @@
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/</loc>
-  <lastmod>2015-11-09T20:24:00Z</lastmod>
- </url>
- <url>
-  <loc>http://graham.hayes.ie/listings/big-rename-2-message.txt.html</loc>
   <lastmod>2015-11-09T20:30:00Z</lastmod>
  </url>
  <url>
+  <loc>http://graham.hayes.ie/listings/big-rename-2-message.txt.html</loc>
+  <lastmod>2015-11-09T20:39:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://graham.hayes.ie/listings/big-rename-error-render.py.html</loc>
-  <lastmod>2015-11-09T20:25:00Z</lastmod>
+  <lastmod>2015-11-09T20:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/big-rename-render.py.html</loc>
-  <lastmod>2015-11-09T20:23:00Z</lastmod>
- </url>
- <url>
-  <loc>http://graham.hayes.ie/listings/big-rename-render.rst.html</loc>
-  <lastmod>2015-11-09T20:23:00Z</lastmod>
+  <lastmod>2015-11-09T20:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/hello.py.html</loc>
-  <lastmod>2015-11-09T17:12:00Z</lastmod>
+  <lastmod>2015-11-09T20:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/openstack-summit-designate-report/</loc>
