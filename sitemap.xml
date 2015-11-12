@@ -71,11 +71,15 @@
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/</loc>
-  <lastmod>2015-11-09T20:30:00Z</lastmod>
+  <lastmod>2015-11-12T20:12:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/big-rename-2-message.txt.html</loc>
   <lastmod>2015-11-09T20:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://graham.hayes.ie/listings/big-rename-2-update-message.txt.html</loc>
+  <lastmod>2015-11-12T20:12:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/big-rename-error-render.py.html</loc>

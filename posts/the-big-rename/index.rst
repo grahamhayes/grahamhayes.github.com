@@ -8,6 +8,16 @@
 .. type: text
 .. previewimage: https://upload.wikimedia.org/wikipedia/commons/1/1a/Code.jpg
 
+Update
+======
+
+Due to unforeseen circumstances I will not be able to continue work on this until
+Monday, so we will have to extend the freeze until Tuesday the 17th.
+
+The following message will be put on the patches affected by the freeze.
+
+.. listing:: big-rename-2-update-message.txt text
+
 .. image:: https://upload.wikimedia.org/wikipedia/commons/1/1a/Code.jpg
 
 [1]_
