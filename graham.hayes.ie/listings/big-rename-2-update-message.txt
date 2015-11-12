@@ -1,0 +1,8 @@
+Due to unforeseen circumstances I will not be able to continue work on this until
+Monday, so we will have to extend the freeze until Tuesday the 17th.
+
+On Tuesday 2015-11-17 this -2 will be removed, and code review as normal will continue.
+
+I apologise for the delay, and will get this completed ASAP.
+
+Further updates will be posted to http://graham.hayes.ie/posts/the-big-rename/
