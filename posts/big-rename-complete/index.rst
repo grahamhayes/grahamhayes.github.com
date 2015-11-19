@@ -18,3 +18,7 @@ So, yesterday Tim and Kiall +2'd the change.
 It was quite a bit bigger than expected (+4444, -4230) so thanks to all the
 reviewers who put time and effort into checking everything worked, and I hadn't
 made any glaring mistakes :).
+
+For anyone interested (or mad) the change is here: `Review`_
+
+.. _Review: https://review.openstack.org/#/c/244315/
