@@ -10,10 +10,8 @@
 
 .. image:: http://replygif.net/i/789.gif
 
-****************
-It is done!!! :)
-****************
-
+It is done !! :)
+================
 
 So, yesterday Tim and Kiall +2'd the change.
 
