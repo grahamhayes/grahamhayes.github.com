@@ -5,30 +5,28 @@ article: http://ogp.me/ns/article#
 " lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="description" content="What happened at the Kosmos mid cycle">
 <meta name="viewport" content="width=device-width">
-<title>Big Rename - Complete!! | graham.hayes.ie</title>
+<title>Kosmos Mid Cycle | graham.hayes.ie</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
-<link rel="canonical" href="http://graham.hayes.ie/posts/big-rename-complete/">
+<link rel="canonical" href="http://graham.hayes.ie/posts/kosmos-mid-cycle/">
 <!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="Graham Hayes">
 <meta property="og:site_name" content="graham.hayes.ie">
-<meta property="og:title" content="Big Rename - Complete!!">
-<meta property="og:url" content="http://graham.hayes.ie/posts/big-rename-complete/">
-<meta property="og:description" content="It is done !! :)
-So, yesterday Tim and Kiall +2'd the change.
-It was quite a bit bigger than expected (+4444, -4230) so thanks to all the
-reviewers who put time and effort into checking everything wor">
-<meta property="og:image" content="http://replygif.net/i/789.gif">
+<meta property="og:title" content="Kosmos Mid Cycle">
+<meta property="og:url" content="http://graham.hayes.ie/posts/kosmos-mid-cycle/">
+<meta property="og:description" content="What happened at the Kosmos mid cycle">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/5/58/Seattle_Center_as_night_falls.jpg">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2015-11-19T12:49:35Z">
-<meta property="article:tag" content="code">
-<meta property="article:tag" content="designate">
+<meta property="article:published_time" content="2016-01-29T18:14:05Z">
 <meta property="article:tag" content="openstack">
-<meta property="article:tag" content="refactor">
+<meta property="article:tag" content="seattle">
+<meta property="article:tag" content="summit">
+<meta property="article:tag" content="travel">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@grahamhayes">
 <meta name="twitter:creator" content="@grahamhayes">
-<meta name="twitter:image" content="http://replygif.net/i/789.gif">
+<meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/5/58/Seattle_Center_as_night_falls.jpg">
 </head>
 <body>
     <section class="social"><ul>
@@ -44,11 +42,11 @@ reviewers who put time and effort into checking everything wor">
 
         </ul></section><section class="page-content"><div class="content" rel="main">
     <div class="post">
-        <h1 class="p-name entry-title" itemprop="headline name">Big Rename - Complete!!</h1>
+        <h1 class="p-name entry-title" itemprop="headline name">Kosmos Mid Cycle</h1>
 
         <div class="meta">
             <div class="authordate">
-                <time class="timeago" datetime="2015-11-19T12:49:35+00:00">2015-11-19 12:49</time>
+                <time class="timeago" datetime="2016-01-29T18:14:05+00:00">2016-01-29 18:14</time>
             
                       |  
         <a href="index.rst" id="sourcelink">Source</a>
@@ -57,40 +55,52 @@ reviewers who put time and effort into checking everything wor">
                     <div itemprop="keywords" class="tags">
         <ul>
         Tags : 
-           <li><a class="tag p-category" href="../../categories/code/" rel="tag">code</a></li>
-           <li><a class="tag p-category" href="../../categories/designate/" rel="tag">designate</a></li>
            <li><a class="tag p-category" href="../../categories/openstack/" rel="tag">openstack</a></li>
-           <li><a class="tag p-category" href="../../categories/refactor/" rel="tag">refactor</a></li>
+           <li><a class="tag p-category" href="../../categories/seattle/" rel="tag">seattle</a></li>
+           <li><a class="tag p-category" href="../../categories/summit/" rel="tag">summit</a></li>
+           <li><a class="tag p-category" href="../../categories/travel/" rel="tag">travel</a></li>
         </ul>
 </div>
 
         </div>
         <div class="body">
             <div>
-<img alt="http://replygif.net/i/789.gif" src="http://replygif.net/i/789.gif"><div class="section" id="it-is-done">
-<h2>It is done !! :)</h2>
-<p>So, yesterday Tim and Kiall +2'd the change.</p>
-<p>It was quite a bit bigger than expected (+4444, -4230) so thanks to all the
-reviewers who put time and effort into checking everything worked, and I hadn't
-made any glaring mistakes :).</p>
-<p>For anyone interested (or mad) the change is here: <a class="reference external" href="https://review.openstack.org/#/c/244315/">Review</a></p>
+<img alt="https://upload.wikimedia.org/wikipedia/commons/5/58/Seattle_Center_as_night_falls.jpg" src="https://upload.wikimedia.org/wikipedia/commons/5/58/Seattle_Center_as_night_falls.jpg"><p><a class="footnote-reference" href="#id2" id="id1">[1]</a></p>
+<div class="section" id="kosmos-mid-cycle">
+<h2>Kosmos Mid Cycle</h2>
+<p>We sat down in Seattle last week to plan out how we were going to kick start
+progess on Kosmos</p>
+<p>(For those of you who don't know what Kosmos is - here is the overview <a class="reference external" href="https://wiki.openstack.org/wiki/Kosmos">on the wiki</a> )</p>
+<p>We decided on a few things, I managed to clarify my (admitedly weird and convaluted) thought process, and we started on the inital sets of patches.</p>
+<p>It was a small group - some people were sick from the LBaaS / VPN / FW mid cycle the week before, but enough to start.</p>
+<p>We covered the DB, the layout, and how we will interact with it. I showed our basic use of the olso_versionedobjects lib, and the basic pecan framework that was in place.</p>
+<p>We have the basic design up on our specs repo <a class="reference external" href="https://github.com/openstack/kosmos-specs">here</a> ( it is not publishing anywhere yet - I will fix that soon )</p>
+<p>If anyone is interested in the project, give me a ping - be it for developing drivers, code, requirements or general interest. (But, really - if you want to write code, just jump in, or ping me for what the hot topics are)</p>
+<p>In 2 weeks time I will be off the Designate Mid Cycle - a little closer to home this time - in Galway, Ireland.</p>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top"><tr>
+<td class="label"><a class="fn-backref" href="#id1">[1]</a></td>
+<td>By Jeffery Hayes (Jeffery Hayes) [CC BY-SA 3.0 (<a class="reference external" href="http://creativecommons.org/licenses/by-sa/3.0">http://creativecommons.org/licenses/by-sa/3.0</a>)], via Wikimedia Commons</td>
+</tr></tbody>
+</table>
 </div>
 </div>
         </div>
                 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../the-big-rename/" rel="prev" title="The Big Rename - why?">Previous post</a>
-            </li>
-            <li class="next">
-                <a href="../kosmos-mid-cycle/" rel="next" title="Kosmos Mid Cycle">Next post</a>
+                <a href="../big-rename-complete/" rel="prev" title="Big Rename - Complete!!">Previous post</a>
             </li>
         </ul>
 <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="grahamhayesie",
-            disqus_url="http://graham.hayes.ie/posts/big-rename-complete/",
-        disqus_title="Big Rename - Complete!!",
-        disqus_identifier="cache/posts/big-rename-complete.html",
+            disqus_url="http://graham.hayes.ie/posts/kosmos-mid-cycle/",
+        disqus_title="Kosmos Mid Cycle",
+        disqus_identifier="cache/posts/kosmos-mid-cycle.html",
         disqus_config = function () {
             this.language = "en";
         };

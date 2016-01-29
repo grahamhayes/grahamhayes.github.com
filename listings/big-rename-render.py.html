@@ -47,25 +47,25 @@ article: http://ogp.me/ns/article#
 <a href="#listingsbig-rename-renderpy-15">15</a>
 <a href="#listingsbig-rename-renderpy-16">16</a></pre></div></td>
 <td class="code"><pre class="code literal-block"><a name="listingsbig-rename-renderpy-1"></a><span class="k">def</span> <span class="nf">_render_object</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-<a name="listingsbig-rename-renderpy-2"></a>    <span class="c"># The dict we will return to be rendered to JSON / output format</span>
+<a name="listingsbig-rename-renderpy-2"></a>    <span class="c1"># The dict we will return to be rendered to JSON / output format</span>
 <a name="listingsbig-rename-renderpy-3"></a>    <span class="n">r_obj</span> <span class="o">=</span> <span class="p">{}</span>
-<a name="listingsbig-rename-renderpy-4"></a>    <span class="c"># Loop over all fields that are supposed to be output</span>
-<a name="listingsbig-rename-renderpy-5"></a>    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">cls</span><span class="o">.</span><span class="n">MODIFICATIONS</span><span class="p">[</span><span class="s">'fields'</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-<a name="listingsbig-rename-renderpy-6"></a>        <span class="c"># Get properties for this field</span>
-<a name="listingsbig-rename-renderpy-7"></a>        <span class="n">field_props</span> <span class="o">=</span> <span class="n">cls</span><span class="o">.</span><span class="n">MODIFICATIONS</span><span class="p">[</span><span class="s">'fields'</span><span class="p">][</span><span class="n">key</span><span class="p">]</span>
-<a name="listingsbig-rename-renderpy-8"></a>        <span class="c"># Check if it has to be renamed</span>
-<a name="listingsbig-rename-renderpy-9"></a>        <span class="k">if</span> <span class="n">field_props</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'rename'</span><span class="p">,</span> <span class="bp">False</span><span class="p">):</span>
-<a name="listingsbig-rename-renderpy-10"></a>            <span class="n">obj</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">field_props</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'rename'</span><span class="p">))</span>
-<a name="listingsbig-rename-renderpy-11"></a>            <span class="c"># if rename is specified we need to change the key</span>
-<a name="listingsbig-rename-renderpy-12"></a>            <span class="n">obj_key</span> <span class="o">=</span> <span class="n">field_props</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'rename'</span><span class="p">)</span>
+<a name="listingsbig-rename-renderpy-4"></a>    <span class="c1"># Loop over all fields that are supposed to be output</span>
+<a name="listingsbig-rename-renderpy-5"></a>    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">cls</span><span class="o">.</span><span class="n">MODIFICATIONS</span><span class="p">[</span><span class="s1">'fields'</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<a name="listingsbig-rename-renderpy-6"></a>        <span class="c1"># Get properties for this field</span>
+<a name="listingsbig-rename-renderpy-7"></a>        <span class="n">field_props</span> <span class="o">=</span> <span class="n">cls</span><span class="o">.</span><span class="n">MODIFICATIONS</span><span class="p">[</span><span class="s1">'fields'</span><span class="p">][</span><span class="n">key</span><span class="p">]</span>
+<a name="listingsbig-rename-renderpy-8"></a>        <span class="c1"># Check if it has to be renamed</span>
+<a name="listingsbig-rename-renderpy-9"></a>        <span class="k">if</span> <span class="n">field_props</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rename'</span><span class="p">,</span> <span class="bp">False</span><span class="p">):</span>
+<a name="listingsbig-rename-renderpy-10"></a>            <span class="n">obj</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">field_props</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rename'</span><span class="p">))</span>
+<a name="listingsbig-rename-renderpy-11"></a>            <span class="c1"># if rename is specified we need to change the key</span>
+<a name="listingsbig-rename-renderpy-12"></a>            <span class="n">obj_key</span> <span class="o">=</span> <span class="n">field_props</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rename'</span><span class="p">)</span>
 <a name="listingsbig-rename-renderpy-13"></a>        <span class="k">else</span><span class="p">:</span>
-<a name="listingsbig-rename-renderpy-14"></a>            <span class="c"># if not, move on</span>
+<a name="listingsbig-rename-renderpy-14"></a>            <span class="c1"># if not, move on</span>
 <a name="listingsbig-rename-renderpy-15"></a>            <span class="n">obj</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
 <a name="listingsbig-rename-renderpy-16"></a>            <span class="n">obj_key</span> <span class="o">=</span> <span class="n">key</span>
 </pre></td>
 </tr></table>
 <p class="sourceline"><a href="big-rename-render.py" id="sourcelink">Source</a></p>
-                    <footer id="footer"><p>Contents © 2015         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                    <footer id="footer"><p>Contents © 2016         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

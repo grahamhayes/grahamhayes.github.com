@@ -73,47 +73,47 @@ article: http://ogp.me/ns/article#
 <td class="code"><pre class="code literal-block"><a name="listingsbig-rename-error-renderpy-1"></a><span class="nd">@classmethod</span>
 <a name="listingsbig-rename-error-renderpy-2"></a><span class="k">def</span> <span class="nf">_rename_path_segment</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="n">obj_adapter</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="n">path_segment</span><span class="p">):</span>
 <a name="listingsbig-rename-error-renderpy-3"></a>
-<a name="listingsbig-rename-error-renderpy-4"></a>    <span class="c"># Check if the object is a list - lists will just have an index as a</span>
-<a name="listingsbig-rename-error-renderpy-5"></a>    <span class="c"># value, ands this can't be renamed</span>
+<a name="listingsbig-rename-error-renderpy-4"></a>    <span class="c1"># Check if the object is a list - lists will just have an index as a</span>
+<a name="listingsbig-rename-error-renderpy-5"></a>    <span class="c1"># value, ands this can't be renamed</span>
 <a name="listingsbig-rename-error-renderpy-6"></a>    <span class="k">if</span> <span class="nb">issubclass</span><span class="p">(</span><span class="n">obj_adapter</span><span class="o">.</span><span class="n">ADAPTER_OBJECT</span><span class="p">,</span> <span class="n">objects</span><span class="o">.</span><span class="n">ListObjectMixin</span><span class="p">):</span>
 <a name="listingsbig-rename-error-renderpy-7"></a>        <span class="n">obj_adapter</span> <span class="o">=</span> <span class="n">cls</span><span class="o">.</span><span class="n">get_object_adapter</span><span class="p">(</span>
 <a name="listingsbig-rename-error-renderpy-8"></a>            <span class="n">cls</span><span class="o">.</span><span class="n">ADAPTER_FORMAT</span><span class="p">,</span>
 <a name="listingsbig-rename-error-renderpy-9"></a>            <span class="n">obj_adapter</span><span class="o">.</span><span class="n">ADAPTER_OBJECT</span><span class="o">.</span><span class="n">LIST_ITEM_TYPE</span><span class="o">.</span><span class="n">obj_name</span><span class="p">())</span>
-<a name="listingsbig-rename-error-renderpy-10"></a>        <span class="c"># Return the segment as is, and the next adapter (which is the</span>
-<a name="listingsbig-rename-error-renderpy-11"></a>        <span class="c"># LIST_ITEM_TYPE)</span>
+<a name="listingsbig-rename-error-renderpy-10"></a>        <span class="c1"># Return the segment as is, and the next adapter (which is the</span>
+<a name="listingsbig-rename-error-renderpy-11"></a>        <span class="c1"># LIST_ITEM_TYPE)</span>
 <a name="listingsbig-rename-error-renderpy-12"></a>        <span class="k">return</span> <span class="n">path_segment</span><span class="p">,</span> <span class="n">obj_adapter</span>
 <a name="listingsbig-rename-error-renderpy-13"></a>
 <a name="listingsbig-rename-error-renderpy-14"></a>    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">obj_adapter</span><span class="o">.</span><span class="n">MODIFICATIONS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
-<a name="listingsbig-rename-error-renderpy-15"></a>            <span class="s">'fields'</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<a name="listingsbig-rename-error-renderpy-15"></a>            <span class="s1">'fields'</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
 <a name="listingsbig-rename-error-renderpy-16"></a>
-<a name="listingsbig-rename-error-renderpy-17"></a>        <span class="c"># Check if this field as actually a nested object</span>
-<a name="listingsbig-rename-error-renderpy-18"></a>        <span class="k">if</span> <span class="nb">object</span><span class="o">.</span><span class="n">FIELDS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">path_segment</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'relation'</span><span class="p">,</span> <span class="bp">False</span><span class="p">):</span>
+<a name="listingsbig-rename-error-renderpy-17"></a>        <span class="c1"># Check if this field as actually a nested object</span>
+<a name="listingsbig-rename-error-renderpy-18"></a>        <span class="k">if</span> <span class="nb">object</span><span class="o">.</span><span class="n">FIELDS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">path_segment</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'relation'</span><span class="p">,</span> <span class="bp">False</span><span class="p">):</span>
 <a name="listingsbig-rename-error-renderpy-19"></a>
-<a name="listingsbig-rename-error-renderpy-20"></a>            <span class="n">obj_cls</span> <span class="o">=</span> <span class="nb">object</span><span class="o">.</span><span class="n">FIELDS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">path_segment</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'relation_cls'</span><span class="p">)</span>
+<a name="listingsbig-rename-error-renderpy-20"></a>            <span class="n">obj_cls</span> <span class="o">=</span> <span class="nb">object</span><span class="o">.</span><span class="n">FIELDS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">path_segment</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'relation_cls'</span><span class="p">)</span>
 <a name="listingsbig-rename-error-renderpy-21"></a>            <span class="n">obj_adapter</span> <span class="o">=</span> <span class="n">cls</span><span class="o">.</span><span class="n">get_object_adapter</span><span class="p">(</span>
 <a name="listingsbig-rename-error-renderpy-22"></a>                <span class="n">cls</span><span class="o">.</span><span class="n">ADAPTER_FORMAT</span><span class="p">,</span>
 <a name="listingsbig-rename-error-renderpy-23"></a>                <span class="n">obj_cls</span><span class="p">)</span>
 <a name="listingsbig-rename-error-renderpy-24"></a>
 <a name="listingsbig-rename-error-renderpy-25"></a>            <span class="nb">object</span> <span class="o">=</span> <span class="n">objects</span><span class="o">.</span><span class="n">DesignateObject</span><span class="o">.</span><span class="n">obj_cls_from_name</span><span class="p">(</span><span class="n">obj_cls</span><span class="p">)()</span>
-<a name="listingsbig-rename-error-renderpy-26"></a>            <span class="c"># Recurse down into this object</span>
+<a name="listingsbig-rename-error-renderpy-26"></a>            <span class="c1"># Recurse down into this object</span>
 <a name="listingsbig-rename-error-renderpy-27"></a>            <span class="n">path_segment</span><span class="p">,</span> <span class="n">obj_adapter</span> <span class="o">=</span> <span class="n">cls</span><span class="o">.</span><span class="n">_rename_path_segment</span><span class="p">(</span>
 <a name="listingsbig-rename-error-renderpy-28"></a>                <span class="n">obj_adapter</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="n">path_segment</span><span class="p">)</span>
 <a name="listingsbig-rename-error-renderpy-29"></a>
-<a name="listingsbig-rename-error-renderpy-30"></a>            <span class="c"># No need to continue the loop</span>
+<a name="listingsbig-rename-error-renderpy-30"></a>            <span class="c1"># No need to continue the loop</span>
 <a name="listingsbig-rename-error-renderpy-31"></a>            <span class="k">break</span>
 <a name="listingsbig-rename-error-renderpy-32"></a>
 <a name="listingsbig-rename-error-renderpy-33"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span>
 <a name="listingsbig-rename-error-renderpy-34"></a>            <span class="n">value</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
-<a name="listingsbig-rename-error-renderpy-35"></a>                <span class="s">'rename'</span><span class="p">,</span> <span class="n">NotSpecifiedSential</span><span class="p">()),</span> <span class="n">NotSpecifiedSential</span><span class="p">)</span>\
-<a name="listingsbig-rename-error-renderpy-36"></a>                <span class="ow">and</span> <span class="n">path_segment</span> <span class="o">==</span> <span class="n">value</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'rename'</span><span class="p">):</span>
-<a name="listingsbig-rename-error-renderpy-37"></a>            <span class="c"># Just do the rename</span>
+<a name="listingsbig-rename-error-renderpy-35"></a>                <span class="s1">'rename'</span><span class="p">,</span> <span class="n">NotSpecifiedSential</span><span class="p">()),</span> <span class="n">NotSpecifiedSential</span><span class="p">)</span>\
+<a name="listingsbig-rename-error-renderpy-36"></a>                <span class="ow">and</span> <span class="n">path_segment</span> <span class="o">==</span> <span class="n">value</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rename'</span><span class="p">):</span>
+<a name="listingsbig-rename-error-renderpy-37"></a>            <span class="c1"># Just do the rename</span>
 <a name="listingsbig-rename-error-renderpy-38"></a>            <span class="n">path_segment</span> <span class="o">=</span> <span class="n">key</span>
 <a name="listingsbig-rename-error-renderpy-39"></a>
 <a name="listingsbig-rename-error-renderpy-40"></a>    <span class="k">return</span> <span class="n">path_segment</span><span class="p">,</span> <span class="n">obj_adapter</span>
 </pre></td>
 </tr></table>
 <p class="sourceline"><a href="big-rename-error-render.py" id="sourcelink">Source</a></p>
-                    <footer id="footer"><p>Contents © 2015         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                    <footer id="footer"><p>Contents © 2016         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>
