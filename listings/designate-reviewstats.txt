@@ -1,0 +1,69 @@
+2016-02-24 16:40:52.192668
+
+Reviews for the last 60 days in designate
+** -- designate-core team member
++----------------+---------------------------------------+----------------+
+|    Reviewer    | Reviews   -2  -1  +1  +2  +A    +/- % | Disagreements* |
++----------------+---------------------------------------+----------------+
+|   graham **    |     170    1  14   0 155  54    91.2% |    3 (  1.8%)  |
+|    kiall **    |     116    0   6   0 110  64    94.8% |    0 (  0.0%)  |
+|   sonu.kumar   |      67    0   1  66   0   0    98.5% |    1 (  1.5%)  |
+|     clint      |      31    0   0  31   0   0   100.0% |    0 (  0.0%)  |
+| TimSimmons **  |      25    0   2   0  23  22    92.0% |    1 (  4.0%)  |
+|    elarson     |      20    0   8  12   0   0    60.0% |    0 (  0.0%)  |
+|    ceratto     |      16    0   1  15   0   0    93.8% |    0 (  0.0%)  |
+|     pglass     |      11    0   4   7   0   0    63.6% |    3 ( 27.3%)  |
+| endre-karlson  |       7    0   0   7   0   0   100.0% |    0 (  0.0%)  |
+|   rahmansyed   |       7    0   0   7   0   0   100.0% |    1 ( 14.3%)  |
+| venkatamahesh  |       5    0   1   4   0   0    80.0% |    0 (  0.0%)  |
+|   jaegerandi   |       4    0   3   1   0   0    25.0% |    0 (  0.0%)  |
+|     Reedip     |       3    0   0   3   0   0   100.0% |    0 (  0.0%)  |
+|  sharath.rao   |       2    0   0   2   0   0   100.0% |    0 (  0.0%)  |
+| yatin.kumbhare |       2    0   0   2   0   0   100.0% |    0 (  0.0%)  |
+|     tmazur     |       2    0   0   0   2   0   100.0% |    0 (  0.0%)  |
+|     to222      |       2    0   1   1   0   0    50.0% |    0 (  0.0%)  |
+|    blallau     |       1    0   0   1   0   0   100.0% |    0 (  0.0%)  |
+|    zhurong     |       1    0   0   1   0   0   100.0% |    0 (  0.0%)  |
+|     antal      |       1    0   0   1   0   0   100.0% |    0 (  0.0%)  |
+|  shillasaebi   |       1    0   0   1   0   0   100.0% |    0 (  0.0%)  |
+|    chen-li     |       1    0   0   1   0   0   100.0% |    0 (  0.0%)  |
+|     caoyue     |       0    0   0   0   0   0     0.0% |    0 (  0.0%)  |
+|       km       |       0    0   0   0   0   0     0.0% |    0 (  0.0%)  |
+|  shihanzhang   |       0    0   0   0   0   0     0.0% |    0 (  0.0%)  |
+|  Chaozhe.Chen  |       0    0   0   0   0   0     0.0% |    0 (  0.0%)  |
+|  AndrewSpiers  |       0    0   0   0   0   0     0.0% |    0 (  0.0%)  |
+|    shuquan     |       0    0   0   0   0   0     0.0% |    0 (  0.0%)  |
+|     filler     |       0    0   0   0   0   0     0.0% |    0 (  0.0%)  |
+| wchrisjohnson  |       0    0   0   0   0   0     0.0% |    0 (  0.0%)  |
+|   cbrandily    |       0    0   0   0   0   0     0.0% |    0 (  0.0%)  |
+|    stanzgy     |       0    0   0   0   0   0     0.0% |    0 (  0.0%)  |
+|  proposal-bot  |       0    0   0   0   0   0     0.0% |    0 (  0.0%)  |
+|   Janonymous   |       0    0   0   0   0   0     0.0% |    0 (  0.0%)  |
+|      afly      |       0    0   0   0   0   0     0.0% |    0 (  0.0%)  |
+|   ramtalari    |       0    0   0   0   0   0     0.0% |    0 (  0.0%)  |
+|   james-li-3   |       0    0   0   0   0   0     0.0% |    0 (  0.0%)  |
+|    coolsvap    |       0    0   0   0   0   0     0.0% |    0 (  0.0%)  |
+|   naggappan    |       0    0   0   0   0   0     0.0% |    0 (  0.0%)  |
+|     binean     |       0    0   0   0   0   0     0.0% |    0 (  0.0%)  |
+|    barclaac    |       0    0   0   0   0   0     0.0% |    0 (  0.0%)  |
+|     haypo      |       0    0   0   0   0   0     0.0% |    0 (  0.0%)  |
+|     vishal     |       0    0   0   0   0   0     0.0% |    0 (  0.0%)  |
+| doug-hellmann  |       0    0   0   0   0   0     0.0% |    0 (  0.0%)  |
+| abhishekkekane |       0    0   0   0   0   0     0.0% |    0 (  0.0%)  |
+|   krotscheck   |       0    0   0   0   0   0     0.0% |    0 (  0.0%)  |
++----------------+---------------------------------------+----------------+
+
+Total reviews: 495 (8.2/day)
+Total reviewers: 22 (avg 0.4 reviews/day)
+Total reviews by core team: 311 (5.2/day)
+Core team size: 3 (avg 1.7 reviews/day)
+New patch sets in the last 60 days: 389 (6.5/day)
+Changes involved in the last 60 days: 182 (3.0/day)
+  New changes in the last 60 days: 153 (2.5/day)
+  Changes merged in the last 60 days: 123 (2.0/day)
+  Changes abandoned in the last 60 days: 10 (0.2/day)
+  Changes left in state WIP in the last 60 days: 0 (0.0/day)
+  Queue growth in the last 60 days: 20 (0.3/day)
+  Average number of patches per changeset: 2.1
+
+(*) Disagreements are defined as a +1 or +2 vote on a patch where a core team member later gave a -1 or -2 vote, or a negative vote overridden with a positive one afterwards.
