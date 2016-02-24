@@ -6,7 +6,7 @@
 .. link:
 .. description: What happened at the Designate mid cycle
 .. type: text
-.. previewimage: http://photos.gra.ham.ie/Designate-Mid-Cycle/i-S96NrNb/0/O/IMG_3854.jpg
+.. previewimage: http://photos.gra.ham.ie/Designate-Mid-Cycle/i-S96NrNb/0/S/IMG_3854-S.jpg
 
 .. image:: http://photos.gra.ham.ie/Designate-Mid-Cycle/i-S96NrNb/0/O/IMG_3854.jpg
 
