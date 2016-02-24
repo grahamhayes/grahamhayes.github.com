@@ -19,11 +19,11 @@
  </url>
  <url>
   <loc>http://graham.hayes.ie/archive.html</loc>
-  <lastmod>2016-01-29T18:39:00Z</lastmod>
+  <lastmod>2016-02-24T20:37:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/</loc>
-  <lastmod>2016-01-29T18:39:00Z</lastmod>
+  <lastmod>2016-02-24T20:37:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/cat_openstack/</loc>
@@ -36,6 +36,10 @@
  <url>
   <loc>http://graham.hayes.ie/categories/designate/</loc>
   <lastmod>2016-01-29T18:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://graham.hayes.ie/categories/galway/</loc>
+  <lastmod>2016-02-24T20:37:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/intro/</loc>
@@ -104,6 +108,10 @@
  <url>
   <loc>http://graham.hayes.ie/posts/big-rename-complete/</loc>
   <lastmod>2016-01-29T18:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://graham.hayes.ie/posts/designate-mid-cycle/</loc>
+  <lastmod>2016-02-24T20:37:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/kosmos-mid-cycle/</loc>

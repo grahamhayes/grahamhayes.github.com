@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>http://graham.hayes.ie/categories/cat_openstack.xml</loc>
-  <lastmod>2016-01-29T18:39:00Z</lastmod>
+  <lastmod>2016-02-24T20:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/code.xml</loc>
@@ -18,12 +18,16 @@
   <lastmod>2016-01-29T18:39:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://graham.hayes.ie/categories/galway.xml</loc>
+  <lastmod>2016-02-24T20:37:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://graham.hayes.ie/categories/intro.xml</loc>
   <lastmod>2016-01-29T18:39:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/openstack.xml</loc>
-  <lastmod>2016-01-29T18:39:00Z</lastmod>
+  <lastmod>2016-02-24T20:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/refactor.xml</loc>
@@ -35,7 +39,7 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/summit.xml</loc>
-  <lastmod>2016-01-29T18:39:00Z</lastmod>
+  <lastmod>2016-02-24T20:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/tokyo.xml</loc>
@@ -43,7 +47,7 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/travel.xml</loc>
-  <lastmod>2016-01-29T18:39:00Z</lastmod>
+  <lastmod>2016-02-24T20:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/welcome.xml</loc>
@@ -51,10 +55,10 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/rss.xml</loc>
-  <lastmod>2016-01-29T18:39:00Z</lastmod>
+  <lastmod>2016-02-24T20:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/sitemap.xml</loc>
-  <lastmod>2016-02-24T16:55:00Z</lastmod>
+  <lastmod>2016-02-24T20:37:00Z</lastmod>
  </sitemap>
 </sitemapindex>
