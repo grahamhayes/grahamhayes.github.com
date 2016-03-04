@@ -1,0 +1,20 @@
+[-] Handling TCP Request from: MY_IP:50401 from (pid=60592) _dns_handle_tcp /home/graham/designate/designate/service.py:250
+Policy check succeeded for rule 'all_tenants' on target {}
+Unhandled exception while processing request from MY_IP:50401
+ Traceback (most recent call last):
+   File "/home/graham/designate/designate/service.py", line 342, in _dns_handle
+     client.sendall(tcp_response)
+   File "<eventlet_path>/eventlet/greenio/base.py", line 388, in sendall
+     tail += self.send(data[tail:], flags)
+   File "<eventlet_path>/eventlet/greenio/base.py", line 379, in send
+     return self._send_loop(self.fd.send, data, flags)
+   File "<eventlet_path>/eventlet/greenio/base.py", line 374, in _send_loop
+     timeout_exc=socket.timeout("timed out"))
+   File "<eventlet_path>/eventlet/greenio/base.py", line 203, in _trampoline
+     mark_as_closed=self._mark_as_closed)
+   File "<eventlet_path>/eventlet/hubs/__init__.py", line 162, in trampoline
+     return hub.switch()
+   File "<eventlet_path>/eventlet/hubs/hub.py", line 294, in switch
+     return self.greenlet.switch()
+ timeout: timed out
+

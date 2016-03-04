@@ -27,6 +27,46 @@ article: http://ogp.me/ns/article#
 
         </ul></section><section class="page-content"><div class="content" rel="main">
         <div class="post">
+            <h1 class="title"><a href="posts/minidns-tcp-and-the-internet/">MiniDNS, TCP, and the internet</a></h1>
+            <div class="meta">
+                <div class="authordate">
+                    <time class="timeago" datetime="2016-03-04T20:50:00+00:00">2016-03-04 20:50</time>
+</div>
+                <div class="stats">
+                                <a href="posts/minidns-tcp-and-the-internet/#disqus_thread" data-disqus-identifier="cache/posts/minidns-tcp-and-the-internet.html">Comments</a>
+
+
+                </div>
+                        <div itemprop="keywords" class="tags">
+        <ul>
+        Tags : 
+           <li><a class="tag p-category" href="categories/bugs/" rel="tag">bugs</a></li>
+           <li><a class="tag p-category" href="categories/eventlet/" rel="tag">eventlet</a></li>
+           <li><a class="tag p-category" href="categories/networking/" rel="tag">networking</a></li>
+           <li><a class="tag p-category" href="categories/openstack/" rel="tag">openstack</a></li>
+        </ul>
+</div>
+
+            </div>
+            <div class="body">
+                <div>
+<p>We had <a class="reference external" href="https://bugs.launchpad.net/designate/+bug/1552864">this bug</a> come
+in yesterday.</p>
+<p>It was a bit unexpected - as we tested it pretty extensively when it was being
+developed.</p>
+<p>The line in question was this:</p>
+<pre class="code python"><a name="rest_code_ba422ec57f334cc791c959f414a5a2cb-1"></a><span class="n">client</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">tcp_response</span><span class="p">)</span>
+</pre>
+<p>In eventlet 0.17.x this behaved like the standard
+<code class="python"><span class="n">socket</span><span class="o">.</span><span class="n">sendall</span><span class="p">()</span></code> , instead of <code class="python"><span class="n">socket</span><span class="o">.</span><span class="n">send</span><span class="p">()</span></code></p>
+<p>(It was <a class="reference external" href="https://github.com/eventlet/eventlet/commit/c315ee86dac996ac533b738f7c8777f4d01a0472">this commit</a> as it turns out - it was noted in the release notes <a class="reference external" href="http://eventlet.net/doc/changelog.html#id5">here</a> but we missed it)</p>
+<p>The other major problem is that the bug did not manifest itself until we pushed
+the AXFR over a long range connection.</p>
+<p class="more"><a href="posts/minidns-tcp-and-the-internet/">Read more…</a></p>
+</div>
+            </div>
+        </div>
+        <div class="post">
             <h1 class="title"><a href="posts/designate-mid-cycle/">Designate Mid Cycle</a></h1>
             <div class="meta">
                 <div class="authordate">

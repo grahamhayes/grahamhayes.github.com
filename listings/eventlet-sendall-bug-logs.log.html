@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="eventlet-sendall-bug-logs.log">
+<meta name="viewport" content="width=device-width">
+<title>eventlet-sendall-bug-logs.log | graham.hayes.ie</title>
+<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+<link rel="canonical" href="http://graham.hayes.ie/listings/eventlet-sendall-bug-logs.log.html">
+<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]-->
+</head>
+<body>
+    <section class="social"><ul>
+<a href="../"><img style="border-radius: 50%; margin-left: auto; margin-right: auto; display: block; margin-bottom: 20px" width="80" height="80" src="../images/me.jpg"></a>
+                    <li><a href="../" title="Home"><i class="icon-home"></i></a></li>
+            <li><a href="../archive.html" title="Archives"><i class="icon-folder-open-alt"></i></a></li>
+            <li><a href="../categories" title="Tags"><i class="icon-tags"></i></a></li>
+            <li><a href="../projects" title="Projects"><i class="icon-briefcase"></i></a></li>
+            <li><a href="../stories/about-me" title="About Me"><i class="icon-info"></i></a></li>
+            <li><a href="../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
+            <li><a href="https://twitter.com/grahamhayes" title="My Twitter"><i class="icon-twitter"></i></a></li>
+            <li><a href="https://github.com/grahamhayes" title="My Github"><i class="icon-github"></i></a></li>
+
+        </ul></section><section class="page-content"><div class="content" rel="main">
+<nav class="breadcrumbs"><ul class="breadcrumb">
+<li><a href=".">listings</a></li>
+                <li>eventlet-sendall-bug-logs.log</li>
+</ul></nav><table class="codetable"><tr>
+<td class="linenos"><div class="linenodiv"><pre><a href="#listingseventlet-sendall-bug-logslog-1"> 1</a>
+<a href="#listingseventlet-sendall-bug-logslog-2"> 2</a>
+<a href="#listingseventlet-sendall-bug-logslog-3"> 3</a>
+<a href="#listingseventlet-sendall-bug-logslog-4"> 4</a>
+<a href="#listingseventlet-sendall-bug-logslog-5"> 5</a>
+<a href="#listingseventlet-sendall-bug-logslog-6"> 6</a>
+<a href="#listingseventlet-sendall-bug-logslog-7"> 7</a>
+<a href="#listingseventlet-sendall-bug-logslog-8"> 8</a>
+<a href="#listingseventlet-sendall-bug-logslog-9"> 9</a>
+<a href="#listingseventlet-sendall-bug-logslog-10">10</a>
+<a href="#listingseventlet-sendall-bug-logslog-11">11</a>
+<a href="#listingseventlet-sendall-bug-logslog-12">12</a>
+<a href="#listingseventlet-sendall-bug-logslog-13">13</a>
+<a href="#listingseventlet-sendall-bug-logslog-14">14</a>
+<a href="#listingseventlet-sendall-bug-logslog-15">15</a>
+<a href="#listingseventlet-sendall-bug-logslog-16">16</a>
+<a href="#listingseventlet-sendall-bug-logslog-17">17</a>
+<a href="#listingseventlet-sendall-bug-logslog-18">18</a>
+<a href="#listingseventlet-sendall-bug-logslog-19">19</a></pre></div></td>
+<td class="code"><pre class="code literal-block"><a name="listingseventlet-sendall-bug-logslog-1"></a>[-] Handling TCP Request from: MY_IP:50401 from (pid=60592) _dns_handle_tcp /home/graham/designate/designate/service.py:250
+<a name="listingseventlet-sendall-bug-logslog-2"></a>Policy check succeeded for rule 'all_tenants' on target {}
+<a name="listingseventlet-sendall-bug-logslog-3"></a>Unhandled exception while processing request from MY_IP:50401
+<a name="listingseventlet-sendall-bug-logslog-4"></a> Traceback (most recent call last):
+<a name="listingseventlet-sendall-bug-logslog-5"></a>   File "/home/graham/designate/designate/service.py", line 342, in _dns_handle
+<a name="listingseventlet-sendall-bug-logslog-6"></a>     client.sendall(tcp_response)
+<a name="listingseventlet-sendall-bug-logslog-7"></a>   File "&lt;eventlet_path&gt;/eventlet/greenio/base.py", line 388, in sendall
+<a name="listingseventlet-sendall-bug-logslog-8"></a>     tail += self.send(data[tail:], flags)
+<a name="listingseventlet-sendall-bug-logslog-9"></a>   File "&lt;eventlet_path&gt;/eventlet/greenio/base.py", line 379, in send
+<a name="listingseventlet-sendall-bug-logslog-10"></a>     return self._send_loop(self.fd.send, data, flags)
+<a name="listingseventlet-sendall-bug-logslog-11"></a>   File "&lt;eventlet_path&gt;/eventlet/greenio/base.py", line 374, in _send_loop
+<a name="listingseventlet-sendall-bug-logslog-12"></a>     timeout_exc=socket.timeout("timed out"))
+<a name="listingseventlet-sendall-bug-logslog-13"></a>   File "&lt;eventlet_path&gt;/eventlet/greenio/base.py", line 203, in _trampoline
+<a name="listingseventlet-sendall-bug-logslog-14"></a>     mark_as_closed=self._mark_as_closed)
+<a name="listingseventlet-sendall-bug-logslog-15"></a>   File "&lt;eventlet_path&gt;/eventlet/hubs/__init__.py", line 162, in trampoline
+<a name="listingseventlet-sendall-bug-logslog-16"></a>     return hub.switch()
+<a name="listingseventlet-sendall-bug-logslog-17"></a>   File "&lt;eventlet_path&gt;/eventlet/hubs/hub.py", line 294, in switch
+<a name="listingseventlet-sendall-bug-logslog-18"></a>     return self.greenlet.switch()
+<a name="listingseventlet-sendall-bug-logslog-19"></a> timeout: timed out
+</pre></td>
+</tr></table>
+<p class="sourceline"><a href="eventlet-sendall-bug-logs.log" id="sourcelink">Source</a></p>
+                    <footer id="footer"><p>Contents © 2016         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+            
+        </footer>
+</div>
+    </section><script src="../assets/js/all-nocdn.js" type="text/javascript"></script><script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-23042579-7', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
