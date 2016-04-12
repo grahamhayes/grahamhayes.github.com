@@ -19,11 +19,11 @@
  </url>
  <url>
   <loc>http://graham.hayes.ie/archive.html</loc>
-  <lastmod>2016-03-31T14:18:00Z</lastmod>
+  <lastmod>2016-04-12T13:18:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/</loc>
-  <lastmod>2016-03-04T20:55:00Z</lastmod>
+  <lastmod>2016-03-31T20:50:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/bugs/</loc>
@@ -54,6 +54,10 @@
   <lastmod>2016-02-24T20:37:00Z</lastmod>
  </url>
  <url>
+  <loc>http://graham.hayes.ie/categories/governance/</loc>
+  <lastmod>2016-03-31T20:50:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://graham.hayes.ie/categories/intro/</loc>
   <lastmod>2016-01-29T18:39:00Z</lastmod>
  </url>
@@ -76,6 +80,10 @@
  <url>
   <loc>http://graham.hayes.ie/categories/summit/</loc>
   <lastmod>2016-01-29T18:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://graham.hayes.ie/categories/tc/</loc>
+  <lastmod>2016-03-31T20:50:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/tokyo/</loc>
@@ -148,6 +156,10 @@
  <url>
   <loc>http://graham.hayes.ie/posts/openstack-summit-designate-report/</loc>
   <lastmod>2016-01-29T18:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://graham.hayes.ie/posts/openstack-tech-committee-my-cloudy-vision/</loc>
+  <lastmod>2016-03-31T20:50:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/starting-blogging-again/</loc>
