@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (OpenStack)</title><link>http://graham.hayes.ie/</link><description></description><atom:link rel="self" type="application/rss+xml" href="http://graham.hayes.ie/categories/cat_openstack.xml"></atom:link><language>en</language><lastBuildDate>Thu, 05 May 2016 17:31:08 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Designate Newton Design Summit</title><link>http://graham.hayes.ie/posts/designate-newton-design-summit/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Austin_Evening.jpg/1024px-Austin_Evening.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;img alt="https://photos.smugmug.com/Misc/i-wSSCDSC/0/X3/IMG_20160427_201746-X3.jpg" src="https://photos.smugmug.com/Misc/i-wSSCDSC/0/X3/IMG_20160427_201746-X3.jpg"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>graham.hayes.ie (OpenStack)</title><link>http://graham.hayes.ie/</link><description></description><atom:link type="application/rss+xml" href="http://graham.hayes.ie/categories/cat_openstack.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 05 May 2016 17:41:26 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Designate Newton Design Summit</title><link>http://graham.hayes.ie/posts/designate-newton-design-summit/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Austin_Evening.jpg/1024px-Austin_Evening.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;img alt="https://photos.smugmug.com/Misc/i-wSSCDSC/0/X3/IMG_20160427_201746-X3.jpg" src="https://photos.smugmug.com/Misc/i-wSSCDSC/0/X3/IMG_20160427_201746-X3.jpg"&gt;
 &lt;p&gt;I started writing this on a plane on the way home from Austin, TX where we just
 finished up the Newton design summit for OpenStack, and finished it a few days
 later - please excuse any wierdness in syntax or flow :)&lt;/p&gt;
@@ -17,7 +17,69 @@ in Kilo, we now have a much easier to read YAML file that is loaded into the
 database via the &lt;code class="bash"&gt;designate-manage&lt;/code&gt; cli, we now actually support multiple
 pools in a real way with the addition of a schedular in
 &lt;code class="bash"&gt;designate-central&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://graham.hayes.ie/posts/designate-newton-design-summit/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>austin</category><category>openstack</category><category>summit</category><category>travel</category><guid>http://graham.hayes.ie/posts/designate-newton-design-summit/</guid><pubDate>Thu, 05 May 2016 17:00:00 GMT</pubDate></item><item><title>Designate Mid Cycle</title><link>http://graham.hayes.ie/posts/designate-mid-cycle/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://photos.gra.ham.ie/Designate-Mid-Cycle/i-S96NrNb/0/S/IMG_3854-S.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;img alt="http://photos.gra.ham.ie/Designate-Mid-Cycle/i-S96NrNb/0/O/IMG_3854.jpg" src="http://photos.gra.ham.ie/Designate-Mid-Cycle/i-S96NrNb/0/O/IMG_3854.jpg"&gt;
+&lt;/div&gt;
+&lt;div class="section" id="where-are-we-going"&gt;
+&lt;h2&gt;Where are we going?&lt;/h2&gt;
+&lt;p&gt;So - the point of the design summit is to plan the future of the projects - and
+designate is no execption. We were in a (very nice boardroom) room for a few
+hours - and we talked through quite a few things.&lt;/p&gt;
+&lt;img alt="https://photos.smugmug.com/Misc/i-p8SxMgH/0/X2/IMG_20160427_140741-X2.jpg" src="https://photos.smugmug.com/Misc/i-p8SxMgH/0/X2/IMG_20160427_140741-X2.jpg"&gt;
+&lt;p&gt;The collection of &lt;a class="reference external" href="https://etherpad.openstack.org/p/newton-design-designate"&gt;etherpads&lt;/a&gt; for the summit are available as well.&lt;/p&gt;
+&lt;div class="section" id="golang-replacement-of-minidns"&gt;
+&lt;h3&gt;Golang Replacement of MiniDNS&lt;/h3&gt;
+&lt;p&gt;One of the nicer things about our current architecture is the flexibility that
+we have because we use the standard DNS protocols to update the target DNS
+servers. This has the downside however, that we are writing code that deals with
+DNS packets in python, which is slow. timsim from RackSpace has writen a POC
+in go that has a very large perfomance improvement.&lt;/p&gt;
+&lt;p&gt;This needs to documented, and permission requested from the TC to move this
+component to Go, (and will be a separate post in its own right).&lt;/p&gt;
+&lt;p&gt;After we got back it turned out that we were not the only project considering
+this, and swift actually have a feature branch with code in place. So, based on
+this, we are going to collaborate with them on the integration of Go to
+OpenStack.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="worker-model"&gt;
+&lt;h3&gt;Worker Model&lt;/h3&gt;
+&lt;p&gt;As we dicussed in Galway - we need to replace the current &lt;code class="bash"&gt;*-manager&lt;/code&gt; services
+with a generic service that can scale out horizontally. As part of this we
+planned out our upgrade and implementation plans for these services.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="docs-deprications-and-more-docs"&gt;
+&lt;h3&gt;Docs, Deprications and more Docs&lt;/h3&gt;
+&lt;p&gt;Docs were a common theme - we were asked to improve them, and also have them
+located in the main docs on the OpenStack.org website.&lt;/p&gt;
+&lt;p&gt;We had a member of the docs team in the room, who gave us some great guidenance
+on how to include our docs in the correct place.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="vmt-the-application-process"&gt;
+&lt;h3&gt;VMT - The application process&lt;/h3&gt;
+&lt;p&gt;On of the teams that supports OpenStack is the Vunrebility Management Team.
+They deal with disclosures and assigning OSSA numbers to issues that could present
+and issue to our deployers.&lt;/p&gt;
+&lt;p&gt;They had a session this summit on how that process might work, and designate
+was one of the projects chosen to be used as a pilot as I have previously
+produced Threat Analysis documentation for Designate inside of Hewlett Packard
+Enterprise - this information is currently being processed for release to
+the community.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="searchlight"&gt;
+&lt;h3&gt;Searchlight&lt;/h3&gt;
+&lt;p&gt;Searchlight is a new (ish) project in OpenStack that enables true searching
+capabilities on clouds. We have a designate plugin, but there are issues
+with how we emit notifications from the v1 and the v2 API.&lt;/p&gt;
+&lt;p&gt;We decided that when we move the Horizon panels to v2, we will just listen for
+v2 notifications in Searchlight.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="api-docs"&gt;
+&lt;h3&gt;API Docs&lt;/h3&gt;
+&lt;p&gt;There was an interesting session on how the community are moving to document
+their APIs. It will now reside in the projects repo, and is based on a
+custom sphinx extention that was written for OpenStack.&lt;/p&gt;
+&lt;p&gt;As this progresses we will migrate designate to these docs, and remove our
+current docs, as they are much harder to read.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>austin</category><category>openstack</category><category>summit</category><category>travel</category><guid>http://graham.hayes.ie/posts/designate-newton-design-summit/</guid><pubDate>Thu, 05 May 2016 17:00:00 GMT</pubDate></item><item><title>Designate Mid Cycle</title><link>http://graham.hayes.ie/posts/designate-mid-cycle/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://photos.gra.ham.ie/Designate-Mid-Cycle/i-S96NrNb/0/S/IMG_3854-S.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;img alt="http://photos.gra.ham.ie/Designate-Mid-Cycle/i-S96NrNb/0/O/IMG_3854.jpg" src="http://photos.gra.ham.ie/Designate-Mid-Cycle/i-S96NrNb/0/O/IMG_3854.jpg"&gt;
 &lt;div class="section" id="designate-mid-cycle"&gt;
 &lt;h2&gt;Designate Mid Cycle&lt;/h2&gt;
 &lt;p&gt;This was a little over a week ago, and I have been trying to get my thoughts down on

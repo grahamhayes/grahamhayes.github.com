@@ -42,7 +42,6 @@ database via the :bash:`designate-manage` cli, we now actually support multiple
 pools in a real way with the addition of a schedular in
 :bash:`designate-central`.
 
-.. TEASER_END
 
 Where are we going?
 ===================
