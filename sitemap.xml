@@ -19,11 +19,15 @@
  </url>
  <url>
   <loc>http://graham.hayes.ie/archive.html</loc>
-  <lastmod>2016-04-12T13:18:00Z</lastmod>
+  <lastmod>2016-05-05T16:49:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/</loc>
-  <lastmod>2016-04-12T13:18:00Z</lastmod>
+  <lastmod>2016-05-01T07:22:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://graham.hayes.ie/categories/austin/</loc>
+  <lastmod>2016-05-01T07:22:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/bugs/</loc>
@@ -54,6 +58,10 @@
   <lastmod>2016-02-24T20:37:00Z</lastmod>
  </url>
  <url>
+  <loc>http://graham.hayes.ie/categories/governance/</loc>
+  <lastmod>2016-05-01T07:09:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://graham.hayes.ie/categories/intro/</loc>
   <lastmod>2016-01-29T18:39:00Z</lastmod>
  </url>
@@ -76,6 +84,10 @@
  <url>
   <loc>http://graham.hayes.ie/categories/summit/</loc>
   <lastmod>2016-01-29T18:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://graham.hayes.ie/categories/tc/</loc>
+  <lastmod>2016-05-01T07:09:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/tokyo/</loc>
@@ -138,6 +150,14 @@
   <lastmod>2016-02-24T20:37:00Z</lastmod>
  </url>
  <url>
+  <loc>http://graham.hayes.ie/posts/designate-newton-design-summit/</loc>
+  <lastmod>2016-05-01T07:22:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://graham.hayes.ie/posts/designate-newtondesign-summit/</loc>
+  <lastmod>2016-05-01T07:16:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://graham.hayes.ie/posts/kosmos-mid-cycle/</loc>
   <lastmod>2016-01-29T18:39:00Z</lastmod>
  </url>
@@ -148,6 +168,10 @@
  <url>
   <loc>http://graham.hayes.ie/posts/openstack-summit-designate-report/</loc>
   <lastmod>2016-01-29T18:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://graham.hayes.ie/posts/openstack-tech-committee-my-cloudy-vision/</loc>
+  <lastmod>2016-05-01T07:09:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/starting-blogging-again/</loc>

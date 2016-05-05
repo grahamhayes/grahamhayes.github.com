@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Designate Newton Design Summit | graham.hayes.ie</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://graham.hayes.ie/posts/designate-newton-design-summit/">
+<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="Graham Hayes">
+<meta property="og:site_name" content="graham.hayes.ie">
+<meta property="og:title" content="Designate Newton Design Summit">
+<meta property="og:url" content="http://graham.hayes.ie/posts/designate-newton-design-summit/">
+<meta property="og:description" content="I started writing this on a plane on the way home from Austin, TX where we just
+finished up the Newton design summit for OpenStack, and finished it a few days
+later - please excuse any wierdness in sy">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Austin_Evening.jpg/1024px-Austin_Evening.jpg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2016-05-05T17:00:00Z">
+<meta property="article:tag" content="austin">
+<meta property="article:tag" content="openstack">
+<meta property="article:tag" content="summit">
+<meta property="article:tag" content="travel">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@grahamhayes">
+<meta name="twitter:creator" content="@grahamhayes">
+<meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Austin_Evening.jpg/1024px-Austin_Evening.jpg">
+</head>
+<body>
+    <section class="social"><ul>
+<a href="../../"><img style="border-radius: 50%; margin-left: auto; margin-right: auto; display: block; margin-bottom: 20px" width="80" height="80" src="../../images/me.jpg"></a>
+                    <li><a href="../../" title="Home"><i class="icon-home"></i></a></li>
+            <li><a href="../../archive.html" title="Archives"><i class="icon-folder-open-alt"></i></a></li>
+            <li><a href="../../categories" title="Tags"><i class="icon-tags"></i></a></li>
+            <li><a href="../../projects" title="Projects"><i class="icon-briefcase"></i></a></li>
+            <li><a href="../../stories/about-me" title="About Me"><i class="icon-info"></i></a></li>
+            <li><a href="../../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
+            <li><a href="https://twitter.com/grahamhayes" title="My Twitter"><i class="icon-twitter"></i></a></li>
+            <li><a href="https://github.com/grahamhayes" title="My Github"><i class="icon-github"></i></a></li>
+
+        </ul></section><section class="page-content"><div class="content" rel="main">
+    <div class="post">
+        <h1 class="p-name entry-title" itemprop="headline name">Designate Newton Design Summit</h1>
+
+        <div class="meta">
+            <div class="authordate">
+                <time class="timeago" datetime="2016-05-05T17:00:00+00:00">2016-05-05 17:00</time>
+            
+                      |  
+        <a href="index.rst" id="sourcelink">Source</a>
+
+            </div>
+                    <div itemprop="keywords" class="tags">
+        <ul>
+        Tags : 
+           <li><a class="tag p-category" href="../../categories/austin/" rel="tag">austin</a></li>
+           <li><a class="tag p-category" href="../../categories/openstack/" rel="tag">openstack</a></li>
+           <li><a class="tag p-category" href="../../categories/summit/" rel="tag">summit</a></li>
+           <li><a class="tag p-category" href="../../categories/travel/" rel="tag">travel</a></li>
+        </ul>
+</div>
+
+        </div>
+        <div class="body">
+            <div>
+<img alt="https://photos.smugmug.com/Misc/i-wSSCDSC/0/X3/IMG_20160427_201746-X3.jpg" src="https://photos.smugmug.com/Misc/i-wSSCDSC/0/X3/IMG_20160427_201746-X3.jpg"><p>I started writing this on a plane on the way home from Austin, TX where we just
+finished up the Newton design summit for OpenStack, and finished it a few days
+later - please excuse any wierdness in syntax or flow :)</p>
+<p>Austin was its usual weird, wacky, wonderful self. Everytime we are here, I
+have a great time, I just can't deal with the heat :).</p>
+<p>The summit format this year worked really well - I pretty much stayed in the
+design summit hotel for the week - and got some very good work done.</p>
+<div class="section" id="months-on-where-are-we">
+<h2>6 Months On: Where are we</h2>
+<p>One of the things I did before this design summit was to look at what we had
+achived last cycle.</p>
+<p>We had a quiet cycle overall, but we did merge some vital features.</p>
+<p>Operators no longer need to use the awfull config format we created for pools
+in Kilo, we now have a much easier to read YAML file that is loaded into the
+database via the <code class="bash">designate-manage</code> cli, we now actually support multiple
+pools in a real way with the addition of a schedular in
+<code class="bash">designate-central</code>.</p>
+<!-- TEASER_END -->
+</div>
+<div class="section" id="where-are-we-going">
+<h2>Where are we going?</h2>
+<p>So - the point of the design summit is to plan the future of the projects - and
+designate is no execption. We were in a (very nice boardroom) room for a few
+hours - and we talked through quite a few things.</p>
+<img alt="https://photos.smugmug.com/Misc/i-p8SxMgH/0/X2/IMG_20160427_140741-X2.jpg" src="https://photos.smugmug.com/Misc/i-p8SxMgH/0/X2/IMG_20160427_140741-X2.jpg"><p>The collection of <a class="reference external" href="https://etherpad.openstack.org/p/newton-design-designate">etherpads</a> for the summit are available as well.</p>
+<div class="section" id="golang-replacement-of-minidns">
+<h3>Golang Replacement of MiniDNS</h3>
+<p>One of the nicer things about our current architecture is the flexibility that
+we have because we use the standard DNS protocols to update the target DNS
+servers. This has the downside however, that we are writing code that deals with
+DNS packets in python, which is slow. timsim from RackSpace has writen a POC
+in go that has a very large perfomance improvement.</p>
+<p>This needs to documented, and permission requested from the TC to move this
+component to Go, (and will be a separate post in its own right).</p>
+<p>After we got back it turned out that we were not the only project considering
+this, and swift actually have a feature branch with code in place. So, based on
+this, we are going to collaborate with them on the integration of Go to
+OpenStack.</p>
+</div>
+<div class="section" id="worker-model">
+<h3>Worker Model</h3>
+<p>As we dicussed in Galway - we need to replace the current <code class="bash">*-manager</code> services
+with a generic service that can scale out horizontally. As part of this we
+planned out our upgrade and implementation plans for these services.</p>
+</div>
+<div class="section" id="docs-deprications-and-more-docs">
+<h3>Docs, Deprications and more Docs</h3>
+<p>Docs were a common theme - we were asked to improve them, and also have them
+located in the main docs on the OpenStack.org website.</p>
+<p>We had a member of the docs team in the room, who gave us some great guidenance
+on how to include our docs in the correct place.</p>
+</div>
+<div class="section" id="vmt-the-application-process">
+<h3>VMT - The application process</h3>
+<p>On of the teams that supports OpenStack is the Vunrebility Management Team.
+They deal with disclosures and assigning OSSA numbers to issues that could present
+and issue to our deployers.</p>
+<p>They had a session this summit on how that process might work, and designate
+was one of the projects chosen to be used as a pilot as I have previously
+produced Threat Analysis documentation for Designate inside of Hewlett Packard
+Enterprise - this information is currently being processed for release to
+the community.</p>
+</div>
+<div class="section" id="searchlight">
+<h3>Searchlight</h3>
+<p>Searchlight is a new (ish) project in OpenStack that enables true searching
+capabilities on clouds. We have a designate plugin, but there are issues
+with how we emit notifications from the v1 and the v2 API.</p>
+<p>We decided that when we move the Horizon panels to v2, we will just listen for
+v2 notifications in Searchlight.</p>
+</div>
+<div class="section" id="api-docs">
+<h3>API Docs</h3>
+<p>There was an interesting session on how the community are moving to document
+their APIs. It will now reside in the projects repo, and is based on a
+custom sphinx extention that was written for OpenStack.</p>
+<p>As this progresses we will migrate designate to these docs, and remove our
+current docs, as they are much harder to read.</p>
+</div>
+</div>
+</div>
+        </div>
+                <ul class="pager hidden-print">
+<li class="previous">
+                <a href="../minidns-tcp-and-the-internet/" rel="prev" title="MiniDNS, TCP, and the internet">Previous post</a>
+            </li>
+        </ul>
+<div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="grahamhayesie",
+            disqus_url="http://graham.hayes.ie/posts/designate-newton-design-summit/",
+        disqus_title="Designate Newton Design Summit",
+        disqus_identifier="cache/posts/designate-newton-design-summit.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        
+    </div>
+                    <footer id="footer"><p>Contents © 2016         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+            
+        </footer>
+</div>
+    </section><script src="../../assets/js/all-nocdn.js" type="text/javascript"></script><script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-23042579-7', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

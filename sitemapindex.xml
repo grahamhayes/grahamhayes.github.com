@@ -6,6 +6,10 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>http://graham.hayes.ie/categories/austin.xml</loc>
+  <lastmod>2016-05-05T16:49:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://graham.hayes.ie/categories/bugs.xml</loc>
   <lastmod>2016-03-31T14:18:00Z</lastmod>
  </sitemap>
@@ -15,7 +19,7 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/cat_openstack.xml</loc>
-  <lastmod>2016-04-12T13:18:00Z</lastmod>
+  <lastmod>2016-05-05T16:49:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/code.xml</loc>
@@ -34,6 +38,10 @@
   <lastmod>2016-03-31T14:18:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://graham.hayes.ie/categories/governance.xml</loc>
+  <lastmod>2016-05-01T07:13:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://graham.hayes.ie/categories/intro.xml</loc>
   <lastmod>2016-03-31T14:18:00Z</lastmod>
  </sitemap>
@@ -43,7 +51,7 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/openstack.xml</loc>
-  <lastmod>2016-04-12T13:18:00Z</lastmod>
+  <lastmod>2016-05-05T16:49:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/refactor.xml</loc>
@@ -55,7 +63,11 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/summit.xml</loc>
-  <lastmod>2016-03-31T14:18:00Z</lastmod>
+  <lastmod>2016-05-05T16:49:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://graham.hayes.ie/categories/tc.xml</loc>
+  <lastmod>2016-05-01T07:13:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/tokyo.xml</loc>
@@ -63,7 +75,7 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/travel.xml</loc>
-  <lastmod>2016-03-31T14:18:00Z</lastmod>
+  <lastmod>2016-05-05T16:49:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/welcome.xml</loc>
@@ -71,10 +83,10 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/rss.xml</loc>
-  <lastmod>2016-04-12T13:18:00Z</lastmod>
+  <lastmod>2016-05-05T16:49:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/sitemap.xml</loc>
-  <lastmod>2016-04-26T22:50:00Z</lastmod>
+  <lastmod>2016-05-05T16:49:00Z</lastmod>
  </sitemap>
 </sitemapindex>

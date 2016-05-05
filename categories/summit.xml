@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (summit)</title><link>http://graham.hayes.ie/</link><description></description><atom:link rel="self" href="http://graham.hayes.ie/categories/summit.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 31 Mar 2016 14:18:25 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Designate Mid Cycle</title><link>http://graham.hayes.ie/posts/designate-mid-cycle/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://photos.gra.ham.ie/Designate-Mid-Cycle/i-S96NrNb/0/S/IMG_3854-S.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;img alt="http://photos.gra.ham.ie/Designate-Mid-Cycle/i-S96NrNb/0/O/IMG_3854.jpg" src="http://photos.gra.ham.ie/Designate-Mid-Cycle/i-S96NrNb/0/O/IMG_3854.jpg"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (summit)</title><link>http://graham.hayes.ie/</link><description></description><atom:link rel="self" type="application/rss+xml" href="http://graham.hayes.ie/categories/summit.xml"></atom:link><language>en</language><lastBuildDate>Thu, 05 May 2016 17:31:08 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Designate Newton Design Summit</title><link>http://graham.hayes.ie/posts/designate-newton-design-summit/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Austin_Evening.jpg/1024px-Austin_Evening.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;img alt="https://photos.smugmug.com/Misc/i-wSSCDSC/0/X3/IMG_20160427_201746-X3.jpg" src="https://photos.smugmug.com/Misc/i-wSSCDSC/0/X3/IMG_20160427_201746-X3.jpg"&gt;
+&lt;p&gt;I started writing this on a plane on the way home from Austin, TX where we just
+finished up the Newton design summit for OpenStack, and finished it a few days
+later - please excuse any wierdness in syntax or flow :)&lt;/p&gt;
+&lt;p&gt;Austin was its usual weird, wacky, wonderful self. Everytime we are here, I
+have a great time, I just can't deal with the heat :).&lt;/p&gt;
+&lt;p&gt;The summit format this year worked really well - I pretty much stayed in the
+design summit hotel for the week - and got some very good work done.&lt;/p&gt;
+&lt;div class="section" id="months-on-where-are-we"&gt;
+&lt;h2&gt;6 Months On: Where are we&lt;/h2&gt;
+&lt;p&gt;One of the things I did before this design summit was to look at what we had
+achived last cycle.&lt;/p&gt;
+&lt;p&gt;We had a quiet cycle overall, but we did merge some vital features.&lt;/p&gt;
+&lt;p&gt;Operators no longer need to use the awfull config format we created for pools
+in Kilo, we now have a much easier to read YAML file that is loaded into the
+database via the &lt;code class="bash"&gt;designate-manage&lt;/code&gt; cli, we now actually support multiple
+pools in a real way with the addition of a schedular in
+&lt;code class="bash"&gt;designate-central&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://graham.hayes.ie/posts/designate-newton-design-summit/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>austin</category><category>openstack</category><category>summit</category><category>travel</category><guid>http://graham.hayes.ie/posts/designate-newton-design-summit/</guid><pubDate>Thu, 05 May 2016 17:00:00 GMT</pubDate></item><item><title>Designate Mid Cycle</title><link>http://graham.hayes.ie/posts/designate-mid-cycle/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://photos.gra.ham.ie/Designate-Mid-Cycle/i-S96NrNb/0/S/IMG_3854-S.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;img alt="http://photos.gra.ham.ie/Designate-Mid-Cycle/i-S96NrNb/0/O/IMG_3854.jpg" src="http://photos.gra.ham.ie/Designate-Mid-Cycle/i-S96NrNb/0/O/IMG_3854.jpg"&gt;
 &lt;div class="section" id="designate-mid-cycle"&gt;
 &lt;h2&gt;Designate Mid Cycle&lt;/h2&gt;
 &lt;p&gt;This was a little over a week ago, and I have been trying to get my thoughts down on
