@@ -27,6 +27,83 @@ article: http://ogp.me/ns/article#
 
         </ul></section><section class="page-content"><div class="content" rel="main">
         <div class="post">
+            <h1 class="title"><a href="posts/openstack-a-leveler-playing-field/">OpenStack - A leveler playing field</a></h1>
+            <div class="meta">
+                <div class="authordate">
+                    <time class="timeago" datetime="2016-07-14T19:30:07+00:00">2016-07-14 19:30</time>
+</div>
+                <div class="stats">
+                                <a href="posts/openstack-a-leveler-playing-field/#disqus_thread" data-disqus-identifier="cache/posts/openstack-a-leveler-playing-field.html">Comments</a>
+
+
+                </div>
+                        <div itemprop="keywords" class="tags">
+        <ul>
+        Tags : 
+           <li><a class="tag p-category" href="categories/governance/" rel="tag">governance</a></li>
+           <li><a class="tag p-category" href="categories/openstack/" rel="tag">openstack</a></li>
+           <li><a class="tag p-category" href="categories/plugins/" rel="tag">plugins</a></li>
+           <li><a class="tag p-category" href="categories/tc/" rel="tag">tc</a></li>
+        </ul>
+</div>
+
+            </div>
+            <div class="body">
+                <div>
+<p>I just proposed a review to <a class="reference external" href="https://review.openstack.org/342366">openstack/governance</a>  repo [0] that aims
+to have everything across OpenStack be plugin based for all cross
+project interaction, or allow all projects access to the same internal
+APIs and I wanted to give a bit of background on my motivation, and how
+it came about.</p>
+<p>Coming from a smaller project, I can see issues for new projects,
+smaller projects, and projects that may not be seen as "important".</p>
+<p>As a smaller project trying to fit into cross project initiatives,
+(and yes, make sure our software looks at least OK in the
+Project Navigator) the process can be difficult.</p>
+<p>A lot of projects / repositories have plugin interfaces, but also
+have project integrations in tree, that do not follow the plugin
+interface. This makes it difficult to see what a plugin can, and
+should do.</p>
+<p>When we moved to the big tent, we wanted as a community to move to
+a flatter model, removing the old integrated status.</p>
+<p>Unfortunately we still have areas when some projects are more equal -
+there is a lingering set of projects who were integrated at the point
+in time that we moved, and have preferential status.</p>
+<p>A lot of the effects are hard to see, and are not insurmountable, but
+do cause projects to re-invent the wheel.</p>
+<p>For example, quotas - there is no way for a project that is not nova,
+neutron, cinder to hook into the standard CLI, or UI for setting
+quotas. They can be done as either extra commands
+(openstack dns quota set --foo bar) or as custom panels, but not
+the way other quotas get set.</p>
+<p>Tempest plugins are another example. Approximately 30 of the 36
+current plugins are using resources that are not supposed to be
+used, and are an unstable interface. Projects in tree in tempest
+are at a much better position, as any change to the internal
+API will have to be fixed before the gate merges, but other
+out of tree plugins are in a place where they can be broken at any
+point.</p>
+<p>None of this is meant to single out projects, or teams. A lot
+of the projects that are in this situation have inordinate amounts of
+work placed on them by the big-tent, and I can emphasize with why things
+are this way. These were the examples that currently stick out
+in my mind, and I think we have come to a point where we need to make
+a change as a community.</p>
+<p>By moving to a "plugins for all" model, these issues are reduced.
+It undoubtedly will cause more, but it is closer to our goal
+of Recognizing all our community is part of OpenStack, and
+differentiate projects by tags.</p>
+<p>This won't be a change that happens tomorrow, next week, or even next
+cycle, but think as a goal, we should start moving in this direction
+as soon as we can, and start building momentum.</p>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">This was originally posted to the <a class="reference external" href="http://lists.openstack.org/pipermail/openstack-dev/2016-July/099285.html">openstack-dev</a> mailing list.</p>
+</div>
+</div>
+            </div>
+        </div>
+        <div class="post">
             <h1 class="title"><a href="posts/designate-newton-design-summit/">Designate Newton Design Summit</a></h1>
             <div class="meta">
                 <div class="authordate">

@@ -1,5 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>graham.hayes.ie</title><link>http://graham.hayes.ie/</link><description>Weird (sometimes incoherent) rambling of a developer.</description><atom:link type="application/rss+xml" href="http://graham.hayes.ie/rss.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 05 May 2016 17:41:26 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Designate Newton Design Summit</title><link>http://graham.hayes.ie/posts/designate-newton-design-summit/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Austin_Evening.jpg/1024px-Austin_Evening.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;img alt="https://photos.smugmug.com/Misc/i-wSSCDSC/0/X3/IMG_20160427_201746-X3.jpg" src="https://photos.smugmug.com/Misc/i-wSSCDSC/0/X3/IMG_20160427_201746-X3.jpg"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie</title><link>http://graham.hayes.ie/</link><description>Weird (sometimes incoherent) rambling of a developer.</description><atom:link type="application/rss+xml" rel="self" href="http://graham.hayes.ie/rss.xml"></atom:link><language>en</language><lastBuildDate>Thu, 14 Jul 2016 19:33:53 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>OpenStack - A leveler playing field</title><link>http://graham.hayes.ie/posts/openstack-a-leveler-playing-field/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;p&gt;I just proposed a review to &lt;a class="reference external" href="https://review.openstack.org/342366"&gt;openstack/governance&lt;/a&gt;  repo [0] that aims
+to have everything across OpenStack be plugin based for all cross
+project interaction, or allow all projects access to the same internal
+APIs and I wanted to give a bit of background on my motivation, and how
+it came about.&lt;/p&gt;
+&lt;p&gt;Coming from a smaller project, I can see issues for new projects,
+smaller projects, and projects that may not be seen as "important".&lt;/p&gt;
+&lt;p&gt;As a smaller project trying to fit into cross project initiatives,
+(and yes, make sure our software looks at least OK in the
+Project Navigator) the process can be difficult.&lt;/p&gt;
+&lt;p&gt;A lot of projects / repositories have plugin interfaces, but also
+have project integrations in tree, that do not follow the plugin
+interface. This makes it difficult to see what a plugin can, and
+should do.&lt;/p&gt;
+&lt;p&gt;When we moved to the big tent, we wanted as a community to move to
+a flatter model, removing the old integrated status.&lt;/p&gt;
+&lt;p&gt;Unfortunately we still have areas when some projects are more equal -
+there is a lingering set of projects who were integrated at the point
+in time that we moved, and have preferential status.&lt;/p&gt;
+&lt;p&gt;A lot of the effects are hard to see, and are not insurmountable, but
+do cause projects to re-invent the wheel.&lt;/p&gt;
+&lt;p&gt;For example, quotas - there is no way for a project that is not nova,
+neutron, cinder to hook into the standard CLI, or UI for setting
+quotas. They can be done as either extra commands
+(openstack dns quota set --foo bar) or as custom panels, but not
+the way other quotas get set.&lt;/p&gt;
+&lt;p&gt;Tempest plugins are another example. Approximately 30 of the 36
+current plugins are using resources that are not supposed to be
+used, and are an unstable interface. Projects in tree in tempest
+are at a much better position, as any change to the internal
+API will have to be fixed before the gate merges, but other
+out of tree plugins are in a place where they can be broken at any
+point.&lt;/p&gt;
+&lt;p&gt;None of this is meant to single out projects, or teams. A lot
+of the projects that are in this situation have inordinate amounts of
+work placed on them by the big-tent, and I can emphasize with why things
+are this way. These were the examples that currently stick out
+in my mind, and I think we have come to a point where we need to make
+a change as a community.&lt;/p&gt;
+&lt;p&gt;By moving to a "plugins for all" model, these issues are reduced.
+It undoubtedly will cause more, but it is closer to our goal
+of Recognizing all our community is part of OpenStack, and
+differentiate projects by tags.&lt;/p&gt;
+&lt;p&gt;This won't be a change that happens tomorrow, next week, or even next
+cycle, but think as a goal, we should start moving in this direction
+as soon as we can, and start building momentum.&lt;/p&gt;
+&lt;div class="note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;This was originally posted to the &lt;a class="reference external" href="http://lists.openstack.org/pipermail/openstack-dev/2016-July/099285.html"&gt;openstack-dev&lt;/a&gt; mailing list.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>governance</category><category>openstack</category><category>plugins</category><category>tc</category><guid>http://graham.hayes.ie/posts/openstack-a-leveler-playing-field/</guid><pubDate>Thu, 14 Jul 2016 19:30:07 GMT</pubDate></item><item><title>Designate Newton Design Summit</title><link>http://graham.hayes.ie/posts/designate-newton-design-summit/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Austin_Evening.jpg/1024px-Austin_Evening.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;img alt="https://photos.smugmug.com/Misc/i-wSSCDSC/0/X3/IMG_20160427_201746-X3.jpg" src="https://photos.smugmug.com/Misc/i-wSSCDSC/0/X3/IMG_20160427_201746-X3.jpg"&gt;
 &lt;p&gt;I started writing this on a plane on the way home from Austin, TX where we just
 finished up the Newton design summit for OpenStack, and finished it a few days
 later - please excuse any wierdness in syntax or flow :)&lt;/p&gt;
