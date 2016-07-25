@@ -19,7 +19,7 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/cat_openstack.xml</loc>
-  <lastmod>2016-07-14T19:33:00Z</lastmod>
+  <lastmod>2016-07-25T21:19:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/code.xml</loc>
@@ -39,7 +39,7 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/governance.xml</loc>
-  <lastmod>2016-07-14T19:33:00Z</lastmod>
+  <lastmod>2016-07-25T21:19:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/intro.xml</loc>
@@ -51,11 +51,11 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/openstack.xml</loc>
-  <lastmod>2016-07-14T19:33:00Z</lastmod>
+  <lastmod>2016-07-25T21:19:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/plugins.xml</loc>
-  <lastmod>2016-07-14T19:33:00Z</lastmod>
+  <lastmod>2016-07-25T21:19:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/refactor.xml</loc>
@@ -71,7 +71,7 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/tc.xml</loc>
-  <lastmod>2016-07-14T19:33:00Z</lastmod>
+  <lastmod>2016-07-25T21:19:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/tokyo.xml</loc>
@@ -87,10 +87,10 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/rss.xml</loc>
-  <lastmod>2016-07-14T19:33:00Z</lastmod>
+  <lastmod>2016-07-25T21:19:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/sitemap.xml</loc>
-  <lastmod>2016-07-14T19:33:00Z</lastmod>
+  <lastmod>2016-07-25T21:19:00Z</lastmod>
  </sitemap>
 </sitemapindex>

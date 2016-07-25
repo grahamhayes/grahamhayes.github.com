@@ -1,5 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (governance)</title><link>http://graham.hayes.ie/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://graham.hayes.ie/categories/governance.xml"></atom:link><language>en</language><lastBuildDate>Thu, 14 Jul 2016 19:33:53 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>OpenStack - A leveler playing field</title><link>http://graham.hayes.ie/posts/openstack-a-leveler-playing-field/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;p&gt;I just proposed a review to &lt;a class="reference external" href="https://review.openstack.org/342366"&gt;openstack/governance&lt;/a&gt;  repo [0] that aims
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (governance)</title><link>http://graham.hayes.ie/</link><description></description><atom:link rel="self" href="http://graham.hayes.ie/categories/governance.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 25 Jul 2016 21:27:28 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Equal Opportunities for all OpenStack Projects</title><link>http://graham.hayes.ie/posts/equal-opportunities-for-all-openstack-projects/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;p&gt;So, two weeks ago, I dropped a TC &lt;a class="reference external" href="https://review.openstack.org/#/c/342366/"&gt;motion&lt;/a&gt; and a mailing list &lt;a class="reference external" href="http://lists.openstack.org/pipermail/openstack-dev/2016-July/099285.html"&gt;post&lt;/a&gt; and
+waited for the other foot to drop.&lt;/p&gt;
+&lt;p&gt;I was pleasantly surprised - no one started shouting at me - but by trying
+to not point fingers at individual teams I made the text too convoluted.&lt;/p&gt;
+&lt;p&gt;So, in an effort to clarify things, here is an overview of what has been said
+so far, both in the mailing list and the gerrit review itself.&lt;/p&gt;
+&lt;div class="section" id="feedback"&gt;
+&lt;h2&gt;Feedback&lt;/h2&gt;
+&lt;blockquote class="epigraph"&gt;
+... does this also include plugins within projects, like storage
+backends in cinder and hypervisor drivers in nova?&lt;/blockquote&gt;
+&lt;p&gt;No - this was not clear enough. This change is aimed at projects that are
+points of significant cross project interaction. While, in the future there may
+come a point where Nova Compute Drivers are developed out of tree (though
+I doubt it), that is not happening today. As a result, there is no projects in
+the list of &lt;a class="reference external" href="https://governance.openstack.org/reference/projects/index.html"&gt;projects&lt;/a&gt; that would need to integrate with Nova.&lt;/p&gt;
+&lt;blockquote class="epigraph"&gt;
+Could you please clarify: do you advocate for a generic plugin interface for
+every project, or that each project should expose a plugin interface that
+allows plugin to behave as in-tree components? Because the latter is what
+happens with Tempest, and I see the former a bit complicated.&lt;/blockquote&gt;
+&lt;p&gt;For every project that has cross project interaction - tempest is a good
+example.&lt;/p&gt;
+&lt;p&gt;For these projects, they should allow all projects in tree (like Nova,
+Neutron, Cinder etc are today), or they should have a plugin interface
+(like they currently do), but all projects &lt;em&gt;must&lt;/em&gt; use it, and not use
+parts of tempest that are not exposed in that interface.&lt;/p&gt;
+&lt;p&gt;This would mean that tempest would move the nova, neutron, etc tests to
+use the plugin interface.&lt;/p&gt;
+&lt;p&gt;Now, that plugin could be kept in the tempest repo, and still maintained
+by the QA team, but should use the same interface as the other plugins
+that are not in that repository.&lt;/p&gt;
+&lt;p&gt;Of course, it is not just tempest - an incomplete list looks like:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Tempest&lt;/li&gt;
+&lt;li&gt;Devstack&lt;/li&gt;
+&lt;li&gt;Grende&lt;/li&gt;
+&lt;li&gt;Horizon&lt;/li&gt;
+&lt;li&gt;OpenStack Client&lt;/li&gt;
+&lt;li&gt;OpenStack SDK&lt;/li&gt;
+&lt;li&gt;Searchlight&lt;/li&gt;
+&lt;li&gt;Heat&lt;/li&gt;
+&lt;li&gt;Mistral&lt;/li&gt;
+&lt;li&gt;Celiometer&lt;/li&gt;
+&lt;li&gt;Rally&lt;/li&gt;
+&lt;li&gt;Documentation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And I am sure I have missed some obvious ones. (if you see a project missing
+let me know on the &lt;a class="reference external" href="https://review.openstack.org/#/c/342366/"&gt;motion&lt;/a&gt;)&lt;/p&gt;
+&lt;blockquote class="epigraph"&gt;
+I think I disagree here. The root cause is being addressed: external tests can
+use the Tempest plugin interface, and use the API, which is being stabilized.
+The fact that the Tempest API is partially unstable is a temporary things, due
+to the origin of the project and the way the scope was redefined, but again
+it's temporary.&lt;/blockquote&gt;
+&lt;p&gt;This seems to be the core of a lot of the disagreement - this is only temporary,
+it will all be fixed in the future, and it should stay this way.&lt;/p&gt;
+&lt;p&gt;Unfortunately the discrepancy between projects is not temporary. The specific
+problems I have highlighted in the thread for one of the projects is temporary,
+but I beleive the only long-term solution is to remove the difference between
+projects.&lt;/p&gt;
+&lt;blockquote class="epigraph"&gt;
+Before we start making lots of specific rules about how teams
+coordinate, I would like to understand the problem those rules are meant
+to solve, so thank you for providing that example.
+...
+It's not clear yet whether there needs to be a new policy to change the
+existing intent, or if a discussion just hasn't happened, or if someone
+simply needs to edit some code.&lt;/blockquote&gt;
+&lt;p&gt;Unfortunately there is a big push back on editing code to help plugins from
+some of the projects. Again, having the differing access between projects will
+continue to exacerbate the problem.&lt;/p&gt;
+&lt;blockquote class="epigraph"&gt;
+&lt;p&gt;"Change the name of the resolution"&lt;/p&gt;
+&lt;p class="attribution"&gt;—(Paraphrase from a few people)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;That was done in the last patchset. I think the Level Playing Field title
+bounced around my head from the other resolution that was titled Level Playing
+Field. It may have been confusing alright.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="other-areas"&gt;
+&lt;h2&gt;Other Areas&lt;/h2&gt;
+&lt;p&gt;I feel like I have been picking on tempest a little too much, it just captures
+the current issues perfectly, and a large number of the community have some
+knowledge of it, and how it works.&lt;/p&gt;
+&lt;p&gt;There is other areas across OpenStack the need attention as well:&lt;/p&gt;
+&lt;div class="section" id="horizon"&gt;
+&lt;h3&gt;Horizon&lt;/h3&gt;
+&lt;p&gt;Horizon privileged projects have access to much more panels than
+plugins (service status, quotas, overviews etc).
+Plugins have to rely on tarballs of horizon&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="openstack-client"&gt;
+&lt;h3&gt;OpenStack Client&lt;/h3&gt;
+&lt;p&gt;OpenStack CLI privileged projects have access to more commands, as
+plugins cannot hook in to them (e.g. quotas)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="grenade"&gt;
+&lt;h3&gt;Grenade&lt;/h3&gt;
+&lt;p&gt;Plugins may or may not have tempest tests ran (I think that patch
+merged), they have to use parts of tempest I was told explicitly
+plugins should not use to get the tests to run at that point.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="docs"&gt;
+&lt;h3&gt;Docs&lt;/h3&gt;
+&lt;p&gt;We can now add install guides and hook into the API Reference, and API
+guides. This is great - and I am really happy about it. We still have
+issues trying to integrate with other areas in docs, and most non docs
+privileged projects end up with massive amounts of users docs in
+docs.openstack.org/developer/&amp;lt;project&amp;gt; , which is not ideal.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>governance</category><category>openstack</category><category>plugins</category><category>tc</category><guid>http://graham.hayes.ie/posts/equal-opportunities-for-all-openstack-projects/</guid><pubDate>Mon, 25 Jul 2016 21:25:00 GMT</pubDate></item><item><title>OpenStack - A leveler playing field</title><link>http://graham.hayes.ie/posts/openstack-a-leveler-playing-field/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;p&gt;I just proposed a review to &lt;a class="reference external" href="https://review.openstack.org/342366"&gt;openstack/governance&lt;/a&gt;  repo [0] that aims
 to have everything across OpenStack be plugin based for all cross
 project interaction, or allow all projects access to the same internal
 APIs and I wanted to give a bit of background on my motivation, and how
