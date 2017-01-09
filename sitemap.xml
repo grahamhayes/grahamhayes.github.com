@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://graham.hayes.ie/</loc>
-  <lastmod>2016-08-09T16:32:00Z</lastmod>
+  <lastmod>2017-01-09T19:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/2015/</loc>
@@ -18,8 +18,12 @@
   <lastmod>2016-01-29T18:39:00Z</lastmod>
  </url>
  <url>
+  <loc>http://graham.hayes.ie/2017/</loc>
+  <lastmod>2017-01-09T19:53:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://graham.hayes.ie/archive.html</loc>
-  <lastmod>2016-07-25T21:19:00Z</lastmod>
+  <lastmod>2017-01-09T19:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/</loc>
@@ -114,40 +118,44 @@
   <lastmod>2016-08-09T16:32:00Z</lastmod>
  </url>
  <url>
+  <loc>http://graham.hayes.ie/index-1.html</loc>
+  <lastmod>2017-01-09T19:53:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://graham.hayes.ie/listings/</loc>
   <lastmod>2016-03-04T20:58:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/big-rename-2-message.txt.html</loc>
-  <lastmod>2016-03-31T14:18:00Z</lastmod>
+  <lastmod>2017-01-09T19:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/big-rename-2-update-message.txt.html</loc>
-  <lastmod>2016-03-31T14:18:00Z</lastmod>
+  <lastmod>2017-01-09T19:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/big-rename-error-render.py.html</loc>
-  <lastmod>2016-03-31T14:18:00Z</lastmod>
+  <lastmod>2017-01-09T19:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/big-rename-render.py.html</loc>
-  <lastmod>2016-03-31T14:18:00Z</lastmod>
+  <lastmod>2017-01-09T19:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/designate-reviewstats.txt.html</loc>
-  <lastmod>2016-03-31T14:18:00Z</lastmod>
+  <lastmod>2017-01-09T19:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/eventlet-sendall-bug-logs.log.html</loc>
-  <lastmod>2016-03-31T14:18:00Z</lastmod>
+  <lastmod>2017-01-09T19:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/generate-zone-rrsets.sh.html</loc>
-  <lastmod>2016-03-31T14:18:00Z</lastmod>
+  <lastmod>2017-01-09T19:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/hello.py.html</loc>
-  <lastmod>2016-03-31T14:18:00Z</lastmod>
+  <lastmod>2017-01-09T19:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/big-rename-complete/</loc>
@@ -172,6 +180,14 @@
  <url>
   <loc>http://graham.hayes.ie/posts/minidns-tcp-and-the-internet/</loc>
   <lastmod>2016-03-04T19:49:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://graham.hayes.ie/posts/non-candidacy-for-designate-ptl/</loc>
+  <lastmod>2017-01-09T22:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://graham.hayes.ie/posts/non-condidacy-for-designate-ptl/</loc>
+  <lastmod>2017-01-09T19:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/openstack-a-leveler-playing-field/</loc>

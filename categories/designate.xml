@@ -1,5 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (designate)</title><link>http://graham.hayes.ie/</link><description></description><atom:link rel="self" href="http://graham.hayes.ie/categories/designate.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 31 Mar 2016 14:18:25 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Big Rename - Complete!!</title><link>http://graham.hayes.ie/posts/big-rename-complete/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;img alt="http://replygif.net/i/789.gif" src="http://replygif.net/i/789.gif"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (designate)</title><link>http://graham.hayes.ie/</link><description></description><atom:link type="application/rss+xml" href="http://graham.hayes.ie/categories/designate.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 09 Jan 2017 22:30:44 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Non Candidacy for Designate PTL</title><link>http://graham.hayes.ie/posts/non-candidacy-for-designate-ptl/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;img alt="https://photos.smugmug.com/Designate-Mid-Cycle/i-2McNPwq/0/X3/IMG_3854-X3.jpg" src="https://photos.smugmug.com/Designate-Mid-Cycle/i-2McNPwq/0/X3/IMG_3854-X3.jpg"&gt;
+&lt;div class="section" id="non-candidacy-for-designate-ptl-pike"&gt;
+&lt;h2&gt;Non Candidacy for Designate PTL - Pike&lt;/h2&gt;
+&lt;p&gt;Happy new year!&lt;/p&gt;
+&lt;p&gt;As you may have guessed from the title, I have decided that the time has come to step aside as PTL
+for the upcoming cycle. It is unfortunate, but my work has pivoted in a different direction over the last
+year (containers all the way down man - but hey, I got part of my wish to write Golang, just not on the
+project I envisaged :) ).&lt;/p&gt;
+&lt;p&gt;As a result, I have been trying to PTL out of hours for the last cycle and a half. Unfortunatly, this has had a
+bad impact on this cycle, and I don't think we should repeat the pattern.&lt;/p&gt;
+&lt;p&gt;We have done some great work over the last year or so - Worker Model, the &lt;code class="python"&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Domain&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Zone&lt;/span&gt;&lt;/code&gt; work,
+the new dashboard, being one of the first projects to have an external tempest plugin and getting lost in
+the west of Ireland in the aftermath of the flooding.&lt;/p&gt;
+&lt;img alt="https://photos.smugmug.com/Designate-Mid-Cycle/i-h4gGtxX/0/X3/IMG_3869-X3.jpg" src="https://photos.smugmug.com/Designate-Mid-Cycle/i-h4gGtxX/0/X3/IMG_3869-X3.jpg"&gt;
+&lt;p&gt;I can honestly say, I have enjoyed my entire time with this team, from our first meeting in Austin, back in
+the beginning of 2014, the whole way through to today. We have always been a small team, but when I think back
+to what we have produced over the last few years, I am incredibly proud.&lt;/p&gt;
+&lt;p&gt;Change is healthy, and I have been in a leadership position in Designate longer than most, and no project should
+rely on a person or persons to continue to exist.&lt;/p&gt;
+&lt;p&gt;I will stick around on IRC, and still remain a member of the core review team, as a lot of the roadmap is still in
+the heads of myself and 2 or 3 others, but my main aim will be to document the roadmap in a single place, and not
+just in thousands of etherpads.&lt;/p&gt;
+&lt;p&gt;It has been a fun journey - I have gotten to work with some great people, see some amazing places, work on really
+interestig problems and contribute to a project that was close to my heart.&lt;/p&gt;
+&lt;p&gt;This is not an easy thing to do, but I think the time is right for the project and me to let someone else make
+their stamp on the project, and bring it to the next level.&lt;/p&gt;
+&lt;p&gt;Nominations close soon &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/non-candidacy-for-designate-ptl/#id4" id="id1"&gt;[0]&lt;/a&gt; so please start thinking about if you would like to run or not. If anyone has any questions
+about the role, please drop me an email &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/non-candidacy-for-designate-ptl/#id5" id="id2"&gt;[1]&lt;/a&gt; or ping me &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/non-candidacy-for-designate-ptl/#id6" id="id3"&gt;[2]&lt;/a&gt; on &lt;a class="reference external" href="irc://chat.freenode.net/#openstack-dns"&gt;IRC&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Thank you for this opportunity to serve the community for so long, it is not something I will forget.&lt;/p&gt;
+&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label"&gt;&lt;col&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="http://graham.hayes.ie/posts/non-candidacy-for-designate-ptl/#id1"&gt;[0]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://governance.openstack.org/election/"&gt;Election Schedule&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id5" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label"&gt;&lt;col&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="http://graham.hayes.ie/posts/non-candidacy-for-designate-ptl/#id2"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;graham.hayes (a) hpe.com&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id6" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label"&gt;&lt;col&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="http://graham.hayes.ie/posts/non-candidacy-for-designate-ptl/#id3"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;mugsie&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>designate</category><category>openstack</category><guid>http://graham.hayes.ie/posts/non-candidacy-for-designate-ptl/</guid><pubDate>Mon, 09 Jan 2017 22:16:50 GMT</pubDate></item><item><title>Big Rename - Complete!!</title><link>http://graham.hayes.ie/posts/big-rename-complete/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;img alt="http://replygif.net/i/789.gif" src="http://replygif.net/i/789.gif"&gt;
 &lt;div class="section" id="it-is-done"&gt;
 &lt;h2&gt;It is done !! :)&lt;/h2&gt;
 &lt;p&gt;So, yesterday Tim and Kiall +2'd the change.&lt;/p&gt;

@@ -19,7 +19,7 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/cat_openstack.xml</loc>
-  <lastmod>2016-07-25T21:27:00Z</lastmod>
+  <lastmod>2017-01-09T22:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/code.xml</loc>
@@ -27,7 +27,7 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/designate.xml</loc>
-  <lastmod>2016-03-31T14:18:00Z</lastmod>
+  <lastmod>2017-01-09T22:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/eventlet.xml</loc>
@@ -51,7 +51,7 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/openstack.xml</loc>
-  <lastmod>2016-07-25T21:27:00Z</lastmod>
+  <lastmod>2017-01-09T22:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/plugins.xml</loc>
@@ -87,10 +87,10 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/rss.xml</loc>
-  <lastmod>2016-07-25T21:27:00Z</lastmod>
+  <lastmod>2017-01-09T22:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/sitemap.xml</loc>
-  <lastmod>2016-08-09T16:32:00Z</lastmod>
+  <lastmod>2017-01-09T22:17:00Z</lastmod>
  </sitemap>
 </sitemapindex>
