@@ -6,7 +6,7 @@
 .. link: 
 .. description: Time to step aside
 .. type: text
-.. previewimgae: https://photos.smugmug.com/Designate-Mid-Cycle/i-2McNPwq/0/S/IMG_3854-S.jpg
+.. previewimage: https://photos.smugmug.com/Designate-Mid-Cycle/i-2McNPwq/0/S/IMG_3854-S.jpg
 
 .. role:: python(code)
    :language: python
