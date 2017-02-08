@@ -13,7 +13,7 @@ A bit about me, and what I do.
 
 * Employed by `Hewlett Packard Enterprise`_
 * PTL for the OpenStack DNS Project (`Designate`_)
-* PTL for the *upcoming* OpenStack Global Load Balancing Project (`Kosmos`_)
+* ex PTL for the **failed** OpenStack Global Load Balancing Project (`Kosmos`_)
 * Amateur Photographer with delusions of skill
 * Volunteer System Administrator for `DIT Netsoc`_ and `DIT Societies`_
 
