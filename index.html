@@ -27,6 +27,274 @@ article: http://ogp.me/ns/article#
 
         </ul></section><section class="page-content"><div class="content" rel="main">
         <div class="post">
+            <h1 class="title"><a href="posts/openstack-designate-where-we-are/">OpenStack Designate - Where we are.</a></h1>
+            <div class="meta">
+                <div class="authordate">
+                    <time class="timeago" datetime="2017-02-09T18:38:00+00:00">2017-02-09 18:38</time>
+</div>
+                <div class="stats">
+                                <a href="posts/openstack-designate-where-we-are/#disqus_thread" data-disqus-identifier="cache/posts/openstack-designate-where-we-are.html">Comments</a>
+
+
+                </div>
+                        <div itemprop="keywords" class="tags">
+        <ul>
+        Tags : 
+           <li><a class="tag p-category" href="categories/designate/" rel="tag">designate</a></li>
+           <li><a class="tag p-category" href="categories/openstack/" rel="tag">openstack</a></li>
+           <li><a class="tag p-category" href="categories/project-update/" rel="tag">project update</a></li>
+           <li><a class="tag p-category" href="categories/tc/" rel="tag">tc</a></li>
+        </ul>
+</div>
+
+            </div>
+            <div class="body">
+                <div>
+<p>I have been asked a few times recently "What is the state of the Designate
+project?", "How is Designate getting on?", and by people who know what is
+happening "What are you going to do about Designate?".</p>
+<p>Needless to say, all of this is depressing to me, and the people that I have
+worked with for the last number of years to make Designate a truly useful,
+feature rich project.</p>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last"><em>TL;DR;</em> for this - Designate is not in a sustainable place.</p>
+</div>
+<p>To start out - Designate has always been a small project. DNS does not have
+massive <em>cool</em> appeal - its not shiny, pretty, or something you see on the
+front page of HackerNews (unless it breaks - then oh boy do people become DNS
+experts).</p>
+<p>A line a previous PTL for the project used to use, and I have happily robbed is
+"DNS is like plumbing, no one cares about it until it breaks, and then you are
+standing knee deep in $expletive". (As an aside, that was the reason we chose
+the crocodile as our mascot - its basically a dinosaur, old as dirt, and when
+it bites it causes some serious complications).</p>
+<p>Unfortunately that comes over into the development of DNS products sometimes.
+DNSaaS is a check box on a tender response, an assumption.</p>
+<p>We were lucky in the beginning - we had 2 large(ish) public clouds that needed
+DNS services, and nothing currently existed in the eco-system, so we got
+funding for a team from a few sources.</p>
+<p>We got a ton done in that period - we moved from a v1 API which was
+synchronous to a new v2 async API, we massively increased the amount of DNS
+servers we supported, and added new features.</p>
+<p>Unfortunately, this didn't last. Internal priorities within companies
+sponsoring the development changed, and we started to shed contributors, which
+happens, however disappointing. Usually when this happens if a project is
+important enough the community will pick up where the previous group left off.</p>
+<p>We have yet to see many (meaningful) commits from the community though. We
+have some great deployers who will file bugs, and if they can put up patch
+sets - but they are (incredibly valuable and appreciated) tactical
+contributions. A project cannot survive on them, and we are no exception.</p>
+<p>So where does that leave us? Let have a look at how many actual commits we
+have had:</p>
+<table border="1" class="docutils">
+<caption>Commits per cycle</caption>
+<colgroup>
+<col width="61%">
+<col width="39%">
+</colgroup>
+<tbody valign="top">
+<tr>
+<td>Havana</td>
+<td>172</td>
+</tr>
+<tr>
+<td>Icehouse</td>
+<td>165</td>
+</tr>
+<tr>
+<td>Juno</td>
+<td>254</td>
+</tr>
+<tr>
+<td>Kilo</td>
+<td>340</td>
+</tr>
+<tr>
+<td>Liberty</td>
+<td>327</td>
+</tr>
+<tr>
+<td>Mitaka</td>
+<td>246</td>
+</tr>
+<tr>
+<td>Newton</td>
+<td>299</td>
+</tr>
+<tr>
+<td>Ocata</td>
+<td>98</td>
+</tr>
+</tbody>
+</table>
+<p>Next cycle, we are going to have 2 community goals:</p>
+<ul class="simple">
+<li>Control Plane API endpoints deployment via WSGI</li>
+<li>Python 3.5 functional testing</li>
+</ul>
+<p>We would have been actually OK for the tempest one - we were one of the first
+external repo based plug-ins with <a class="reference external" href="https://github.com/openstack/designate-tempest-plugin">designate-tempest-plugin</a></p>
+<p>For WSGI based APIs, this will be a chunk of work - due to our internal code
+structure splitting out the API is going to be ... an issue. (and I think it
+will be harder than most people expect - anyone using olso.service has
+eventlet imported - I am not sure how that affects running in a WSGI server)</p>
+<p>Python 3.5 - I have no idea. We can't even run all our unit tests on python
+3.5, so I suspect getting functional testing may be an issue. And, convincing
+management that re-factoring parts of the code base due to "community goals"
+or a future potential pay-off can be more difficult than it should.</p>
+<img alt="/images/oct-2016-projects-prod.jpg" src="images/oct-2016-projects-prod.jpg"><p>We now have a situation where the largest "non-core" project <a class="footnote-reference" href="posts/openstack-designate-where-we-are/#id6" id="id1">[1]</a> in the tent
+has a tiny number of developers working on it. 42% of deployers are evaluating
+Designate, so we should see this start to increase.</p>
+<div class="section" id="how-did-this-happen">
+<h2>How did this happen?</h2>
+<p>Like most situations, there is no single cause.</p>
+<p>Certainly there may have been fault on the side of the Designate leadership.
+We had started out as a small team, and had built a huge amount of trust and
+respect based on in person interactions over a few years, which meant that
+there was a fair bit of "tribal knowledge" in the heads of a few people, and
+that new people had a hard time becoming part of the group.</p>
+<p>Also, due to volume of work done by this small group, a lot of users / distros
+were OK leaving us work - some of us were also running a production designate
+service during this time, so we knew what we needed to develop, and we had
+pretty quick feedback when we made a mistake, or caused a bug. All of this
+resulted in the major development cost being funded by two companies, which
+left us vulnerable to changes in direction from those companies. Then that
+shoe dropped. We are now one corporate change of direction from having no
+cores on the project being paid to work on the project. <a class="footnote-reference" href="posts/openstack-designate-where-we-are/#id7" id="id2">[2]</a></p>
+<p>Preceding this, the governance of OpenStack changed to the <a class="reference external" href="https://governance.openstack.org/tc/resolutions/20141202-project-structure-reform-spec.html">Big Tent</a>
+While this change was a good thing for the OpenStack project as a
+whole it had quite a bad impact on us.</p>
+<p>Pre Big Tent, you got integrated. This was at least a cycle, where you moved
+docs to docs.openstack.org, integrated with QA testing tooling, got packaged
+by Linux distros, and build cross project features.</p>
+<p>When this was a selective thing, there was teams available to help with that,
+docs teams would help with content (and tooling - docs was a mass of XML back
+then), QA would help with tempest and devstack, horizon would help with panels.</p>
+<p>In Big Tent, there just wasn't resources to do this - the scope of the project
+expansion was huge. However the big tent happened (in my opinion - I have
+written about this before) before the horizontal / cross project teams were
+ready. They stuck to covering the "integrated" projects, which was all
+they could do at the time.</p>
+<p>This left us in a position of having to reimplement tooling, figure out
+what tooling we did have access to, and migrate everything we had on our
+own. And, as a project that (at our peak level of contribution) only ever had
+5% of the number of contributors compared to a project like nova,  this put
+quite a load on our developers. Things like grenade, tempest and horizon
+plug-ins, took weeks to figure out all of which took time from other vital
+things like docs, functional tests and getting designate into other tools.</p>
+<p>One of the companies who invested in designate had a QE engineer that used to
+contribute, and I can honestly say that the quality of our testing improved 10
+fold during the time he worked with us. Not just from in repo tests, but from
+standing up full deployment stacks, and trying to break them - we learned a lot
+about how we could improve things from his expertise.</p>
+<p>Which is kind of the point I think. Nobody is amazing at everything. You need
+people with domain knowledge to work on these areas. If you asked me to do a
+multi-node grenade job, I would either start drinking, throw my laptop at you
+or do both.</p>
+<p>We still have some of these problems to this day - most of our docs are
+in a messy pile in <a class="reference external" href="http://docs.openstack.org/developer/designate">docs.openstack.org/developer/designate</a>
+while we still have a small amount of old functional tests that are not ported
+from our old non plug-in style.</p>
+<p>All of this adds up to make projects like Designate much less attractive
+to users - we just need to look at the <a class="reference external" href="https://www.openstack.org/software/releases/newton/components/designate">project navigator</a> to see what a bad
+image potential users get of us. <a class="footnote-reference" href="posts/openstack-designate-where-we-are/#id8" id="id3">[3]</a> This is for a project that was ran as a
+full (non beta) service in a public cloud. <a class="footnote-reference" href="posts/openstack-designate-where-we-are/#id9" id="id4">[4]</a></p>
+</div>
+<div class="section" id="where-too-now-then">
+<h2>Where too now then?</h2>
+<p>Well, this is where I call out to people who actually use the project - don't
+jump ship and use something else because of the picture I have painted. We are
+a dedicated team, how cares about the project. We just need some help.</p>
+<p>I know there are large telcos who use Designate. I am sure there is tooling,
+or docs build up in these companies that could be very useful to the project.</p>
+<p>Nearly every commercial OpenStack distro has Designate. Some have had it since
+the beginning. Again, developers, docs, tooling, testers, anything and
+everything is welcome. We don't need a massive amount of resources - we are a
+small ish, stable, project.</p>
+<p>We need developers with upstream time allocated, and the budget to go to events
+like the PTG - for cross project work, and internal designate road map, these
+events form the core of how we work.</p>
+<p>We also need help from cross project teams - the work done by them is brilliant
+but it can be hard for smaller projects to consume. We have had a lot of
+progress since the <a class="reference external" href="http://graham.hayes.ie/posts/openstack-a-leveler-playing-field/">Leveller Playing Field</a> debate, but a lot of work is
+still optimised for the larger teams who get direct support, or well resourced
+teams who can dedicate people to the implementation of plugins / code.</p>
+<p>As someone I was talking to recently said - AWS is not winning public cloud
+because of commodity compute (that does help - a lot), but because of the
+added services that make using the cloud, well, cloud like. OpenStack needs to
+decide that either it is just compute, or if it wants the eco-system. <a class="footnote-reference" href="posts/openstack-designate-where-we-are/#id10" id="id5">[5]</a>
+Designate is far from alone in this.</p>
+<p>I am happy to talk to anyone about helping to fill in the needed resources -
+Designate is a project that started in the very office I am writing this blog
+post in, and something I want to last.</p>
+<p>For a visual this is Designate team in Atlanta, just before we got incubated.</p>
+<img alt="/images/ATL.jpg" src="images/ATL.jpg"><p>and this was our last mid cycle:</p>
+<img alt="/images/mid-cycle.jpg" src="images/mid-cycle.jpg"><p>and in Atlanta at the PTG, there will be two of us.</p>
+<table class="docutils footnote" frame="void" id="id6" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top"><tr>
+<td class="label"><a class="fn-backref" href="posts/openstack-designate-where-we-are/#id1">[1]</a></td>
+<td>In the <a class="reference external" href="https://www.openstack.org/analytics">Oct-2016</a> User Survey Designate was deployed in 23% of clouds</td>
+</tr></tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id7" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top"><tr>
+<td class="label"><a class="fn-backref" href="posts/openstack-designate-where-we-are/#id2">[2]</a></td>
+<td>I have been lucky to have a management chain that is OK with me
+spending some time on Designate, and have not asked me to take time off
+for Summits or Gatherings, but my day job is working on a completely
+different project.</td>
+</tr></tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id8" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top"><tr>
+<td class="label"><a class="fn-backref" href="posts/openstack-designate-where-we-are/#id3">[3]</a></td>
+<td>I do have other issues with the metrics - mainly that we existed before
+becoming leaving stackforge, and some of the other stats are set so
+high, that non "core" projects will probably never meet them.</td>
+</tr></tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id9" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top"><tr>
+<td class="label"><a class="fn-backref" href="posts/openstack-designate-where-we-are/#id4">[4]</a></td>
+<td>I recently went to an internal training talk, where they were talking
+about new features in Newton. There was a whole slide about how projects
+and improved, or gotten worse on these scores. A whole slide. With
+tables of scores, and I think there may have even been a graph.</td>
+</tr></tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id10" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top"><tr>
+<td class="label"><a class="fn-backref" href="posts/openstack-designate-where-we-are/#id5">[5]</a></td>
+<td>Now, I am slightly biased, but I would argue that DNS is needed in
+commodity compute, but again, that is my view.</td>
+</tr></tbody>
+</table>
+</div>
+</div>
+            </div>
+        </div>
+        <div class="post">
             <h1 class="title"><a href="posts/non-candidacy-for-designate-ptl/">Non Candidacy for Designate PTL</a></h1>
             <div class="meta">
                 <div class="authordate">
@@ -729,110 +997,6 @@ Monday, so we will have to extend the freeze until Tuesday the 17th.</p>
 <td>By Crusher95 (Own work) [CC BY-SA 4.0 (<a class="reference external" href="http://creativecommons.org/licenses/by-sa/4.0">http://creativecommons.org/licenses/by-sa/4.0</a>)], via Wikimedia Commons</td>
 </tr></tbody>
 </table>
-</div>
-</div>
-            </div>
-        </div>
-        <div class="post">
-            <h1 class="title"><a href="posts/openstack-summit-designate-report/">OpenStack Summit - Designate Report</a></h1>
-            <div class="meta">
-                <div class="authordate">
-                    <time class="timeago" datetime="2015-11-04T21:18:41+00:00">2015-11-04 21:18</time>
-</div>
-                <div class="stats">
-                                <a href="posts/openstack-summit-designate-report/#disqus_thread" data-disqus-identifier="cache/posts/openstack-summit-designate-report.html">Comments</a>
-
-
-                </div>
-                        <div itemprop="keywords" class="tags">
-        <ul>
-        Tags : 
-           <li><a class="tag p-category" href="categories/openstack/" rel="tag">openstack</a></li>
-           <li><a class="tag p-category" href="categories/summit/" rel="tag">summit</a></li>
-           <li><a class="tag p-category" href="categories/tokyo/" rel="tag">tokyo</a></li>
-           <li><a class="tag p-category" href="categories/travel/" rel="tag">travel</a></li>
-        </ul>
-</div>
-
-            </div>
-            <div class="body">
-                <div>
-<img alt="https://upload.wikimedia.org/wikipedia/commons/7/70/Ginza_at_Night,_Tokyo.jpg" src="https://upload.wikimedia.org/wikipedia/commons/7/70/Ginza_at_Night,_Tokyo.jpg"><p><a class="footnote-reference" href="posts/openstack-summit-designate-report/#id2" id="id1">[1]</a></p>
-<div class="section" id="tokyo">
-<h2>Tokyo</h2>
-<p>Oh, what a place. I thought I was ready for the experience, but this city has
-to be visited to understand. From the 2 or 3 different metro systems that snake
-across the city, to the 9 story electronics stores, it is something else.</p>
-<p>Living in a city that has 3 metro lines that don't actually connect it was a nice
-change to be able to get reliable public transport :).</p>
-</div>
-<div class="section" id="design-summit">
-<h2>Design Summit</h2>
-<p>This was a much more relaxed summit for Designate. We had done a huge amount of
-work in Vancouver, and we were nailing down details and doing cross project work.</p>
-<p>We got a few major features discussed, and laid out our priorities for the next cycle.</p>
-<p>We decided on the following:</p>
-<ol class="arabic simple">
-<li>Nova / Neutron Integration</li>
-<li>Pool Scheduler</li>
-<li>Pool Configuration migration to database</li>
-<li>IXFR (Incremental Zone Transfer)</li>
-<li>ALIAS Record type (Allows for CNAME like records at the root of a DNS Zone)</li>
-<li>DNSSEC (this may drag on for a cycle or two)</li>
-</ol>
-<div class="section" id="nova-neutron-integration">
-<h3>Nova &amp; Neutron Integration</h3>
-<p>This is progressing pretty well, and Miguel Lavalle has patches up for this. He,
-Kiall Mac Innes and Carl Baldwin demoed this in a session on the Thursday. If
-you are interested in the idea, it is definitely worth a watch <a class="reference external" href="http://https://www.youtube.com/watch?v=AZbiARM9FPM">here</a></p>
-</div>
-<div class="section" id="pool-scheduler">
-<h3>Pool Scheduler</h3>
-<p>A vital piece of the pools re architecture that needs to be finished out.
-There is no great debate on what we need, and I have taken on the task of
-finishing this out.</p>
-</div>
-<div class="section" id="pool-configuration-migration-to-database">
-<h3>Pool Configuration migration to database</h3>
-<p>Are current configuration file format is quite complex, and moving it to an API
-allows us to iterate on it much quicker, while reducing the complexity of the
-config file. I recently had to write an ansible play to write out this file, and
-it was not fun.</p>
-<p>Kiall had a patch up, so we should be able to continue based on that.</p>
-</div>
-<div class="section" id="ixfr">
-<h3>IXFR</h3>
-<p>There was quite a lot of discussion on how this will be implemented, both in the
-work session, and the 1/2 day session on the Friday. Tim Simmons has stepped up,
-to continue the work on this.</p>
-</div>
-<div class="section" id="alias">
-<h3>ALIAS</h3>
-<p>This is quite a sort after feature - but is quite complex to implement.
-The DNS RFCs explicitly ban this behavior, so we have to work the solution
-around them. Eric Larson has been doing quite a lot of work on this in Liberty,
-and is going to continue in Mitaka.</p>
-</div>
-<div class="section" id="dnssec">
-<h3>DNSSEC</h3>
-<p>This is a feature that we have been looking at for a while, but we started to plan
-out our roadmap for it recently.</p>
-<p>We (I) am allergic to storing private encryption keys in Designate, so we had a
-good conversation with Barbican about implementing a signing endpoint that we would
-post a hash to. This work is on me to now drive for Mitaka, so we can consume it in N.</p>
-<p>There is some raw notes in the <a class="reference external" href="https://etherpad.openstack.org/p/mitaka-designate-summit-roadmap">etherpad</a> and I expect we will soon be seeing
-specs building out of them.</p>
-<table class="docutils footnote" frame="void" id="id2" rules="none">
-<colgroup>
-<col class="label">
-<col>
-</colgroup>
-<tbody valign="top"><tr>
-<td class="label"><a class="fn-backref" href="posts/openstack-summit-designate-report/#id1">[1]</a></td>
-<td>By Francisco Diez (Flickr: Ginza at Night, Tokyo) [CC BY 2.0 (<a class="reference external" href="http://creativecommons.org/licenses/by/2.0">http://creativecommons.org/licenses/by/2.0</a>)], via Wikimedia Commons</td>
-</tr></tbody>
-</table>
-</div>
 </div>
 </div>
             </div>
