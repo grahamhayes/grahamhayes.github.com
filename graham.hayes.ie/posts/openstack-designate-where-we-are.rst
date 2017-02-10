@@ -173,7 +173,7 @@ Where too now then?
 
 Well, this is where I call out to people who actually use the project - don't
 jump ship and use something else because of the picture I have painted. We are
-a dedicated team, how cares about the project. We just need some help.
+a dedicated team, who cares about the project. We just need some help.
 
 I know there are large telcos who use Designate. I am sure there is tooling,
 or docs build up in these companies that could be very useful to the project.
@@ -220,11 +220,11 @@ and in Atlanta at the PTG, there will be two of us.
        for Summits or Gatherings, but my day job is working on a completely
        different project.
 .. [3] I do have other issues with the metrics - mainly that we existed before
-       becoming leaving stackforge, and some of the other stats are set so
+       leaving stackforge, and some of the other stats are set so
        high, that non "core" projects will probably never meet them.
 .. [4] I recently went to an internal training talk, where they were talking
        about new features in Newton. There was a whole slide about how projects
-       and improved, or gotten worse on these scores. A whole slide. With
+       had improved, or gotten worse on these scores. A whole slide. With
        tables of scores, and I think there may have even been a graph.
 .. [5] Now, I am slightly biased, but I would argue that DNS is needed in
        commodity compute, but again, that is my view.
