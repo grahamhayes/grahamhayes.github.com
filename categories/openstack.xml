@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (openstack)</title><link>http://graham.hayes.ie/</link><description></description><atom:link rel="self" type="application/rss+xml" href="http://graham.hayes.ie/categories/openstack.xml"></atom:link><language>en</language><lastBuildDate>Thu, 09 Feb 2017 18:56:59 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>OpenStack Designate - Where we are.</title><link>http://graham.hayes.ie/posts/openstack-designate-where-we-are/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://graham.hayes.ie/images/me.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;I have been asked a few times recently "What is the state of the Designate
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (openstack)</title><link>http://graham.hayes.ie/</link><description></description><atom:link rel="self" type="application/rss+xml" href="http://graham.hayes.ie/categories/openstack.xml"></atom:link><language>en</language><lastBuildDate>Fri, 10 Feb 2017 17:52:28 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>OpenStack Designate - Where we are.</title><link>http://graham.hayes.ie/posts/openstack-designate-where-we-are/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://graham.hayes.ie/images/me.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;I have been asked a few times recently "What is the state of the Designate
 project?", "How is Designate getting on?", and by people who know what is
 happening "What are you going to do about Designate?".&lt;/p&gt;
 &lt;p&gt;Needless to say, all of this is depressing to me, and the people that I have
@@ -147,7 +147,7 @@ full (non beta) service in a public cloud. &lt;a class="footnote-reference" href
 &lt;h2&gt;Where too now then?&lt;/h2&gt;
 &lt;p&gt;Well, this is where I call out to people who actually use the project - don't
 jump ship and use something else because of the picture I have painted. We are
-a dedicated team, how cares about the project. We just need some help.&lt;/p&gt;
+a dedicated team, who cares about the project. We just need some help.&lt;/p&gt;
 &lt;p&gt;I know there are large telcos who use Designate. I am sure there is tooling,
 or docs build up in these companies that could be very useful to the project.&lt;/p&gt;
 &lt;p&gt;Nearly every commercial OpenStack distro has Designate. Some have had it since
@@ -194,7 +194,7 @@ different project.&lt;/td&gt;&lt;/tr&gt;
 &lt;colgroup&gt;&lt;col class="label"&gt;&lt;col&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
 &lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="http://graham.hayes.ie/posts/openstack-designate-where-we-are/#id3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;I do have other issues with the metrics - mainly that we existed before
-becoming leaving stackforge, and some of the other stats are set so
+leaving stackforge, and some of the other stats are set so
 high, that non "core" projects will probably never meet them.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -203,7 +203,7 @@ high, that non "core" projects will probably never meet them.&lt;/td&gt;&lt;/tr&
 &lt;tbody valign="top"&gt;
 &lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="http://graham.hayes.ie/posts/openstack-designate-where-we-are/#id4"&gt;[4]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;I recently went to an internal training talk, where they were talking
 about new features in Newton. There was a whole slide about how projects
-and improved, or gotten worse on these scores. A whole slide. With
+had improved, or gotten worse on these scores. A whole slide. With
 tables of scores, and I think there may have even been a graph.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;

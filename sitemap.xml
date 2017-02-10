@@ -27,11 +27,7 @@
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/</loc>
-  <lastmod>2017-02-08T19:27:00Z</lastmod>
- </url>
- <url>
-  <loc>http://graham.hayes.ie/categories/api/</loc>
-  <lastmod>2017-02-08T19:27:00Z</lastmod>
+  <lastmod>2017-02-09T18:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/austin/</loc>
@@ -74,16 +70,8 @@
   <lastmod>2016-01-29T18:39:00Z</lastmod>
  </url>
  <url>
-  <loc>http://graham.hayes.ie/categories/kubernentes/</loc>
-  <lastmod>2017-02-08T19:27:00Z</lastmod>
- </url>
- <url>
   <loc>http://graham.hayes.ie/categories/networking/</loc>
   <lastmod>2016-03-04T19:49:00Z</lastmod>
- </url>
- <url>
-  <loc>http://graham.hayes.ie/categories/neutron/</loc>
-  <lastmod>2017-02-08T19:27:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/openstack/</loc>
@@ -222,10 +210,6 @@
   <lastmod>2016-01-29T18:39:00Z</lastmod>
  </url>
  <url>
-  <loc>http://graham.hayes.ie/posts/what-i-learned-about-openstack-while-working-on-kubernetes/</loc>
-  <lastmod>2017-02-08T19:27:00Z</lastmod>
- </url>
- <url>
   <loc>http://graham.hayes.ie/projects/</loc>
   <lastmod>2016-01-29T18:39:00Z</lastmod>
  </url>
@@ -240,9 +224,5 @@
  <url>
   <loc>http://graham.hayes.ie/stories/about-me/</loc>
   <lastmod>2016-01-29T18:39:00Z</lastmod>
- </url>
- <url>
-  <loc>http://graham.hayes.ie/talks/designate/</loc>
-  <lastmod>2017-02-08T15:24:00Z</lastmod>
  </url>
 </urlset>

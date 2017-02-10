@@ -6,10 +6,6 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>http://graham.hayes.ie/categories/api.xml</loc>
-  <lastmod>2017-02-08T19:45:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>http://graham.hayes.ie/categories/austin.xml</loc>
   <lastmod>2016-05-05T17:41:00Z</lastmod>
  </sitemap>
@@ -23,7 +19,7 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/cat_openstack.xml</loc>
-  <lastmod>2017-02-08T19:48:00Z</lastmod>
+  <lastmod>2017-02-10T17:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/code.xml</loc>
@@ -31,7 +27,7 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/designate.xml</loc>
-  <lastmod>2017-02-08T15:37:00Z</lastmod>
+  <lastmod>2017-02-10T17:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/eventlet.xml</loc>
@@ -50,20 +46,12 @@
   <lastmod>2016-03-31T14:18:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://graham.hayes.ie/categories/kubernentes.xml</loc>
-  <lastmod>2017-02-08T19:45:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>http://graham.hayes.ie/categories/networking.xml</loc>
   <lastmod>2016-03-31T14:18:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://graham.hayes.ie/categories/neutron.xml</loc>
-  <lastmod>2017-02-08T19:45:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>http://graham.hayes.ie/categories/openstack.xml</loc>
-  <lastmod>2017-02-08T19:48:00Z</lastmod>
+  <lastmod>2017-02-10T17:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/plugins.xml</loc>
@@ -71,7 +59,7 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/project-update.xml</loc>
-  <lastmod>2017-02-08T15:37:00Z</lastmod>
+  <lastmod>2017-02-10T17:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/refactor.xml</loc>
@@ -87,7 +75,7 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/tc.xml</loc>
-  <lastmod>2017-02-08T15:37:00Z</lastmod>
+  <lastmod>2017-02-10T17:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/tokyo.xml</loc>
@@ -103,10 +91,10 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/rss.xml</loc>
-  <lastmod>2017-02-08T19:48:00Z</lastmod>
+  <lastmod>2017-02-10T17:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/sitemap.xml</loc>
-  <lastmod>2017-02-08T19:48:00Z</lastmod>
+  <lastmod>2017-02-10T17:52:00Z</lastmod>
  </sitemap>
 </sitemapindex>
