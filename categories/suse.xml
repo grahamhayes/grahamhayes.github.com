@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (suse)</title><link>http://graham.hayes.ie/</link><description></description><atom:link rel="self" href="http://graham.hayes.ie/categories/suse.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 10 Mar 2017 17:06:39 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>New Adventures</title><link>http://graham.hayes.ie/posts/new-adventures/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;p&gt;Today marks the start of a new chapter for me - I started as an employee
+of SUSE this morning. After 3.5 years (I had no idea it was that long) in HPE
+the time came, and me, and the rest of the team I work with, along with the
+Cloud Foundry team, and the OpenStack teams all moved en-mass to the new
+company.&lt;/p&gt;
+&lt;p&gt;I am really excited to work with SUSE, they really get open source, and do it
+well. I think with the progression of IaaS / CaaS / PaaS in recent years, we
+will end up with something like the linux kernel, and a few distros built
+around core open source components like OpenStack, Kubernetes and Cloud Foundry
+(or OpenShift).&lt;/p&gt;
+&lt;p&gt;SUSE has already shown they know how to do an enterprise distribution of
+an open source product, and I am looking forward to seeing how we do it for
+the future of compute.&lt;/p&gt;
+&lt;p&gt;There is a feeling of wistfulness leaving HP(E) - we did some amazing things
+there, and we had an amazing group of teams working closely to produce the best
+products we could. Running services in the public cloud will always be a
+highlight for me, and the level of freedom we were given to work upstream
+allowed us to have great projects, not just for HPE customers but for the
+community.&lt;/p&gt;
+&lt;p&gt;But alas, life is like a river, and the flow has sped up, carrying me into the
+next adventure!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Graham&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;&lt;/div&gt;</description><category>hpe</category><category>job</category><category>suse</category><guid>http://graham.hayes.ie/posts/new-adventures/</guid><pubDate>Thu, 09 Mar 2017 18:20:13 GMT</pubDate></item></channel></rss>
