@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://graham.hayes.ie/</loc>
-  <lastmod>2017-02-08T15:21:00Z</lastmod>
+  <lastmod>2017-03-16T01:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/2015/</loc>
@@ -171,7 +171,7 @@
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/generate-zone-rrsets.sh.html</loc>
-  <lastmod>2017-03-10T17:06:00Z</lastmod>
+  <lastmod>2017-03-16T01:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/hello.py.html</loc>
