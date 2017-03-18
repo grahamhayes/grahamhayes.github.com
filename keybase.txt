@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/grahamhayes
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://graham.hayes.ie
+  * I am grahamhayes (https://keybase.io/grahamhayes) on keybase.
+  * I have a public key with fingerprint 4A1B 48A5 4564 4507 D5F0  783D 0AD6 B93B 23BA 8E2E
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010192ff802a6681cda3c5b3ea86cf982e00130c4e56c863cabe84dd98a2150ec6090a",
+            "fingerprint": "4a1b48a545644507d5f0783d0ad6b93b23ba8e2e",
+            "host": "keybase.io",
+            "key_id": "0ad6b93b23ba8e2e",
+            "kid": "0101e3c4baf3b114d73be262970fea7fbf217a4bf4560c879fc383c83fa2edf0ada30a",
+            "uid": "b178d7df271168caefcb7367dce1aa00",
+            "username": "grahamhayes"
+        },
+        "service": {
+            "hostname": "graham.hayes.ie",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1489627596,
+    "expire_in": 157680000,
+    "prev": "e0212d99c3c9a5cc08412e7b99159b2d1469d57be8bfd301388a68c6ff46ade0",
+    "seqno": 23,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owFlkl1oHUUUx+9Nraah1ZgQxA+ULqgPCWFmZ3c+Looa1GJaqn1RKdLLfJy5d21y
+93Z3b2pMQ7V9KKmCNRAESxGLSrC0Qmv7UIlBa6xFGojQENFqrZpwH2wVVBQhOBsV
+EedlmDm/85//mXMOrFtVaC3eete9M6/1X71Q/LSpCk+ea3454qnYDHulEW87rGww
+YCDNytsj45U8hBEWvrUc+ZJSjrWRRIeKgORUW8F9QAgTpAMIqeaUaKmAB8YILn0c
+ItAUCSS9Hs9GtQok9SSqZU42kFgFXIZBSIMgRMyEFjFODJKGKkGUT5Tk4INLrMZp
+nuHMKZlCbxS7O3co/2Xv//y/voHoQElLFMaBYUSBT33BkAXJrLI+ZjJQ1jlAmjNh
+NeFEc2KlD8Y6XUlWfDdW5BRm3DBjfYYx5VqC1YoRyowGLCVCOZhCUpOD4OhKIqty
+sCqHIfVGezwXGIo05H+bF/MfqHeF6o1y5/UkzmIdD7hgNcvqaSlPzobrOb0TVPlv
+nbKKasb9pssYgiSN4ppXwo7UWZQL44AL6rNQ0B4PnqlHCZSjnAgZ5cit/B0YcpJQ
+Rj72jRCaaCFDrREPsA9MCYFDoXyDAypMyFxDlTXEtZlz6Yqn1gZUGsiLTmFHLfZK
+PnFGZcWJplGlJrNGAt5o21jxtmsKxdbCtatb8kErtK1p/2f6Zi63Fl7vWG7f/PCe
+O0oXFh+9NNUxcWU2/OT304vPnW2cntzzzvftcy27VP8PGyePdN3+1KrpLbPrjx28
+tDvd+QgsfczVA8HJtYfPbVjbvemGE29u/fXH9y5vO57+Eh++uNwSvdhdOb40Ni86
+2z5c13n/t97Ty3NrFk8+Mdh9y+hn+z8o7L1xmh9LJvs+/2Zq04PPfjfn7ZodeeVQ
+F9y9urtxcWFifZP98XPHxnfPenvR+EMfnem/zwyoHXeeV2/13bw089K2N764qfnV
+T0c6D319/rcD4/taO+mrJ3a3bSjMPzZf7utfONhAL6Ni854t7z8+ldn949NnNgdj
+V46+DddNdo0P1iYmnr+6b4FXT71w/Z8=
+=UFGI
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/grahamhayes
+
+==================================================================
+
