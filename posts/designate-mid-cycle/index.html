@@ -8,7 +8,10 @@ article: http://ogp.me/ns/article#
 <meta name="description" content="What happened at the Designate mid cycle">
 <meta name="viewport" content="width=device-width">
 <title>Designate Mid Cycle | graham.hayes.ie</title>
-<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/bitter.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/main.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://graham.hayes.ie/posts/designate-mid-cycle/">
 <!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="Graham Hayes">
@@ -151,78 +154,78 @@ done with fairly easily.</p>
 recordsets that they have across all zones.</p>
 <p>This will allow users to filter across all recordsets for data, for example if
 a user wanted to see where they had used 8.8.8.8 they could do the following:</p>
-<pre class="code http"><a name="rest_code_8bd2654577af4cdc9711af59b467975e-1"></a><span class="nf">GET</span> <span class="nn">http://127.0.0.1:9001/v2/recordsets?data=8.8.8.8</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
-<a name="rest_code_8bd2654577af4cdc9711af59b467975e-2"></a><span class="na">Host</span><span class="o">:</span> <span class="l">127.0.0.1:9001</span>
-<a name="rest_code_8bd2654577af4cdc9711af59b467975e-3"></a><span class="na">Accept</span><span class="o">:</span> <span class="l">application/json</span>
-<a name="rest_code_8bd2654577af4cdc9711af59b467975e-4"></a><span class="na">Content-Type</span><span class="o">:</span> <span class="l">application/json</span>
+<pre class="code http"><a name="rest_code_4e915b4197f74ab9a8bb8d5f8f1efab8-1"></a><span class="nf">GET</span> <span class="nn">http://127.0.0.1:9001/v2/recordsets?data=8.8.8.8</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<a name="rest_code_4e915b4197f74ab9a8bb8d5f8f1efab8-2"></a><span class="na">Host</span><span class="o">:</span> <span class="l">127.0.0.1:9001</span>
+<a name="rest_code_4e915b4197f74ab9a8bb8d5f8f1efab8-3"></a><span class="na">Accept</span><span class="o">:</span> <span class="l">application/json</span>
+<a name="rest_code_4e915b4197f74ab9a8bb8d5f8f1efab8-4"></a><span class="na">Content-Type</span><span class="o">:</span> <span class="l">application/json</span>
 </pre>
-<pre class="code http"><a name="rest_code_95f7101c89d24060a3df575a69b67206-1"></a><span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-2"></a><span class="na">Content-Type</span><span class="o">:</span> <span class="l">application/json</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-3"></a>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-4"></a><span class="p">{</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-5"></a>    <span class="nt">"recordsets"</span><span class="p">:</span> <span class="p">[</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-6"></a>        <span class="p">{</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-7"></a>            <span class="nt">"description"</span><span class="p">:</span> <span class="s2">"This is an example record set."</span><span class="p">,</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-8"></a>            <span class="nt">"links"</span><span class="p">:</span> <span class="p">{</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-9"></a>                <span class="nt">"self"</span><span class="p">:</span> <span class="s2">"https://127.0.0.1:9001/v2/zones/2150b1bf-dee2-4221-9d85-11f7886fb15f/recordsets/f7b10e9b-0cae-4a91-b162-562bc6096648"</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-10"></a>            <span class="p">},</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-11"></a>            <span class="nt">"updated_at"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-12"></a>            <span class="nt">"records"</span><span class="p">:</span> <span class="p">[</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-13"></a>                <span class="s2">"8.8.8.8"</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-14"></a>            <span class="p">],</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-15"></a>            <span class="nt">"ttl"</span><span class="p">:</span> <span class="mi">3600</span><span class="p">,</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-16"></a>            <span class="nt">"id"</span><span class="p">:</span> <span class="s2">"f7b10e9b-0cae-4a91-b162-562bc6096648"</span><span class="p">,</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-17"></a>            <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"service.other-example.net."</span><span class="p">,</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-18"></a>            <span class="nt">"zone_id"</span><span class="p">:</span> <span class="s2">"2150b1bf-dee2-4221-9d85-11f7886fb15f"</span><span class="p">,</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-19"></a>            <span class="nt">"created_at"</span><span class="p">:</span> <span class="s2">"2010-01-54T17:49:27.000000"</span><span class="p">,</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-20"></a>            <span class="nt">"version"</span><span class="p">:</span> <span class="mi">13</span><span class="p">,</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-21"></a>            <span class="nt">"type"</span><span class="p">:</span> <span class="s2">"A"</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-22"></a>        <span class="p">},</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-23"></a>        <span class="p">{</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-24"></a>            <span class="nt">"description"</span><span class="p">:</span> <span class="s2">"This is an example record set."</span><span class="p">,</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-25"></a>            <span class="nt">"links"</span><span class="p">:</span> <span class="p">{</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-26"></a>                <span class="nt">"self"</span><span class="p">:</span> <span class="s2">"https://127.0.0.1:9001/v2/zones/249502fa-620d-458f-8e29-9ecfc732c357/recordsets/e88f64d0-71ab-423e-9d84-eb8d76b51938"</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-27"></a>            <span class="p">},</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-28"></a>            <span class="nt">"updated_at"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-29"></a>            <span class="nt">"records"</span><span class="p">:</span> <span class="p">[</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-30"></a>                <span class="s2">"8.8.8.8"</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-31"></a>            <span class="p">],</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-32"></a>            <span class="nt">"ttl"</span><span class="p">:</span> <span class="mi">3600</span><span class="p">,</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-33"></a>            <span class="nt">"id"</span><span class="p">:</span> <span class="s2">"e88f64d0-71ab-423e-9d84-eb8d76b51938"</span><span class="p">,</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-34"></a>            <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"service.example.org."</span><span class="p">,</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-35"></a>            <span class="nt">"zone_id"</span><span class="p">:</span> <span class="s2">"249502fa-620d-458f-8e29-9ecfc732c357"</span><span class="p">,</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-36"></a>            <span class="nt">"created_at"</span><span class="p">:</span> <span class="s2">"2014-10-24T19:59:44.000000"</span><span class="p">,</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-37"></a>            <span class="nt">"version"</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-38"></a>            <span class="nt">"type"</span><span class="p">:</span> <span class="s2">"A"</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-39"></a>        <span class="p">}</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-40"></a>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-41"></a>    <span class="p">]</span>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-42"></a>
-<a name="rest_code_95f7101c89d24060a3df575a69b67206-43"></a><span class="p">}</span>
+<pre class="code http"><a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-1"></a><span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-2"></a><span class="na">Content-Type</span><span class="o">:</span> <span class="l">application/json</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-3"></a>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-4"></a><span class="p">{</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-5"></a>    <span class="nt">"recordsets"</span><span class="p">:</span> <span class="p">[</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-6"></a>        <span class="p">{</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-7"></a>            <span class="nt">"description"</span><span class="p">:</span> <span class="s2">"This is an example record set."</span><span class="p">,</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-8"></a>            <span class="nt">"links"</span><span class="p">:</span> <span class="p">{</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-9"></a>                <span class="nt">"self"</span><span class="p">:</span> <span class="s2">"https://127.0.0.1:9001/v2/zones/2150b1bf-dee2-4221-9d85-11f7886fb15f/recordsets/f7b10e9b-0cae-4a91-b162-562bc6096648"</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-10"></a>            <span class="p">},</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-11"></a>            <span class="nt">"updated_at"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-12"></a>            <span class="nt">"records"</span><span class="p">:</span> <span class="p">[</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-13"></a>                <span class="s2">"8.8.8.8"</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-14"></a>            <span class="p">],</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-15"></a>            <span class="nt">"ttl"</span><span class="p">:</span> <span class="mi">3600</span><span class="p">,</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-16"></a>            <span class="nt">"id"</span><span class="p">:</span> <span class="s2">"f7b10e9b-0cae-4a91-b162-562bc6096648"</span><span class="p">,</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-17"></a>            <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"service.other-example.net."</span><span class="p">,</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-18"></a>            <span class="nt">"zone_id"</span><span class="p">:</span> <span class="s2">"2150b1bf-dee2-4221-9d85-11f7886fb15f"</span><span class="p">,</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-19"></a>            <span class="nt">"created_at"</span><span class="p">:</span> <span class="s2">"2010-01-54T17:49:27.000000"</span><span class="p">,</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-20"></a>            <span class="nt">"version"</span><span class="p">:</span> <span class="mi">13</span><span class="p">,</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-21"></a>            <span class="nt">"type"</span><span class="p">:</span> <span class="s2">"A"</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-22"></a>        <span class="p">},</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-23"></a>        <span class="p">{</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-24"></a>            <span class="nt">"description"</span><span class="p">:</span> <span class="s2">"This is an example record set."</span><span class="p">,</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-25"></a>            <span class="nt">"links"</span><span class="p">:</span> <span class="p">{</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-26"></a>                <span class="nt">"self"</span><span class="p">:</span> <span class="s2">"https://127.0.0.1:9001/v2/zones/249502fa-620d-458f-8e29-9ecfc732c357/recordsets/e88f64d0-71ab-423e-9d84-eb8d76b51938"</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-27"></a>            <span class="p">},</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-28"></a>            <span class="nt">"updated_at"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-29"></a>            <span class="nt">"records"</span><span class="p">:</span> <span class="p">[</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-30"></a>                <span class="s2">"8.8.8.8"</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-31"></a>            <span class="p">],</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-32"></a>            <span class="nt">"ttl"</span><span class="p">:</span> <span class="mi">3600</span><span class="p">,</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-33"></a>            <span class="nt">"id"</span><span class="p">:</span> <span class="s2">"e88f64d0-71ab-423e-9d84-eb8d76b51938"</span><span class="p">,</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-34"></a>            <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"service.example.org."</span><span class="p">,</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-35"></a>            <span class="nt">"zone_id"</span><span class="p">:</span> <span class="s2">"249502fa-620d-458f-8e29-9ecfc732c357"</span><span class="p">,</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-36"></a>            <span class="nt">"created_at"</span><span class="p">:</span> <span class="s2">"2014-10-24T19:59:44.000000"</span><span class="p">,</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-37"></a>            <span class="nt">"version"</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-38"></a>            <span class="nt">"type"</span><span class="p">:</span> <span class="s2">"A"</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-39"></a>        <span class="p">}</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-40"></a>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-41"></a>    <span class="p">]</span>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-42"></a>
+<a name="rest_code_7b7820948c1c4e02a6e7b89b9722019c-43"></a><span class="p">}</span>
 </pre>
 </div>
 <div class="section" id="add-serial-to-the-recordset-data">
 <h5>Add Serial to the recordset data</h5>
 <p>Internally within Designate we track the serial number for the last time a
 recordset was updated. We decided to show that in the new response:</p>
-<pre class="code json"><a name="rest_code_37034b90111e402baedee8d0aba47d22-1"></a><span class="p">{</span>
-<a name="rest_code_37034b90111e402baedee8d0aba47d22-2"></a>    <span class="nt">"description"</span><span class="p">:</span> <span class="s2">"This is an example record set."</span><span class="p">,</span>
-<a name="rest_code_37034b90111e402baedee8d0aba47d22-3"></a>    <span class="nt">"links"</span><span class="p">:</span> <span class="p">{</span>
-<a name="rest_code_37034b90111e402baedee8d0aba47d22-4"></a>        <span class="nt">"self"</span><span class="p">:</span> <span class="s2">"https://127.0.0.1:9001/v2/zones/249502fa-620d-458f-8e29-9ecfc732c357/recordsets/e88f64d0-71ab-423e-9d84-eb8d76b51938"</span>
-<a name="rest_code_37034b90111e402baedee8d0aba47d22-5"></a>    <span class="p">},</span>
-<a name="rest_code_37034b90111e402baedee8d0aba47d22-6"></a>    <span class="nt">"updated_at"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-<a name="rest_code_37034b90111e402baedee8d0aba47d22-7"></a>    <span class="nt">"records"</span><span class="p">:</span> <span class="p">[</span>
-<a name="rest_code_37034b90111e402baedee8d0aba47d22-8"></a>        <span class="s2">"8.8.8.8"</span>
-<a name="rest_code_37034b90111e402baedee8d0aba47d22-9"></a>    <span class="p">],</span>
-<a name="rest_code_37034b90111e402baedee8d0aba47d22-10"></a>    <span class="nt">"ttl"</span><span class="p">:</span> <span class="mi">3600</span><span class="p">,</span>
-<a name="rest_code_37034b90111e402baedee8d0aba47d22-11"></a>    <span class="nt">"id"</span><span class="p">:</span> <span class="s2">"e88f64d0-71ab-423e-9d84-eb8d76b51938"</span><span class="p">,</span>
-<a name="rest_code_37034b90111e402baedee8d0aba47d22-12"></a>    <span class="nt">"serial"</span><span class="p">:</span> <span class="mi">1456351502</span><span class="p">,</span>
-<a name="rest_code_37034b90111e402baedee8d0aba47d22-13"></a>    <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"service.example.org."</span><span class="p">,</span>
-<a name="rest_code_37034b90111e402baedee8d0aba47d22-14"></a>    <span class="nt">"zone_id"</span><span class="p">:</span> <span class="s2">"249502fa-620d-458f-8e29-9ecfc732c357"</span><span class="p">,</span>
-<a name="rest_code_37034b90111e402baedee8d0aba47d22-15"></a>    <span class="nt">"created_at"</span><span class="p">:</span> <span class="s2">"2014-10-24T19:59:44.000000"</span><span class="p">,</span>
-<a name="rest_code_37034b90111e402baedee8d0aba47d22-16"></a>    <span class="nt">"version"</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
-<a name="rest_code_37034b90111e402baedee8d0aba47d22-17"></a>    <span class="nt">"type"</span><span class="p">:</span> <span class="s2">"A"</span>
-<a name="rest_code_37034b90111e402baedee8d0aba47d22-18"></a><span class="p">}</span>
+<pre class="code json"><a name="rest_code_e13f77db71654aa3ba834c19352d5a65-1"></a><span class="p">{</span>
+<a name="rest_code_e13f77db71654aa3ba834c19352d5a65-2"></a>    <span class="nt">"description"</span><span class="p">:</span> <span class="s2">"This is an example record set."</span><span class="p">,</span>
+<a name="rest_code_e13f77db71654aa3ba834c19352d5a65-3"></a>    <span class="nt">"links"</span><span class="p">:</span> <span class="p">{</span>
+<a name="rest_code_e13f77db71654aa3ba834c19352d5a65-4"></a>        <span class="nt">"self"</span><span class="p">:</span> <span class="s2">"https://127.0.0.1:9001/v2/zones/249502fa-620d-458f-8e29-9ecfc732c357/recordsets/e88f64d0-71ab-423e-9d84-eb8d76b51938"</span>
+<a name="rest_code_e13f77db71654aa3ba834c19352d5a65-5"></a>    <span class="p">},</span>
+<a name="rest_code_e13f77db71654aa3ba834c19352d5a65-6"></a>    <span class="nt">"updated_at"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+<a name="rest_code_e13f77db71654aa3ba834c19352d5a65-7"></a>    <span class="nt">"records"</span><span class="p">:</span> <span class="p">[</span>
+<a name="rest_code_e13f77db71654aa3ba834c19352d5a65-8"></a>        <span class="s2">"8.8.8.8"</span>
+<a name="rest_code_e13f77db71654aa3ba834c19352d5a65-9"></a>    <span class="p">],</span>
+<a name="rest_code_e13f77db71654aa3ba834c19352d5a65-10"></a>    <span class="nt">"ttl"</span><span class="p">:</span> <span class="mi">3600</span><span class="p">,</span>
+<a name="rest_code_e13f77db71654aa3ba834c19352d5a65-11"></a>    <span class="nt">"id"</span><span class="p">:</span> <span class="s2">"e88f64d0-71ab-423e-9d84-eb8d76b51938"</span><span class="p">,</span>
+<a name="rest_code_e13f77db71654aa3ba834c19352d5a65-12"></a>    <span class="nt">"serial"</span><span class="p">:</span> <span class="mi">1456351502</span><span class="p">,</span>
+<a name="rest_code_e13f77db71654aa3ba834c19352d5a65-13"></a>    <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"service.example.org."</span><span class="p">,</span>
+<a name="rest_code_e13f77db71654aa3ba834c19352d5a65-14"></a>    <span class="nt">"zone_id"</span><span class="p">:</span> <span class="s2">"249502fa-620d-458f-8e29-9ecfc732c357"</span><span class="p">,</span>
+<a name="rest_code_e13f77db71654aa3ba834c19352d5a65-15"></a>    <span class="nt">"created_at"</span><span class="p">:</span> <span class="s2">"2014-10-24T19:59:44.000000"</span><span class="p">,</span>
+<a name="rest_code_e13f77db71654aa3ba834c19352d5a65-16"></a>    <span class="nt">"version"</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
+<a name="rest_code_e13f77db71654aa3ba834c19352d5a65-17"></a>    <span class="nt">"type"</span><span class="p">:</span> <span class="s2">"A"</span>
+<a name="rest_code_e13f77db71654aa3ba834c19352d5a65-18"></a><span class="p">}</span>
 </pre>
 </div>
 <div class="section" id="structured-data-for-recordsets">
@@ -232,35 +235,35 @@ recordset was updated. We decided to show that in the new response:</p>
 find a way to allow for updates to the data.</p>
 <p>It would allow us to do some nice things like break the record data up into meaningful
 chunks (for people who do not know DNS RFC off the top oof their heads :) ) - for example:</p>
-<pre class="code http"><a name="rest_code_d433110651db4d2aaa42c55d08ea0ed3-1"></a><span class="nf">GET</span> <span class="nn">/v2/zones/2150b1bf-dee2-4221-9d85-11f7886fb15f/recordsets/f7b10e9b-0cae-4a91-b162-562bc6096648</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
-<a name="rest_code_d433110651db4d2aaa42c55d08ea0ed3-2"></a><span class="na">Host</span><span class="o">:</span> <span class="l">127.0.0.1:9001</span>
-<a name="rest_code_d433110651db4d2aaa42c55d08ea0ed3-3"></a><span class="na">Accept</span><span class="o">:</span> <span class="l">application/vnd.openstack.dns-v2+json</span>
+<pre class="code http"><a name="rest_code_67e2f2c4c82b439e9ba97f8972c135e5-1"></a><span class="nf">GET</span> <span class="nn">/v2/zones/2150b1bf-dee2-4221-9d85-11f7886fb15f/recordsets/f7b10e9b-0cae-4a91-b162-562bc6096648</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<a name="rest_code_67e2f2c4c82b439e9ba97f8972c135e5-2"></a><span class="na">Host</span><span class="o">:</span> <span class="l">127.0.0.1:9001</span>
+<a name="rest_code_67e2f2c4c82b439e9ba97f8972c135e5-3"></a><span class="na">Accept</span><span class="o">:</span> <span class="l">application/vnd.openstack.dns-v2+json</span>
 </pre>
-<pre class="code http"><a name="rest_code_f96ef321d9dd48acb9054643e9a06494-1"></a><span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
-<a name="rest_code_f96ef321d9dd48acb9054643e9a06494-2"></a><span class="na">Vary</span><span class="o">:</span> <span class="l">Accept</span>
-<a name="rest_code_f96ef321d9dd48acb9054643e9a06494-3"></a><span class="na">Content-Type</span><span class="o">:</span> <span class="l">application/vnd.openstack.dns-v2+json</span>
-<a name="rest_code_f96ef321d9dd48acb9054643e9a06494-4"></a>
-<a name="rest_code_f96ef321d9dd48acb9054643e9a06494-5"></a><span class="p">{</span>
-<a name="rest_code_f96ef321d9dd48acb9054643e9a06494-6"></a>    <span class="nt">"description"</span><span class="p">:</span> <span class="s2">"This is an example recordset."</span><span class="p">,</span>
-<a name="rest_code_f96ef321d9dd48acb9054643e9a06494-7"></a>    <span class="nt">"links"</span><span class="p">:</span> <span class="p">{</span>
-<a name="rest_code_f96ef321d9dd48acb9054643e9a06494-8"></a>        <span class="nt">"self"</span><span class="p">:</span> <span class="s2">"https://127.0.0.1:9001/v2/zones/2150b1bf-dee2-4221-9d85-11f7886fb15f/recordsets/f7b10e9b-0cae-4a91-b162-562bc6096648"</span>
-<a name="rest_code_f96ef321d9dd48acb9054643e9a06494-9"></a>    <span class="p">},</span>
-<a name="rest_code_f96ef321d9dd48acb9054643e9a06494-10"></a>    <span class="nt">"updated_at"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-<a name="rest_code_f96ef321d9dd48acb9054643e9a06494-11"></a>    <span class="nt">"records"</span><span class="p">:</span> <span class="p">[</span>
-<a name="rest_code_f96ef321d9dd48acb9054643e9a06494-12"></a>        <span class="p">{</span>
-<a name="rest_code_f96ef321d9dd48acb9054643e9a06494-13"></a>            <span class="nt">"algorithm"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-<a name="rest_code_f96ef321d9dd48acb9054643e9a06494-14"></a>            <span class="nt">"fp_type"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-<a name="rest_code_f96ef321d9dd48acb9054643e9a06494-15"></a>            <span class="nt">"fingerprint"</span><span class="p">:</span> <span class="s2">"253d9636219be6aec03d06359837e0604b370372"</span>
-<a name="rest_code_f96ef321d9dd48acb9054643e9a06494-16"></a>        <span class="p">}</span>
-<a name="rest_code_f96ef321d9dd48acb9054643e9a06494-17"></a>    <span class="p">],</span>
-<a name="rest_code_f96ef321d9dd48acb9054643e9a06494-18"></a>    <span class="nt">"ttl"</span><span class="p">:</span> <span class="mi">3600</span><span class="p">,</span>
-<a name="rest_code_f96ef321d9dd48acb9054643e9a06494-19"></a>    <span class="nt">"id"</span><span class="p">:</span> <span class="s2">"f7b10e9b-0cae-4a91-b162-562bc6096648"</span><span class="p">,</span>
-<a name="rest_code_f96ef321d9dd48acb9054643e9a06494-20"></a>    <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"example.org."</span><span class="p">,</span>
-<a name="rest_code_f96ef321d9dd48acb9054643e9a06494-21"></a>    <span class="nt">"zone_id"</span><span class="p">:</span> <span class="s2">"2150b1bf-dee2-4221-9d85-11f7886fb15f"</span><span class="p">,</span>
-<a name="rest_code_f96ef321d9dd48acb9054643e9a06494-22"></a>    <span class="nt">"created_at"</span><span class="p">:</span> <span class="s2">"2014-10-24T19:59:44.000000"</span><span class="p">,</span>
-<a name="rest_code_f96ef321d9dd48acb9054643e9a06494-23"></a>    <span class="nt">"version"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-<a name="rest_code_f96ef321d9dd48acb9054643e9a06494-24"></a>    <span class="nt">"type"</span><span class="p">:</span> <span class="s2">"SSHFP"</span>
-<a name="rest_code_f96ef321d9dd48acb9054643e9a06494-25"></a><span class="p">}</span>
+<pre class="code http"><a name="rest_code_2208038e200c4907bee53c9f78a886ca-1"></a><span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
+<a name="rest_code_2208038e200c4907bee53c9f78a886ca-2"></a><span class="na">Vary</span><span class="o">:</span> <span class="l">Accept</span>
+<a name="rest_code_2208038e200c4907bee53c9f78a886ca-3"></a><span class="na">Content-Type</span><span class="o">:</span> <span class="l">application/vnd.openstack.dns-v2+json</span>
+<a name="rest_code_2208038e200c4907bee53c9f78a886ca-4"></a>
+<a name="rest_code_2208038e200c4907bee53c9f78a886ca-5"></a><span class="p">{</span>
+<a name="rest_code_2208038e200c4907bee53c9f78a886ca-6"></a>    <span class="nt">"description"</span><span class="p">:</span> <span class="s2">"This is an example recordset."</span><span class="p">,</span>
+<a name="rest_code_2208038e200c4907bee53c9f78a886ca-7"></a>    <span class="nt">"links"</span><span class="p">:</span> <span class="p">{</span>
+<a name="rest_code_2208038e200c4907bee53c9f78a886ca-8"></a>        <span class="nt">"self"</span><span class="p">:</span> <span class="s2">"https://127.0.0.1:9001/v2/zones/2150b1bf-dee2-4221-9d85-11f7886fb15f/recordsets/f7b10e9b-0cae-4a91-b162-562bc6096648"</span>
+<a name="rest_code_2208038e200c4907bee53c9f78a886ca-9"></a>    <span class="p">},</span>
+<a name="rest_code_2208038e200c4907bee53c9f78a886ca-10"></a>    <span class="nt">"updated_at"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+<a name="rest_code_2208038e200c4907bee53c9f78a886ca-11"></a>    <span class="nt">"records"</span><span class="p">:</span> <span class="p">[</span>
+<a name="rest_code_2208038e200c4907bee53c9f78a886ca-12"></a>        <span class="p">{</span>
+<a name="rest_code_2208038e200c4907bee53c9f78a886ca-13"></a>            <span class="nt">"algorithm"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+<a name="rest_code_2208038e200c4907bee53c9f78a886ca-14"></a>            <span class="nt">"fp_type"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+<a name="rest_code_2208038e200c4907bee53c9f78a886ca-15"></a>            <span class="nt">"fingerprint"</span><span class="p">:</span> <span class="s2">"253d9636219be6aec03d06359837e0604b370372"</span>
+<a name="rest_code_2208038e200c4907bee53c9f78a886ca-16"></a>        <span class="p">}</span>
+<a name="rest_code_2208038e200c4907bee53c9f78a886ca-17"></a>    <span class="p">],</span>
+<a name="rest_code_2208038e200c4907bee53c9f78a886ca-18"></a>    <span class="nt">"ttl"</span><span class="p">:</span> <span class="mi">3600</span><span class="p">,</span>
+<a name="rest_code_2208038e200c4907bee53c9f78a886ca-19"></a>    <span class="nt">"id"</span><span class="p">:</span> <span class="s2">"f7b10e9b-0cae-4a91-b162-562bc6096648"</span><span class="p">,</span>
+<a name="rest_code_2208038e200c4907bee53c9f78a886ca-20"></a>    <span class="nt">"name"</span><span class="p">:</span> <span class="s2">"example.org."</span><span class="p">,</span>
+<a name="rest_code_2208038e200c4907bee53c9f78a886ca-21"></a>    <span class="nt">"zone_id"</span><span class="p">:</span> <span class="s2">"2150b1bf-dee2-4221-9d85-11f7886fb15f"</span><span class="p">,</span>
+<a name="rest_code_2208038e200c4907bee53c9f78a886ca-22"></a>    <span class="nt">"created_at"</span><span class="p">:</span> <span class="s2">"2014-10-24T19:59:44.000000"</span><span class="p">,</span>
+<a name="rest_code_2208038e200c4907bee53c9f78a886ca-23"></a>    <span class="nt">"version"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+<a name="rest_code_2208038e200c4907bee53c9f78a886ca-24"></a>    <span class="nt">"type"</span><span class="p">:</span> <span class="s2">"SSHFP"</span>
+<a name="rest_code_2208038e200c4907bee53c9f78a886ca-25"></a><span class="p">}</span>
 </pre>
 </div>
 </div>
@@ -343,7 +346,7 @@ back with how healthy they are, and some new libraries for tasks like <a class="
             
         </footer>
 </div>
-    </section><script src="../../assets/js/all-nocdn.js" type="text/javascript"></script><script type="text/javascript">
+    </section><script src="../../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script><script src="../../assets/js/jquery.timeago.js" type="text/javascript"></script><script type="text/javascript">
             $(function(){
                 $('.timeago').timeago();
             });

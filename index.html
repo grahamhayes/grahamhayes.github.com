@@ -8,7 +8,10 @@ article: http://ogp.me/ns/article#
 <meta name="description" content="Weird (sometimes incoherent) rambling of a developer.">
 <meta name="viewport" content="width=device-width">
 <title>graham.hayes.ie | graham.hayes.ie</title>
-<link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="assets/css/bitter.css" rel="stylesheet" type="text/css">
+<link href="assets/css/main.css" rel="stylesheet" type="text/css">
+<link href="assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="assets/css/code.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="http://graham.hayes.ie/">
 <!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]-->
@@ -108,7 +111,7 @@ happening "What are you going to do about Designate?".</p>
 <p>Needless to say, all of this is depressing to me, and the people that I have
 worked with for the last number of years to make Designate a truly useful,
 feature rich project.</p>
-<div class="note">
+<div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last"><em>TL;DR;</em> for this - Designate is not in a sustainable place.</p>
 </div>
@@ -638,7 +641,7 @@ differentiate projects by tags.</p>
 <p>This won't be a change that happens tomorrow, next week, or even next
 cycle, but think as a goal, we should start moving in this direction
 as soon as we can, and start building momentum.</p>
-<div class="note">
+<div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This was originally posted to the <a class="reference external" href="http://lists.openstack.org/pipermail/openstack-dev/2016-July/099285.html">openstack-dev</a> mailing list.</p>
 </div>
@@ -780,7 +783,7 @@ in yesterday.</p>
 <p>It was a bit unexpected - as we tested it pretty extensively when it was being
 developed.</p>
 <p>The line in question was this:</p>
-<pre class="code python"><a name="rest_code_fcb8e87fcaa5443eaaa31965f1570dff-1"></a><span class="n">client</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">tcp_response</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_788cf66598294102a31aae332ca80e53-1"></a><span class="n">client</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">tcp_response</span><span class="p">)</span>
 </pre>
 <p>In eventlet 0.17.x this behaved like the standard
 <code class="python"><span class="n">socket</span><span class="o">.</span><span class="n">sendall</span><span class="p">()</span></code> , instead of <code class="python"><span class="n">socket</span><span class="o">.</span><span class="n">send</span><span class="p">()</span></code></p>
@@ -920,7 +923,7 @@ made any glaring mistakes :).</p>
             
         </footer>
 </div>
-    </section><script src="assets/js/all-nocdn.js" type="text/javascript"></script><script type="text/javascript">
+    </section><script src="assets/js/jquery-1.10.2.min.js" type="text/javascript"></script><script src="assets/js/jquery.timeago.js" type="text/javascript"></script><script type="text/javascript">
             $(function(){
                 $('.timeago').timeago();
             });

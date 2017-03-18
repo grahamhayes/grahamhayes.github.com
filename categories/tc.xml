@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>graham.hayes.ie (tc)</title><link>http://graham.hayes.ie/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://graham.hayes.ie/categories/tc.xml"></atom:link><language>en</language><lastBuildDate>Thu, 09 Mar 2017 18:17:09 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>OpenStack Designate - Where we are.</title><link>http://graham.hayes.ie/posts/openstack-designate-where-we-are/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://graham.hayes.ie/images/me.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;I have been asked a few times recently "What is the state of the Designate
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (Posts about tc)</title><link>http://graham.hayes.ie/</link><description></description><atom:link href="http://graham.hayes.ie/categories/tc.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 18 Mar 2017 00:47:58 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>OpenStack Designate - Where we are.</title><link>http://graham.hayes.ie/posts/openstack-designate-where-we-are/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://graham.hayes.ie/images/me.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;I have been asked a few times recently "What is the state of the Designate
 project?", "How is Designate getting on?", and by people who know what is
 happening "What are you going to do about Designate?".&lt;/p&gt;
 &lt;p&gt;Needless to say, all of this is depressing to me, and the people that I have
 worked with for the last number of years to make Designate a truly useful,
 feature rich project.&lt;/p&gt;
-&lt;div class="note"&gt;
+&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;&lt;em&gt;TL;DR;&lt;/em&gt; for this - Designate is not in a sustainable place.&lt;/p&gt;
 &lt;/div&gt;
@@ -371,7 +371,7 @@ differentiate projects by tags.&lt;/p&gt;
 &lt;p&gt;This won't be a change that happens tomorrow, next week, or even next
 cycle, but think as a goal, we should start moving in this direction
 as soon as we can, and start building momentum.&lt;/p&gt;
-&lt;div class="note"&gt;
+&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;This was originally posted to the &lt;a class="reference external" href="http://lists.openstack.org/pipermail/openstack-dev/2016-July/099285.html"&gt;openstack-dev&lt;/a&gt; mailing list.&lt;/p&gt;
 &lt;/div&gt;&lt;/div&gt;</description><category>governance</category><category>openstack</category><category>plugins</category><category>tc</category><guid>http://graham.hayes.ie/posts/openstack-a-leveler-playing-field/</guid><pubDate>Thu, 14 Jul 2016 19:30:07 GMT</pubDate></item></channel></rss>

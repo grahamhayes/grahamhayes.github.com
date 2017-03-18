@@ -8,7 +8,10 @@ article: http://ogp.me/ns/article#
 <meta name="description" content="generate-zone-rrsets.sh">
 <meta name="viewport" content="width=device-width">
 <title>generate-zone-rrsets.sh | graham.hayes.ie</title>
-<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/bitter.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/main.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/code.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
 <link rel="canonical" href="http://graham.hayes.ie/listings/generate-zone-rrsets.sh.html">
 <!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]-->
@@ -29,25 +32,27 @@ article: http://ogp.me/ns/article#
 <nav class="breadcrumbs"><ul class="breadcrumb">
 <li><a href=".">listings</a></li>
                 <li>generate-zone-rrsets.sh</li>
-</ul></nav><table class="codetable"><tr>
+</ul></nav><h1>generate-zone-rrsets.sh
+            <small><a href="generate-zone-rrsets.sh">(Source)</a></small>
+        </h1>
+    <table class="codetable"><tr>
 <td class="linenos"><div class="linenodiv"><pre><a href="#listingsgenerate-zone-rrsetssh-1">1</a>
 <a href="#listingsgenerate-zone-rrsetssh-2">2</a>
 <a href="#listingsgenerate-zone-rrsetssh-3">3</a>
 <a href="#listingsgenerate-zone-rrsetssh-4">4</a>
 <a href="#listingsgenerate-zone-rrsetssh-5">5</a></pre></div></td>
 <td class="code"><pre class="code literal-block"><a name="listingsgenerate-zone-rrsetssh-1"></a>    <span class="c1">#!/bin/bash</span>
-<a name="listingsgenerate-zone-rrsetssh-2"></a>    <span class="k">for</span> i in <span class="k">$(</span>seq <span class="m">1</span> 2000<span class="k">)</span><span class="p">;</span> <span class="k">do</span>
-<a name="listingsgenerate-zone-rrsetssh-3"></a>        http http://IP:9001/v2/zones/ZONE_ID/recordsets <span class="nv">name</span><span class="o">=</span>ww$i.largetestzone.tld. records:<span class="o">=</span><span class="s1">'["10.0.0.1"]'</span> <span class="nv">type</span><span class="o">=</span>A
-<a name="listingsgenerate-zone-rrsetssh-4"></a>        http http://IP:9001/v2/zones/ZONE_ID/recordsets <span class="nv">name</span><span class="o">=</span>txt$i.largetestzone.tld. records:<span class="o">=</span><span class="s1">'["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie leo sit amet commodo aliquet. Sed semper felis sit amet egestas euismod. Nulla non elementum orci. Nulla pharetra, ligula eget aliquet sagittis, velit nisl rhoncus nibh, vitae amet.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie leo sit amet commodo aliquet. Sed semper felis sit amet egestas euismod. Nulla non elementum orci. Nulla pharetra, ligula eget aliquet sagittis, velit nisl rhoncus nibh, vitae amet.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie leo sit amet commodo aliquet. Sed semper felis sit amet egestas euismod. Nulla non elementum orci. Nulla pharetra, ligula eget aliquet sagittis, velit nisl rhoncus nibh, vitae amet.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie leo sit amet commodo aliquet. Sed semper felis sit amet egestas euismod. Nulla non elementum orci. Nulla pharetra, ligula eget aliquet sagittis, velit nisl rhoncus nibh, vitae amet."]'</span> <span class="nv">type</span><span class="o">=</span>TXT
+<a name="listingsgenerate-zone-rrsetssh-2"></a>    <span class="k">for</span> i in <span class="k">$(</span>seq <span class="m">1</span> <span class="m">2000</span><span class="k">)</span><span class="p">;</span> <span class="k">do</span>
+<a name="listingsgenerate-zone-rrsetssh-3"></a>        http http://IP:9001/v2/zones/ZONE_ID/recordsets <span class="nv">name</span><span class="o">=</span>ww<span class="nv">$i</span>.largetestzone.tld. records:<span class="o">=</span><span class="s1">'["10.0.0.1"]'</span> <span class="nv">type</span><span class="o">=</span>A
+<a name="listingsgenerate-zone-rrsetssh-4"></a>        http http://IP:9001/v2/zones/ZONE_ID/recordsets <span class="nv">name</span><span class="o">=</span>txt<span class="nv">$i</span>.largetestzone.tld. records:<span class="o">=</span><span class="s1">'["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie leo sit amet commodo aliquet. Sed semper felis sit amet egestas euismod. Nulla non elementum orci. Nulla pharetra, ligula eget aliquet sagittis, velit nisl rhoncus nibh, vitae amet.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie leo sit amet commodo aliquet. Sed semper felis sit amet egestas euismod. Nulla non elementum orci. Nulla pharetra, ligula eget aliquet sagittis, velit nisl rhoncus nibh, vitae amet.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie leo sit amet commodo aliquet. Sed semper felis sit amet egestas euismod. Nulla non elementum orci. Nulla pharetra, ligula eget aliquet sagittis, velit nisl rhoncus nibh, vitae amet.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie leo sit amet commodo aliquet. Sed semper felis sit amet egestas euismod. Nulla non elementum orci. Nulla pharetra, ligula eget aliquet sagittis, velit nisl rhoncus nibh, vitae amet."]'</span> <span class="nv">type</span><span class="o">=</span>TXT
 <a name="listingsgenerate-zone-rrsetssh-5"></a>    <span class="k">done</span>
 </pre></td>
 </tr></table>
-<p class="sourceline"><a href="generate-zone-rrsets.sh" id="sourcelink">Source</a></p>
-                    <footer id="footer"><p>Contents © 2017         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+<footer id="footer"><p>Contents © 2017         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>
-    </section><script src="../assets/js/all-nocdn.js" type="text/javascript"></script><script type="text/javascript">
+    </section><script src="../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script><script src="../assets/js/jquery.timeago.js" type="text/javascript"></script><script type="text/javascript">
             $(function(){
                 $('.timeago').timeago();
             });

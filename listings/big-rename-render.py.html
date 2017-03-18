@@ -8,7 +8,10 @@ article: http://ogp.me/ns/article#
 <meta name="description" content="big-rename-render.py">
 <meta name="viewport" content="width=device-width">
 <title>big-rename-render.py | graham.hayes.ie</title>
-<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/bitter.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/main.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/code.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
 <link rel="canonical" href="http://graham.hayes.ie/listings/big-rename-render.py.html">
 <!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]-->
@@ -29,7 +32,10 @@ article: http://ogp.me/ns/article#
 <nav class="breadcrumbs"><ul class="breadcrumb">
 <li><a href=".">listings</a></li>
                 <li>big-rename-render.py</li>
-</ul></nav><table class="codetable"><tr>
+</ul></nav><h1>big-rename-render.py
+            <small><a href="big-rename-render.py">(Source)</a></small>
+        </h1>
+    <table class="codetable"><tr>
 <td class="linenos"><div class="linenodiv"><pre><a href="#listingsbig-rename-renderpy-1"> 1</a>
 <a href="#listingsbig-rename-renderpy-2"> 2</a>
 <a href="#listingsbig-rename-renderpy-3"> 3</a>
@@ -46,13 +52,13 @@ article: http://ogp.me/ns/article#
 <a href="#listingsbig-rename-renderpy-14">14</a>
 <a href="#listingsbig-rename-renderpy-15">15</a>
 <a href="#listingsbig-rename-renderpy-16">16</a></pre></div></td>
-<td class="code"><pre class="code literal-block"><a name="listingsbig-rename-renderpy-1"></a><span class="k">def</span> <span class="nf">_render_object</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<td class="code"><pre class="code literal-block"><a name="listingsbig-rename-renderpy-1"></a><span class="k">def</span> <span class="nf">_render_object</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
 <a name="listingsbig-rename-renderpy-2"></a>    <span class="c1"># The dict we will return to be rendered to JSON / output format</span>
 <a name="listingsbig-rename-renderpy-3"></a>    <span class="n">r_obj</span> <span class="o">=</span> <span class="p">{}</span>
 <a name="listingsbig-rename-renderpy-4"></a>    <span class="c1"># Loop over all fields that are supposed to be output</span>
-<a name="listingsbig-rename-renderpy-5"></a>    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">cls</span><span class="o">.</span><span class="n">MODIFICATIONS</span><span class="p">[</span><span class="s1">'fields'</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<a name="listingsbig-rename-renderpy-5"></a>    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">MODIFICATIONS</span><span class="p">[</span><span class="s1">'fields'</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
 <a name="listingsbig-rename-renderpy-6"></a>        <span class="c1"># Get properties for this field</span>
-<a name="listingsbig-rename-renderpy-7"></a>        <span class="n">field_props</span> <span class="o">=</span> <span class="n">cls</span><span class="o">.</span><span class="n">MODIFICATIONS</span><span class="p">[</span><span class="s1">'fields'</span><span class="p">][</span><span class="n">key</span><span class="p">]</span>
+<a name="listingsbig-rename-renderpy-7"></a>        <span class="n">field_props</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">MODIFICATIONS</span><span class="p">[</span><span class="s1">'fields'</span><span class="p">][</span><span class="n">key</span><span class="p">]</span>
 <a name="listingsbig-rename-renderpy-8"></a>        <span class="c1"># Check if it has to be renamed</span>
 <a name="listingsbig-rename-renderpy-9"></a>        <span class="k">if</span> <span class="n">field_props</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rename'</span><span class="p">,</span> <span class="bp">False</span><span class="p">):</span>
 <a name="listingsbig-rename-renderpy-10"></a>            <span class="n">obj</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">field_props</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rename'</span><span class="p">))</span>
@@ -64,12 +70,11 @@ article: http://ogp.me/ns/article#
 <a name="listingsbig-rename-renderpy-16"></a>            <span class="n">obj_key</span> <span class="o">=</span> <span class="n">key</span>
 </pre></td>
 </tr></table>
-<p class="sourceline"><a href="big-rename-render.py" id="sourcelink">Source</a></p>
-                    <footer id="footer"><p>Contents © 2017         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+<footer id="footer"><p>Contents © 2017         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>
-    </section><script src="../assets/js/all-nocdn.js" type="text/javascript"></script><script type="text/javascript">
+    </section><script src="../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script><script src="../assets/js/jquery.timeago.js" type="text/javascript"></script><script type="text/javascript">
             $(function(){
                 $('.timeago').timeago();
             });

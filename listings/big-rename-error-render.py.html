@@ -8,7 +8,10 @@ article: http://ogp.me/ns/article#
 <meta name="description" content="big-rename-error-render.py">
 <meta name="viewport" content="width=device-width">
 <title>big-rename-error-render.py | graham.hayes.ie</title>
-<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/bitter.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/main.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/code.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
 <link rel="canonical" href="http://graham.hayes.ie/listings/big-rename-error-render.py.html">
 <!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]-->
@@ -29,7 +32,10 @@ article: http://ogp.me/ns/article#
 <nav class="breadcrumbs"><ul class="breadcrumb">
 <li><a href=".">listings</a></li>
                 <li>big-rename-error-render.py</li>
-</ul></nav><table class="codetable"><tr>
+</ul></nav><h1>big-rename-error-render.py
+            <small><a href="big-rename-error-render.py">(Source)</a></small>
+        </h1>
+    <table class="codetable"><tr>
 <td class="linenos"><div class="linenodiv"><pre><a href="#listingsbig-rename-error-renderpy-1"> 1</a>
 <a href="#listingsbig-rename-error-renderpy-2"> 2</a>
 <a href="#listingsbig-rename-error-renderpy-3"> 3</a>
@@ -71,13 +77,13 @@ article: http://ogp.me/ns/article#
 <a href="#listingsbig-rename-error-renderpy-39">39</a>
 <a href="#listingsbig-rename-error-renderpy-40">40</a></pre></div></td>
 <td class="code"><pre class="code literal-block"><a name="listingsbig-rename-error-renderpy-1"></a><span class="nd">@classmethod</span>
-<a name="listingsbig-rename-error-renderpy-2"></a><span class="k">def</span> <span class="nf">_rename_path_segment</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="n">obj_adapter</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="n">path_segment</span><span class="p">):</span>
+<a name="listingsbig-rename-error-renderpy-2"></a><span class="k">def</span> <span class="nf">_rename_path_segment</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">obj_adapter</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="n">path_segment</span><span class="p">):</span>
 <a name="listingsbig-rename-error-renderpy-3"></a>
 <a name="listingsbig-rename-error-renderpy-4"></a>    <span class="c1"># Check if the object is a list - lists will just have an index as a</span>
 <a name="listingsbig-rename-error-renderpy-5"></a>    <span class="c1"># value, ands this can't be renamed</span>
 <a name="listingsbig-rename-error-renderpy-6"></a>    <span class="k">if</span> <span class="nb">issubclass</span><span class="p">(</span><span class="n">obj_adapter</span><span class="o">.</span><span class="n">ADAPTER_OBJECT</span><span class="p">,</span> <span class="n">objects</span><span class="o">.</span><span class="n">ListObjectMixin</span><span class="p">):</span>
-<a name="listingsbig-rename-error-renderpy-7"></a>        <span class="n">obj_adapter</span> <span class="o">=</span> <span class="n">cls</span><span class="o">.</span><span class="n">get_object_adapter</span><span class="p">(</span>
-<a name="listingsbig-rename-error-renderpy-8"></a>            <span class="n">cls</span><span class="o">.</span><span class="n">ADAPTER_FORMAT</span><span class="p">,</span>
+<a name="listingsbig-rename-error-renderpy-7"></a>        <span class="n">obj_adapter</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_object_adapter</span><span class="p">(</span>
+<a name="listingsbig-rename-error-renderpy-8"></a>            <span class="bp">cls</span><span class="o">.</span><span class="n">ADAPTER_FORMAT</span><span class="p">,</span>
 <a name="listingsbig-rename-error-renderpy-9"></a>            <span class="n">obj_adapter</span><span class="o">.</span><span class="n">ADAPTER_OBJECT</span><span class="o">.</span><span class="n">LIST_ITEM_TYPE</span><span class="o">.</span><span class="n">obj_name</span><span class="p">())</span>
 <a name="listingsbig-rename-error-renderpy-10"></a>        <span class="c1"># Return the segment as is, and the next adapter (which is the</span>
 <a name="listingsbig-rename-error-renderpy-11"></a>        <span class="c1"># LIST_ITEM_TYPE)</span>
@@ -90,13 +96,13 @@ article: http://ogp.me/ns/article#
 <a name="listingsbig-rename-error-renderpy-18"></a>        <span class="k">if</span> <span class="nb">object</span><span class="o">.</span><span class="n">FIELDS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">path_segment</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'relation'</span><span class="p">,</span> <span class="bp">False</span><span class="p">):</span>
 <a name="listingsbig-rename-error-renderpy-19"></a>
 <a name="listingsbig-rename-error-renderpy-20"></a>            <span class="n">obj_cls</span> <span class="o">=</span> <span class="nb">object</span><span class="o">.</span><span class="n">FIELDS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">path_segment</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'relation_cls'</span><span class="p">)</span>
-<a name="listingsbig-rename-error-renderpy-21"></a>            <span class="n">obj_adapter</span> <span class="o">=</span> <span class="n">cls</span><span class="o">.</span><span class="n">get_object_adapter</span><span class="p">(</span>
-<a name="listingsbig-rename-error-renderpy-22"></a>                <span class="n">cls</span><span class="o">.</span><span class="n">ADAPTER_FORMAT</span><span class="p">,</span>
+<a name="listingsbig-rename-error-renderpy-21"></a>            <span class="n">obj_adapter</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_object_adapter</span><span class="p">(</span>
+<a name="listingsbig-rename-error-renderpy-22"></a>                <span class="bp">cls</span><span class="o">.</span><span class="n">ADAPTER_FORMAT</span><span class="p">,</span>
 <a name="listingsbig-rename-error-renderpy-23"></a>                <span class="n">obj_cls</span><span class="p">)</span>
 <a name="listingsbig-rename-error-renderpy-24"></a>
 <a name="listingsbig-rename-error-renderpy-25"></a>            <span class="nb">object</span> <span class="o">=</span> <span class="n">objects</span><span class="o">.</span><span class="n">DesignateObject</span><span class="o">.</span><span class="n">obj_cls_from_name</span><span class="p">(</span><span class="n">obj_cls</span><span class="p">)()</span>
 <a name="listingsbig-rename-error-renderpy-26"></a>            <span class="c1"># Recurse down into this object</span>
-<a name="listingsbig-rename-error-renderpy-27"></a>            <span class="n">path_segment</span><span class="p">,</span> <span class="n">obj_adapter</span> <span class="o">=</span> <span class="n">cls</span><span class="o">.</span><span class="n">_rename_path_segment</span><span class="p">(</span>
+<a name="listingsbig-rename-error-renderpy-27"></a>            <span class="n">path_segment</span><span class="p">,</span> <span class="n">obj_adapter</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_rename_path_segment</span><span class="p">(</span>
 <a name="listingsbig-rename-error-renderpy-28"></a>                <span class="n">obj_adapter</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="n">path_segment</span><span class="p">)</span>
 <a name="listingsbig-rename-error-renderpy-29"></a>
 <a name="listingsbig-rename-error-renderpy-30"></a>            <span class="c1"># No need to continue the loop</span>
@@ -112,12 +118,11 @@ article: http://ogp.me/ns/article#
 <a name="listingsbig-rename-error-renderpy-40"></a>    <span class="k">return</span> <span class="n">path_segment</span><span class="p">,</span> <span class="n">obj_adapter</span>
 </pre></td>
 </tr></table>
-<p class="sourceline"><a href="big-rename-error-render.py" id="sourcelink">Source</a></p>
-                    <footer id="footer"><p>Contents © 2017         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+<footer id="footer"><p>Contents © 2017         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>
-    </section><script src="../assets/js/all-nocdn.js" type="text/javascript"></script><script type="text/javascript">
+    </section><script src="../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script><script src="../assets/js/jquery.timeago.js" type="text/javascript"></script><script type="text/javascript">
             $(function(){
                 $('.timeago').timeago();
             });
