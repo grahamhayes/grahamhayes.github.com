@@ -1,5 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie</title><link>http://graham.hayes.ie/</link><description>Weird (sometimes incoherent) rambling of a developer.</description><atom:link href="http://graham.hayes.ie/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 18 Mar 2017 00:47:59 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>New Adventures</title><link>http://graham.hayes.ie/posts/new-adventures/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;p&gt;Today marks the start of a new chapter for me - I started as an employee
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>graham.hayes.ie</title><link>http://graham.hayes.ie/</link><description>Weird (sometimes incoherent) rambling of a developer.</description><atom:link href="http://graham.hayes.ie/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 11 Oct 2017 13:10:37 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>OpenStack TC Nomination</title><link>http://graham.hayes.ie/posts/openstack-tc-nomination/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://graham.hayes.ie/images/me.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;I would like to submit my candidacy for the Technical Committee for the
+upcoming election.&lt;/p&gt;
+&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;&lt;em&gt;TL;DR;&lt;/em&gt; So, I bit the bullet and ran for the TC :)&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;I have been contributing to OpenStack since the Havana cycle &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/openstack-tc-nomination/#id5" id="id1"&gt;[1]&lt;/a&gt; mainly in
+Designate. I have also sporadically gotten involved with the TC, and its
+meetings since Designate applied for incubation all the way back in Atlanta.&lt;/p&gt;
+&lt;p&gt;I have been PTL for Designate for Mitaka, Newton, Ocata and the Queens cycle,
+and a core for a longer period. I was also PTL for the Global Load Balancing
+before it was an unfortunate early casualty of the recent reshuffling within
+sponsoring organizations in the community.&lt;/p&gt;
+&lt;p&gt;As part of previous projects, I was both a developer and a heavy user of
+OpenStack. As part of contributing to the Kubernetes OpenStack integration
+we ran into a lot of the problems that impact our users, and people who
+try to integrate with us.&lt;/p&gt;
+&lt;p&gt;I believe that we all ready have a great base structure in place to help
+OpenStack evolve, and part of that is too have a group of people from different
+companies, backgrounds, genders and cultures to drive the project in the
+Technical Committee.&lt;/p&gt;
+&lt;p&gt;I believe my experience working in a younger, smaller project within
+OpenStack is a benefit, along with the experience of working on software as an
+end user of OpenStack I can help us ensure the Technical Committee is mindful
+of the unique challenges these projects and users can face.&lt;/p&gt;
+&lt;p&gt;I have not traditionally been shy about broaching these topics in the past &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/openstack-tc-nomination/#id6" id="id2"&gt;[2]&lt;/a&gt;
+&lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/openstack-tc-nomination/#id7" id="id3"&gt;[3]&lt;/a&gt; and &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/openstack-tc-nomination/#id8" id="id4"&gt;[4]&lt;/a&gt;, but I feel it is time I started follow through, and help guide the
+resolution for these questions, and I now have an employeer who is supportive
+of me spending more time in the community.&lt;/p&gt;
+&lt;p&gt;I do really like this community, and I want us to grow, expand and evolve the
+software we write, without changing what we stand for.&lt;/p&gt;
+&lt;p&gt;Thank you for taking the time to read this.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Graham Hayes (mugsie)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;table class="docutils footnote" frame="void" id="id5" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label"&gt;&lt;col&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="http://graham.hayes.ie/posts/openstack-tc-nomination/#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="http://stackalytics.com/?release=all&amp;amp;metric=commits&amp;amp;user_id=grahamhayes"&gt;http://stackalytics.com/?release=all&amp;amp;metric=commits&amp;amp;user_id=grahamhayes&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id6" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label"&gt;&lt;col&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="http://graham.hayes.ie/posts/openstack-tc-nomination/#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="http://lists.openstack.org/pipermail/openstack-dev/2016-July/099285.html"&gt;http://lists.openstack.org/pipermail/openstack-dev/2016-July/099285.html&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id7" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label"&gt;&lt;col&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="http://graham.hayes.ie/posts/openstack-tc-nomination/#id3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="http://graham.hayes.ie/posts/openstack-designate-where-we-are/"&gt;http://graham.hayes.ie/posts/openstack-designate-where-we-are/&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id8" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label"&gt;&lt;col&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="http://graham.hayes.ie/posts/openstack-tc-nomination/#id4"&gt;[4]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://review.openstack.org/#/c/312267/"&gt;https://review.openstack.org/#/c/312267/&lt;/a&gt; (and related discussion)&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;</description><category>elections</category><category>openstack</category><category>tc</category><guid>http://graham.hayes.ie/posts/openstack-tc-nomination/</guid><pubDate>Wed, 11 Oct 2017 13:02:20 GMT</pubDate></item><item><title>New Adventures</title><link>http://graham.hayes.ie/posts/new-adventures/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;p&gt;Today marks the start of a new chapter for me - I started as an employee
 of SUSE this morning. After 3.5 years (I had no idea it was that long) in HPE
 the time came, and me, and the rest of the team I work with, along with the
 Cloud Foundry team, and the OpenStack teams all moved en-mass to the new
@@ -531,7 +591,7 @@ in yesterday.&lt;/p&gt;
 &lt;p&gt;It was a bit unexpected - as we tested it pretty extensively when it was being
 developed.&lt;/p&gt;
 &lt;p&gt;The line in question was this:&lt;/p&gt;
-&lt;pre class="code python"&gt;&lt;a name="rest_code_788cf66598294102a31aae332ca80e53-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;client&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;send&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;tcp_response&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;pre class="code python"&gt;&lt;a name="rest_code_19cac11ec75947deac9350b36592cbb6-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;client&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;send&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;tcp_response&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;p&gt;In eventlet 0.17.x this behaved like the standard
 &lt;code class="python"&gt;&lt;span class="n"&gt;socket&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sendall&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;/code&gt; , instead of &lt;code class="python"&gt;&lt;span class="n"&gt;socket&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;send&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;(It was &lt;a class="reference external" href="https://github.com/eventlet/eventlet/commit/c315ee86dac996ac533b738f7c8777f4d01a0472"&gt;this commit&lt;/a&gt; as it turns out - it was noted in the release notes &lt;a class="reference external" href="http://eventlet.net/doc/changelog.html#id5"&gt;here&lt;/a&gt; but we missed it)&lt;/p&gt;
@@ -564,12 +624,4 @@ progess on Kosmos&lt;/p&gt;
 &lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="http://graham.hayes.ie/posts/kosmos-mid-cycle/#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;By Jeffery Hayes (Jeffery Hayes) [CC BY-SA 3.0 (&lt;a class="reference external" href="http://creativecommons.org/licenses/by-sa/3.0"&gt;http://creativecommons.org/licenses/by-sa/3.0&lt;/a&gt;)], via Wikimedia Commons&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>openstack</category><category>seattle</category><category>summit</category><category>travel</category><guid>http://graham.hayes.ie/posts/kosmos-mid-cycle/</guid><pubDate>Fri, 29 Jan 2016 18:14:05 GMT</pubDate></item><item><title>Big Rename - Complete!!</title><link>http://graham.hayes.ie/posts/big-rename-complete/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;img alt="http://replygif.net/i/789.gif" src="http://replygif.net/i/789.gif"&gt;
-&lt;div class="section" id="it-is-done"&gt;
-&lt;h2&gt;It is done !! :)&lt;/h2&gt;
-&lt;p&gt;So, yesterday Tim and Kiall +2'd the change.&lt;/p&gt;
-&lt;p&gt;It was quite a bit bigger than expected (+4444, -4230) so thanks to all the
-reviewers who put time and effort into checking everything worked, and I hadn't
-made any glaring mistakes :).&lt;/p&gt;
-&lt;p&gt;For anyone interested (or mad) the change is here: &lt;a class="reference external" href="https://review.openstack.org/#/c/244315/"&gt;Review&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>code</category><category>designate</category><category>openstack</category><category>refactor</category><guid>http://graham.hayes.ie/posts/big-rename-complete/</guid><pubDate>Thu, 19 Nov 2015 12:49:35 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;&lt;/div&gt;</description><category>openstack</category><category>seattle</category><category>summit</category><category>travel</category><guid>http://graham.hayes.ie/posts/kosmos-mid-cycle/</guid><pubDate>Fri, 29 Jan 2016 18:14:05 GMT</pubDate></item></channel></rss>
