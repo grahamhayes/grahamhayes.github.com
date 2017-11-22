@@ -1,5 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>graham.hayes.ie (Posts about openstack)</title><link>http://graham.hayes.ie/</link><description></description><atom:link href="http://graham.hayes.ie/categories/openstack.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 11 Oct 2017 13:10:37 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>OpenStack TC Nomination</title><link>http://graham.hayes.ie/posts/openstack-tc-nomination/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://graham.hayes.ie/images/me.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;I would like to submit my candidacy for the Technical Committee for the
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (Posts about openstack)</title><link>http://graham.hayes.ie/</link><description></description><atom:link rel="self" type="application/rss+xml" href="http://graham.hayes.ie/categories/openstack.xml"></atom:link><language>en</language><lastBuildDate>Wed, 22 Nov 2017 19:40:18 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Sydney OpenStack Summit</title><link>http://graham.hayes.ie/posts/sydney-openstack-summit/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;img alt="https://lh3.googleusercontent.com/9v91EBE02VNZ1fSWcd8JoH7TgPLYhSKXuKrMkqQgSwMHcsw8Im71eM01j6zolH-GuP5XqrAeq4m-GT9Yx4dZXZ_DfND-XWgqvIP64oQwQC-vZgnoLZZ3O-mnOPhQRpouOBscymYBkNelPpg5g2RRy6mXnT9e6lAVy6HGewxRRTL0VOdNApenH_zr-FeRLu_rAOs6WArITF2EbvBsXH74b3EPIGO3BeKlejiC2kSp5Xdj5u7KADXphRazHEVuB8sHegnu0CbZZ2xVLynxvgoSUBPlcwtMUhr87J8_clj0aXIksl-PAWFbhgt7xYlzBkoA1DHsDs5Vw7Cuuah-nycRYRhcSzcFIOvW7L8qWpwHXoD7Xay-DXlqfIYEZjfZc0drpV4AEAnzIaKgIa2PJsFfpiq4hqMv9T59bSIj-EX_wdQ2vXCOzokeZp2t9xCtbIeync9QR_Ij7eXJh_2XHAlLXoR7XrLsY8RiDfrmXSQWVgjEiDGd7urFn6-r3kHLj8QsYRL3ehjfr7GlMtHWuXLkadhblQYpIhnSI-aeEe6NjlXicdMKC43tpWGZkELO9Xm6I82xxycCU68q_g5Sy7BW2_BF7ERp8rNOZg2W4WFJXoySa2fsJitydiJJUvlLSnopYp5GUytsxiMie9fEXQwriFItXlFnXtZsOB8=w1440-h691-no" src="https://lh3.googleusercontent.com/9v91EBE02VNZ1fSWcd8JoH7TgPLYhSKXuKrMkqQgSwMHcsw8Im71eM01j6zolH-GuP5XqrAeq4m-GT9Yx4dZXZ_DfND-XWgqvIP64oQwQC-vZgnoLZZ3O-mnOPhQRpouOBscymYBkNelPpg5g2RRy6mXnT9e6lAVy6HGewxRRTL0VOdNApenH_zr-FeRLu_rAOs6WArITF2EbvBsXH74b3EPIGO3BeKlejiC2kSp5Xdj5u7KADXphRazHEVuB8sHegnu0CbZZ2xVLynxvgoSUBPlcwtMUhr87J8_clj0aXIksl-PAWFbhgt7xYlzBkoA1DHsDs5Vw7Cuuah-nycRYRhcSzcFIOvW7L8qWpwHXoD7Xay-DXlqfIYEZjfZc0drpV4AEAnzIaKgIa2PJsFfpiq4hqMv9T59bSIj-EX_wdQ2vXCOzokeZp2t9xCtbIeync9QR_Ij7eXJh_2XHAlLXoR7XrLsY8RiDfrmXSQWVgjEiDGd7urFn6-r3kHLj8QsYRL3ehjfr7GlMtHWuXLkadhblQYpIhnSI-aeEe6NjlXicdMKC43tpWGZkELO9Xm6I82xxycCU68q_g5Sy7BW2_BF7ERp8rNOZg2W4WFJXoySa2fsJitydiJJUvlLSnopYp5GUytsxiMie9fEXQwriFItXlFnXtZsOB8=w1440-h691-no"&gt;
+&lt;div class="section" id="openstack-down-under"&gt;
+&lt;h2&gt;OpenStack Down Under&lt;/h2&gt;
+&lt;p&gt;This year the travelling circus that is the OpenStack summit migrated to
+Sydney. A lot of us in Europe / North America found out exactly how far away
+from our normal venues it really is. (#openstacksummit on twitter for the days
+before the summit was an entertaining read :) )&lt;/p&gt;
+&lt;div class="section" id="sunday-board-joint-leadership-meeting"&gt;
+&lt;h3&gt;Sunday Board / Joint Leadership Meeting&lt;/h3&gt;
+&lt;p&gt;As I was in Sydney, and staying across the road from the meeting, I decided to
+drop in and listen. It was an interesting discussion, with a couple of
+highlights.&lt;/p&gt;
+&lt;p&gt;Chris Dent had a very interesting item about developer satisfaction - he has
+blogged about it on his blog: &lt;a class="reference external" href="https://anticdent.org/openstack-developer-satisfaction.html"&gt;anticdent.org&lt;/a&gt; and it is well worth the read.&lt;/p&gt;
+&lt;p&gt;Johnathon Bryce lead the presentation of a proposed new expansion of the
+foundation, which he touched on in the Keynote the next day - I have a few
+concerns, but they are all much longer term issues, and may just be my own
+interal biases. I think the first new addition to the foundation will let us
+know how the rest of the process is going to go.&lt;/p&gt;
+&lt;p&gt;Colleen Murphy and Julia Kreger told us that they (along with Flavio Percoco)
+will be starting research to help improve our inclusiveness in the community.&lt;/p&gt;
+&lt;p&gt;The last item was brought forward by 2 board members, and they focused on LTS
+(Long Term Support / Stable) branches. The time from an upstream release until
+a user has it in production is actually long than expected - with a lot of time
+being used by distros packaging and ensuring installers are up to date.&lt;/p&gt;
+&lt;p&gt;This means that by the time users have a release in production, the upstream
+branches may be fully deprecated. There was a follow up Forum Session, and
+there is now an effort to co-ordinate a new methodology for long term
+collaboration in the &lt;a class="reference external" href="https://etherpad.openstack.org/p/LTS-proposal"&gt;LTS Etherpad&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There seems to be an assumption that distros are keeping actual git branches
+around for the longer term, and not layering patches inside of deb / rpm files,
+which I think is much more likely. I hope this effort succeeds, but my cynical
+side thinks this is more of a "fix it for us" cry, than "help us fix it". I
+suppose we will see if people show up.&lt;/p&gt;
+&lt;p&gt;One slide from this section was not discussed but concerned me. It was talking
+about having an enforced "TC Roadmap" which had lines from various workgroups
+and SIGs. Coming from a project that gets a lot of "Can you do &lt;cite&gt;x&lt;/cite&gt; feature?"
+(to which I usually respond with "Do you have anyone to write the code?") this
+concerns me. I understand that it can be hard to get things changed in
+OpenStack, really I do, but a top down enforced "Roadmap" is not the way
+forward.
+Honestly, that two board members of an Open Source foundation think it
+is is worrying.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="designate"&gt;
+&lt;h3&gt;Designate&lt;/h3&gt;
+&lt;p&gt;Designate had 3 sessions in Sydney:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Our project update&lt;/li&gt;
+&lt;li&gt;Project On Boarding&lt;/li&gt;
+&lt;li&gt;Ops Feedback&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The project update was good - much improved from Boston, where the 2 presenters
+were not paid to work on the project. We covered the major potential features,
+where we were for Cycle goals (both Queens goals completed, and Pike goals
+underway).&lt;/p&gt;
+&lt;p&gt;Project on boarding was not hugely attended, but I am hoping that was a side
+effect of the summit being both smaller and far away.&lt;/p&gt;
+&lt;img alt="/images/small_far_away.gif" src="http://graham.hayes.ie/images/small_far_away.gif"&gt;
+&lt;p&gt;Ops feedback was great - we got a lot of bugs that were impacting our users and
+deployers, and collected it in our &lt;a class="reference external" href="https://etherpad.openstack.org/p/SYD-forum-designate-feedback"&gt;Feedback Etherpad&lt;/a&gt; (any comments welcome).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="cross-project-work"&gt;
+&lt;h3&gt;Cross Project Work&lt;/h3&gt;
+&lt;p&gt;I went to quite a few cross project sessions - there was a good amount of
+discussion, and some useful work came out of it.&lt;/p&gt;
+&lt;div class="section" id="application-tokens"&gt;
+&lt;h4&gt;Application Tokens&lt;/h4&gt;
+&lt;p&gt;This is something that had completely slipped past me until now, but the ideas
+were great, and it would have made things I have done in previous companies
+much much easier.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="healthchecks-per-service"&gt;
+&lt;h4&gt;Healthchecks per service&lt;/h4&gt;
+&lt;p&gt;We came to a good agreement on how we can do standardised health checks across
+OpenStack, we now need to write a spec and start coding a new piece of
+middleware :)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="edge-computing"&gt;
+&lt;h4&gt;Edge Computing&lt;/h4&gt;
+&lt;p&gt;Not so sure this was worth a vist - it was much more crowded than any of the
+other Forum sessions I went to, and ended up Bike Shedding on where the Edge
+ends (we literally spent 10 mins talking about if a car was part of the Edge
+or a thing managed by the edge.)&lt;/p&gt;
+&lt;p&gt;I kept hearing "smaller and lighter OpenStack" in that session, but have yet
+to hear what is too heavy about what we currently have. Nearly all our service
+scale down to some extent, and you can run a complete infrastructure on an 8GB
+VM.&lt;/p&gt;
+&lt;p&gt;Overall, it was a good summit - not too busy, and short. Looking forward to not
+traveling for the next PTG, I think the DUB -&amp;gt; DOH -&amp;gt; SYD and back drained the
+enthusiasm for flights for the next few months.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>openstack</category><category>summit</category><category>tokyo</category><category>travel</category><guid>http://graham.hayes.ie/posts/sydney-openstack-summit/</guid><pubDate>Wed, 22 Nov 2017 19:35:33 GMT</pubDate></item><item><title>OpenStack TC Nomination</title><link>http://graham.hayes.ie/posts/openstack-tc-nomination/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://graham.hayes.ie/images/me.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;I would like to submit my candidacy for the Technical Committee for the
 upcoming election.&lt;/p&gt;
 &lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
@@ -599,12 +694,4 @@ progess on Kosmos&lt;/p&gt;
 &lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="http://graham.hayes.ie/posts/kosmos-mid-cycle/#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;By Jeffery Hayes (Jeffery Hayes) [CC BY-SA 3.0 (&lt;a class="reference external" href="http://creativecommons.org/licenses/by-sa/3.0"&gt;http://creativecommons.org/licenses/by-sa/3.0&lt;/a&gt;)], via Wikimedia Commons&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>openstack</category><category>seattle</category><category>summit</category><category>travel</category><guid>http://graham.hayes.ie/posts/kosmos-mid-cycle/</guid><pubDate>Fri, 29 Jan 2016 18:14:05 GMT</pubDate></item><item><title>Big Rename - Complete!!</title><link>http://graham.hayes.ie/posts/big-rename-complete/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;img alt="http://replygif.net/i/789.gif" src="http://replygif.net/i/789.gif"&gt;
-&lt;div class="section" id="it-is-done"&gt;
-&lt;h2&gt;It is done !! :)&lt;/h2&gt;
-&lt;p&gt;So, yesterday Tim and Kiall +2'd the change.&lt;/p&gt;
-&lt;p&gt;It was quite a bit bigger than expected (+4444, -4230) so thanks to all the
-reviewers who put time and effort into checking everything worked, and I hadn't
-made any glaring mistakes :).&lt;/p&gt;
-&lt;p&gt;For anyone interested (or mad) the change is here: &lt;a class="reference external" href="https://review.openstack.org/#/c/244315/"&gt;Review&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>code</category><category>designate</category><category>openstack</category><category>refactor</category><guid>http://graham.hayes.ie/posts/big-rename-complete/</guid><pubDate>Thu, 19 Nov 2015 12:49:35 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;&lt;/div&gt;</description><category>openstack</category><category>seattle</category><category>summit</category><category>travel</category><guid>http://graham.hayes.ie/posts/kosmos-mid-cycle/</guid><pubDate>Fri, 29 Jan 2016 18:14:05 GMT</pubDate></item></channel></rss>
