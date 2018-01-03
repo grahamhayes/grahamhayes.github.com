@@ -72,7 +72,7 @@ in yesterday.</p>
 <p>It was a bit unexpected - as we tested it pretty extensively when it was being
 developed.</p>
 <p>The line in question was this:</p>
-<pre class="code python"><a name="rest_code_19cac11ec75947deac9350b36592cbb6-1"></a><span class="n">client</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">tcp_response</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_8d992b77771445d8b48c9689b3bd5a66-1"></a><span class="n">client</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">tcp_response</span><span class="p">)</span>
 </pre>
 <p>In eventlet 0.17.x this behaved like the standard
 <code class="python"><span class="n">socket</span><span class="o">.</span><span class="n">sendall</span><span class="p">()</span></code> , instead of <code class="python"><span class="n">socket</span><span class="o">.</span><span class="n">send</span><span class="p">()</span></code></p>
@@ -83,15 +83,15 @@ the AXFR over a long range connection.</p>
 <p>To test it, I booted a VM in West US (California I believe), installed designate
 and populated a DB with a large zone using</p>
 <p><a class="reference external" href="../../listings/generate-zone-rrsets.sh.html">generate-zone-rrsets.sh</a>  <a class="reference external" href="../../listings/generate-zone-rrsets.sh">(Source)</a></p>
-<pre class="code bash"><a name="rest_code_a44ac48f79684750a78f9b405ebbefdd-1"></a>    <span class="c1">#!/bin/bash</span>
-<a name="rest_code_a44ac48f79684750a78f9b405ebbefdd-2"></a>    <span class="k">for</span> i in <span class="k">$(</span>seq <span class="m">1</span> <span class="m">2000</span><span class="k">)</span><span class="p">;</span> <span class="k">do</span>
-<a name="rest_code_a44ac48f79684750a78f9b405ebbefdd-3"></a>        http http://IP:9001/v2/zones/ZONE_ID/recordsets <span class="nv">name</span><span class="o">=</span>ww<span class="nv">$i</span>.largetestzone.tld. records:<span class="o">=</span><span class="s1">'["10.0.0.1"]'</span> <span class="nv">type</span><span class="o">=</span>A
-<a name="rest_code_a44ac48f79684750a78f9b405ebbefdd-4"></a>        http http://IP:9001/v2/zones/ZONE_ID/recordsets <span class="nv">name</span><span class="o">=</span>txt<span class="nv">$i</span>.largetestzone.tld. records:<span class="o">=</span><span class="s1">'["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie leo sit amet commodo aliquet. Sed semper felis sit amet egestas euismod. Nulla non elementum orci. Nulla pharetra, ligula eget aliquet sagittis, velit nisl rhoncus nibh, vitae amet.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie leo sit amet commodo aliquet. Sed semper felis sit amet egestas euismod. Nulla non elementum orci. Nulla pharetra, ligula eget aliquet sagittis, velit nisl rhoncus nibh, vitae amet.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie leo sit amet commodo aliquet. Sed semper felis sit amet egestas euismod. Nulla non elementum orci. Nulla pharetra, ligula eget aliquet sagittis, velit nisl rhoncus nibh, vitae amet.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie leo sit amet commodo aliquet. Sed semper felis sit amet egestas euismod. Nulla non elementum orci. Nulla pharetra, ligula eget aliquet sagittis, velit nisl rhoncus nibh, vitae amet."]'</span> <span class="nv">type</span><span class="o">=</span>TXT
-<a name="rest_code_a44ac48f79684750a78f9b405ebbefdd-5"></a>    <span class="k">done</span>
+<pre class="code bash"><a name="rest_code_cfc173efd8184d67af984b571af39128-1"></a>    <span class="c1">#!/bin/bash</span>
+<a name="rest_code_cfc173efd8184d67af984b571af39128-2"></a>    <span class="k">for</span> i in <span class="k">$(</span>seq <span class="m">1</span> <span class="m">2000</span><span class="k">)</span><span class="p">;</span> <span class="k">do</span>
+<a name="rest_code_cfc173efd8184d67af984b571af39128-3"></a>        http http://IP:9001/v2/zones/ZONE_ID/recordsets <span class="nv">name</span><span class="o">=</span>ww<span class="nv">$i</span>.largetestzone.tld. records:<span class="o">=</span><span class="s1">'["10.0.0.1"]'</span> <span class="nv">type</span><span class="o">=</span>A
+<a name="rest_code_cfc173efd8184d67af984b571af39128-4"></a>        http http://IP:9001/v2/zones/ZONE_ID/recordsets <span class="nv">name</span><span class="o">=</span>txt<span class="nv">$i</span>.largetestzone.tld. records:<span class="o">=</span><span class="s1">'["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie leo sit amet commodo aliquet. Sed semper felis sit amet egestas euismod. Nulla non elementum orci. Nulla pharetra, ligula eget aliquet sagittis, velit nisl rhoncus nibh, vitae amet.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie leo sit amet commodo aliquet. Sed semper felis sit amet egestas euismod. Nulla non elementum orci. Nulla pharetra, ligula eget aliquet sagittis, velit nisl rhoncus nibh, vitae amet.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie leo sit amet commodo aliquet. Sed semper felis sit amet egestas euismod. Nulla non elementum orci. Nulla pharetra, ligula eget aliquet sagittis, velit nisl rhoncus nibh, vitae amet.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie leo sit amet commodo aliquet. Sed semper felis sit amet egestas euismod. Nulla non elementum orci. Nulla pharetra, ligula eget aliquet sagittis, velit nisl rhoncus nibh, vitae amet."]'</span> <span class="nv">type</span><span class="o">=</span>TXT
+<a name="rest_code_cfc173efd8184d67af984b571af39128-5"></a>    <span class="k">done</span>
 </pre>
 <p>Then from Dublin I started to run to see what was happening.</p>
 <p><code class="bash">dig @IP -p <span class="m">5354</span> largetestzone.tld. AXFR</code></p>
-<pre class="code bash"><a name="rest_code_52000466675a4b079ce6fed0849358e8-1"></a>dig @IP -p <span class="m">5354</span> largetestzone.tld. AXFR
+<pre class="code bash"><a name="rest_code_5dd5bf860cd647b0928e748227714a8a-1"></a>dig @IP -p <span class="m">5354</span> largetestzone.tld. AXFR
 </pre>
 <p>What was interesting was that I had to get to 3 TCP messages before I started to see any issues,
 and that those issues did not appear when I was testing from the same geographical region.</p>
@@ -171,7 +171,7 @@ OK merging this fix, and finding the new bugs root cause in the near future.</p>
             
 
     </div>
-                    <footer id="footer"><p>Contents © 2017         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                    <footer id="footer"><p>Contents © 2018         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

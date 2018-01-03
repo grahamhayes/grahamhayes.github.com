@@ -1,6 +1,6 @@
 .. title: Sydney OpenStack Summit
 .. slug: sydney-openstack-summit
-.. date: 2017-11-22 19:35:33 UTC
+.. date: 2017-11-20 14:28:33 UTC
 .. tags: openstack, summit, travel, tokyo
 .. category: OpenStack
 .. link:
@@ -85,44 +85,6 @@ effect of the summit being both smaller and far away.
 
 Ops feedback was great - we got a lot of bugs that were impacting our users and
 deployers, and collected it in our `Feedback Etherpad`_ (any comments welcome).
-
-
-Cross Project Work
-==================
-
-I went to quite a few cross project sessions - there was a good amount of
-discussion, and some useful work came out of it.
-
-Application Tokens
-------------------
-
-This is something that had completely slipped past me until now, but the ideas
-were great, and it would have made things I have done in previous companies
-much much easier.
-
-Healthchecks per service
-------------------------
-
-We came to a good agreement on how we can do standardised health checks across
-OpenStack, we now need to write a spec and start coding a new piece of
-middleware :)
-
-Edge Computing
---------------
-
-Not so sure this was worth a vist - it was much more crowded than any of the
-other Forum sessions I went to, and ended up Bike Shedding on where the Edge
-ends (we literally spent 10 mins talking about if a car was part of the Edge
-or a thing managed by the edge.)
-
-I kept hearing "smaller and lighter OpenStack" in that session, but have yet
-to hear what is too heavy about what we currently have. Nearly all our service
-scale down to some extent, and you can run a complete infrastructure on an 8GB
-VM.
-
-Overall, it was a good summit - not too busy, and short. Looking forward to not
-traveling for the next PTG, I think the DUB -> DOH -> SYD and back drained the
-enthusiasm for flights for the next few months.
 
 
 
