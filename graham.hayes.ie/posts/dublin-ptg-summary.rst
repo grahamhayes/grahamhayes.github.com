@@ -6,7 +6,7 @@
 .. link:
 .. description:
 .. type: text
-.. previewimage: https://pbs.twimg.com/media/DXItoxEW4AAqaxV.jpg:large
+.. previewimage: https://pbs.twimg.com/media/DXItoxEW4AAqaxV.jpg:medium
 
 .. role:: bash(code)
    :language: bash
