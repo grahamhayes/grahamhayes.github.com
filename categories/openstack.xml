@@ -1,5 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (Posts about openstack)</title><link>http://graham.hayes.ie/</link><description></description><atom:link href="http://graham.hayes.ie/categories/openstack.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 03 Jan 2018 15:02:21 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Sydney OpenStack Summit</title><link>http://graham.hayes.ie/posts/sydney-openstack-summit/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;img alt="https://lh3.googleusercontent.com/9v91EBE02VNZ1fSWcd8JoH7TgPLYhSKXuKrMkqQgSwMHcsw8Im71eM01j6zolH-GuP5XqrAeq4m-GT9Yx4dZXZ_DfND-XWgqvIP64oQwQC-vZgnoLZZ3O-mnOPhQRpouOBscymYBkNelPpg5g2RRy6mXnT9e6lAVy6HGewxRRTL0VOdNApenH_zr-FeRLu_rAOs6WArITF2EbvBsXH74b3EPIGO3BeKlejiC2kSp5Xdj5u7KADXphRazHEVuB8sHegnu0CbZZ2xVLynxvgoSUBPlcwtMUhr87J8_clj0aXIksl-PAWFbhgt7xYlzBkoA1DHsDs5Vw7Cuuah-nycRYRhcSzcFIOvW7L8qWpwHXoD7Xay-DXlqfIYEZjfZc0drpV4AEAnzIaKgIa2PJsFfpiq4hqMv9T59bSIj-EX_wdQ2vXCOzokeZp2t9xCtbIeync9QR_Ij7eXJh_2XHAlLXoR7XrLsY8RiDfrmXSQWVgjEiDGd7urFn6-r3kHLj8QsYRL3ehjfr7GlMtHWuXLkadhblQYpIhnSI-aeEe6NjlXicdMKC43tpWGZkELO9Xm6I82xxycCU68q_g5Sy7BW2_BF7ERp8rNOZg2W4WFJXoySa2fsJitydiJJUvlLSnopYp5GUytsxiMie9fEXQwriFItXlFnXtZsOB8=w1440-h691-no" src="https://lh3.googleusercontent.com/9v91EBE02VNZ1fSWcd8JoH7TgPLYhSKXuKrMkqQgSwMHcsw8Im71eM01j6zolH-GuP5XqrAeq4m-GT9Yx4dZXZ_DfND-XWgqvIP64oQwQC-vZgnoLZZ3O-mnOPhQRpouOBscymYBkNelPpg5g2RRy6mXnT9e6lAVy6HGewxRRTL0VOdNApenH_zr-FeRLu_rAOs6WArITF2EbvBsXH74b3EPIGO3BeKlejiC2kSp5Xdj5u7KADXphRazHEVuB8sHegnu0CbZZ2xVLynxvgoSUBPlcwtMUhr87J8_clj0aXIksl-PAWFbhgt7xYlzBkoA1DHsDs5Vw7Cuuah-nycRYRhcSzcFIOvW7L8qWpwHXoD7Xay-DXlqfIYEZjfZc0drpV4AEAnzIaKgIa2PJsFfpiq4hqMv9T59bSIj-EX_wdQ2vXCOzokeZp2t9xCtbIeync9QR_Ij7eXJh_2XHAlLXoR7XrLsY8RiDfrmXSQWVgjEiDGd7urFn6-r3kHLj8QsYRL3ehjfr7GlMtHWuXLkadhblQYpIhnSI-aeEe6NjlXicdMKC43tpWGZkELO9Xm6I82xxycCU68q_g5Sy7BW2_BF7ERp8rNOZg2W4WFJXoySa2fsJitydiJJUvlLSnopYp5GUytsxiMie9fEXQwriFItXlFnXtZsOB8=w1440-h691-no"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>graham.hayes.ie (Posts about openstack)</title><link>http://graham.hayes.ie/</link><description></description><atom:link href="http://graham.hayes.ie/categories/openstack.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 15 Mar 2018 19:25:42 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Dublin PTG Summary</title><link>http://graham.hayes.ie/posts/dublin-ptg-summary/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;img alt="https://pbs.twimg.com/media/DXItoxEW4AAqaxV.jpg:large" src="https://pbs.twimg.com/media/DXItoxEW4AAqaxV.jpg:large"&gt;
+&lt;p&gt;Not getting on a plane was a nice change for an OpenStack event :) - especially
+as it looks like I would not have made it home for a few days.&lt;/p&gt;
+&lt;div class="section" id="cross-project-days-monday-tuesday"&gt;
+&lt;h2&gt;Cross Project Days (Monday / Tuesday)&lt;/h2&gt;
+&lt;p&gt;These days are where I think the major value of the PTG is. The cross project
+days feel like the Summit of old, with more time for topics, and less running
+around a conference centre trying to cram 2 weeks worth of talks / developer
+sessions, and other meetings into a few days.&lt;/p&gt;
+&lt;div class="section" id="unified-limits-olso-limits-keystone-stored-limit-data"&gt;
+&lt;h3&gt;Unified Limits / olso.limits / keystone stored limit data&lt;/h3&gt;
+&lt;p&gt;First up for me was the keystone based limits API for unifying quota data in
+keystone. It was decided to create oslo.limts (&lt;a class="reference external" href="https://review.openstack.org/#/c/550491/"&gt;olso.limits repo&lt;/a&gt;,
+&lt;a class="reference external" href="http://lists.openstack.org/pipermail/openstack-dev/2018-March/128175.html"&gt;olso.limits spec&lt;/a&gt; &amp;amp; &lt;a class="reference external" href="https://etherpad.openstack.org/p/unified-limits-rocky-ptg"&gt;oslo.limits etherpad&lt;/a&gt;). The keystone team already
+created a &lt;a class="reference external" href="https://developer.openstack.org/api-ref/identity/v3/index.html#unified-limits"&gt;keystone-limits-api&lt;/a&gt; that is currently experimental, and the
+feeling in the room was that we should try and implement it using a new oslo
+library to find where changes need to be made.&lt;/p&gt;
+&lt;p&gt;The migration procedure was discussed, and how we (the services) would need to
+run multiple quota systems for quite a few cycles, due to partial upgrades
+that happen in OpenStack. &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/dublin-ptg-summary/#id2" id="id1"&gt;[1]&lt;/a&gt; Possible implementations were discussed, and
+the &lt;a class="reference external" href="https://etherpad.openstack.org/p/unified-limits-rocky-ptg"&gt;oslo.limits etherpad&lt;/a&gt; has a good overview of them.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="olso-healthcheck"&gt;
+&lt;h3&gt;olso.healthcheck&lt;/h3&gt;
+&lt;p&gt;This is an idea that I have been very interested in since it was discussed in
+Sydney. We actually had 3 sessions on this in Dublin, across 3 different cross
+project rooms - API-SIG, Oslo and Self Healing SIG.&lt;/p&gt;
+&lt;p&gt;Overall, most people were receptive - the commentary is that the spec is too
+wordy, and contains my favorite description:&lt;/p&gt;
+&lt;blockquote class="epigraph"&gt;
+It feels like OpenStack, but not really in a good way.&lt;/blockquote&gt;
+&lt;p&gt;After listening to feedback, and talking offline to a few people I think I have
+a handle on where the issues are, and I think I have a rough spec I can work flesh
+out over the next few days. I think I will just start writing code at that
+point as well - I think with a more concrete example it could help clear up
+issues for people.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="edge-computing"&gt;
+&lt;h3&gt;Edge Computing&lt;/h3&gt;
+&lt;p&gt;I stopped by the Edge room on the Tuesday to listen in on the discussion.
+Personally, I really think this group needs to stop bikesheding on, well,
+everything, and actually go and implement a POC and see what breaks.&lt;/p&gt;
+&lt;p&gt;The push still seems to be "make OpenStack work on the edge" instead of (what
+I think is the quickest / most productive way forward) "write extra tooling
+to orchestrate OpenStack on the edge."&lt;/p&gt;
+&lt;p&gt;There was some interesting items brought up, like Glance, and image / data
+residency. I think that actually engaging with the Glance team might have been
+helpful, as they were completely unaware that the discussion was being held,
+but the concepts raised sounded interesting.&lt;/p&gt;
+&lt;p&gt;I lasted about an hour or so, before I gave up. From my limited exposure, it
+sounded exactly like the discussions I have heard on the Edge Calls, which
+were the same as the ones I heard in Sydney.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="designate-sessions"&gt;
+&lt;h2&gt;Designate Sessions&lt;/h2&gt;
+&lt;p&gt;The Designate room was a quiet enough affair, but it marks the first time since
+the PTG's started that getting a dedicated room was justified. We did some
+onboarding with new folks, and laid out a plan for the cycle.&lt;/p&gt;
+&lt;p&gt;The plan so far looks like this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p class="first"&gt;DNSSEC&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;A starting point, using signing keys in the Designate database, which we
+can use as a jumping point to storing keys in a HSM / Barbican&lt;/li&gt;
+&lt;li&gt;People are currently looking at PowerDNS's inline signing as a short term
+solution.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Docs (it will never &lt;strong&gt;not&lt;/strong&gt; be a priority :) )&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Shared Zones&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Improve the UI&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;This really relies on us either &lt;code class="bash"&gt;rm -rf openstack/designate-dashboard&lt;/code&gt;
+or finding people who understand Angular.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="tc-qa-tempest-trademark-programs"&gt;
+&lt;h2&gt;TC / QA / Tempest / Trademark Programs&lt;/h2&gt;
+&lt;p&gt;If you follow the mailing list, or &lt;a class="reference external" href="https://github.com/openstack/governance"&gt;openstack/governance&lt;/a&gt; reviews, you may
+have seen a long running discussion over where tempest tests used for Trademark
+Programs should go. From memory I seem to remember this being raised in Boston,
+but it could have been Barcelona. There was tension between QA, me, the InterOp
+Work Group, and others about the location. Chris Dent covered this pretty well
+in his &lt;a class="reference external" href="https://anticdent.org/tag/tc.html"&gt;TC updates&lt;/a&gt; over the last while, so I am not going to rehash it, but
+it does look like we finally have some sort of agreement on the &lt;a class="reference external" href="https://review.openstack.org/#/c/550571/"&gt;location&lt;/a&gt;,
+after what was 2 other times I thought we had agreement :).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="board-of-directors-meeting"&gt;
+&lt;h2&gt;Board of Directors Meeting&lt;/h2&gt;
+&lt;p&gt;The OpenStack Board of Directors met on the first day of the PTG. This was an
+issue in its own right, which was highlighted in a thread on the
+&lt;a class="reference external" href="http://lists.openstack.org/pipermail/foundation/2018-January/002558.html"&gt;foundation list&lt;/a&gt;. Thankfully, I have been told that this situation will not
+happen again (I can't seem to find any record of the decision, so it may have
+been an informal board discussion, but if anyone from the board is reading,
+replying to the &lt;a class="reference external" href="http://lists.openstack.org/pipermail/foundation/2018-January/002558.html"&gt;foundation list&lt;/a&gt; would be great.).&lt;/p&gt;
+&lt;p&gt;As it met on day one, I didn't get to see much - I arrived to wait for the
+Add On Trademark program approvals, and happened to catch a very interesting
+&lt;a class="reference external" href="https://docs.google.com/presentation/d/1_N7xhzwk6HzCl0fMm_cWfQ2UFu8bOaZYD2OOAV4y5yQ/edit#slide=id.g33768e8068_2_244"&gt;presentation&lt;/a&gt; by Dims, Chris and Melvin. I then got to see the board approve
+DNS as a Trademark add on, which is great for the project, and people who want
+a constant DNSaaS experience across multiple clouds.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://lists.openstack.org/pipermail/foundation/2018-March/002570.html"&gt;Johnathon Price's Board Recap&lt;/a&gt; is also a good overview, with links to things
+that were presented at the meeting.&lt;/p&gt;
+&lt;div class="section" id="the-board-community-and-how-we-interact"&gt;
+&lt;h3&gt;The Board, Community, and how we interact&lt;/h3&gt;
+&lt;p&gt;One topic that was highlighted by the &lt;a class="reference internal" href="http://graham.hayes.ie/posts/dublin-ptg-summary/#tc-qa-tempest-trademark-programs"&gt;TC / QA / Tempest / Trademark Programs&lt;/a&gt;
+discussion was that the QA team is very under resourced. This, combined with
+the board discussing &lt;a class="reference external" href="https://anticdent.org/tc-report-18-10.html#talking-about-the-ptg-at-the-ptg"&gt;future of the PTGs&lt;/a&gt; due to cost makes me very worried.&lt;/p&gt;
+&lt;p&gt;The foundation has (in my mind) two main focuses.&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Promote the use of the software or IP produced by people working on projects
+under the foundation, and protect its reputation.&lt;/li&gt;
+&lt;li&gt;Empower the developers working on said software or IP to do so.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In my eyes, Trademark programs are very much part of #1, and the board should
+either:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Fund / find resources for the QA team, to ensure they have enough bandwidth
+to maintain all trademark programs, the associated tests, and tooling.&lt;/li&gt;
+&lt;li&gt;Fund / find a team that does it separately, but removes the entire burden
+from the QA team.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The PTG falls firmly under #2. I was initially a PTG skeptic, but I really
+think it works as an event, and adds &lt;strong&gt;much&lt;/strong&gt; more value than the old
+mid-cycles did. I understand it has problems, but without it, teams will go
+back to the mid cycles, which may have looked cheaper at first glance, but
+for some people either meant multiple trips, or missing discussions.&lt;/p&gt;
+&lt;p&gt;One very disappointing thing to see was the list of Travel Support Program
+donors - there was some very generous individuals in the community that stood
+up and donated, but none of the corporate foundation members contributed. This,
+with members being added to the foundation that seem to stop at paying the
+membership fee (see &lt;a class="reference external" href="http://stackalytics.com/?release=all&amp;amp;company=tencent"&gt;tencent&lt;/a&gt; who were added at the Sydney board meeting),
+makes me wonder about the value placed on the community by the board.&lt;/p&gt;
+&lt;p&gt;I know the OpenStack Foundation is diversifying its portfolio of projects
+beyond just the OpenStack Project (this is going to get confusing :/), but
+we should still be supporting the community that currently exists.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="other-great-write-ups"&gt;
+&lt;h2&gt;Other great write ups&lt;/h2&gt;
+&lt;p&gt;This turned into a bit of a PTG + 2 weeks after update, so here are some other
+write ups I have read over the last week or so, and prompted me to remember
+things that I would have otherwise forgotten.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://anticdent.org/tc-report-18-10.html"&gt;Chris Dent&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://www.gazlene.net/dublin-ptg.html"&gt;Colleen Murphy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://blog.adamspiers.org/2018/03/09/openstack-ptg-dublin/"&gt;Adam Spiers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://markvoelker.github.io/blog/dublin-ptg-edge-sessions/"&gt;Mark Voelker&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="the-hotel"&gt;
+&lt;h2&gt;The Hotel&lt;/h2&gt;
+&lt;p&gt;And, I saved the best until last. The &lt;a class="reference external" href="https://www.doylecollection.com/hotels/the-croke-park-hotel"&gt;Croke Park Hotel&lt;/a&gt; was absolutely
+amazing during the conference. When we needed to leave the main venue on
+Thursday, they managed the transition of a few hundred developers into all the
+public spaces we could find extremely well. They kept us fed, watered and happy
+the entire time we were in the hotel. The fact they managed to do this, while
+not leaving the hotel to go home and sleep themselves! I cannot say enough good
+things about them, and encourage anyone who is looking for a hotel in Dublin to
+stay there, or is running an event to use Croke Park and the hotel.&lt;/p&gt;
+&lt;!-- Recap links --&gt;
+&lt;!-- oslo.limits links --&gt;
+&lt;!-- TC / Tempest --&gt;
+&lt;!-- BOD --&gt;
+&lt;!-- Misc --&gt;
+&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label"&gt;&lt;col&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="http://graham.hayes.ie/posts/dublin-ptg-summary/#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;I have heard of companies running Newton / Ocata Designate (and other projects) on clouds as old as Liberty.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>dublin</category><category>openstack</category><category>snow</category><category>snowpenstack</category><category>summit</category><guid>http://graham.hayes.ie/posts/dublin-ptg-summary/</guid><pubDate>Thu, 15 Mar 2018 19:23:00 GMT</pubDate></item><item><title>Sydney OpenStack Summit</title><link>http://graham.hayes.ie/posts/sydney-openstack-summit/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;img alt="https://lh3.googleusercontent.com/9v91EBE02VNZ1fSWcd8JoH7TgPLYhSKXuKrMkqQgSwMHcsw8Im71eM01j6zolH-GuP5XqrAeq4m-GT9Yx4dZXZ_DfND-XWgqvIP64oQwQC-vZgnoLZZ3O-mnOPhQRpouOBscymYBkNelPpg5g2RRy6mXnT9e6lAVy6HGewxRRTL0VOdNApenH_zr-FeRLu_rAOs6WArITF2EbvBsXH74b3EPIGO3BeKlejiC2kSp5Xdj5u7KADXphRazHEVuB8sHegnu0CbZZ2xVLynxvgoSUBPlcwtMUhr87J8_clj0aXIksl-PAWFbhgt7xYlzBkoA1DHsDs5Vw7Cuuah-nycRYRhcSzcFIOvW7L8qWpwHXoD7Xay-DXlqfIYEZjfZc0drpV4AEAnzIaKgIa2PJsFfpiq4hqMv9T59bSIj-EX_wdQ2vXCOzokeZp2t9xCtbIeync9QR_Ij7eXJh_2XHAlLXoR7XrLsY8RiDfrmXSQWVgjEiDGd7urFn6-r3kHLj8QsYRL3ehjfr7GlMtHWuXLkadhblQYpIhnSI-aeEe6NjlXicdMKC43tpWGZkELO9Xm6I82xxycCU68q_g5Sy7BW2_BF7ERp8rNOZg2W4WFJXoySa2fsJitydiJJUvlLSnopYp5GUytsxiMie9fEXQwriFItXlFnXtZsOB8=w1440-h691-no" src="https://lh3.googleusercontent.com/9v91EBE02VNZ1fSWcd8JoH7TgPLYhSKXuKrMkqQgSwMHcsw8Im71eM01j6zolH-GuP5XqrAeq4m-GT9Yx4dZXZ_DfND-XWgqvIP64oQwQC-vZgnoLZZ3O-mnOPhQRpouOBscymYBkNelPpg5g2RRy6mXnT9e6lAVy6HGewxRRTL0VOdNApenH_zr-FeRLu_rAOs6WArITF2EbvBsXH74b3EPIGO3BeKlejiC2kSp5Xdj5u7KADXphRazHEVuB8sHegnu0CbZZ2xVLynxvgoSUBPlcwtMUhr87J8_clj0aXIksl-PAWFbhgt7xYlzBkoA1DHsDs5Vw7Cuuah-nycRYRhcSzcFIOvW7L8qWpwHXoD7Xay-DXlqfIYEZjfZc0drpV4AEAnzIaKgIa2PJsFfpiq4hqMv9T59bSIj-EX_wdQ2vXCOzokeZp2t9xCtbIeync9QR_Ij7eXJh_2XHAlLXoR7XrLsY8RiDfrmXSQWVgjEiDGd7urFn6-r3kHLj8QsYRL3ehjfr7GlMtHWuXLkadhblQYpIhnSI-aeEe6NjlXicdMKC43tpWGZkELO9Xm6I82xxycCU68q_g5Sy7BW2_BF7ERp8rNOZg2W4WFJXoySa2fsJitydiJJUvlLSnopYp5GUytsxiMie9fEXQwriFItXlFnXtZsOB8=w1440-h691-no"&gt;
 &lt;div class="section" id="openstack-down-under"&gt;
 &lt;h2&gt;OpenStack Down Under&lt;/h2&gt;
 &lt;p&gt;This year the travelling circus that is the OpenStack summit migrated to
@@ -63,7 +242,38 @@ effect of the summit being both smaller and far away.&lt;/p&gt;
 &lt;p&gt;Ops feedback was great - we got a lot of bugs that were impacting our users and
 deployers, and collected it in our &lt;a class="reference external" href="https://etherpad.openstack.org/p/SYD-forum-designate-feedback"&gt;Feedback Etherpad&lt;/a&gt; (any comments welcome).&lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>openstack</category><category>summit</category><category>tokyo</category><category>travel</category><guid>http://graham.hayes.ie/posts/sydney-openstack-summit/</guid><pubDate>Mon, 20 Nov 2017 14:28:33 GMT</pubDate></item><item><title>OpenStack TC Nomination</title><link>http://graham.hayes.ie/posts/openstack-tc-nomination/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://graham.hayes.ie/images/me.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;I would like to submit my candidacy for the Technical Committee for the
+&lt;div class="section" id="cross-project-work"&gt;
+&lt;h3&gt;Cross Project Work&lt;/h3&gt;
+&lt;p&gt;I went to quite a few cross project sessions - there was a good amount of
+discussion, and some useful work came out of it.&lt;/p&gt;
+&lt;div class="section" id="application-tokens"&gt;
+&lt;h4&gt;Application Tokens&lt;/h4&gt;
+&lt;p&gt;This is something that had completely slipped past me until now, but the ideas
+were great, and it would have made things I have done in previous companies
+much much easier.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="healthchecks-per-service"&gt;
+&lt;h4&gt;Healthchecks per service&lt;/h4&gt;
+&lt;p&gt;We came to a good agreement on how we can do standardised health checks across
+OpenStack, we now need to write a spec and start coding a new piece of
+middleware :)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="edge-computing"&gt;
+&lt;h4&gt;Edge Computing&lt;/h4&gt;
+&lt;p&gt;Not so sure this was worth a vist - it was much more crowded than any of the
+other Forum sessions I went to, and ended up Bike Shedding on where the Edge
+ends (we literally spent 10 mins talking about if a car was part of the Edge
+or a thing managed by the edge.)&lt;/p&gt;
+&lt;p&gt;I kept hearing "smaller and lighter OpenStack" in that session, but have yet
+to hear what is too heavy about what we currently have. Nearly all our service
+scale down to some extent, and you can run a complete infrastructure on an 8GB
+VM.&lt;/p&gt;
+&lt;p&gt;Overall, it was a good summit - not too busy, and short. Looking forward to not
+traveling for the next PTG, I think the DUB -&amp;gt; DOH -&amp;gt; SYD and back drained the
+enthusiasm for flights for the next few months.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>openstack</category><category>summit</category><category>tokyo</category><category>travel</category><guid>http://graham.hayes.ie/posts/sydney-openstack-summit/</guid><pubDate>Wed, 22 Nov 2017 19:35:33 GMT</pubDate></item><item><title>OpenStack TC Nomination</title><link>http://graham.hayes.ie/posts/openstack-tc-nomination/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://graham.hayes.ie/images/me.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;I would like to submit my candidacy for the Technical Committee for the
 upcoming election.&lt;/p&gt;
 &lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
@@ -630,7 +840,7 @@ in yesterday.&lt;/p&gt;
 &lt;p&gt;It was a bit unexpected - as we tested it pretty extensively when it was being
 developed.&lt;/p&gt;
 &lt;p&gt;The line in question was this:&lt;/p&gt;
-&lt;pre class="code python"&gt;&lt;a name="rest_code_8d992b77771445d8b48c9689b3bd5a66-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;client&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;send&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;tcp_response&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;pre class="code python"&gt;&lt;a name="rest_code_19cac11ec75947deac9350b36592cbb6-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;client&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;send&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;tcp_response&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;p&gt;In eventlet 0.17.x this behaved like the standard
 &lt;code class="python"&gt;&lt;span class="n"&gt;socket&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sendall&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;/code&gt; , instead of &lt;code class="python"&gt;&lt;span class="n"&gt;socket&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;send&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;(It was &lt;a class="reference external" href="https://github.com/eventlet/eventlet/commit/c315ee86dac996ac533b738f7c8777f4d01a0472"&gt;this commit&lt;/a&gt; as it turns out - it was noted in the release notes &lt;a class="reference external" href="http://eventlet.net/doc/changelog.html#id5"&gt;here&lt;/a&gt; but we missed it)&lt;/p&gt;
@@ -644,23 +854,4 @@ paper /  rst.&lt;/p&gt;
 &lt;p&gt;It was a good few days overall - we had our usual arguements about implementation of some
 familiar features, we listed out reasons that our past selves were wrong about everything,
 and how we should fix our mistakes.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://graham.hayes.ie/posts/designate-mid-cycle/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>galway</category><category>openstack</category><category>summit</category><category>travel</category><guid>http://graham.hayes.ie/posts/designate-mid-cycle/</guid><pubDate>Wed, 24 Feb 2016 22:55:00 GMT</pubDate></item><item><title>Kosmos Mid Cycle</title><link>http://graham.hayes.ie/posts/kosmos-mid-cycle/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;img alt="https://upload.wikimedia.org/wikipedia/commons/5/58/Seattle_Center_as_night_falls.jpg" src="https://upload.wikimedia.org/wikipedia/commons/5/58/Seattle_Center_as_night_falls.jpg"&gt;
-&lt;p&gt;&lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/kosmos-mid-cycle/#id2" id="id1"&gt;[1]&lt;/a&gt;&lt;/p&gt;
-&lt;div class="section" id="kosmos-mid-cycle"&gt;
-&lt;h2&gt;Kosmos Mid Cycle&lt;/h2&gt;
-&lt;p&gt;We sat down in Seattle last week to plan out how we were going to kick start
-progess on Kosmos&lt;/p&gt;
-&lt;p&gt;(For those of you who don't know what Kosmos is - here is the overview &lt;a class="reference external" href="https://wiki.openstack.org/wiki/Kosmos"&gt;on the wiki&lt;/a&gt; )&lt;/p&gt;
-&lt;p&gt;We decided on a few things, I managed to clarify my (admitedly weird and convaluted) thought process, and we started on the inital sets of patches.&lt;/p&gt;
-&lt;p&gt;It was a small group - some people were sick from the LBaaS / VPN / FW mid cycle the week before, but enough to start.&lt;/p&gt;
-&lt;p&gt;We covered the DB, the layout, and how we will interact with it. I showed our basic use of the olso_versionedobjects lib, and the basic pecan framework that was in place.&lt;/p&gt;
-&lt;p&gt;We have the basic design up on our specs repo &lt;a class="reference external" href="https://github.com/openstack/kosmos-specs"&gt;here&lt;/a&gt; ( it is not publishing anywhere yet - I will fix that soon )&lt;/p&gt;
-&lt;p&gt;If anyone is interested in the project, give me a ping - be it for developing drivers, code, requirements or general interest. (But, really - if you want to write code, just jump in, or ping me for what the hot topics are)&lt;/p&gt;
-&lt;p&gt;In 2 weeks time I will be off the Designate Mid Cycle - a little closer to home this time - in Galway, Ireland.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
-&lt;colgroup&gt;&lt;col class="label"&gt;&lt;col&gt;&lt;/colgroup&gt;
-&lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="http://graham.hayes.ie/posts/kosmos-mid-cycle/#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;By Jeffery Hayes (Jeffery Hayes) [CC BY-SA 3.0 (&lt;a class="reference external" href="http://creativecommons.org/licenses/by-sa/3.0"&gt;http://creativecommons.org/licenses/by-sa/3.0&lt;/a&gt;)], via Wikimedia Commons&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>openstack</category><category>seattle</category><category>summit</category><category>travel</category><guid>http://graham.hayes.ie/posts/kosmos-mid-cycle/</guid><pubDate>Fri, 29 Jan 2016 18:14:05 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="http://graham.hayes.ie/posts/designate-mid-cycle/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>galway</category><category>openstack</category><category>summit</category><category>travel</category><guid>http://graham.hayes.ie/posts/designate-mid-cycle/</guid><pubDate>Wed, 24 Feb 2016 22:55:00 GMT</pubDate></item></channel></rss>

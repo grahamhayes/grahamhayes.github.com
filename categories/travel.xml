@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (Posts about travel)</title><link>http://graham.hayes.ie/</link><description></description><atom:link href="http://graham.hayes.ie/categories/travel.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 03 Jan 2018 15:02:21 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Sydney OpenStack Summit</title><link>http://graham.hayes.ie/posts/sydney-openstack-summit/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;img alt="https://lh3.googleusercontent.com/9v91EBE02VNZ1fSWcd8JoH7TgPLYhSKXuKrMkqQgSwMHcsw8Im71eM01j6zolH-GuP5XqrAeq4m-GT9Yx4dZXZ_DfND-XWgqvIP64oQwQC-vZgnoLZZ3O-mnOPhQRpouOBscymYBkNelPpg5g2RRy6mXnT9e6lAVy6HGewxRRTL0VOdNApenH_zr-FeRLu_rAOs6WArITF2EbvBsXH74b3EPIGO3BeKlejiC2kSp5Xdj5u7KADXphRazHEVuB8sHegnu0CbZZ2xVLynxvgoSUBPlcwtMUhr87J8_clj0aXIksl-PAWFbhgt7xYlzBkoA1DHsDs5Vw7Cuuah-nycRYRhcSzcFIOvW7L8qWpwHXoD7Xay-DXlqfIYEZjfZc0drpV4AEAnzIaKgIa2PJsFfpiq4hqMv9T59bSIj-EX_wdQ2vXCOzokeZp2t9xCtbIeync9QR_Ij7eXJh_2XHAlLXoR7XrLsY8RiDfrmXSQWVgjEiDGd7urFn6-r3kHLj8QsYRL3ehjfr7GlMtHWuXLkadhblQYpIhnSI-aeEe6NjlXicdMKC43tpWGZkELO9Xm6I82xxycCU68q_g5Sy7BW2_BF7ERp8rNOZg2W4WFJXoySa2fsJitydiJJUvlLSnopYp5GUytsxiMie9fEXQwriFItXlFnXtZsOB8=w1440-h691-no" src="https://lh3.googleusercontent.com/9v91EBE02VNZ1fSWcd8JoH7TgPLYhSKXuKrMkqQgSwMHcsw8Im71eM01j6zolH-GuP5XqrAeq4m-GT9Yx4dZXZ_DfND-XWgqvIP64oQwQC-vZgnoLZZ3O-mnOPhQRpouOBscymYBkNelPpg5g2RRy6mXnT9e6lAVy6HGewxRRTL0VOdNApenH_zr-FeRLu_rAOs6WArITF2EbvBsXH74b3EPIGO3BeKlejiC2kSp5Xdj5u7KADXphRazHEVuB8sHegnu0CbZZ2xVLynxvgoSUBPlcwtMUhr87J8_clj0aXIksl-PAWFbhgt7xYlzBkoA1DHsDs5Vw7Cuuah-nycRYRhcSzcFIOvW7L8qWpwHXoD7Xay-DXlqfIYEZjfZc0drpV4AEAnzIaKgIa2PJsFfpiq4hqMv9T59bSIj-EX_wdQ2vXCOzokeZp2t9xCtbIeync9QR_Ij7eXJh_2XHAlLXoR7XrLsY8RiDfrmXSQWVgjEiDGd7urFn6-r3kHLj8QsYRL3ehjfr7GlMtHWuXLkadhblQYpIhnSI-aeEe6NjlXicdMKC43tpWGZkELO9Xm6I82xxycCU68q_g5Sy7BW2_BF7ERp8rNOZg2W4WFJXoySa2fsJitydiJJUvlLSnopYp5GUytsxiMie9fEXQwriFItXlFnXtZsOB8=w1440-h691-no"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>graham.hayes.ie (Posts about travel)</title><link>http://graham.hayes.ie/</link><description></description><atom:link rel="self" href="http://graham.hayes.ie/categories/travel.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 12 Mar 2018 20:24:12 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Sydney OpenStack Summit</title><link>http://graham.hayes.ie/posts/sydney-openstack-summit/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;img alt="https://lh3.googleusercontent.com/9v91EBE02VNZ1fSWcd8JoH7TgPLYhSKXuKrMkqQgSwMHcsw8Im71eM01j6zolH-GuP5XqrAeq4m-GT9Yx4dZXZ_DfND-XWgqvIP64oQwQC-vZgnoLZZ3O-mnOPhQRpouOBscymYBkNelPpg5g2RRy6mXnT9e6lAVy6HGewxRRTL0VOdNApenH_zr-FeRLu_rAOs6WArITF2EbvBsXH74b3EPIGO3BeKlejiC2kSp5Xdj5u7KADXphRazHEVuB8sHegnu0CbZZ2xVLynxvgoSUBPlcwtMUhr87J8_clj0aXIksl-PAWFbhgt7xYlzBkoA1DHsDs5Vw7Cuuah-nycRYRhcSzcFIOvW7L8qWpwHXoD7Xay-DXlqfIYEZjfZc0drpV4AEAnzIaKgIa2PJsFfpiq4hqMv9T59bSIj-EX_wdQ2vXCOzokeZp2t9xCtbIeync9QR_Ij7eXJh_2XHAlLXoR7XrLsY8RiDfrmXSQWVgjEiDGd7urFn6-r3kHLj8QsYRL3ehjfr7GlMtHWuXLkadhblQYpIhnSI-aeEe6NjlXicdMKC43tpWGZkELO9Xm6I82xxycCU68q_g5Sy7BW2_BF7ERp8rNOZg2W4WFJXoySa2fsJitydiJJUvlLSnopYp5GUytsxiMie9fEXQwriFItXlFnXtZsOB8=w1440-h691-no" src="https://lh3.googleusercontent.com/9v91EBE02VNZ1fSWcd8JoH7TgPLYhSKXuKrMkqQgSwMHcsw8Im71eM01j6zolH-GuP5XqrAeq4m-GT9Yx4dZXZ_DfND-XWgqvIP64oQwQC-vZgnoLZZ3O-mnOPhQRpouOBscymYBkNelPpg5g2RRy6mXnT9e6lAVy6HGewxRRTL0VOdNApenH_zr-FeRLu_rAOs6WArITF2EbvBsXH74b3EPIGO3BeKlejiC2kSp5Xdj5u7KADXphRazHEVuB8sHegnu0CbZZ2xVLynxvgoSUBPlcwtMUhr87J8_clj0aXIksl-PAWFbhgt7xYlzBkoA1DHsDs5Vw7Cuuah-nycRYRhcSzcFIOvW7L8qWpwHXoD7Xay-DXlqfIYEZjfZc0drpV4AEAnzIaKgIa2PJsFfpiq4hqMv9T59bSIj-EX_wdQ2vXCOzokeZp2t9xCtbIeync9QR_Ij7eXJh_2XHAlLXoR7XrLsY8RiDfrmXSQWVgjEiDGd7urFn6-r3kHLj8QsYRL3ehjfr7GlMtHWuXLkadhblQYpIhnSI-aeEe6NjlXicdMKC43tpWGZkELO9Xm6I82xxycCU68q_g5Sy7BW2_BF7ERp8rNOZg2W4WFJXoySa2fsJitydiJJUvlLSnopYp5GUytsxiMie9fEXQwriFItXlFnXtZsOB8=w1440-h691-no"&gt;
 &lt;div class="section" id="openstack-down-under"&gt;
 &lt;h2&gt;OpenStack Down Under&lt;/h2&gt;
 &lt;p&gt;This year the travelling circus that is the OpenStack summit migrated to
@@ -63,7 +63,38 @@ effect of the summit being both smaller and far away.&lt;/p&gt;
 &lt;p&gt;Ops feedback was great - we got a lot of bugs that were impacting our users and
 deployers, and collected it in our &lt;a class="reference external" href="https://etherpad.openstack.org/p/SYD-forum-designate-feedback"&gt;Feedback Etherpad&lt;/a&gt; (any comments welcome).&lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>openstack</category><category>summit</category><category>tokyo</category><category>travel</category><guid>http://graham.hayes.ie/posts/sydney-openstack-summit/</guid><pubDate>Mon, 20 Nov 2017 14:28:33 GMT</pubDate></item><item><title>Designate Newton Design Summit</title><link>http://graham.hayes.ie/posts/designate-newton-design-summit/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Austin_Evening.jpg/1024px-Austin_Evening.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;img alt="https://photos.smugmug.com/Misc/i-wSSCDSC/0/X3/IMG_20160427_201746-X3.jpg" src="https://photos.smugmug.com/Misc/i-wSSCDSC/0/X3/IMG_20160427_201746-X3.jpg"&gt;
+&lt;div class="section" id="cross-project-work"&gt;
+&lt;h3&gt;Cross Project Work&lt;/h3&gt;
+&lt;p&gt;I went to quite a few cross project sessions - there was a good amount of
+discussion, and some useful work came out of it.&lt;/p&gt;
+&lt;div class="section" id="application-tokens"&gt;
+&lt;h4&gt;Application Tokens&lt;/h4&gt;
+&lt;p&gt;This is something that had completely slipped past me until now, but the ideas
+were great, and it would have made things I have done in previous companies
+much much easier.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="healthchecks-per-service"&gt;
+&lt;h4&gt;Healthchecks per service&lt;/h4&gt;
+&lt;p&gt;We came to a good agreement on how we can do standardised health checks across
+OpenStack, we now need to write a spec and start coding a new piece of
+middleware :)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="edge-computing"&gt;
+&lt;h4&gt;Edge Computing&lt;/h4&gt;
+&lt;p&gt;Not so sure this was worth a vist - it was much more crowded than any of the
+other Forum sessions I went to, and ended up Bike Shedding on where the Edge
+ends (we literally spent 10 mins talking about if a car was part of the Edge
+or a thing managed by the edge.)&lt;/p&gt;
+&lt;p&gt;I kept hearing "smaller and lighter OpenStack" in that session, but have yet
+to hear what is too heavy about what we currently have. Nearly all our service
+scale down to some extent, and you can run a complete infrastructure on an 8GB
+VM.&lt;/p&gt;
+&lt;p&gt;Overall, it was a good summit - not too busy, and short. Looking forward to not
+traveling for the next PTG, I think the DUB -&amp;gt; DOH -&amp;gt; SYD and back drained the
+enthusiasm for flights for the next few months.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>openstack</category><category>summit</category><category>tokyo</category><category>travel</category><guid>http://graham.hayes.ie/posts/sydney-openstack-summit/</guid><pubDate>Wed, 22 Nov 2017 19:35:33 GMT</pubDate></item><item><title>Designate Newton Design Summit</title><link>http://graham.hayes.ie/posts/designate-newton-design-summit/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Austin_Evening.jpg/1024px-Austin_Evening.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;img alt="https://photos.smugmug.com/Misc/i-wSSCDSC/0/X3/IMG_20160427_201746-X3.jpg" src="https://photos.smugmug.com/Misc/i-wSSCDSC/0/X3/IMG_20160427_201746-X3.jpg"&gt;
 &lt;p&gt;I started writing this on a plane on the way home from Austin, TX where we just
 finished up the Newton design summit for OpenStack, and finished it a few days
 later - please excuse any wierdness in syntax or flow :)&lt;/p&gt;
