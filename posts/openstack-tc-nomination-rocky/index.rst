@@ -34,7 +34,7 @@ projects and users can face.
 
    We need to focus on 2 areas in the TC in the near future.
 
-   * Constsellations
+   * Constellations
    * Robust and fully open discusion with the Board and other groups.
 
 With the broadening of the scope of the OpenStack Foundation, I believe that
