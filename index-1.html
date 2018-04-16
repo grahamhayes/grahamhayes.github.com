@@ -180,14 +180,14 @@ made any glaring mistakes :).</p>
 Monday, so we will have to extend the freeze until Tuesday the 17th.</p>
 <p>The following message will be put on the patches affected by the freeze.</p>
 <p><a class="reference external" href="listings/big-rename-2-update-message.txt.html">big-rename-2-update-message.txt</a>  <a class="reference external" href="listings/big-rename-2-update-message.txt">(Source)</a></p>
-<pre class="code text"><a name="rest_code_d03f77e93dd14dfe94b7c61d0ce3bde3-1"></a>Due to unforeseen circumstances I will not be able to continue work on this until
-<a name="rest_code_d03f77e93dd14dfe94b7c61d0ce3bde3-2"></a>Monday, so we will have to extend the freeze until Tuesday the 17th.
-<a name="rest_code_d03f77e93dd14dfe94b7c61d0ce3bde3-3"></a>
-<a name="rest_code_d03f77e93dd14dfe94b7c61d0ce3bde3-4"></a>On Tuesday 2015-11-17 this -2 will be removed, and code review as normal will continue.
-<a name="rest_code_d03f77e93dd14dfe94b7c61d0ce3bde3-5"></a>
-<a name="rest_code_d03f77e93dd14dfe94b7c61d0ce3bde3-6"></a>I apologise for the delay, and will get this completed ASAP.
-<a name="rest_code_d03f77e93dd14dfe94b7c61d0ce3bde3-7"></a>
-<a name="rest_code_d03f77e93dd14dfe94b7c61d0ce3bde3-8"></a>Further updates will be posted to http://graham.hayes.ie/posts/the-big-rename/
+<pre class="code text"><a name="rest_code_c8de4d082d524172bebb4944add19b18-1"></a>Due to unforeseen circumstances I will not be able to continue work on this until
+<a name="rest_code_c8de4d082d524172bebb4944add19b18-2"></a>Monday, so we will have to extend the freeze until Tuesday the 17th.
+<a name="rest_code_c8de4d082d524172bebb4944add19b18-3"></a>
+<a name="rest_code_c8de4d082d524172bebb4944add19b18-4"></a>On Tuesday 2015-11-17 this -2 will be removed, and code review as normal will continue.
+<a name="rest_code_c8de4d082d524172bebb4944add19b18-5"></a>
+<a name="rest_code_c8de4d082d524172bebb4944add19b18-6"></a>I apologise for the delay, and will get this completed ASAP.
+<a name="rest_code_c8de4d082d524172bebb4944add19b18-7"></a>
+<a name="rest_code_c8de4d082d524172bebb4944add19b18-8"></a>Further updates will be posted to http://graham.hayes.ie/posts/the-big-rename/
 </pre>
 <img alt="https://upload.wikimedia.org/wikipedia/commons/1/1a/Code.jpg" src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Code.jpg"><p><a class="footnote-reference" href="posts/the-big-rename/#id2" id="id1">[1]</a></p>
 </div>
@@ -200,82 +200,82 @@ Monday, so we will have to extend the freeze until Tuesday the 17th.</p>
 <p>When we started the v2 API, we decided to avoid confusion and expose "Domains" as "Zones".</p>
 <p>This worked for a while, but as we worked on the V2 API, we had to write code to translate the internal code (which referenced Domains) to Zones. this caused code like:</p>
 <p><a class="reference external" href="listings/big-rename-render.py.html">big-rename-render.py</a>  <a class="reference external" href="listings/big-rename-render.py">(Source)</a></p>
-<pre class="code python"><a name="rest_code_93fb3b8bdbcf4bf288f7483bc387f962-1"></a><span class="k">def</span> <span class="nf">_render_object</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-<a name="rest_code_93fb3b8bdbcf4bf288f7483bc387f962-2"></a>    <span class="c1"># The dict we will return to be rendered to JSON / output format</span>
-<a name="rest_code_93fb3b8bdbcf4bf288f7483bc387f962-3"></a>    <span class="n">r_obj</span> <span class="o">=</span> <span class="p">{}</span>
-<a name="rest_code_93fb3b8bdbcf4bf288f7483bc387f962-4"></a>    <span class="c1"># Loop over all fields that are supposed to be output</span>
-<a name="rest_code_93fb3b8bdbcf4bf288f7483bc387f962-5"></a>    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">MODIFICATIONS</span><span class="p">[</span><span class="s1">'fields'</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-<a name="rest_code_93fb3b8bdbcf4bf288f7483bc387f962-6"></a>        <span class="c1"># Get properties for this field</span>
-<a name="rest_code_93fb3b8bdbcf4bf288f7483bc387f962-7"></a>        <span class="n">field_props</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">MODIFICATIONS</span><span class="p">[</span><span class="s1">'fields'</span><span class="p">][</span><span class="n">key</span><span class="p">]</span>
-<a name="rest_code_93fb3b8bdbcf4bf288f7483bc387f962-8"></a>        <span class="c1"># Check if it has to be renamed</span>
-<a name="rest_code_93fb3b8bdbcf4bf288f7483bc387f962-9"></a>        <span class="k">if</span> <span class="n">field_props</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rename'</span><span class="p">,</span> <span class="bp">False</span><span class="p">):</span>
-<a name="rest_code_93fb3b8bdbcf4bf288f7483bc387f962-10"></a>            <span class="n">obj</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">field_props</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rename'</span><span class="p">))</span>
-<a name="rest_code_93fb3b8bdbcf4bf288f7483bc387f962-11"></a>            <span class="c1"># if rename is specified we need to change the key</span>
-<a name="rest_code_93fb3b8bdbcf4bf288f7483bc387f962-12"></a>            <span class="n">obj_key</span> <span class="o">=</span> <span class="n">field_props</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rename'</span><span class="p">)</span>
-<a name="rest_code_93fb3b8bdbcf4bf288f7483bc387f962-13"></a>        <span class="k">else</span><span class="p">:</span>
-<a name="rest_code_93fb3b8bdbcf4bf288f7483bc387f962-14"></a>            <span class="c1"># if not, move on</span>
-<a name="rest_code_93fb3b8bdbcf4bf288f7483bc387f962-15"></a>            <span class="n">obj</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
-<a name="rest_code_93fb3b8bdbcf4bf288f7483bc387f962-16"></a>            <span class="n">obj_key</span> <span class="o">=</span> <span class="n">key</span>
+<pre class="code python"><a name="rest_code_5a4c4d3ec5c64240a69db0c877d448bf-1"></a><span class="k">def</span> <span class="nf">_render_object</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<a name="rest_code_5a4c4d3ec5c64240a69db0c877d448bf-2"></a>    <span class="c1"># The dict we will return to be rendered to JSON / output format</span>
+<a name="rest_code_5a4c4d3ec5c64240a69db0c877d448bf-3"></a>    <span class="n">r_obj</span> <span class="o">=</span> <span class="p">{}</span>
+<a name="rest_code_5a4c4d3ec5c64240a69db0c877d448bf-4"></a>    <span class="c1"># Loop over all fields that are supposed to be output</span>
+<a name="rest_code_5a4c4d3ec5c64240a69db0c877d448bf-5"></a>    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">MODIFICATIONS</span><span class="p">[</span><span class="s1">'fields'</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<a name="rest_code_5a4c4d3ec5c64240a69db0c877d448bf-6"></a>        <span class="c1"># Get properties for this field</span>
+<a name="rest_code_5a4c4d3ec5c64240a69db0c877d448bf-7"></a>        <span class="n">field_props</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">MODIFICATIONS</span><span class="p">[</span><span class="s1">'fields'</span><span class="p">][</span><span class="n">key</span><span class="p">]</span>
+<a name="rest_code_5a4c4d3ec5c64240a69db0c877d448bf-8"></a>        <span class="c1"># Check if it has to be renamed</span>
+<a name="rest_code_5a4c4d3ec5c64240a69db0c877d448bf-9"></a>        <span class="k">if</span> <span class="n">field_props</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rename'</span><span class="p">,</span> <span class="bp">False</span><span class="p">):</span>
+<a name="rest_code_5a4c4d3ec5c64240a69db0c877d448bf-10"></a>            <span class="n">obj</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">field_props</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rename'</span><span class="p">))</span>
+<a name="rest_code_5a4c4d3ec5c64240a69db0c877d448bf-11"></a>            <span class="c1"># if rename is specified we need to change the key</span>
+<a name="rest_code_5a4c4d3ec5c64240a69db0c877d448bf-12"></a>            <span class="n">obj_key</span> <span class="o">=</span> <span class="n">field_props</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rename'</span><span class="p">)</span>
+<a name="rest_code_5a4c4d3ec5c64240a69db0c877d448bf-13"></a>        <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_5a4c4d3ec5c64240a69db0c877d448bf-14"></a>            <span class="c1"># if not, move on</span>
+<a name="rest_code_5a4c4d3ec5c64240a69db0c877d448bf-15"></a>            <span class="n">obj</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+<a name="rest_code_5a4c4d3ec5c64240a69db0c877d448bf-16"></a>            <span class="n">obj_key</span> <span class="o">=</span> <span class="n">key</span>
 </pre>
 <p>and</p>
 <p><a class="reference external" href="listings/big-rename-error-render.py.html">big-rename-error-render.py</a>  <a class="reference external" href="listings/big-rename-error-render.py">(Source)</a></p>
-<pre class="code python"><a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-1"></a><span class="nd">@classmethod</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-2"></a><span class="k">def</span> <span class="nf">_rename_path_segment</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">obj_adapter</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="n">path_segment</span><span class="p">):</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-3"></a>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-4"></a>    <span class="c1"># Check if the object is a list - lists will just have an index as a</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-5"></a>    <span class="c1"># value, ands this can't be renamed</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-6"></a>    <span class="k">if</span> <span class="nb">issubclass</span><span class="p">(</span><span class="n">obj_adapter</span><span class="o">.</span><span class="n">ADAPTER_OBJECT</span><span class="p">,</span> <span class="n">objects</span><span class="o">.</span><span class="n">ListObjectMixin</span><span class="p">):</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-7"></a>        <span class="n">obj_adapter</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_object_adapter</span><span class="p">(</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-8"></a>            <span class="bp">cls</span><span class="o">.</span><span class="n">ADAPTER_FORMAT</span><span class="p">,</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-9"></a>            <span class="n">obj_adapter</span><span class="o">.</span><span class="n">ADAPTER_OBJECT</span><span class="o">.</span><span class="n">LIST_ITEM_TYPE</span><span class="o">.</span><span class="n">obj_name</span><span class="p">())</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-10"></a>        <span class="c1"># Return the segment as is, and the next adapter (which is the</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-11"></a>        <span class="c1"># LIST_ITEM_TYPE)</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-12"></a>        <span class="k">return</span> <span class="n">path_segment</span><span class="p">,</span> <span class="n">obj_adapter</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-13"></a>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-14"></a>    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">obj_adapter</span><span class="o">.</span><span class="n">MODIFICATIONS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-15"></a>            <span class="s1">'fields'</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-16"></a>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-17"></a>        <span class="c1"># Check if this field as actually a nested object</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-18"></a>        <span class="k">if</span> <span class="nb">object</span><span class="o">.</span><span class="n">FIELDS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">path_segment</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'relation'</span><span class="p">,</span> <span class="bp">False</span><span class="p">):</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-19"></a>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-20"></a>            <span class="n">obj_cls</span> <span class="o">=</span> <span class="nb">object</span><span class="o">.</span><span class="n">FIELDS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">path_segment</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'relation_cls'</span><span class="p">)</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-21"></a>            <span class="n">obj_adapter</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_object_adapter</span><span class="p">(</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-22"></a>                <span class="bp">cls</span><span class="o">.</span><span class="n">ADAPTER_FORMAT</span><span class="p">,</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-23"></a>                <span class="n">obj_cls</span><span class="p">)</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-24"></a>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-25"></a>            <span class="nb">object</span> <span class="o">=</span> <span class="n">objects</span><span class="o">.</span><span class="n">DesignateObject</span><span class="o">.</span><span class="n">obj_cls_from_name</span><span class="p">(</span><span class="n">obj_cls</span><span class="p">)()</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-26"></a>            <span class="c1"># Recurse down into this object</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-27"></a>            <span class="n">path_segment</span><span class="p">,</span> <span class="n">obj_adapter</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_rename_path_segment</span><span class="p">(</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-28"></a>                <span class="n">obj_adapter</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="n">path_segment</span><span class="p">)</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-29"></a>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-30"></a>            <span class="c1"># No need to continue the loop</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-31"></a>            <span class="k">break</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-32"></a>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-33"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-34"></a>            <span class="n">value</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-35"></a>                <span class="s1">'rename'</span><span class="p">,</span> <span class="n">NotSpecifiedSential</span><span class="p">()),</span> <span class="n">NotSpecifiedSential</span><span class="p">)</span>\
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-36"></a>                <span class="ow">and</span> <span class="n">path_segment</span> <span class="o">==</span> <span class="n">value</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rename'</span><span class="p">):</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-37"></a>            <span class="c1"># Just do the rename</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-38"></a>            <span class="n">path_segment</span> <span class="o">=</span> <span class="n">key</span>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-39"></a>
-<a name="rest_code_9f1302e02d074bb3ab0310aef595e27b-40"></a>    <span class="k">return</span> <span class="n">path_segment</span><span class="p">,</span> <span class="n">obj_adapter</span>
+<pre class="code python"><a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-1"></a><span class="nd">@classmethod</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-2"></a><span class="k">def</span> <span class="nf">_rename_path_segment</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">obj_adapter</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="n">path_segment</span><span class="p">):</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-3"></a>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-4"></a>    <span class="c1"># Check if the object is a list - lists will just have an index as a</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-5"></a>    <span class="c1"># value, ands this can't be renamed</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-6"></a>    <span class="k">if</span> <span class="nb">issubclass</span><span class="p">(</span><span class="n">obj_adapter</span><span class="o">.</span><span class="n">ADAPTER_OBJECT</span><span class="p">,</span> <span class="n">objects</span><span class="o">.</span><span class="n">ListObjectMixin</span><span class="p">):</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-7"></a>        <span class="n">obj_adapter</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_object_adapter</span><span class="p">(</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-8"></a>            <span class="bp">cls</span><span class="o">.</span><span class="n">ADAPTER_FORMAT</span><span class="p">,</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-9"></a>            <span class="n">obj_adapter</span><span class="o">.</span><span class="n">ADAPTER_OBJECT</span><span class="o">.</span><span class="n">LIST_ITEM_TYPE</span><span class="o">.</span><span class="n">obj_name</span><span class="p">())</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-10"></a>        <span class="c1"># Return the segment as is, and the next adapter (which is the</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-11"></a>        <span class="c1"># LIST_ITEM_TYPE)</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-12"></a>        <span class="k">return</span> <span class="n">path_segment</span><span class="p">,</span> <span class="n">obj_adapter</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-13"></a>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-14"></a>    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">obj_adapter</span><span class="o">.</span><span class="n">MODIFICATIONS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-15"></a>            <span class="s1">'fields'</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-16"></a>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-17"></a>        <span class="c1"># Check if this field as actually a nested object</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-18"></a>        <span class="k">if</span> <span class="nb">object</span><span class="o">.</span><span class="n">FIELDS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">path_segment</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'relation'</span><span class="p">,</span> <span class="bp">False</span><span class="p">):</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-19"></a>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-20"></a>            <span class="n">obj_cls</span> <span class="o">=</span> <span class="nb">object</span><span class="o">.</span><span class="n">FIELDS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">path_segment</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'relation_cls'</span><span class="p">)</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-21"></a>            <span class="n">obj_adapter</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_object_adapter</span><span class="p">(</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-22"></a>                <span class="bp">cls</span><span class="o">.</span><span class="n">ADAPTER_FORMAT</span><span class="p">,</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-23"></a>                <span class="n">obj_cls</span><span class="p">)</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-24"></a>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-25"></a>            <span class="nb">object</span> <span class="o">=</span> <span class="n">objects</span><span class="o">.</span><span class="n">DesignateObject</span><span class="o">.</span><span class="n">obj_cls_from_name</span><span class="p">(</span><span class="n">obj_cls</span><span class="p">)()</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-26"></a>            <span class="c1"># Recurse down into this object</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-27"></a>            <span class="n">path_segment</span><span class="p">,</span> <span class="n">obj_adapter</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_rename_path_segment</span><span class="p">(</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-28"></a>                <span class="n">obj_adapter</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="n">path_segment</span><span class="p">)</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-29"></a>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-30"></a>            <span class="c1"># No need to continue the loop</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-31"></a>            <span class="k">break</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-32"></a>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-33"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-34"></a>            <span class="n">value</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-35"></a>                <span class="s1">'rename'</span><span class="p">,</span> <span class="n">NotSpecifiedSential</span><span class="p">()),</span> <span class="n">NotSpecifiedSential</span><span class="p">)</span>\
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-36"></a>                <span class="ow">and</span> <span class="n">path_segment</span> <span class="o">==</span> <span class="n">value</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rename'</span><span class="p">):</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-37"></a>            <span class="c1"># Just do the rename</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-38"></a>            <span class="n">path_segment</span> <span class="o">=</span> <span class="n">key</span>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-39"></a>
+<a name="rest_code_33f4dca0e0f84b658bfaa1d84f752846-40"></a>    <span class="k">return</span> <span class="n">path_segment</span><span class="p">,</span> <span class="n">obj_adapter</span>
 </pre>
 <p>which proved to be quite fragile. (Yes that last bit of code is trying to walk the error path of a JSONSchema Error and rename the path to the new terminology)</p>
 <p>We are also logging messages about domains - which could prove to be quite confusing when we remove the v1 API and users are only interacting with zones.</p>
 <p>So tomorrow morning-ish (UTC) we will start to rename every occurrence of "domain" in the code base to "zone" (without breaking Keystone domain support).</p>
 <p>Anything that does not have the "the-big-rename" topic on Gerrit will be getting a procedural -2 from me or the designate-core team.</p>
 <p><a class="reference external" href="listings/big-rename-2-message.txt.html">big-rename-2-message.txt</a>  <a class="reference external" href="listings/big-rename-2-message.txt">(Source)</a></p>
-<pre class="code text"><a name="rest_code_b951a252b8a545aaaff903e7033f680f-1"></a>Currently Designate is undergoing a code freeze to allow us re-factor the code base,
-<a name="rest_code_b951a252b8a545aaaff903e7033f680f-2"></a>as announced here: - http://lists.openstack.org/pipermail/openstack-dev/2015-October/077442.html
-<a name="rest_code_b951a252b8a545aaaff903e7033f680f-3"></a>
-<a name="rest_code_b951a252b8a545aaaff903e7033f680f-4"></a>All code that is not in the "the-big-rename" topic will be getting this procedural -2.
-<a name="rest_code_b951a252b8a545aaaff903e7033f680f-5"></a>
-<a name="rest_code_b951a252b8a545aaaff903e7033f680f-6"></a>More information can be found here: - http://graham.hayes.ie/posts/the-big-rename/
-<a name="rest_code_b951a252b8a545aaaff903e7033f680f-7"></a>
-<a name="rest_code_b951a252b8a545aaaff903e7033f680f-8"></a>On Friday 2015-11-13 this -2 will be removed, and code review as normal will continue.
-<a name="rest_code_b951a252b8a545aaaff903e7033f680f-9"></a>
-<a name="rest_code_b951a252b8a545aaaff903e7033f680f-10"></a>This re-factor will break the majority of patches that are outstanding, and you may need to manually
-<a name="rest_code_b951a252b8a545aaaff903e7033f680f-11"></a>rebase your patch when we remove the -2.
+<pre class="code text"><a name="rest_code_529bd6814ffb489481390dfeb045d1fa-1"></a>Currently Designate is undergoing a code freeze to allow us re-factor the code base,
+<a name="rest_code_529bd6814ffb489481390dfeb045d1fa-2"></a>as announced here: - http://lists.openstack.org/pipermail/openstack-dev/2015-October/077442.html
+<a name="rest_code_529bd6814ffb489481390dfeb045d1fa-3"></a>
+<a name="rest_code_529bd6814ffb489481390dfeb045d1fa-4"></a>All code that is not in the "the-big-rename" topic will be getting this procedural -2.
+<a name="rest_code_529bd6814ffb489481390dfeb045d1fa-5"></a>
+<a name="rest_code_529bd6814ffb489481390dfeb045d1fa-6"></a>More information can be found here: - http://graham.hayes.ie/posts/the-big-rename/
+<a name="rest_code_529bd6814ffb489481390dfeb045d1fa-7"></a>
+<a name="rest_code_529bd6814ffb489481390dfeb045d1fa-8"></a>On Friday 2015-11-13 this -2 will be removed, and code review as normal will continue.
+<a name="rest_code_529bd6814ffb489481390dfeb045d1fa-9"></a>
+<a name="rest_code_529bd6814ffb489481390dfeb045d1fa-10"></a>This re-factor will break the majority of patches that are outstanding, and you may need to manually
+<a name="rest_code_529bd6814ffb489481390dfeb045d1fa-11"></a>rebase your patch when we remove the -2.
 </pre>
 <table class="docutils footnote" frame="void" id="id2" rules="none">
 <colgroup>

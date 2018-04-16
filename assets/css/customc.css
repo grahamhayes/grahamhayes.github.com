@@ -1,0 +1,12 @@
+/* RSTDiff */
+.diff_add {background-color: lightgreen; display: block; font-family: monospace;}
+.diff_sub {background-color: #ffa0a0; display: block; font-family: monospace;}
+td.diff_header {padding-left:6px; padding-right:6px; text-align:right;}
+table.diff {white-space: pre;}
+/* Emoji */
+.emoji {
+    height: 1.4em;
+    vertical-align: text-bottom;
+}
+/* Graphviz */
+p.graphviz { text-align: center; }
