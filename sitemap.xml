@@ -27,7 +27,7 @@
  </url>
  <url>
   <loc>http://graham.hayes.ie/archive.html</loc>
-  <lastmod>2018-04-16T14:16:00Z</lastmod>
+  <lastmod>2018-04-16T14:19:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/</loc>
@@ -159,7 +159,7 @@
  </url>
  <url>
   <loc>http://graham.hayes.ie/index-1.html</loc>
-  <lastmod>2018-04-16T14:16:00Z</lastmod>
+  <lastmod>2018-04-16T14:19:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/</loc>
@@ -244,6 +244,10 @@
  <url>
   <loc>http://graham.hayes.ie/posts/openstack-summit-designate-report/</loc>
   <lastmod>2017-10-11T11:33:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/</loc>
+  <lastmod>2018-04-16T14:18:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/openstack-tc-nomination/</loc>

@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>graham.hayes.ie</title><link>http://graham.hayes.ie/</link><description>Weird (sometimes incoherent) rambling of a developer.</description><atom:link href="http://graham.hayes.ie/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 16 Apr 2018 14:16:44 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Dublin PTG Summary</title><link>http://graham.hayes.ie/posts/dublin-ptg-summary/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="https://pbs.twimg.com/media/DXItoxEW4AAqaxV.jpg:medium"&gt;&lt;/figure&gt; &lt;div&gt;&lt;img alt="https://pbs.twimg.com/media/DXItoxEW4AAqaxV.jpg:large" src="https://pbs.twimg.com/media/DXItoxEW4AAqaxV.jpg:large"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie</title><link>http://graham.hayes.ie/</link><description>Weird (sometimes incoherent) rambling of a developer.</description><atom:link href="http://graham.hayes.ie/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 16 Apr 2018 14:19:05 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>TC Nomination - Rocky Cycle</title><link>http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://graham.hayes.ie/images/me.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;Hi,&lt;/p&gt;
+&lt;p&gt;I am submitting my candidacy for the OpenStack Technical Committee.&lt;/p&gt;
+&lt;p&gt;I have been contributing to OpenStack since the Havana cycle &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/#id7" id="id1"&gt;[1]&lt;/a&gt; &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/#id8" id="id2"&gt;[2]&lt;/a&gt;, mainly
+in Designate. I have also been involved with the TC, and its meetings since
+Designate applied for incubation all the way back in Atlanta (the first time
+we were there).&lt;/p&gt;
+&lt;p&gt;Over the last 6 months I have become more involved in the TC, and have been
+an active contributor to TC discussions (both on IRC and in person) and
+governance &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/#id9" id="id3"&gt;[3]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I have been PTL for Designate for Mitaka, Newton, Ocata, Queens and Rocky
+cycles, and a core for a longer period. I believe my experience working in a
+younger, smaller project within OpenStack is a benefit. Along with the
+experience of working on software as an end user of OpenStack I can help us
+ensure the Technical Committee is mindful of the unique challenges these
+projects and users can face.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>elections</category><category>openstack</category><category>tc</category><guid>http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/</guid><pubDate>Mon, 16 Apr 2018 14:08:00 GMT</pubDate></item><item><title>Dublin PTG Summary</title><link>http://graham.hayes.ie/posts/dublin-ptg-summary/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="https://pbs.twimg.com/media/DXItoxEW4AAqaxV.jpg:medium"&gt;&lt;/figure&gt; &lt;div&gt;&lt;img alt="https://pbs.twimg.com/media/DXItoxEW4AAqaxV.jpg:large" src="https://pbs.twimg.com/media/DXItoxEW4AAqaxV.jpg:large"&gt;
 &lt;p&gt;Not getting on a plane was a nice change for an OpenStack event :) - especially
 as it looks like I would not have made it home for a few days.&lt;/p&gt;
 &lt;div class="section" id="cross-project-days-monday-tuesday"&gt;
@@ -860,15 +875,4 @@ custom sphinx extention that was written for OpenStack.&lt;/p&gt;
 &lt;p&gt;As this progresses we will migrate designate to these docs, and remove our
 current docs, as they are much harder to read.&lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>austin</category><category>openstack</category><category>summit</category><category>travel</category><guid>http://graham.hayes.ie/posts/designate-newton-design-summit/</guid><pubDate>Thu, 05 May 2016 17:00:00 GMT</pubDate></item><item><title>MiniDNS, TCP, and the internet</title><link>http://graham.hayes.ie/posts/minidns-tcp-and-the-internet/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;p&gt;We had &lt;a class="reference external" href="https://bugs.launchpad.net/designate/+bug/1552864"&gt;this bug&lt;/a&gt; come
-in yesterday.&lt;/p&gt;
-&lt;p&gt;It was a bit unexpected - as we tested it pretty extensively when it was being
-developed.&lt;/p&gt;
-&lt;p&gt;The line in question was this:&lt;/p&gt;
-&lt;pre class="code python"&gt;&lt;a name="rest_code_28f1655c070445c78486ae99515c298f-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;client&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;send&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;tcp_response&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;p&gt;In eventlet 0.17.x this behaved like the standard
-&lt;code class="python"&gt;&lt;span class="n"&gt;socket&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sendall&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;/code&gt; , instead of &lt;code class="python"&gt;&lt;span class="n"&gt;socket&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;send&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;(It was &lt;a class="reference external" href="https://github.com/eventlet/eventlet/commit/c315ee86dac996ac533b738f7c8777f4d01a0472"&gt;this commit&lt;/a&gt; as it turns out - it was noted in the release notes &lt;a class="reference external" href="http://eventlet.net/doc/changelog.html#id5"&gt;here&lt;/a&gt; but we missed it)&lt;/p&gt;
-&lt;p&gt;The other major problem is that the bug did not manifest itself until we pushed
-the AXFR over a long range connection.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://graham.hayes.ie/posts/minidns-tcp-and-the-internet/"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>bugs</category><category>eventlet</category><category>networking</category><category>openstack</category><guid>http://graham.hayes.ie/posts/minidns-tcp-and-the-internet/</guid><pubDate>Fri, 04 Mar 2016 20:50:00 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;&lt;/div&gt;</description><category>austin</category><category>openstack</category><category>summit</category><category>travel</category><guid>http://graham.hayes.ie/posts/designate-newton-design-summit/</guid><pubDate>Thu, 05 May 2016 17:00:00 GMT</pubDate></item></channel></rss>

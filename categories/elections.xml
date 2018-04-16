@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>graham.hayes.ie (Posts about elections)</title><link>http://graham.hayes.ie/</link><description></description><atom:link href="http://graham.hayes.ie/categories/elections.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 16 Apr 2018 14:16:44 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>OpenStack TC Nomination</title><link>http://graham.hayes.ie/posts/openstack-tc-nomination/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://graham.hayes.ie/images/me.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;I would like to submit my candidacy for the Technical Committee for the
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (Posts about elections)</title><link>http://graham.hayes.ie/</link><description></description><atom:link href="http://graham.hayes.ie/categories/elections.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 16 Apr 2018 14:19:05 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>TC Nomination - Rocky Cycle</title><link>http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://graham.hayes.ie/images/me.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;Hi,&lt;/p&gt;
+&lt;p&gt;I am submitting my candidacy for the OpenStack Technical Committee.&lt;/p&gt;
+&lt;p&gt;I have been contributing to OpenStack since the Havana cycle &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/#id7" id="id1"&gt;[1]&lt;/a&gt; &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/#id8" id="id2"&gt;[2]&lt;/a&gt;, mainly
+in Designate. I have also been involved with the TC, and its meetings since
+Designate applied for incubation all the way back in Atlanta (the first time
+we were there).&lt;/p&gt;
+&lt;p&gt;Over the last 6 months I have become more involved in the TC, and have been
+an active contributor to TC discussions (both on IRC and in person) and
+governance &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/#id9" id="id3"&gt;[3]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I have been PTL for Designate for Mitaka, Newton, Ocata, Queens and Rocky
+cycles, and a core for a longer period. I believe my experience working in a
+younger, smaller project within OpenStack is a benefit. Along with the
+experience of working on software as an end user of OpenStack I can help us
+ensure the Technical Committee is mindful of the unique challenges these
+projects and users can face.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>elections</category><category>openstack</category><category>tc</category><guid>http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/</guid><pubDate>Mon, 16 Apr 2018 14:08:00 GMT</pubDate></item><item><title>OpenStack TC Nomination</title><link>http://graham.hayes.ie/posts/openstack-tc-nomination/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://graham.hayes.ie/images/me.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;I would like to submit my candidacy for the Technical Committee for the
 upcoming election.&lt;/p&gt;
 &lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;

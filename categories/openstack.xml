@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>graham.hayes.ie (Posts about openstack)</title><link>http://graham.hayes.ie/</link><description></description><atom:link href="http://graham.hayes.ie/categories/openstack.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 16 Apr 2018 14:16:44 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Dublin PTG Summary</title><link>http://graham.hayes.ie/posts/dublin-ptg-summary/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="https://pbs.twimg.com/media/DXItoxEW4AAqaxV.jpg:medium"&gt;&lt;/figure&gt; &lt;div&gt;&lt;img alt="https://pbs.twimg.com/media/DXItoxEW4AAqaxV.jpg:large" src="https://pbs.twimg.com/media/DXItoxEW4AAqaxV.jpg:large"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (Posts about openstack)</title><link>http://graham.hayes.ie/</link><description></description><atom:link href="http://graham.hayes.ie/categories/openstack.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 16 Apr 2018 14:19:05 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>TC Nomination - Rocky Cycle</title><link>http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://graham.hayes.ie/images/me.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;Hi,&lt;/p&gt;
+&lt;p&gt;I am submitting my candidacy for the OpenStack Technical Committee.&lt;/p&gt;
+&lt;p&gt;I have been contributing to OpenStack since the Havana cycle &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/#id7" id="id1"&gt;[1]&lt;/a&gt; &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/#id8" id="id2"&gt;[2]&lt;/a&gt;, mainly
+in Designate. I have also been involved with the TC, and its meetings since
+Designate applied for incubation all the way back in Atlanta (the first time
+we were there).&lt;/p&gt;
+&lt;p&gt;Over the last 6 months I have become more involved in the TC, and have been
+an active contributor to TC discussions (both on IRC and in person) and
+governance &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/#id9" id="id3"&gt;[3]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I have been PTL for Designate for Mitaka, Newton, Ocata, Queens and Rocky
+cycles, and a core for a longer period. I believe my experience working in a
+younger, smaller project within OpenStack is a benefit. Along with the
+experience of working on software as an end user of OpenStack I can help us
+ensure the Technical Committee is mindful of the unique challenges these
+projects and users can face.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>elections</category><category>openstack</category><category>tc</category><guid>http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/</guid><pubDate>Mon, 16 Apr 2018 14:08:00 GMT</pubDate></item><item><title>Dublin PTG Summary</title><link>http://graham.hayes.ie/posts/dublin-ptg-summary/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="https://pbs.twimg.com/media/DXItoxEW4AAqaxV.jpg:medium"&gt;&lt;/figure&gt; &lt;div&gt;&lt;img alt="https://pbs.twimg.com/media/DXItoxEW4AAqaxV.jpg:large" src="https://pbs.twimg.com/media/DXItoxEW4AAqaxV.jpg:large"&gt;
 &lt;p&gt;Not getting on a plane was a nice change for an OpenStack event :) - especially
 as it looks like I would not have made it home for a few days.&lt;/p&gt;
 &lt;div class="section" id="cross-project-days-monday-tuesday"&gt;
@@ -846,12 +861,4 @@ developed.&lt;/p&gt;
 &lt;p&gt;(It was &lt;a class="reference external" href="https://github.com/eventlet/eventlet/commit/c315ee86dac996ac533b738f7c8777f4d01a0472"&gt;this commit&lt;/a&gt; as it turns out - it was noted in the release notes &lt;a class="reference external" href="http://eventlet.net/doc/changelog.html#id5"&gt;here&lt;/a&gt; but we missed it)&lt;/p&gt;
 &lt;p&gt;The other major problem is that the bug did not manifest itself until we pushed
 the AXFR over a long range connection.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://graham.hayes.ie/posts/minidns-tcp-and-the-internet/"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>bugs</category><category>eventlet</category><category>networking</category><category>openstack</category><guid>http://graham.hayes.ie/posts/minidns-tcp-and-the-internet/</guid><pubDate>Fri, 04 Mar 2016 20:50:00 GMT</pubDate></item><item><title>Designate Mid Cycle</title><link>http://graham.hayes.ie/posts/designate-mid-cycle/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://photos.gra.ham.ie/Designate-Mid-Cycle/i-S96NrNb/0/S/IMG_3854-S.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;img alt="http://photos.gra.ham.ie/Designate-Mid-Cycle/i-S96NrNb/0/O/IMG_3854.jpg" src="http://photos.gra.ham.ie/Designate-Mid-Cycle/i-S96NrNb/0/O/IMG_3854.jpg"&gt;
-&lt;div class="section" id="designate-mid-cycle"&gt;
-&lt;h2&gt;Designate Mid Cycle&lt;/h2&gt;
-&lt;p&gt;This was a little over a week ago, and I have been trying to get my thoughts down on
-paper /  rst.&lt;/p&gt;
-&lt;p&gt;It was a good few days overall - we had our usual arguements about implementation of some
-familiar features, we listed out reasons that our past selves were wrong about everything,
-and how we should fix our mistakes.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://graham.hayes.ie/posts/designate-mid-cycle/"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>galway</category><category>openstack</category><category>summit</category><category>travel</category><guid>http://graham.hayes.ie/posts/designate-mid-cycle/</guid><pubDate>Wed, 24 Feb 2016 22:55:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="http://graham.hayes.ie/posts/minidns-tcp-and-the-internet/"&gt;Read more…&lt;/a&gt; (2 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>bugs</category><category>eventlet</category><category>networking</category><category>openstack</category><guid>http://graham.hayes.ie/posts/minidns-tcp-and-the-internet/</guid><pubDate>Fri, 04 Mar 2016 20:50:00 GMT</pubDate></item></channel></rss>

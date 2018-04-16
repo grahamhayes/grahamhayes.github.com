@@ -30,6 +30,48 @@ article: http://ogp.me/ns/article#
 
         </ul></section><section class="page-content"><div class="content" rel="main">
         <div class="post">
+            <h1 class="title"><a href="posts/openstack-tc-nomination-rocky/">TC Nomination - Rocky Cycle</a></h1>
+            <div class="meta">
+                <div class="authordate">
+                    <time class="timeago" datetime="2018-04-16T14:08:00+00:00">2018-04-16 14:08</time>
+</div>
+                <div class="stats">
+                                <a href="posts/openstack-tc-nomination-rocky/#disqus_thread" data-disqus-identifier="cache/posts/openstack-tc-nomination-rocky.html">Comments</a>
+
+
+                </div>
+                        <div itemprop="keywords" class="tags">
+        <ul>
+        Tags : 
+           <li><a class="tag p-category" href="categories/elections/" rel="tag">elections</a></li>
+           <li><a class="tag p-category" href="categories/openstack/" rel="tag">openstack</a></li>
+           <li><a class="tag p-category" href="categories/tc/" rel="tag">tc</a></li>
+        </ul>
+</div>
+
+            </div>
+            <div class="body">
+                <div>
+<p>Hi,</p>
+<p>I am submitting my candidacy for the OpenStack Technical Committee.</p>
+<p>I have been contributing to OpenStack since the Havana cycle <a class="footnote-reference" href="posts/openstack-tc-nomination-rocky/#id7" id="id1">[1]</a> <a class="footnote-reference" href="posts/openstack-tc-nomination-rocky/#id8" id="id2">[2]</a>, mainly
+in Designate. I have also been involved with the TC, and its meetings since
+Designate applied for incubation all the way back in Atlanta (the first time
+we were there).</p>
+<p>Over the last 6 months I have become more involved in the TC, and have been
+an active contributor to TC discussions (both on IRC and in person) and
+governance <a class="footnote-reference" href="posts/openstack-tc-nomination-rocky/#id9" id="id3">[3]</a>.</p>
+<p>I have been PTL for Designate for Mitaka, Newton, Ocata, Queens and Rocky
+cycles, and a core for a longer period. I believe my experience working in a
+younger, smaller project within OpenStack is a benefit. Along with the
+experience of working on software as an end user of OpenStack I can help us
+ensure the Technical Committee is mindful of the unique challenges these
+projects and users can face.</p>
+<p class="more"><a href="posts/openstack-tc-nomination-rocky/">Read more…</a></p>
+</div>
+            </div>
+        </div>
+        <div class="post">
             <h1 class="title"><a href="posts/dublin-ptg-summary/">Dublin PTG Summary</a></h1>
             <div class="meta">
                 <div class="authordate">
@@ -1191,46 +1233,6 @@ custom sphinx extention that was written for OpenStack.</p>
 current docs, as they are much harder to read.</p>
 </div>
 </div>
-</div>
-            </div>
-        </div>
-        <div class="post">
-            <h1 class="title"><a href="posts/minidns-tcp-and-the-internet/">MiniDNS, TCP, and the internet</a></h1>
-            <div class="meta">
-                <div class="authordate">
-                    <time class="timeago" datetime="2016-03-04T20:50:00+00:00">2016-03-04 20:50</time>
-</div>
-                <div class="stats">
-                                <a href="posts/minidns-tcp-and-the-internet/#disqus_thread" data-disqus-identifier="cache/posts/minidns-tcp-and-the-internet.html">Comments</a>
-
-
-                </div>
-                        <div itemprop="keywords" class="tags">
-        <ul>
-        Tags : 
-           <li><a class="tag p-category" href="categories/bugs/" rel="tag">bugs</a></li>
-           <li><a class="tag p-category" href="categories/eventlet/" rel="tag">eventlet</a></li>
-           <li><a class="tag p-category" href="categories/networking/" rel="tag">networking</a></li>
-           <li><a class="tag p-category" href="categories/openstack/" rel="tag">openstack</a></li>
-        </ul>
-</div>
-
-            </div>
-            <div class="body">
-                <div>
-<p>We had <a class="reference external" href="https://bugs.launchpad.net/designate/+bug/1552864">this bug</a> come
-in yesterday.</p>
-<p>It was a bit unexpected - as we tested it pretty extensively when it was being
-developed.</p>
-<p>The line in question was this:</p>
-<pre class="code python"><a name="rest_code_28f1655c070445c78486ae99515c298f-1"></a><span class="n">client</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">tcp_response</span><span class="p">)</span>
-</pre>
-<p>In eventlet 0.17.x this behaved like the standard
-<code class="python"><span class="n">socket</span><span class="o">.</span><span class="n">sendall</span><span class="p">()</span></code> , instead of <code class="python"><span class="n">socket</span><span class="o">.</span><span class="n">send</span><span class="p">()</span></code></p>
-<p>(It was <a class="reference external" href="https://github.com/eventlet/eventlet/commit/c315ee86dac996ac533b738f7c8777f4d01a0472">this commit</a> as it turns out - it was noted in the release notes <a class="reference external" href="http://eventlet.net/doc/changelog.html#id5">here</a> but we missed it)</p>
-<p>The other major problem is that the bug did not manifest itself until we pushed
-the AXFR over a long range connection.</p>
-<p class="more"><a href="posts/minidns-tcp-and-the-internet/">Read more…</a></p>
 </div>
             </div>
         </div>
