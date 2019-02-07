@@ -30,6 +30,46 @@ article: http://ogp.me/ns/article#
 
         </ul></section><section class="page-content"><div class="content" rel="main">
         <div class="post">
+            <h1 class="title"><a href="posts/wireguard-%2B-unifi/">WireGuard + UniFi</a></h1>
+            <div class="meta">
+                <div class="authordate">
+                    <time class="timeago" datetime="2019-02-07T22:52:26+00:00">2019-02-07 22:52</time>
+</div>
+                <div class="stats">
+                                <a href="posts/wireguard-%2B-unifi/#disqus_thread" data-disqus-identifier="cache/posts/wireguard-+-unifi.html">Comments</a>
+
+
+                </div>
+                        <div itemprop="keywords" class="tags">
+        <ul>
+        Tags : 
+           <li><a class="tag p-category" href="categories/networking/" rel="tag">networking</a></li>
+           <li><a class="tag p-category" href="categories/unifi/" rel="tag">unifi</a></li>
+           <li><a class="tag p-category" href="categories/vpn/" rel="tag">vpn</a></li>
+        </ul>
+</div>
+
+            </div>
+            <div class="body">
+                <div>
+<p>I have been looking around for a good VPN solution to use on the road recently. I have a few
+services running at home, that I really don't want on the internet (OctoPrint etc), but I want to use
+remotely.</p>
+<p>This is as much documentation for future me as it is for anyone who stumbles across this page :)</p>
+<p>I had previously set up a L2TP Remote user VPN in the UniFi controller, but it had a few issues.</p>
+<ul class="simple">
+<li>Roaming problems on mobile</li>
+<li>Battery usage on mobile</li>
+<li>Slow Speeds</li>
+</ul>
+<p>I had heard of Wireguard a while ago (I think they had a stall near the OpenStack stall in FOSDEM
+last year), but I had completely forgotten about them. It turns out some kind soul has created a
+deb package to install WireGuard on Vyatta (which is what the USG is based on).</p>
+<p class="more"><a href="posts/wireguard-%2B-unifi/">Read more…</a></p>
+</div>
+            </div>
+        </div>
+        <div class="post">
             <h1 class="title"><a href="posts/openstack-tc-nomination-rocky/">TC Nomination - Rocky Cycle</a></h1>
             <div class="meta">
                 <div class="authordate">
@@ -1130,117 +1170,11 @@ as soon as we can, and start building momentum.</p>
 </div>
             </div>
         </div>
-        <div class="post">
-            <h1 class="title"><a href="posts/designate-newton-design-summit/">Designate Newton Design Summit</a></h1>
-            <div class="meta">
-                <div class="authordate">
-                    <time class="timeago" datetime="2016-05-05T17:00:00+00:00">2016-05-05 17:00</time>
-</div>
-                <div class="stats">
-                                <a href="posts/designate-newton-design-summit/#disqus_thread" data-disqus-identifier="cache/posts/designate-newton-design-summit.html">Comments</a>
-
-
-                </div>
-                        <div itemprop="keywords" class="tags">
-        <ul>
-        Tags : 
-           <li><a class="tag p-category" href="categories/austin/" rel="tag">austin</a></li>
-           <li><a class="tag p-category" href="categories/openstack/" rel="tag">openstack</a></li>
-           <li><a class="tag p-category" href="categories/summit/" rel="tag">summit</a></li>
-           <li><a class="tag p-category" href="categories/travel/" rel="tag">travel</a></li>
-        </ul>
-</div>
-
-            </div>
-            <div class="body">
-                <div>
-<img alt="https://photos.smugmug.com/Misc/i-wSSCDSC/0/X3/IMG_20160427_201746-X3.jpg" src="https://photos.smugmug.com/Misc/i-wSSCDSC/0/X3/IMG_20160427_201746-X3.jpg"><p>I started writing this on a plane on the way home from Austin, TX where we just
-finished up the Newton design summit for OpenStack, and finished it a few days
-later - please excuse any wierdness in syntax or flow :)</p>
-<p>Austin was its usual weird, wacky, wonderful self. Everytime we are here, I
-have a great time, I just can't deal with the heat :).</p>
-<p>The summit format this year worked really well - I pretty much stayed in the
-design summit hotel for the week - and got some very good work done.</p>
-<div class="section" id="months-on-where-are-we">
-<h2>6 Months On: Where are we</h2>
-<p>One of the things I did before this design summit was to look at what we had
-achived last cycle.</p>
-<p>We had a quiet cycle overall, but we did merge some vital features.</p>
-<p>Operators no longer need to use the awfull config format we created for pools
-in Kilo, we now have a much easier to read YAML file that is loaded into the
-database via the <code class="bash">designate-manage</code> cli, we now actually support multiple
-pools in a real way with the addition of a schedular in
-<code class="bash">designate-central</code>.</p>
-</div>
-<div class="section" id="where-are-we-going">
-<h2>Where are we going?</h2>
-<p>So - the point of the design summit is to plan the future of the projects - and
-designate is no execption. We were in a (very nice boardroom) room for a few
-hours - and we talked through quite a few things.</p>
-<img alt="https://photos.smugmug.com/Misc/i-p8SxMgH/0/X2/IMG_20160427_140741-X2.jpg" src="https://photos.smugmug.com/Misc/i-p8SxMgH/0/X2/IMG_20160427_140741-X2.jpg"><p>The collection of <a class="reference external" href="https://etherpad.openstack.org/p/newton-design-designate">etherpads</a> for the summit are available as well.</p>
-<div class="section" id="golang-replacement-of-minidns">
-<h3>Golang Replacement of MiniDNS</h3>
-<p>One of the nicer things about our current architecture is the flexibility that
-we have because we use the standard DNS protocols to update the target DNS
-servers. This has the downside however, that we are writing code that deals with
-DNS packets in python, which is slow. timsim from RackSpace has writen a POC
-in go that has a very large perfomance improvement.</p>
-<p>This needs to documented, and permission requested from the TC to move this
-component to Go, (and will be a separate post in its own right).</p>
-<p>After we got back it turned out that we were not the only project considering
-this, and swift actually have a feature branch with code in place. So, based on
-this, we are going to collaborate with them on the integration of Go to
-OpenStack.</p>
-</div>
-<div class="section" id="worker-model">
-<h3>Worker Model</h3>
-<p>As we dicussed in Galway - we need to replace the current <code class="bash">*-manager</code> services
-with a generic service that can scale out horizontally. As part of this we
-planned out our upgrade and implementation plans for these services.</p>
-</div>
-<div class="section" id="docs-deprications-and-more-docs">
-<h3>Docs, Deprications and more Docs</h3>
-<p>Docs were a common theme - we were asked to improve them, and also have them
-located in the main docs on the OpenStack.org website.</p>
-<p>We had a member of the docs team in the room, who gave us some great guidenance
-on how to include our docs in the correct place.</p>
-</div>
-<div class="section" id="vmt-the-application-process">
-<h3>VMT - The application process</h3>
-<p>On of the teams that supports OpenStack is the Vunrebility Management Team.
-They deal with disclosures and assigning OSSA numbers to issues that could present
-and issue to our deployers.</p>
-<p>They had a session this summit on how that process might work, and designate
-was one of the projects chosen to be used as a pilot as I have previously
-produced Threat Analysis documentation for Designate inside of Hewlett Packard
-Enterprise - this information is currently being processed for release to
-the community.</p>
-</div>
-<div class="section" id="searchlight">
-<h3>Searchlight</h3>
-<p>Searchlight is a new (ish) project in OpenStack that enables true searching
-capabilities on clouds. We have a designate plugin, but there are issues
-with how we emit notifications from the v1 and the v2 API.</p>
-<p>We decided that when we move the Horizon panels to v2, we will just listen for
-v2 notifications in Searchlight.</p>
-</div>
-<div class="section" id="api-docs">
-<h3>API Docs</h3>
-<p>There was an interesting session on how the community are moving to document
-their APIs. It will now reside in the projects repo, and is based on a
-custom sphinx extention that was written for OpenStack.</p>
-<p>As this progresses we will migrate designate to these docs, and remove our
-current docs, as they are much harder to read.</p>
-</div>
-</div>
-</div>
-            </div>
-        </div>
             <nav class="postindexpager"><ul class="pager">
 <li class="next">
                 <a href="index-1.html" rel="next">Older posts</a>
             </li>
-        </ul></nav><script>var disqus_shortname="grahamhayesie";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><footer id="footer"><p>Contents © 2018         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+        </ul></nav><script>var disqus_shortname="grahamhayesie";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><footer id="footer"><p>Contents © 2019         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>
