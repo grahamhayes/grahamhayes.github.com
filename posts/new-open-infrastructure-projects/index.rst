@@ -11,6 +11,9 @@
 OpenStack Foundation - Board Meeting : 2019/04/08
 *************************************************
 
+.. note:: It was pointed out on `twitter`_ that the last section was a little vague - I have updated it to be a bit clearer.
+
+
 New OIP (Open Infrastructure Projects)
 ======================================
 
@@ -60,7 +63,7 @@ Best Practices
 ^^^^^^^^^^^^^^
 
 Kata is in a good place for this - they have CI on each PR, a good set of docs,
-and a :abbr:`VMT (Vulnerability Management Team)` that is very similar to the
+and a :abbr:`VMT (Vulnerability Management Team)` (Vulnerability Management Team) that is very similar to the
 OpenStack one.
 
 Open-ness
@@ -190,6 +193,16 @@ At a previous meeting, the board expressed a wish to be able to talk about addin
 a project in an executive session. The above change was posted to the foundation
 mailing list a week or so before the meeting.
 
+What this allows for is the board to decide that they want to talk about the new
+project behind closed doors, where the discussions are not public (people on the
+phone or in the room have to leave), and the people in the session cannot talk
+about what was discussed other then in general terms.
+
+I object to having this ability as I think it violates our core principals of
+the `four opens`_ - namely the open governance pillar. For something like this -
+adding a new member to the family of Open Source Infrastructure projects I think
+we should stick to the rules we expect these projects to live by.
+
 There was a quote on the agenda that said "Feedback from the community is
 amenable to the addition w/some requests for word changes", which was
 unfortunately not quite true.
@@ -244,15 +257,18 @@ though is:
 3. Vote appears out of the discussion in that session.
 
 Is this what we want to have when we are including new project teams in our
-community?
+community? Or should we do that same thing the that the Technical Committee
+do when we look at adding a project, and do it all in the open?
 
-So my question to the directors would be this:
+So my questions to the directors would be this:
 
 Why do you want to add this to the by-laws? When do you see it being used?
 
 I will be at the board meeting in Denver, and I look forward to hearing the
 reasoning.
 
+
+.. _twitter: https://twitter.com/odyssey4me/status/1119411458905923584
 .. _four opens: https://www.openstack.org/four-opens/
 .. _requirements: https://wiki.openstack.org/wiki/Governance/Foundation/OSFProjectConfirmationGuidelines
 .. _Kata Containers: https://katacontainers.io/

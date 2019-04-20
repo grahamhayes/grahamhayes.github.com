@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (Posts about openstack)</title><link>http://graham.hayes.ie/</link><description></description><atom:link href="http://graham.hayes.ie/categories/openstack.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 20 Apr 2019 00:13:16 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>New Open Infrastructure Project(s)</title><link>http://graham.hayes.ie/posts/new-open-infrastructure-projects/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;div class="section" id="new-oip-open-infrastructure-projects"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (Posts about openstack)</title><link>http://graham.hayes.ie/</link><description></description><atom:link href="http://graham.hayes.ie/categories/openstack.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 20 Apr 2019 01:58:10 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>New Open Infrastructure Project(s)</title><link>http://graham.hayes.ie/posts/new-open-infrastructure-projects/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;div class="admonition note"&gt;
+&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
+&lt;p class="last"&gt;It was pointed out on &lt;a class="reference external" href="https://twitter.com/odyssey4me/status/1119411458905923584"&gt;twitter&lt;/a&gt; that the last section was a little vague - I have updated it to be a bit clearer.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="new-oip-open-infrastructure-projects"&gt;
 &lt;h2&gt;New OIP (Open Infrastructure Projects)&lt;/h2&gt;
 &lt;p&gt;In a long running program, started in Sydney at the OpenStack Foundation Board
 meeting, the OpenStack Foundation (&lt;abbr title="OpenStack Foundation"&gt;OSF&lt;/abbr&gt;) has added
@@ -40,7 +44,7 @@ There is no PTL role, but as a smaller project, that would be unnecessary.&lt;/p
 &lt;div class="section" id="best-practices"&gt;
 &lt;h4&gt;Best Practices&lt;/h4&gt;
 &lt;p&gt;Kata is in a good place for this - they have CI on each PR, a good set of docs,
-and a &lt;abbr title="Vulnerability Management Team"&gt;VMT&lt;/abbr&gt; that is very similar to the
+and a &lt;abbr title="Vulnerability Management Team"&gt;VMT&lt;/abbr&gt; (Vulnerability Management Team) that is very similar to the
 OpenStack one.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="open-ness"&gt;
@@ -156,6 +160,14 @@ Foundation as required by Delaware Corporate Law.&lt;/blockquote&gt;
 &lt;p&gt;At a previous meeting, the board expressed a wish to be able to talk about adding
 a project in an executive session. The above change was posted to the foundation
 mailing list a week or so before the meeting.&lt;/p&gt;
+&lt;p&gt;What this allows for is the board to decide that they want to talk about the new
+project behind closed doors, where the discussions are not public (people on the
+phone or in the room have to leave), and the people in the session cannot talk
+about what was discussed other then in general terms.&lt;/p&gt;
+&lt;p&gt;I object to having this ability as I think it violates our core principals of
+the &lt;a class="reference external" href="https://www.openstack.org/four-opens/"&gt;four opens&lt;/a&gt; - namely the open governance pillar. For something like this -
+adding a new member to the family of Open Source Infrastructure projects I think
+we should stick to the rules we expect these projects to live by.&lt;/p&gt;
 &lt;p&gt;There was a quote on the agenda that said "Feedback from the community is
 amenable to the addition w/some requests for word changes", which was
 unfortunately not quite true.&lt;/p&gt;
@@ -201,8 +213,9 @@ though is:&lt;/p&gt;
 &lt;li&gt;Vote appears out of the discussion in that session.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Is this what we want to have when we are including new project teams in our
-community?&lt;/p&gt;
-&lt;p&gt;So my question to the directors would be this:&lt;/p&gt;
+community? Or should we do that same thing the that the Technical Committee
+do when we look at adding a project, and do it all in the open?&lt;/p&gt;
+&lt;p&gt;So my questions to the directors would be this:&lt;/p&gt;
 &lt;p&gt;Why do you want to add this to the by-laws? When do you see it being used?&lt;/p&gt;
 &lt;p&gt;I will be at the board meeting in Denver, and I look forward to hearing the
 reasoning.&lt;/p&gt;
