@@ -7,306 +7,334 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://graham.hayes.ie/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/2015/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/2016/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/2017/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/2018/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/2019/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/archive.html</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:50:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:50:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/austin/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://graham.hayes.ie/categories/board/</loc>
+  <lastmod>2019-04-08T16:50:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/bugs/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/cat_designate/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/cat_jobs/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/cat_networking/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/cat_openstack/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/code/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/designate/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/dublin/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/elections/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/eventlet/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://graham.hayes.ie/categories/foundation/</loc>
+  <lastmod>2019-04-08T16:50:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/galway/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/governance/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/hpe/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/intro/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/job/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/networking/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://graham.hayes.ie/categories/oip/</loc>
+  <lastmod>2019-04-08T16:50:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/openstack/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/plugins/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/project-update/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/refactor/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/seattle/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/snow/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/snowpenstack/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/summit/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/suse/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/tc/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/tokyo/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/travel/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/unifi/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/vpn/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/welcome/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/designate/dashboard/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/designate/ptl-dashboard/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/designate/release-dashboard/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/hangout/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/index-1.html</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:50:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T17:01:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/big-rename-2-message.txt.html</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/big-rename-2-update-message.txt.html</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/big-rename-error-render.py.html</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/big-rename-render.py.html</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/designate-reviewstats.txt.html</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/eventlet-sendall-bug-logs.log.html</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/generate-zone-rrsets.sh.html</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/hello.py.html</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://graham.hayes.ie/listings/oip-bylaws-after.txt.html</loc>
+  <lastmod>2019-04-08T16:58:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://graham.hayes.ie/listings/oip-bylaws-before.txt.html</loc>
+  <lastmod>2019-04-08T17:07:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://graham.hayes.ie/listings/oip-bylaws.rst.html</loc>
+  <lastmod>2019-04-08T17:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/big-rename-complete/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/designate-mid-cycle/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/designate-newton-design-summit/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/dublin-ptg-summary/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/equal-opportunities-for-all-openstack-projects/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/kosmos-mid-cycle/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/minidns-tcp-and-the-internet/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/new-adventures/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://graham.hayes.ie/posts/new-open-infrastructure-projects/</loc>
+  <lastmod>2019-04-08T16:50:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/non-candidacy-for-designate-ptl/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/openstack-a-leveler-playing-field/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/openstack-designate-where-we-are/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/openstack-summit-designate-report/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/openstack-tc-nomination/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/starting-blogging-again/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/sydney-openstack-summit/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/the-big-rename/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/wireguard-%2B-unifi/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/projects/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/projects/designate/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/projects/kosmos/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/stories/about-me/</loc>
-  <lastmod>2019-03-19T12:30:00Z</lastmod>
+  <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
 </urlset>
