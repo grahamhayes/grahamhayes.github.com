@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (Posts about networking)</title><link>http://graham.hayes.ie/</link><description></description><atom:link href="http://graham.hayes.ie/categories/cat_networking.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 08 Apr 2019 16:33:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>WireGuard + UniFi</title><link>http://graham.hayes.ie/posts/wireguard-%2B-unifi/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;p&gt;I have been looking around for a good VPN solution to use on the road recently. I have a few
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (Posts about networking)</title><link>http://graham.hayes.ie/</link><description></description><atom:link href="http://graham.hayes.ie/categories/cat_networking.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 15 May 2019 17:54:21 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>WireGuard + UniFi</title><link>http://graham.hayes.ie/posts/wireguard-%2B-unifi/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://graham.hayes.ie/wireguard-logo.png"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;I have been looking around for a good VPN solution to use on the road recently. I have a few
 services running at home, that I really don't want on the internet (OctoPrint etc), but I want to use
 remotely.&lt;/p&gt;
 &lt;p&gt;This is as much documentation for future me as it is for anyone who stumbles across this page :)&lt;/p&gt;
@@ -12,76 +12,4 @@ remotely.&lt;/p&gt;
 &lt;p&gt;I had heard of Wireguard a while ago (I think they had a stall near the OpenStack stall in FOSDEM
 last year), but I had completely forgotten about them. It turns out some kind soul has created a
 deb package to install WireGuard on Vyatta (which is what the USG is based on).&lt;/p&gt;
-&lt;div class="section" id="installation"&gt;
-&lt;h2&gt;Installation&lt;/h2&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Pick up the correct .deb from &lt;a class="reference external" href="https://github.com/Lochnair/vyatta-wireguard/releases"&gt;here&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code class="bash"&gt;curl -sL https://github.com/Lochnair/vyatta-wireguard/releases/download/&amp;lt;version&amp;gt;/wireguard-&amp;lt;board&amp;gt;-&amp;lt;version&amp;gt;.deb -o wireguard-&amp;lt;board&amp;gt;-&amp;lt;version&amp;gt;.deb&lt;/code&gt; worked for me&lt;/li&gt;
-&lt;li&gt;In my case, version was &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;0.0.20190123-1&lt;/span&gt;&lt;/tt&gt; and board was &lt;tt class="docutils literal"&gt;ugw3&lt;/tt&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code class="bash"&gt;sudo dpkg -i wireguard-&amp;lt;board&amp;gt;-&amp;lt;version&amp;gt;-1.deb&lt;/code&gt; to install the package&lt;/li&gt;
-&lt;li&gt;&lt;code class="bash"&gt;sudo -i&lt;/code&gt; to make everything easier&lt;/li&gt;
-&lt;li&gt;&lt;code class="bash"&gt;&lt;span class="nb"&gt;umask&lt;/span&gt; &lt;span class="m"&gt;077&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; mkdir wireguard &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nb"&gt;cd&lt;/span&gt; wireguard&lt;/code&gt; for the server keys&lt;/li&gt;
-&lt;li&gt;&lt;code class="bash"&gt;wg genkey &lt;span class="p"&gt;|&lt;/span&gt; tee wg_private.key &lt;span class="p"&gt;|&lt;/span&gt; wg pubkey &amp;gt; wg_public.key&lt;/code&gt; to create server keys&lt;/li&gt;
-&lt;li&gt;&lt;code class="bash"&gt;wg genkey &lt;span class="p"&gt;|&lt;/span&gt; tee client1_private.key &lt;span class="p"&gt;|&lt;/span&gt; wg pubkey &amp;gt; client1_public.key&lt;/code&gt; to create the first client keys. You will need one of these keys for each client connecting to the VPN&lt;/li&gt;
-&lt;li&gt;Then we move over to the UniFi controller to create the config for the VPN&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="config-gateway-json"&gt;
-&lt;h2&gt;config.gateway.json&lt;/h2&gt;
-&lt;p&gt;UniFi gateways are pretty similar to EdgeRouter products from Ubiquiti, with a crucial difference. Any config changes done from the CLI are wiped out on
-reboots, or any config changes from the controller. the UniFi Controller is nice, but does not support the full range of EdgeOS features that we can use.&lt;/p&gt;
-&lt;p&gt;Thankfully there is a solution - &lt;tt class="docutils literal"&gt;config.gateway.json&lt;/tt&gt;. This file is layered over the base config that gets generated by UniFi, and allows much more control of a USG.&lt;/p&gt;
-&lt;p&gt;I created this file in my UniFi controller (for me, on Ubuntu the right location is &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;/usr/lib/unifi/data/sites/&amp;lt;site-id&amp;gt;/config.gateway.json&lt;/span&gt;&lt;/tt&gt;).&lt;/p&gt;
-&lt;pre class="code json"&gt;&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-1"&gt;&lt;/a&gt;&lt;span class="p"&gt;{&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-2"&gt;&lt;/a&gt;    &lt;span class="nt"&gt;"firewall"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-3"&gt;&lt;/a&gt;        &lt;span class="nt"&gt;"group"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-4"&gt;&lt;/a&gt;            &lt;span class="nt"&gt;"network-group"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-5"&gt;&lt;/a&gt;                &lt;span class="nt"&gt;"remote_user_vpn_network"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-6"&gt;&lt;/a&gt;                    &lt;span class="nt"&gt;"description"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"Remote User VPN subnets"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-7"&gt;&lt;/a&gt;                    &lt;span class="nt"&gt;"network"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-8"&gt;&lt;/a&gt;                        &lt;span class="s2"&gt;"10.255.252.0/24"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-9"&gt;&lt;/a&gt;                    &lt;span class="p"&gt;]&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-10"&gt;&lt;/a&gt;                &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-11"&gt;&lt;/a&gt;            &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-12"&gt;&lt;/a&gt;        &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-13"&gt;&lt;/a&gt;    &lt;span class="p"&gt;},&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-14"&gt;&lt;/a&gt;    &lt;span class="nt"&gt;"interfaces"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-15"&gt;&lt;/a&gt;        &lt;span class="nt"&gt;"wireguard"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-16"&gt;&lt;/a&gt;            &lt;span class="nt"&gt;"wg0"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-17"&gt;&lt;/a&gt;                &lt;span class="nt"&gt;"description"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"VPN for remote clients"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-18"&gt;&lt;/a&gt;                &lt;span class="nt"&gt;"address"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-19"&gt;&lt;/a&gt;                    &lt;span class="s2"&gt;"10.255.252.1/24"&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-20"&gt;&lt;/a&gt;                &lt;span class="p"&gt;],&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-21"&gt;&lt;/a&gt;                &lt;span class="nt"&gt;"firewall"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-22"&gt;&lt;/a&gt;                    &lt;span class="nt"&gt;"in"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-23"&gt;&lt;/a&gt;                        &lt;span class="nt"&gt;"name"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"LAN_IN"&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-24"&gt;&lt;/a&gt;                    &lt;span class="p"&gt;},&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-25"&gt;&lt;/a&gt;                    &lt;span class="nt"&gt;"local"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-26"&gt;&lt;/a&gt;                        &lt;span class="nt"&gt;"name"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"LAN_LOCAL"&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-27"&gt;&lt;/a&gt;                    &lt;span class="p"&gt;},&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-28"&gt;&lt;/a&gt;                    &lt;span class="nt"&gt;"out"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-29"&gt;&lt;/a&gt;                        &lt;span class="nt"&gt;"name"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"LAN_OUT"&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-30"&gt;&lt;/a&gt;                    &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-31"&gt;&lt;/a&gt;                &lt;span class="p"&gt;},&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-32"&gt;&lt;/a&gt;                &lt;span class="nt"&gt;"listen-port"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"443"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-33"&gt;&lt;/a&gt;                &lt;span class="nt"&gt;"mtu"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"1352"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-34"&gt;&lt;/a&gt;                &lt;span class="nt"&gt;"peer"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-35"&gt;&lt;/a&gt;                    &lt;span class="p"&gt;{&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-36"&gt;&lt;/a&gt;                        &lt;span class="nt"&gt;"&amp;lt;content of client1_public.key&amp;gt;"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-37"&gt;&lt;/a&gt;                            &lt;span class="nt"&gt;"allowed-ips"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-38"&gt;&lt;/a&gt;                            &lt;span class="p"&gt;[&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-39"&gt;&lt;/a&gt;                                &lt;span class="s2"&gt;"10.255.252.2/32"&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-40"&gt;&lt;/a&gt;                            &lt;span class="p"&gt;],&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-41"&gt;&lt;/a&gt;                            &lt;span class="nt"&gt;"persistent-keepalive"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;60&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-42"&gt;&lt;/a&gt;                        &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-43"&gt;&lt;/a&gt;                    &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-44"&gt;&lt;/a&gt;                &lt;span class="p"&gt;],&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-45"&gt;&lt;/a&gt;                &lt;span class="nt"&gt;"private-key"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"/config/auth/wireguard/wg_private.key"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-46"&gt;&lt;/a&gt;                &lt;span class="nt"&gt;"route-allowed-ips"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"true"&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-47"&gt;&lt;/a&gt;            &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-48"&gt;&lt;/a&gt;        &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-49"&gt;&lt;/a&gt;    &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;a name="rest_code_e8ff670c928449a2ab3ea39b440a9522-50"&gt;&lt;/a&gt;&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description><category>networking</category><category>unifi</category><category>vpn</category><guid>http://graham.hayes.ie/posts/wireguard-%2B-unifi/</guid><pubDate>Thu, 07 Feb 2019 19:09:26 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="http://graham.hayes.ie/posts/wireguard-%2B-unifi/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>networking</category><category>unifi</category><category>vpn</category><guid>http://graham.hayes.ie/posts/wireguard-%2B-unifi/</guid><pubDate>Thu, 07 Feb 2019 22:52:26 GMT</pubDate></item></channel></rss>
