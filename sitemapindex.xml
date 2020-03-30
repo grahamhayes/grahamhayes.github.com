@@ -11,7 +11,7 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/board.xml</loc>
-  <lastmod>2019-04-08T17:08:00Z</lastmod>
+  <lastmod>2019-04-20T01:58:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/bugs.xml</loc>
@@ -27,11 +27,15 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/cat_networking.xml</loc>
-  <lastmod>2019-04-08T16:33:00Z</lastmod>
+  <lastmod>2019-05-15T17:54:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://graham.hayes.ie/categories/cat_openstack-tc-elections.xml</loc>
+  <lastmod>2020-03-30T16:49:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/cat_openstack.xml</loc>
-  <lastmod>2019-04-08T17:08:00Z</lastmod>
+  <lastmod>2019-04-20T01:58:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/code.xml</loc>
@@ -55,7 +59,7 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/foundation.xml</loc>
-  <lastmod>2019-04-08T17:08:00Z</lastmod>
+  <lastmod>2019-04-20T01:58:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/galway.xml</loc>
@@ -79,15 +83,15 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/networking.xml</loc>
-  <lastmod>2019-04-08T16:33:00Z</lastmod>
+  <lastmod>2019-05-15T17:54:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/oip.xml</loc>
-  <lastmod>2019-04-08T17:08:00Z</lastmod>
+  <lastmod>2019-04-20T01:58:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/openstack.xml</loc>
-  <lastmod>2019-04-08T17:08:00Z</lastmod>
+  <lastmod>2019-04-20T01:58:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/plugins.xml</loc>
@@ -135,11 +139,11 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/unifi.xml</loc>
-  <lastmod>2019-04-08T16:33:00Z</lastmod>
+  <lastmod>2019-05-15T17:54:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/vpn.xml</loc>
-  <lastmod>2019-04-08T16:33:00Z</lastmod>
+  <lastmod>2019-05-15T17:54:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/categories/welcome.xml</loc>
@@ -147,10 +151,10 @@
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/rss.xml</loc>
-  <lastmod>2019-04-08T17:08:00Z</lastmod>
+  <lastmod>2020-03-30T16:49:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://graham.hayes.ie/sitemap.xml</loc>
-  <lastmod>2019-04-08T17:08:00Z</lastmod>
+  <lastmod>2020-03-30T16:49:00Z</lastmod>
  </sitemap>
 </sitemapindex>

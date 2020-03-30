@@ -93,7 +93,7 @@ article: http://ogp.me/ns/article#
 <a name="listingsbig-rename-error-renderpy-15"></a>            <span class="s1">'fields'</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
 <a name="listingsbig-rename-error-renderpy-16"></a>
 <a name="listingsbig-rename-error-renderpy-17"></a>        <span class="c1"># Check if this field as actually a nested object</span>
-<a name="listingsbig-rename-error-renderpy-18"></a>        <span class="k">if</span> <span class="nb">object</span><span class="o">.</span><span class="n">FIELDS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">path_segment</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'relation'</span><span class="p">,</span> <span class="bp">False</span><span class="p">):</span>
+<a name="listingsbig-rename-error-renderpy-18"></a>        <span class="k">if</span> <span class="nb">object</span><span class="o">.</span><span class="n">FIELDS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">path_segment</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'relation'</span><span class="p">,</span> <span class="kc">False</span><span class="p">):</span>
 <a name="listingsbig-rename-error-renderpy-19"></a>
 <a name="listingsbig-rename-error-renderpy-20"></a>            <span class="n">obj_cls</span> <span class="o">=</span> <span class="nb">object</span><span class="o">.</span><span class="n">FIELDS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">path_segment</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'relation_cls'</span><span class="p">)</span>
 <a name="listingsbig-rename-error-renderpy-21"></a>            <span class="n">obj_adapter</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_object_adapter</span><span class="p">(</span>
@@ -118,7 +118,7 @@ article: http://ogp.me/ns/article#
 <a name="listingsbig-rename-error-renderpy-40"></a>    <span class="k">return</span> <span class="n">path_segment</span><span class="p">,</span> <span class="n">obj_adapter</span>
 </pre></td>
 </tr></table>
-<footer id="footer"><p>Contents © 2019         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+<footer id="footer"><p>Contents © 2020         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

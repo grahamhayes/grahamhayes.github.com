@@ -1,5 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie</title><link>http://graham.hayes.ie/</link><description>Weird (sometimes incoherent) rambling of a developer.</description><atom:link href="http://graham.hayes.ie/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 15 May 2019 17:54:21 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>New Open Infrastructure Project(s)</title><link>http://graham.hayes.ie/posts/new-open-infrastructure-projects/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;div class="admonition note"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie</title><link>http://graham.hayes.ie/</link><description>Weird (sometimes incoherent) rambling of a developer.</description><atom:link href="http://graham.hayes.ie/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 30 Mar 2020 16:49:46 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>OpenStack TC Nominations - Victoria</title><link>http://graham.hayes.ie/posts/openstack-tc-nominations-victoria/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://graham.hayes.ie/images/me.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;Hello Everyone,&lt;/p&gt;
+&lt;p&gt;I have been a member of the TC for 2 terms now, and I am running again for
+another term on the TC.&lt;/p&gt;
+&lt;p&gt;I have been involved in OpenStack as a developer, operator, PTL, and TC member
+for a long time, and I think that I can continue to contribute to the community
+on the TC.&lt;/p&gt;
+&lt;p&gt;I worked as the technical lead for the System Operations team in Verizon Cloud
+Platform, where we ran 90+ OpenStack installs across the world, ranging from
+3 compute micro regions where we needed edge style compute, to much larger
+footprints for core regions in the US. This gave me a unique viewpoint on how
+people use OpenStack for both small scale, and for large, real time mission
+critical telecommunications applications.&lt;/p&gt;
+&lt;p&gt;Further back in my career, I was part of a team that ran the DNSaaS service in
+HP Cloud (based on Designate of course), which combined with my current role
+in Azure, where I am looking at how people use both on prem and external
+clouds, gives me a good insight into the needs of a cloud provider.&lt;/p&gt;
+&lt;p&gt;My main focus over the last term has been trying to get a co-ordinated way for
+organizations to contribute to OpenStack - Graham's soap box at the Board
+face to face meetings has become a regular event. Thankfully, I think this
+has helped push this forward, and I know I have seen people getting involved
+in the projects I keep an eye on.&lt;/p&gt;
+&lt;p&gt;I have also been involved in the design discussions around &lt;a class="reference external" href="https://governance.openstack.org/ideas/ideas/teapot/index.html"&gt;Project Teapot&lt;/a&gt;
+which I think is a great way for OpenStack to help people scale and manage
+their data centers, while providing the services modern applications are
+starting to use. I firmly believe that something like Teapot is an important
+focus of development for OpenStack.&lt;/p&gt;
+&lt;p&gt;I think the new &lt;a class="reference external" href="https://opendev.org/openstack/ideas"&gt;ideas repo&lt;/a&gt; is a fantastic idea and encourage people to put
+what ever they think is a good idea for OpenStack in there. I will definitely
+be putting up some of the ideas I have talked about over the years in there.&lt;/p&gt;
+&lt;p&gt;As a long time PTL of a project I know the pressures they can be under and can
+provide insight as we consider the future governance of the OpenStack project,
+and its sub projects.&lt;/p&gt;
+&lt;p&gt;This has given me a lot of historical knowledge and context to why some things
+within our community are the way they are, and as we record this to avoid
+needing something as unreliable as a human brain (rst is a lot better :) ) I
+feel I can contribute to the discussion.&lt;/p&gt;
+&lt;p&gt;Finally, I feel that over the years I have made it clear that I will speak out
+even if I know it will cause push back, and this has allowed me to receive
+frank and honest feedback from people in community who don't always wish to
+spend the mental energy, or pay the social tax of raising topics that can be
+controversial. I don't plan on changing this.&lt;/p&gt;
+&lt;p&gt;Lastly, I have really enjoyed working in this community, it has given me a lot
+both personally and professionally, and I feel that I can still pay that back.
+If you agree, please vote for me in the up coming elections, if not please
+ask me questions in the next week or so, but for everyone, please vote for
+whoever you think will be the best for OpenStack.&lt;/p&gt;
+&lt;p&gt;Thanks for taking the time to read this,&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Graham&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</description><guid>http://graham.hayes.ie/posts/openstack-tc-nominations-victoria/</guid><pubDate>Mon, 30 Mar 2020 16:48:26 GMT</pubDate></item><item><title>New Open Infrastructure Project(s)</title><link>http://graham.hayes.ie/posts/new-open-infrastructure-projects/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;div class="admonition note"&gt;
 &lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
 &lt;p class="last"&gt;It was pointed out on &lt;a class="reference external" href="https://twitter.com/odyssey4me/status/1119411458905923584"&gt;twitter&lt;/a&gt; that the last section was a little vague - I have updated it to be a bit clearer.&lt;/p&gt;
 &lt;/div&gt;
@@ -868,115 +917,4 @@ about the role, please drop me an email &lt;a class="footnote-reference" href="h
 &lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="http://graham.hayes.ie/posts/non-candidacy-for-designate-ptl/#id3"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;mugsie&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>designate</category><category>openstack</category><guid>http://graham.hayes.ie/posts/non-candidacy-for-designate-ptl/</guid><pubDate>Mon, 09 Jan 2017 22:16:50 GMT</pubDate></item><item><title>Equal Opportunities for all OpenStack Projects</title><link>http://graham.hayes.ie/posts/equal-opportunities-for-all-openstack-projects/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;p&gt;So, two weeks ago, I dropped a TC &lt;a class="reference external" href="https://review.openstack.org/#/c/342366/"&gt;motion&lt;/a&gt; and a mailing list &lt;a class="reference external" href="http://lists.openstack.org/pipermail/openstack-dev/2016-July/099285.html"&gt;post&lt;/a&gt; and
-waited for the other foot to drop.&lt;/p&gt;
-&lt;p&gt;I was pleasantly surprised - no one started shouting at me - but by trying
-to not point fingers at individual teams I made the text too convoluted.&lt;/p&gt;
-&lt;p&gt;So, in an effort to clarify things, here is an overview of what has been said
-so far, both in the mailing list and the gerrit review itself.&lt;/p&gt;
-&lt;div class="section" id="feedback"&gt;
-&lt;h2&gt;Feedback&lt;/h2&gt;
-&lt;blockquote class="epigraph"&gt;
-... does this also include plugins within projects, like storage
-backends in cinder and hypervisor drivers in nova?&lt;/blockquote&gt;
-&lt;p&gt;No - this was not clear enough. This change is aimed at projects that are
-points of significant cross project interaction. While, in the future there may
-come a point where Nova Compute Drivers are developed out of tree (though
-I doubt it), that is not happening today. As a result, there is no projects in
-the list of &lt;a class="reference external" href="https://governance.openstack.org/reference/projects/index.html"&gt;projects&lt;/a&gt; that would need to integrate with Nova.&lt;/p&gt;
-&lt;blockquote class="epigraph"&gt;
-Could you please clarify: do you advocate for a generic plugin interface for
-every project, or that each project should expose a plugin interface that
-allows plugin to behave as in-tree components? Because the latter is what
-happens with Tempest, and I see the former a bit complicated.&lt;/blockquote&gt;
-&lt;p&gt;For every project that has cross project interaction - tempest is a good
-example.&lt;/p&gt;
-&lt;p&gt;For these projects, they should allow all projects in tree (like Nova,
-Neutron, Cinder etc are today), or they should have a plugin interface
-(like they currently do), but all projects &lt;em&gt;must&lt;/em&gt; use it, and not use
-parts of tempest that are not exposed in that interface.&lt;/p&gt;
-&lt;p&gt;This would mean that tempest would move the nova, neutron, etc tests to
-use the plugin interface.&lt;/p&gt;
-&lt;p&gt;Now, that plugin could be kept in the tempest repo, and still maintained
-by the QA team, but should use the same interface as the other plugins
-that are not in that repository.&lt;/p&gt;
-&lt;p&gt;Of course, it is not just tempest - an incomplete list looks like:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Tempest&lt;/li&gt;
-&lt;li&gt;Devstack&lt;/li&gt;
-&lt;li&gt;Grende&lt;/li&gt;
-&lt;li&gt;Horizon&lt;/li&gt;
-&lt;li&gt;OpenStack Client&lt;/li&gt;
-&lt;li&gt;OpenStack SDK&lt;/li&gt;
-&lt;li&gt;Searchlight&lt;/li&gt;
-&lt;li&gt;Heat&lt;/li&gt;
-&lt;li&gt;Mistral&lt;/li&gt;
-&lt;li&gt;Celiometer&lt;/li&gt;
-&lt;li&gt;Rally&lt;/li&gt;
-&lt;li&gt;Documentation&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;And I am sure I have missed some obvious ones. (if you see a project missing
-let me know on the &lt;a class="reference external" href="https://review.openstack.org/#/c/342366/"&gt;motion&lt;/a&gt;)&lt;/p&gt;
-&lt;blockquote class="epigraph"&gt;
-I think I disagree here. The root cause is being addressed: external tests can
-use the Tempest plugin interface, and use the API, which is being stabilized.
-The fact that the Tempest API is partially unstable is a temporary things, due
-to the origin of the project and the way the scope was redefined, but again
-it's temporary.&lt;/blockquote&gt;
-&lt;p&gt;This seems to be the core of a lot of the disagreement - this is only temporary,
-it will all be fixed in the future, and it should stay this way.&lt;/p&gt;
-&lt;p&gt;Unfortunately the discrepancy between projects is not temporary. The specific
-problems I have highlighted in the thread for one of the projects is temporary,
-but I beleive the only long-term solution is to remove the difference between
-projects.&lt;/p&gt;
-&lt;blockquote class="epigraph"&gt;
-Before we start making lots of specific rules about how teams
-coordinate, I would like to understand the problem those rules are meant
-to solve, so thank you for providing that example.
-...
-It's not clear yet whether there needs to be a new policy to change the
-existing intent, or if a discussion just hasn't happened, or if someone
-simply needs to edit some code.&lt;/blockquote&gt;
-&lt;p&gt;Unfortunately there is a big push back on editing code to help plugins from
-some of the projects. Again, having the differing access between projects will
-continue to exacerbate the problem.&lt;/p&gt;
-&lt;blockquote class="epigraph"&gt;
-&lt;p&gt;"Change the name of the resolution"&lt;/p&gt;
-&lt;p class="attribution"&gt;—(Paraphrase from a few people)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;That was done in the last patchset. I think the Level Playing Field title
-bounced around my head from the other resolution that was titled Level Playing
-Field. It may have been confusing alright.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="other-areas"&gt;
-&lt;h2&gt;Other Areas&lt;/h2&gt;
-&lt;p&gt;I feel like I have been picking on tempest a little too much, it just captures
-the current issues perfectly, and a large number of the community have some
-knowledge of it, and how it works.&lt;/p&gt;
-&lt;p&gt;There is other areas across OpenStack the need attention as well:&lt;/p&gt;
-&lt;div class="section" id="horizon"&gt;
-&lt;h3&gt;Horizon&lt;/h3&gt;
-&lt;p&gt;Horizon privileged projects have access to much more panels than
-plugins (service status, quotas, overviews etc).
-Plugins have to rely on tarballs of horizon&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="openstack-client"&gt;
-&lt;h3&gt;OpenStack Client&lt;/h3&gt;
-&lt;p&gt;OpenStack CLI privileged projects have access to more commands, as
-plugins cannot hook in to them (e.g. quotas)&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="grenade"&gt;
-&lt;h3&gt;Grenade&lt;/h3&gt;
-&lt;p&gt;Plugins may or may not have tempest tests ran (I think that patch
-merged), they have to use parts of tempest I was told explicitly
-plugins should not use to get the tests to run at that point.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="docs"&gt;
-&lt;h3&gt;Docs&lt;/h3&gt;
-&lt;p&gt;We can now add install guides and hook into the API Reference, and API
-guides. This is great - and I am really happy about it. We still have
-issues trying to integrate with other areas in docs, and most non docs
-privileged projects end up with massive amounts of users docs in
-docs.openstack.org/developer/&amp;lt;project&amp;gt; , which is not ideal.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>governance</category><category>openstack</category><category>plugins</category><category>tc</category><guid>http://graham.hayes.ie/posts/equal-opportunities-for-all-openstack-projects/</guid><pubDate>Mon, 25 Jul 2016 21:25:00 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;&lt;/div&gt;</description><category>designate</category><category>openstack</category><guid>http://graham.hayes.ie/posts/non-candidacy-for-designate-ptl/</guid><pubDate>Mon, 09 Jan 2017 22:16:50 GMT</pubDate></item></channel></rss>

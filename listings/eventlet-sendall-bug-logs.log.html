@@ -55,28 +55,28 @@ article: http://ogp.me/ns/article#
 <a href="#listingseventlet-sendall-bug-logslog-17">17</a>
 <a href="#listingseventlet-sendall-bug-logslog-18">18</a>
 <a href="#listingseventlet-sendall-bug-logslog-19">19</a></pre></div></td>
-<td class="code"><pre class="code literal-block"><a name="listingseventlet-sendall-bug-logslog-1"></a>[-] Handling TCP Request from: MY_IP:50401 from (pid=60592) _dns_handle_tcp /home/graham/designate/designate/service.py:250
-<a name="listingseventlet-sendall-bug-logslog-2"></a>Policy check succeeded for rule 'all_tenants' on target {}
-<a name="listingseventlet-sendall-bug-logslog-3"></a>Unhandled exception while processing request from MY_IP:50401
-<a name="listingseventlet-sendall-bug-logslog-4"></a> Traceback (most recent call last):
-<a name="listingseventlet-sendall-bug-logslog-5"></a>   File "/home/graham/designate/designate/service.py", line 342, in _dns_handle
-<a name="listingseventlet-sendall-bug-logslog-6"></a>     client.sendall(tcp_response)
-<a name="listingseventlet-sendall-bug-logslog-7"></a>   File "&lt;eventlet_path&gt;/eventlet/greenio/base.py", line 388, in sendall
-<a name="listingseventlet-sendall-bug-logslog-8"></a>     tail += self.send(data[tail:], flags)
-<a name="listingseventlet-sendall-bug-logslog-9"></a>   File "&lt;eventlet_path&gt;/eventlet/greenio/base.py", line 379, in send
-<a name="listingseventlet-sendall-bug-logslog-10"></a>     return self._send_loop(self.fd.send, data, flags)
-<a name="listingseventlet-sendall-bug-logslog-11"></a>   File "&lt;eventlet_path&gt;/eventlet/greenio/base.py", line 374, in _send_loop
-<a name="listingseventlet-sendall-bug-logslog-12"></a>     timeout_exc=socket.timeout("timed out"))
-<a name="listingseventlet-sendall-bug-logslog-13"></a>   File "&lt;eventlet_path&gt;/eventlet/greenio/base.py", line 203, in _trampoline
-<a name="listingseventlet-sendall-bug-logslog-14"></a>     mark_as_closed=self._mark_as_closed)
-<a name="listingseventlet-sendall-bug-logslog-15"></a>   File "&lt;eventlet_path&gt;/eventlet/hubs/__init__.py", line 162, in trampoline
-<a name="listingseventlet-sendall-bug-logslog-16"></a>     return hub.switch()
-<a name="listingseventlet-sendall-bug-logslog-17"></a>   File "&lt;eventlet_path&gt;/eventlet/hubs/hub.py", line 294, in switch
-<a name="listingseventlet-sendall-bug-logslog-18"></a>     return self.greenlet.switch()
-<a name="listingseventlet-sendall-bug-logslog-19"></a> timeout: timed out
+<td class="code"><pre class="code literal-block"><a name="listingseventlet-sendall-bug-logslog-1"></a><span class="err">[-] Handling TCP Request from: MY_IP:50401 from (pid=60592) _dns_handle_tcp /home/graham/designate/designate/service.py:250</span>
+<a name="listingseventlet-sendall-bug-logslog-2"></a><span class="err">Policy check succeeded for rule 'all_tenants' on target {}</span>
+<a name="listingseventlet-sendall-bug-logslog-3"></a><span class="err">Unhandled exception while processing request from MY_IP:50401</span>
+<a name="listingseventlet-sendall-bug-logslog-4"></a><span class="err"> Traceback (most recent call last):</span>
+<a name="listingseventlet-sendall-bug-logslog-5"></a><span class="err">   File "/home/graham/designate/designate/service.py", line 342, in _dns_handle</span>
+<a name="listingseventlet-sendall-bug-logslog-6"></a><span class="err">     client.sendall(tcp_response)</span>
+<a name="listingseventlet-sendall-bug-logslog-7"></a><span class="err">   File "&lt;eventlet_path&gt;/eventlet/greenio/base.py", line 388, in sendall</span>
+<a name="listingseventlet-sendall-bug-logslog-8"></a><span class="err">     tail += self.send(data[tail:], flags)</span>
+<a name="listingseventlet-sendall-bug-logslog-9"></a><span class="err">   File "&lt;eventlet_path&gt;/eventlet/greenio/base.py", line 379, in send</span>
+<a name="listingseventlet-sendall-bug-logslog-10"></a><span class="err">     return self._send_loop(self.fd.send, data, flags)</span>
+<a name="listingseventlet-sendall-bug-logslog-11"></a><span class="err">   File "&lt;eventlet_path&gt;/eventlet/greenio/base.py", line 374, in _send_loop</span>
+<a name="listingseventlet-sendall-bug-logslog-12"></a><span class="err">     timeout_exc=socket.timeout("timed out"))</span>
+<a name="listingseventlet-sendall-bug-logslog-13"></a><span class="err">   File "&lt;eventlet_path&gt;/eventlet/greenio/base.py", line 203, in _trampoline</span>
+<a name="listingseventlet-sendall-bug-logslog-14"></a><span class="err">     mark_as_closed=self._mark_as_closed)</span>
+<a name="listingseventlet-sendall-bug-logslog-15"></a><span class="err">   File "&lt;eventlet_path&gt;/eventlet/hubs/__init__.py", line 162, in trampoline</span>
+<a name="listingseventlet-sendall-bug-logslog-16"></a><span class="err">     return hub.switch()</span>
+<a name="listingseventlet-sendall-bug-logslog-17"></a><span class="err">   File "&lt;eventlet_path&gt;/eventlet/hubs/hub.py", line 294, in switch</span>
+<a name="listingseventlet-sendall-bug-logslog-18"></a><span class="err">     return self.greenlet.switch()</span>
+<a name="listingseventlet-sendall-bug-logslog-19"></a><span class="err"> timeout: timed out</span>
 </pre></td>
 </tr></table>
-<footer id="footer"><p>Contents © 2019         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+<footer id="footer"><p>Contents © 2020         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

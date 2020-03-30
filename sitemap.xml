@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://graham.hayes.ie/</loc>
-  <lastmod>2019-04-08T16:33:00Z</lastmod>
+  <lastmod>2020-03-30T16:49:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/2015/</loc>
@@ -30,12 +30,16 @@
   <lastmod>2019-04-08T16:33:00Z</lastmod>
  </url>
  <url>
+  <loc>http://graham.hayes.ie/2020/</loc>
+  <lastmod>2020-03-30T16:49:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://graham.hayes.ie/archive.html</loc>
-  <lastmod>2019-04-08T16:50:00Z</lastmod>
+  <lastmod>2020-03-30T16:49:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/</loc>
-  <lastmod>2019-04-08T16:50:00Z</lastmod>
+  <lastmod>2020-03-30T16:49:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/austin/</loc>
@@ -60,6 +64,10 @@
  <url>
   <loc>http://graham.hayes.ie/categories/cat_networking/</loc>
   <lastmod>2019-04-08T16:33:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://graham.hayes.ie/categories/cat_openstack-tc-elections/</loc>
+  <lastmod>2020-03-30T16:49:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/categories/cat_openstack/</loc>
@@ -195,7 +203,7 @@
  </url>
  <url>
   <loc>http://graham.hayes.ie/index-1.html</loc>
-  <lastmod>2019-04-08T16:50:00Z</lastmod>
+  <lastmod>2020-03-30T16:49:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/</loc>
@@ -203,47 +211,47 @@
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/big-rename-2-message.txt.html</loc>
-  <lastmod>2019-04-08T16:33:00Z</lastmod>
+  <lastmod>2020-03-30T16:49:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/big-rename-2-update-message.txt.html</loc>
-  <lastmod>2019-04-08T16:33:00Z</lastmod>
+  <lastmod>2020-03-30T16:49:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/big-rename-error-render.py.html</loc>
-  <lastmod>2019-04-08T16:33:00Z</lastmod>
+  <lastmod>2020-03-30T16:49:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/big-rename-render.py.html</loc>
-  <lastmod>2019-04-08T16:33:00Z</lastmod>
+  <lastmod>2020-03-30T16:49:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/designate-reviewstats.txt.html</loc>
-  <lastmod>2019-04-08T16:33:00Z</lastmod>
+  <lastmod>2020-03-30T16:49:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/eventlet-sendall-bug-logs.log.html</loc>
-  <lastmod>2019-04-08T16:33:00Z</lastmod>
+  <lastmod>2020-03-30T16:49:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/generate-zone-rrsets.sh.html</loc>
-  <lastmod>2019-04-08T16:33:00Z</lastmod>
+  <lastmod>2020-03-30T16:49:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/hello.py.html</loc>
-  <lastmod>2019-04-08T16:33:00Z</lastmod>
+  <lastmod>2020-03-30T16:49:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/oip-bylaws-after.txt.html</loc>
-  <lastmod>2019-04-08T16:58:00Z</lastmod>
+  <lastmod>2020-03-30T16:49:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/oip-bylaws-before.txt.html</loc>
-  <lastmod>2019-04-08T17:07:00Z</lastmod>
+  <lastmod>2020-03-30T16:49:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/listings/oip-bylaws.rst.html</loc>
-  <lastmod>2019-04-08T17:08:00Z</lastmod>
+  <lastmod>2020-03-30T16:49:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/big-rename-complete/</loc>
@@ -304,6 +312,10 @@
  <url>
   <loc>http://graham.hayes.ie/posts/openstack-tc-nomination/</loc>
   <lastmod>2019-04-08T16:33:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://graham.hayes.ie/posts/openstack-tc-nominations-victoria/</loc>
+  <lastmod>2020-03-30T16:49:00Z</lastmod>
  </url>
  <url>
   <loc>http://graham.hayes.ie/posts/starting-blogging-again/</loc>

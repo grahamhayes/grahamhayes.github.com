@@ -60,17 +60,17 @@ article: http://ogp.me/ns/article#
 <a name="listingsbig-rename-renderpy-6"></a>        <span class="c1"># Get properties for this field</span>
 <a name="listingsbig-rename-renderpy-7"></a>        <span class="n">field_props</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">MODIFICATIONS</span><span class="p">[</span><span class="s1">'fields'</span><span class="p">][</span><span class="n">key</span><span class="p">]</span>
 <a name="listingsbig-rename-renderpy-8"></a>        <span class="c1"># Check if it has to be renamed</span>
-<a name="listingsbig-rename-renderpy-9"></a>        <span class="k">if</span> <span class="n">field_props</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rename'</span><span class="p">,</span> <span class="bp">False</span><span class="p">):</span>
+<a name="listingsbig-rename-renderpy-9"></a>        <span class="k">if</span> <span class="n">field_props</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rename'</span><span class="p">,</span> <span class="kc">False</span><span class="p">):</span>
 <a name="listingsbig-rename-renderpy-10"></a>            <span class="n">obj</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">field_props</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rename'</span><span class="p">))</span>
 <a name="listingsbig-rename-renderpy-11"></a>            <span class="c1"># if rename is specified we need to change the key</span>
 <a name="listingsbig-rename-renderpy-12"></a>            <span class="n">obj_key</span> <span class="o">=</span> <span class="n">field_props</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rename'</span><span class="p">)</span>
 <a name="listingsbig-rename-renderpy-13"></a>        <span class="k">else</span><span class="p">:</span>
 <a name="listingsbig-rename-renderpy-14"></a>            <span class="c1"># if not, move on</span>
-<a name="listingsbig-rename-renderpy-15"></a>            <span class="n">obj</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+<a name="listingsbig-rename-renderpy-15"></a>            <span class="n">obj</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 <a name="listingsbig-rename-renderpy-16"></a>            <span class="n">obj_key</span> <span class="o">=</span> <span class="n">key</span>
 </pre></td>
 </tr></table>
-<footer id="footer"><p>Contents © 2019         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+<footer id="footer"><p>Contents © 2020         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>
