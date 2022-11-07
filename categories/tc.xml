@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (Posts about tc)</title><link>http://graham.hayes.ie/</link><description></description><atom:link href="http://graham.hayes.ie/categories/tc.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 08 Apr 2019 16:33:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>TC Nomination - Rocky Cycle</title><link>http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://graham.hayes.ie/images/me.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;Hi,&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (Posts about tc)</title><link>http://graham.hayes.ie/</link><description></description><atom:link href="http://graham.hayes.ie/categories/tc.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 07 Nov 2022 17:53:50 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>TC Nomination - Rocky Cycle</title><link>http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://graham.hayes.ie/images/me.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;Hi,&lt;/p&gt;
 &lt;p&gt;I am submitting my candidacy for the OpenStack Technical Committee.&lt;/p&gt;
-&lt;p&gt;I have been contributing to OpenStack since the Havana cycle &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/#id7" id="id1"&gt;[1]&lt;/a&gt; &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/#id8" id="id2"&gt;[2]&lt;/a&gt;, mainly
+&lt;p&gt;I have been contributing to OpenStack since the Havana cycle &lt;a class="footnote-reference brackets" href="http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/#footnote-1" id="footnote-reference-1" role="doc-noteref"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;1&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/a&gt; &lt;a class="footnote-reference brackets" href="http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/#footnote-2" id="footnote-reference-2" role="doc-noteref"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;2&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/a&gt;, mainly
 in Designate. I have also been involved with the TC, and its meetings since
 Designate applied for incubation all the way back in Atlanta (the first time
 we were there).&lt;/p&gt;
 &lt;p&gt;Over the last 6 months I have become more involved in the TC, and have been
 an active contributor to TC discussions (both on IRC and in person) and
-governance &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/#id9" id="id3"&gt;[3]&lt;/a&gt;.&lt;/p&gt;
+governance &lt;a class="footnote-reference brackets" href="http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/#footnote-3" id="footnote-reference-3" role="doc-noteref"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;3&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I have been PTL for Designate for Mitaka, Newton, Ocata, Queens and Rocky
 cycles, and a core for a longer period. I believe my experience working in a
 younger, smaller project within OpenStack is a benefit. Along with the
 experience of working on software as an end user of OpenStack I can help us
 ensure the Technical Committee is mindful of the unique challenges these
 projects and users can face.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>elections</category><category>openstack</category><category>tc</category><guid>http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/</guid><pubDate>Mon, 16 Apr 2018 14:08:00 GMT</pubDate></item><item><title>OpenStack TC Nomination</title><link>http://graham.hayes.ie/posts/openstack-tc-nomination/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://graham.hayes.ie/images/me.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;I would like to submit my candidacy for the Technical Committee for the
+&lt;p&gt;&lt;a href="http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>elections</category><category>openstack</category><category>tc</category><guid>http://graham.hayes.ie/posts/openstack-tc-nomination-rocky/</guid><pubDate>Mon, 16 Apr 2018 14:08:00 GMT</pubDate></item><item><title>OpenStack TC Nomination</title><link>http://graham.hayes.ie/posts/openstack-tc-nomination/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://graham.hayes.ie/images/me.jpg"&gt;&lt;/figure&gt; &lt;section id="tc-nomination"&gt;
+&lt;h2&gt;TC Nomination&lt;/h2&gt;
+&lt;p&gt;I would like to submit my candidacy for the Technical Committee for the
 upcoming election.&lt;/p&gt;
-&lt;div class="admonition note"&gt;
-&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
-&lt;p class="last"&gt;&lt;em&gt;TL;DR;&lt;/em&gt; So, I bit the bullet and ran for the TC :)&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;I have been contributing to OpenStack since the Havana cycle &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/openstack-tc-nomination/#id5" id="id1"&gt;[1]&lt;/a&gt; mainly in
+&lt;aside class="admonition note"&gt;
+&lt;p class="admonition-title"&gt;Note&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;TL;DR;&lt;/em&gt; So, I bit the bullet and ran for the TC :)&lt;/p&gt;
+&lt;/aside&gt;
+&lt;p&gt;I have been contributing to OpenStack since the Havana cycle &lt;a class="footnote-reference brackets" href="http://graham.hayes.ie/posts/openstack-tc-nomination/#footnote-1" id="footnote-reference-1" role="doc-noteref"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;1&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/a&gt; mainly in
 Designate. I have also sporadically gotten involved with the TC, and its
 meetings since Designate applied for incubation all the way back in Atlanta.&lt;/p&gt;
 &lt;p&gt;I have been PTL for Designate for Mitaka, Newton, Ocata and the Queens cycle,
@@ -39,8 +41,8 @@ Technical Committee.&lt;/p&gt;
 OpenStack is a benefit, along with the experience of working on software as an
 end user of OpenStack I can help us ensure the Technical Committee is mindful
 of the unique challenges these projects and users can face.&lt;/p&gt;
-&lt;p&gt;I have not traditionally been shy about broaching these topics in the past &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/openstack-tc-nomination/#id6" id="id2"&gt;[2]&lt;/a&gt;
-&lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/openstack-tc-nomination/#id7" id="id3"&gt;[3]&lt;/a&gt; and &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/openstack-tc-nomination/#id8" id="id4"&gt;[4]&lt;/a&gt;, but I feel it is time I started follow through, and help guide the
+&lt;p&gt;I have not traditionally been shy about broaching these topics in the past &lt;a class="footnote-reference brackets" href="http://graham.hayes.ie/posts/openstack-tc-nomination/#footnote-2" id="footnote-reference-2" role="doc-noteref"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;2&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/a&gt;
+&lt;a class="footnote-reference brackets" href="http://graham.hayes.ie/posts/openstack-tc-nomination/#footnote-3" id="footnote-reference-3" role="doc-noteref"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;3&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/a&gt; and &lt;a class="footnote-reference brackets" href="http://graham.hayes.ie/posts/openstack-tc-nomination/#footnote-4" id="footnote-reference-4" role="doc-noteref"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;4&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/a&gt;, but I feel it is time I started follow through, and help guide the
 resolution for these questions, and I now have an employeer who is supportive
 of me spending more time in the community.&lt;/p&gt;
 &lt;p&gt;I do really like this community, and I want us to grow, expand and evolve the
@@ -48,42 +50,39 @@ software we write, without changing what we stand for.&lt;/p&gt;
 &lt;p&gt;Thank you for taking the time to read this.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;Graham Hayes (mugsie)&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Graham Hayes (mugsie)&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;table class="docutils footnote" frame="void" id="id5" rules="none"&gt;
-&lt;colgroup&gt;&lt;col class="label"&gt;&lt;col&gt;&lt;/colgroup&gt;
-&lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="http://graham.hayes.ie/posts/openstack-tc-nomination/#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="http://stackalytics.com/?release=all&amp;amp;metric=commits&amp;amp;user_id=grahamhayes"&gt;http://stackalytics.com/?release=all&amp;amp;metric=commits&amp;amp;user_id=grahamhayes&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id6" rules="none"&gt;
-&lt;colgroup&gt;&lt;col class="label"&gt;&lt;col&gt;&lt;/colgroup&gt;
-&lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="http://graham.hayes.ie/posts/openstack-tc-nomination/#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="http://lists.openstack.org/pipermail/openstack-dev/2016-July/099285.html"&gt;http://lists.openstack.org/pipermail/openstack-dev/2016-July/099285.html&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id7" rules="none"&gt;
-&lt;colgroup&gt;&lt;col class="label"&gt;&lt;col&gt;&lt;/colgroup&gt;
-&lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="http://graham.hayes.ie/posts/openstack-tc-nomination/#id3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="http://graham.hayes.ie/posts/openstack-designate-where-we-are/"&gt;http://graham.hayes.ie/posts/openstack-designate-where-we-are/&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id8" rules="none"&gt;
-&lt;colgroup&gt;&lt;col class="label"&gt;&lt;col&gt;&lt;/colgroup&gt;
-&lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="http://graham.hayes.ie/posts/openstack-tc-nomination/#id4"&gt;[4]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://review.openstack.org/#/c/312267/"&gt;https://review.openstack.org/#/c/312267/&lt;/a&gt; (and related discussion)&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;&lt;/div&gt;</description><category>elections</category><category>openstack</category><category>tc</category><guid>http://graham.hayes.ie/posts/openstack-tc-nomination/</guid><pubDate>Wed, 11 Oct 2017 13:02:20 GMT</pubDate></item><item><title>OpenStack Designate - Where we are.</title><link>http://graham.hayes.ie/posts/openstack-designate-where-we-are/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://graham.hayes.ie/images/me.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;I have been asked a few times recently "What is the state of the Designate
+&lt;aside class="footnote-list brackets"&gt;
+&lt;aside class="footnote brackets" id="footnote-1" role="note"&gt;
+&lt;span class="label"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;&lt;a role="doc-backlink" href="http://graham.hayes.ie/posts/openstack-tc-nomination/#footnote-reference-1"&gt;1&lt;/a&gt;&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/span&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://stackalytics.com/?release=all&amp;amp;metric=commits&amp;amp;user_id=grahamhayes"&gt;http://stackalytics.com/?release=all&amp;amp;metric=commits&amp;amp;user_id=grahamhayes&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;
+&lt;aside class="footnote brackets" id="footnote-2" role="note"&gt;
+&lt;span class="label"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;&lt;a role="doc-backlink" href="http://graham.hayes.ie/posts/openstack-tc-nomination/#footnote-reference-2"&gt;2&lt;/a&gt;&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/span&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://lists.openstack.org/pipermail/openstack-dev/2016-July/099285.html"&gt;http://lists.openstack.org/pipermail/openstack-dev/2016-July/099285.html&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;
+&lt;aside class="footnote brackets" id="footnote-3" role="note"&gt;
+&lt;span class="label"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;&lt;a role="doc-backlink" href="http://graham.hayes.ie/posts/openstack-tc-nomination/#footnote-reference-3"&gt;3&lt;/a&gt;&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/span&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://graham.hayes.ie/posts/openstack-designate-where-we-are/"&gt;http://graham.hayes.ie/posts/openstack-designate-where-we-are/&lt;/a&gt;&lt;/p&gt;
+&lt;/aside&gt;
+&lt;aside class="footnote brackets" id="footnote-4" role="note"&gt;
+&lt;span class="label"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;&lt;a role="doc-backlink" href="http://graham.hayes.ie/posts/openstack-tc-nomination/#footnote-reference-4"&gt;4&lt;/a&gt;&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/span&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://review.openstack.org/#/c/312267/"&gt;https://review.openstack.org/#/c/312267/&lt;/a&gt; (and related discussion)&lt;/p&gt;
+&lt;/aside&gt;
+&lt;/aside&gt;
+&lt;/section&gt;</description><category>elections</category><category>openstack</category><category>tc</category><guid>http://graham.hayes.ie/posts/openstack-tc-nomination/</guid><pubDate>Wed, 11 Oct 2017 13:02:20 GMT</pubDate></item><item><title>OpenStack Designate - Where we are.</title><link>http://graham.hayes.ie/posts/openstack-designate-where-we-are/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://graham.hayes.ie/images/me.jpg"&gt;&lt;/figure&gt; &lt;section id="designate-state-of-the-unio-project"&gt;
+&lt;h2&gt;Designate: State of the Unio .. Project&lt;/h2&gt;
+&lt;p&gt;I have been asked a few times recently "What is the state of the Designate
 project?", "How is Designate getting on?", and by people who know what is
 happening "What are you going to do about Designate?".&lt;/p&gt;
 &lt;p&gt;Needless to say, all of this is depressing to me, and the people that I have
 worked with for the last number of years to make Designate a truly useful,
 feature rich project.&lt;/p&gt;
-&lt;div class="admonition note"&gt;
-&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
-&lt;p class="last"&gt;&lt;em&gt;TL;DR;&lt;/em&gt; for this - Designate is not in a sustainable place.&lt;/p&gt;
-&lt;/div&gt;
+&lt;aside class="admonition note"&gt;
+&lt;p class="admonition-title"&gt;Note&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;TL;DR;&lt;/em&gt; for this - Designate is not in a sustainable place.&lt;/p&gt;
+&lt;/aside&gt;
 &lt;p&gt;To start out - Designate has always been a small project. DNS does not have
 massive &lt;em&gt;cool&lt;/em&gt; appeal - its not shiny, pretty, or something you see on the
 front page of HackerNews (unless it breaks - then oh boy do people become DNS
@@ -111,43 +110,39 @@ sets - but they are (incredibly valuable and appreciated) tactical
 contributions. A project cannot survive on them, and we are no exception.&lt;/p&gt;
 &lt;p&gt;So where does that leave us? Let have a look at how many actual commits we
 have had:&lt;/p&gt;
-&lt;table border="1" class="docutils"&gt;
+&lt;table&gt;
 &lt;caption&gt;Commits per cycle&lt;/caption&gt;
-&lt;colgroup&gt;
-&lt;col width="61%"&gt;
-&lt;col width="39%"&gt;
-&lt;/colgroup&gt;
-&lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td&gt;Havana&lt;/td&gt;
-&lt;td&gt;172&lt;/td&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;Havana&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;172&lt;/p&gt;&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Icehouse&lt;/td&gt;
-&lt;td&gt;165&lt;/td&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;Icehouse&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;165&lt;/p&gt;&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Juno&lt;/td&gt;
-&lt;td&gt;254&lt;/td&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;Juno&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;254&lt;/p&gt;&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Kilo&lt;/td&gt;
-&lt;td&gt;340&lt;/td&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;Kilo&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;340&lt;/p&gt;&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Liberty&lt;/td&gt;
-&lt;td&gt;327&lt;/td&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;Liberty&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;327&lt;/p&gt;&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Mitaka&lt;/td&gt;
-&lt;td&gt;246&lt;/td&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;Mitaka&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;246&lt;/p&gt;&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Newton&lt;/td&gt;
-&lt;td&gt;299&lt;/td&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;Newton&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;299&lt;/p&gt;&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Ocata&lt;/td&gt;
-&lt;td&gt;98&lt;/td&gt;
+&lt;tr&gt;&lt;td&gt;&lt;p&gt;Ocata&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;98&lt;/p&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Next cycle, we are going to have 2 community goals:&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;Control Plane API endpoints deployment via WSGI&lt;/li&gt;
-&lt;li&gt;Python 3.5 functional testing&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Control Plane API endpoints deployment via WSGI&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Python 3.5 functional testing&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;We would have been actually OK for the tempest one - we were one of the first
 external repo based plug-ins with &lt;a class="reference external" href="https://github.com/openstack/designate-tempest-plugin"&gt;designate-tempest-plugin&lt;/a&gt;&lt;/p&gt;
@@ -160,11 +155,11 @@ eventlet imported - I am not sure how that affects running in a WSGI server)&lt;
 management that re-factoring parts of the code base due to "community goals"
 or a future potential pay-off can be more difficult than it should.&lt;/p&gt;
 &lt;img alt="/images/oct-2016-projects-prod.jpg" src="http://graham.hayes.ie/images/oct-2016-projects-prod.jpg"&gt;
-&lt;p&gt;We now have a situation where the largest "non-core" project &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/openstack-designate-where-we-are/#id6" id="id1"&gt;[1]&lt;/a&gt; in the tent
+&lt;p&gt;We now have a situation where the largest "non-core" project &lt;a class="footnote-reference brackets" href="http://graham.hayes.ie/posts/openstack-designate-where-we-are/#footnote-1" id="footnote-reference-1" role="doc-noteref"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;1&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/a&gt; in the tent
 has a tiny number of developers working on it. 42% of deployers are evaluating
 Designate, so we should see this start to increase.&lt;/p&gt;
-&lt;div class="section" id="how-did-this-happen"&gt;
-&lt;h2&gt;How did this happen?&lt;/h2&gt;
+&lt;section id="how-did-this-happen"&gt;
+&lt;h3&gt;How did this happen?&lt;/h3&gt;
 &lt;p&gt;Like most situations, there is no single cause.&lt;/p&gt;
 &lt;p&gt;Certainly there may have been fault on the side of the Designate leadership.
 We had started out as a small team, and had built a huge amount of trust and
@@ -178,7 +173,7 @@ pretty quick feedback when we made a mistake, or caused a bug. All of this
 resulted in the major development cost being funded by two companies, which
 left us vulnerable to changes in direction from those companies. Then that
 shoe dropped. We are now one corporate change of direction from having no
-cores on the project being paid to work on the project. &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/openstack-designate-where-we-are/#id7" id="id2"&gt;[2]&lt;/a&gt;&lt;/p&gt;
+cores on the project being paid to work on the project. &lt;a class="footnote-reference brackets" href="http://graham.hayes.ie/posts/openstack-designate-where-we-are/#footnote-2" id="footnote-reference-2" role="doc-noteref"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;2&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Preceding this, the governance of OpenStack changed to the &lt;a class="reference external" href="https://governance.openstack.org/tc/resolutions/20141202-project-structure-reform-spec.html"&gt;Big Tent&lt;/a&gt;
 While this change was a good thing for the OpenStack project as a
 whole it had quite a bad impact on us.&lt;/p&gt;
@@ -215,11 +210,11 @@ while we still have a small amount of old functional tests that are not ported
 from our old non plug-in style.&lt;/p&gt;
 &lt;p&gt;All of this adds up to make projects like Designate much less attractive
 to users - we just need to look at the &lt;a class="reference external" href="https://www.openstack.org/software/releases/newton/components/designate"&gt;project navigator&lt;/a&gt; to see what a bad
-image potential users get of us. &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/openstack-designate-where-we-are/#id8" id="id3"&gt;[3]&lt;/a&gt; This is for a project that was ran as a
-full (non beta) service in a public cloud. &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/openstack-designate-where-we-are/#id9" id="id4"&gt;[4]&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="where-too-now-then"&gt;
-&lt;h2&gt;Where too now then?&lt;/h2&gt;
+image potential users get of us. &lt;a class="footnote-reference brackets" href="http://graham.hayes.ie/posts/openstack-designate-where-we-are/#footnote-3" id="footnote-reference-3" role="doc-noteref"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;3&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/a&gt; This is for a project that was ran as a
+full (non beta) service in a public cloud. &lt;a class="footnote-reference brackets" href="http://graham.hayes.ie/posts/openstack-designate-where-we-are/#footnote-4" id="footnote-reference-4" role="doc-noteref"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;4&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="where-too-now-then"&gt;
+&lt;h3&gt;Where too now then?&lt;/h3&gt;
 &lt;p&gt;Well, this is where I call out to people who actually use the project - don't
 jump ship and use something else because of the picture I have painted. We are
 a dedicated team, who cares about the project. We just need some help.&lt;/p&gt;
@@ -240,7 +235,7 @@ teams who can dedicate people to the implementation of plugins / code.&lt;/p&gt;
 &lt;p&gt;As someone I was talking to recently said - AWS is not winning public cloud
 because of commodity compute (that does help - a lot), but because of the
 added services that make using the cloud, well, cloud like. OpenStack needs to
-decide that either it is just compute, or if it wants the eco-system. &lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/openstack-designate-where-we-are/#id10" id="id5"&gt;[5]&lt;/a&gt;
+decide that either it is just compute, or if it wants the eco-system. &lt;a class="footnote-reference brackets" href="http://graham.hayes.ie/posts/openstack-designate-where-we-are/#footnote-5" id="footnote-reference-5" role="doc-noteref"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;5&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/a&gt;
 Designate is far from alone in this.&lt;/p&gt;
 &lt;p&gt;I am happy to talk to anyone about helping to fill in the needed resources -
 Designate is a project that started in the very office I am writing this blog
@@ -250,66 +245,63 @@ post in, and something I want to last.&lt;/p&gt;
 &lt;p&gt;and this was our last mid cycle:&lt;/p&gt;
 &lt;img alt="/images/mid-cycle.jpg" src="http://graham.hayes.ie/images/mid-cycle.jpg"&gt;
 &lt;p&gt;and in Atlanta at the PTG, there will be two of us.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id6" rules="none"&gt;
-&lt;colgroup&gt;&lt;col class="label"&gt;&lt;col&gt;&lt;/colgroup&gt;
-&lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="http://graham.hayes.ie/posts/openstack-designate-where-we-are/#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;In the &lt;a class="reference external" href="https://www.openstack.org/analytics"&gt;Oct-2016&lt;/a&gt; User Survey Designate was deployed in 23% of clouds&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id7" rules="none"&gt;
-&lt;colgroup&gt;&lt;col class="label"&gt;&lt;col&gt;&lt;/colgroup&gt;
-&lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="http://graham.hayes.ie/posts/openstack-designate-where-we-are/#id2"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;I have been lucky to have a management chain that is OK with me
+&lt;aside class="footnote-list brackets"&gt;
+&lt;aside class="footnote brackets" id="footnote-1" role="note"&gt;
+&lt;span class="label"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;&lt;a role="doc-backlink" href="http://graham.hayes.ie/posts/openstack-designate-where-we-are/#footnote-reference-1"&gt;1&lt;/a&gt;&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/span&gt;
+&lt;p&gt;In the &lt;a class="reference external" href="https://www.openstack.org/analytics"&gt;Oct-2016&lt;/a&gt; User Survey Designate was deployed in 23% of clouds&lt;/p&gt;
+&lt;/aside&gt;
+&lt;aside class="footnote brackets" id="footnote-2" role="note"&gt;
+&lt;span class="label"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;&lt;a role="doc-backlink" href="http://graham.hayes.ie/posts/openstack-designate-where-we-are/#footnote-reference-2"&gt;2&lt;/a&gt;&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/span&gt;
+&lt;p&gt;I have been lucky to have a management chain that is OK with me
 spending some time on Designate, and have not asked me to take time off
 for Summits or Gatherings, but my day job is working on a completely
-different project.&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id8" rules="none"&gt;
-&lt;colgroup&gt;&lt;col class="label"&gt;&lt;col&gt;&lt;/colgroup&gt;
-&lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="http://graham.hayes.ie/posts/openstack-designate-where-we-are/#id3"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;I do have other issues with the metrics - mainly that we existed before
+different project.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;aside class="footnote brackets" id="footnote-3" role="note"&gt;
+&lt;span class="label"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;&lt;a role="doc-backlink" href="http://graham.hayes.ie/posts/openstack-designate-where-we-are/#footnote-reference-3"&gt;3&lt;/a&gt;&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/span&gt;
+&lt;p&gt;I do have other issues with the metrics - mainly that we existed before
 leaving stackforge, and some of the other stats are set so
-high, that non "core" projects will probably never meet them.&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id9" rules="none"&gt;
-&lt;colgroup&gt;&lt;col class="label"&gt;&lt;col&gt;&lt;/colgroup&gt;
-&lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="http://graham.hayes.ie/posts/openstack-designate-where-we-are/#id4"&gt;[4]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;I recently went to an internal training talk, where they were talking
+high, that non "core" projects will probably never meet them.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;aside class="footnote brackets" id="footnote-4" role="note"&gt;
+&lt;span class="label"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;&lt;a role="doc-backlink" href="http://graham.hayes.ie/posts/openstack-designate-where-we-are/#footnote-reference-4"&gt;4&lt;/a&gt;&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/span&gt;
+&lt;p&gt;I recently went to an internal training talk, where they were talking
 about new features in Newton. There was a whole slide about how projects
 had improved, or gotten worse on these scores. A whole slide. With
-tables of scores, and I think there may have even been a graph.&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table class="docutils footnote" frame="void" id="id10" rules="none"&gt;
-&lt;colgroup&gt;&lt;col class="label"&gt;&lt;col&gt;&lt;/colgroup&gt;
-&lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="http://graham.hayes.ie/posts/openstack-designate-where-we-are/#id5"&gt;[5]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Now, I am slightly biased, but I would argue that DNS is needed in
-commodity compute, but again, that is my view.&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>designate</category><category>openstack</category><category>project update</category><category>tc</category><guid>http://graham.hayes.ie/posts/openstack-designate-where-we-are/</guid><pubDate>Thu, 09 Feb 2017 18:38:00 GMT</pubDate></item><item><title>Equal Opportunities for all OpenStack Projects</title><link>http://graham.hayes.ie/posts/equal-opportunities-for-all-openstack-projects/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;p&gt;So, two weeks ago, I dropped a TC &lt;a class="reference external" href="https://review.openstack.org/#/c/342366/"&gt;motion&lt;/a&gt; and a mailing list &lt;a class="reference external" href="http://lists.openstack.org/pipermail/openstack-dev/2016-July/099285.html"&gt;post&lt;/a&gt; and
+tables of scores, and I think there may have even been a graph.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;aside class="footnote brackets" id="footnote-5" role="note"&gt;
+&lt;span class="label"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;&lt;a role="doc-backlink" href="http://graham.hayes.ie/posts/openstack-designate-where-we-are/#footnote-reference-5"&gt;5&lt;/a&gt;&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/span&gt;
+&lt;p&gt;Now, I am slightly biased, but I would argue that DNS is needed in
+commodity compute, but again, that is my view.&lt;/p&gt;
+&lt;/aside&gt;
+&lt;/aside&gt;
+&lt;/section&gt;
+&lt;/section&gt;</description><category>designate</category><category>openstack</category><category>project update</category><category>tc</category><guid>http://graham.hayes.ie/posts/openstack-designate-where-we-are/</guid><pubDate>Thu, 09 Feb 2017 18:38:00 GMT</pubDate></item><item><title>Equal Opportunities for all OpenStack Projects</title><link>http://graham.hayes.ie/posts/equal-opportunities-for-all-openstack-projects/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;section id="a-week-or-2-later-where-are-we-on-fairness-for-all-projects"&gt;
+&lt;h2&gt;A week or 2 later - where are we on fairness for all projects?&lt;/h2&gt;
+&lt;p&gt;So, two weeks ago, I dropped a TC &lt;a class="reference external" href="https://review.openstack.org/#/c/342366/"&gt;motion&lt;/a&gt; and a mailing list &lt;a class="reference external" href="http://lists.openstack.org/pipermail/openstack-dev/2016-July/099285.html"&gt;post&lt;/a&gt; and
 waited for the other foot to drop.&lt;/p&gt;
 &lt;p&gt;I was pleasantly surprised - no one started shouting at me - but by trying
 to not point fingers at individual teams I made the text too convoluted.&lt;/p&gt;
 &lt;p&gt;So, in an effort to clarify things, here is an overview of what has been said
 so far, both in the mailing list and the gerrit review itself.&lt;/p&gt;
-&lt;div class="section" id="feedback"&gt;
-&lt;h2&gt;Feedback&lt;/h2&gt;
+&lt;section id="feedback"&gt;
+&lt;h3&gt;Feedback&lt;/h3&gt;
 &lt;blockquote class="epigraph"&gt;
-... does this also include plugins within projects, like storage
-backends in cinder and hypervisor drivers in nova?&lt;/blockquote&gt;
+&lt;p&gt;... does this also include plugins within projects, like storage
+backends in cinder and hypervisor drivers in nova?&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;No - this was not clear enough. This change is aimed at projects that are
 points of significant cross project interaction. While, in the future there may
 come a point where Nova Compute Drivers are developed out of tree (though
 I doubt it), that is not happening today. As a result, there is no projects in
 the list of &lt;a class="reference external" href="https://governance.openstack.org/reference/projects/index.html"&gt;projects&lt;/a&gt; that would need to integrate with Nova.&lt;/p&gt;
 &lt;blockquote class="epigraph"&gt;
-Could you please clarify: do you advocate for a generic plugin interface for
+&lt;p&gt;Could you please clarify: do you advocate for a generic plugin interface for
 every project, or that each project should expose a plugin interface that
 allows plugin to behave as in-tree components? Because the latter is what
-happens with Tempest, and I see the former a bit complicated.&lt;/blockquote&gt;
+happens with Tempest, and I see the former a bit complicated.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;For every project that has cross project interaction - tempest is a good
 example.&lt;/p&gt;
 &lt;p&gt;For these projects, they should allow all projects in tree (like Nova,
@@ -323,27 +315,28 @@ by the QA team, but should use the same interface as the other plugins
 that are not in that repository.&lt;/p&gt;
 &lt;p&gt;Of course, it is not just tempest - an incomplete list looks like:&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;Tempest&lt;/li&gt;
-&lt;li&gt;Devstack&lt;/li&gt;
-&lt;li&gt;Grende&lt;/li&gt;
-&lt;li&gt;Horizon&lt;/li&gt;
-&lt;li&gt;OpenStack Client&lt;/li&gt;
-&lt;li&gt;OpenStack SDK&lt;/li&gt;
-&lt;li&gt;Searchlight&lt;/li&gt;
-&lt;li&gt;Heat&lt;/li&gt;
-&lt;li&gt;Mistral&lt;/li&gt;
-&lt;li&gt;Celiometer&lt;/li&gt;
-&lt;li&gt;Rally&lt;/li&gt;
-&lt;li&gt;Documentation&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Tempest&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Devstack&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Grende&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Horizon&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;OpenStack Client&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;OpenStack SDK&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Searchlight&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Heat&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Mistral&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Celiometer&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Rally&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Documentation&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;And I am sure I have missed some obvious ones. (if you see a project missing
 let me know on the &lt;a class="reference external" href="https://review.openstack.org/#/c/342366/"&gt;motion&lt;/a&gt;)&lt;/p&gt;
 &lt;blockquote class="epigraph"&gt;
-I think I disagree here. The root cause is being addressed: external tests can
+&lt;p&gt;I think I disagree here. The root cause is being addressed: external tests can
 use the Tempest plugin interface, and use the API, which is being stabilized.
 The fact that the Tempest API is partially unstable is a temporary things, due
 to the origin of the project and the way the scope was redefined, but again
-it's temporary.&lt;/blockquote&gt;
+it's temporary.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;This seems to be the core of a lot of the disagreement - this is only temporary,
 it will all be fixed in the future, and it should stay this way.&lt;/p&gt;
 &lt;p&gt;Unfortunately the discrepancy between projects is not temporary. The specific
@@ -351,13 +344,14 @@ problems I have highlighted in the thread for one of the projects is temporary,
 but I beleive the only long-term solution is to remove the difference between
 projects.&lt;/p&gt;
 &lt;blockquote class="epigraph"&gt;
-Before we start making lots of specific rules about how teams
+&lt;p&gt;Before we start making lots of specific rules about how teams
 coordinate, I would like to understand the problem those rules are meant
 to solve, so thank you for providing that example.
 ...
 It's not clear yet whether there needs to be a new policy to change the
 existing intent, or if a discussion just hasn't happened, or if someone
-simply needs to edit some code.&lt;/blockquote&gt;
+simply needs to edit some code.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Unfortunately there is a big push back on editing code to help plugins from
 some of the projects. Again, having the differing access between projects will
 continue to exacerbate the problem.&lt;/p&gt;
@@ -368,39 +362,40 @@ continue to exacerbate the problem.&lt;/p&gt;
 &lt;p&gt;That was done in the last patchset. I think the Level Playing Field title
 bounced around my head from the other resolution that was titled Level Playing
 Field. It may have been confusing alright.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="other-areas"&gt;
-&lt;h2&gt;Other Areas&lt;/h2&gt;
+&lt;/section&gt;
+&lt;section id="other-areas"&gt;
+&lt;h3&gt;Other Areas&lt;/h3&gt;
 &lt;p&gt;I feel like I have been picking on tempest a little too much, it just captures
 the current issues perfectly, and a large number of the community have some
 knowledge of it, and how it works.&lt;/p&gt;
 &lt;p&gt;There is other areas across OpenStack the need attention as well:&lt;/p&gt;
-&lt;div class="section" id="horizon"&gt;
-&lt;h3&gt;Horizon&lt;/h3&gt;
+&lt;section id="horizon"&gt;
+&lt;h4&gt;Horizon&lt;/h4&gt;
 &lt;p&gt;Horizon privileged projects have access to much more panels than
 plugins (service status, quotas, overviews etc).
 Plugins have to rely on tarballs of horizon&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="openstack-client"&gt;
-&lt;h3&gt;OpenStack Client&lt;/h3&gt;
+&lt;/section&gt;
+&lt;section id="openstack-client"&gt;
+&lt;h4&gt;OpenStack Client&lt;/h4&gt;
 &lt;p&gt;OpenStack CLI privileged projects have access to more commands, as
 plugins cannot hook in to them (e.g. quotas)&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="grenade"&gt;
-&lt;h3&gt;Grenade&lt;/h3&gt;
+&lt;/section&gt;
+&lt;section id="grenade"&gt;
+&lt;h4&gt;Grenade&lt;/h4&gt;
 &lt;p&gt;Plugins may or may not have tempest tests ran (I think that patch
 merged), they have to use parts of tempest I was told explicitly
 plugins should not use to get the tests to run at that point.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="docs"&gt;
-&lt;h3&gt;Docs&lt;/h3&gt;
+&lt;/section&gt;
+&lt;section id="docs"&gt;
+&lt;h4&gt;Docs&lt;/h4&gt;
 &lt;p&gt;We can now add install guides and hook into the API Reference, and API
 guides. This is great - and I am really happy about it. We still have
 issues trying to integrate with other areas in docs, and most non docs
 privileged projects end up with massive amounts of users docs in
 docs.openstack.org/developer/&amp;lt;project&amp;gt; , which is not ideal.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>governance</category><category>openstack</category><category>plugins</category><category>tc</category><guid>http://graham.hayes.ie/posts/equal-opportunities-for-all-openstack-projects/</guid><pubDate>Mon, 25 Jul 2016 21:25:00 GMT</pubDate></item><item><title>OpenStack - A leveler playing field</title><link>http://graham.hayes.ie/posts/openstack-a-leveler-playing-field/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;p&gt;I just proposed a review to &lt;a class="reference external" href="https://review.openstack.org/342366"&gt;openstack/governance&lt;/a&gt;  repo [0] that aims
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;/section&gt;</description><category>governance</category><category>openstack</category><category>plugins</category><category>tc</category><guid>http://graham.hayes.ie/posts/equal-opportunities-for-all-openstack-projects/</guid><pubDate>Mon, 25 Jul 2016 21:25:00 GMT</pubDate></item><item><title>OpenStack - A leveler playing field</title><link>http://graham.hayes.ie/posts/openstack-a-leveler-playing-field/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;p&gt;I just proposed a review to &lt;a class="reference external" href="https://review.openstack.org/342366"&gt;openstack/governance&lt;/a&gt;  repo [0] that aims
 to have everything across OpenStack be plugin based for all cross
 project interaction, or allow all projects access to the same internal
 APIs and I wanted to give a bit of background on my motivation, and how
@@ -446,7 +441,7 @@ differentiate projects by tags.&lt;/p&gt;
 &lt;p&gt;This won't be a change that happens tomorrow, next week, or even next
 cycle, but think as a goal, we should start moving in this direction
 as soon as we can, and start building momentum.&lt;/p&gt;
-&lt;div class="admonition note"&gt;
-&lt;p class="first admonition-title"&gt;Note&lt;/p&gt;
-&lt;p class="last"&gt;This was originally posted to the &lt;a class="reference external" href="http://lists.openstack.org/pipermail/openstack-dev/2016-July/099285.html"&gt;openstack-dev&lt;/a&gt; mailing list.&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>governance</category><category>openstack</category><category>plugins</category><category>tc</category><guid>http://graham.hayes.ie/posts/openstack-a-leveler-playing-field/</guid><pubDate>Thu, 14 Jul 2016 19:30:07 GMT</pubDate></item></channel></rss>
+&lt;aside class="admonition note"&gt;
+&lt;p class="admonition-title"&gt;Note&lt;/p&gt;
+&lt;p&gt;This was originally posted to the &lt;a class="reference external" href="http://lists.openstack.org/pipermail/openstack-dev/2016-July/099285.html"&gt;openstack-dev&lt;/a&gt; mailing list.&lt;/p&gt;
+&lt;/aside&gt;</description><category>governance</category><category>openstack</category><category>plugins</category><category>tc</category><guid>http://graham.hayes.ie/posts/openstack-a-leveler-playing-field/</guid><pubDate>Thu, 14 Jul 2016 19:30:07 GMT</pubDate></item></channel></rss>

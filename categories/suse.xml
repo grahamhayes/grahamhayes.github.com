@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (Posts about suse)</title><link>http://graham.hayes.ie/</link><description></description><atom:link href="http://graham.hayes.ie/categories/suse.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 08 Apr 2019 16:33:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>New Adventures</title><link>http://graham.hayes.ie/posts/new-adventures/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;p&gt;Today marks the start of a new chapter for me - I started as an employee
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (Posts about suse)</title><link>http://graham.hayes.ie/</link><description></description><atom:link href="http://graham.hayes.ie/categories/suse.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 07 Nov 2022 17:53:50 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>New Adventures</title><link>http://graham.hayes.ie/posts/new-adventures/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;section id="hello-suse"&gt;
+&lt;h2&gt;Hello SUSE!!!&lt;/h2&gt;
+&lt;p&gt;Today marks the start of a new chapter for me - I started as an employee
 of SUSE this morning. After 3.5 years (I had no idea it was that long) in HPE
 the time came, and me, and the rest of the team I work with, along with the
 Cloud Foundry team, and the OpenStack teams all moved en-mass to the new
@@ -22,6 +24,7 @@ community.&lt;/p&gt;
 next adventure!&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;Graham&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Graham&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/blockquote&gt;&lt;/div&gt;</description><category>hpe</category><category>job</category><category>suse</category><guid>http://graham.hayes.ie/posts/new-adventures/</guid><pubDate>Thu, 09 Mar 2017 18:20:13 GMT</pubDate></item></channel></rss>
+&lt;/blockquote&gt;
+&lt;/section&gt;</description><category>hpe</category><category>job</category><category>suse</category><guid>http://graham.hayes.ie/posts/new-adventures/</guid><pubDate>Thu, 09 Mar 2017 18:20:13 GMT</pubDate></item></channel></rss>

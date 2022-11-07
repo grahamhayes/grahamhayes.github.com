@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (Posts about seattle)</title><link>http://graham.hayes.ie/</link><description></description><atom:link href="http://graham.hayes.ie/categories/seattle.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 08 Apr 2019 16:33:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Kosmos Mid Cycle</title><link>http://graham.hayes.ie/posts/kosmos-mid-cycle/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;img alt="https://upload.wikimedia.org/wikipedia/commons/5/58/Seattle_Center_as_night_falls.jpg" src="https://upload.wikimedia.org/wikipedia/commons/5/58/Seattle_Center_as_night_falls.jpg"&gt;
-&lt;p&gt;&lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/kosmos-mid-cycle/#id2" id="id1"&gt;[1]&lt;/a&gt;&lt;/p&gt;
-&lt;div class="section" id="kosmos-mid-cycle"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (Posts about seattle)</title><link>http://graham.hayes.ie/</link><description></description><atom:link href="http://graham.hayes.ie/categories/seattle.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 07 Nov 2022 17:53:49 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Kosmos Mid Cycle</title><link>http://graham.hayes.ie/posts/kosmos-mid-cycle/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;img alt="https://upload.wikimedia.org/wikipedia/commons/5/58/Seattle_Center_as_night_falls.jpg" src="https://upload.wikimedia.org/wikipedia/commons/5/58/Seattle_Center_as_night_falls.jpg"&gt;
+&lt;p&gt;&lt;a class="footnote-reference brackets" href="http://graham.hayes.ie/posts/kosmos-mid-cycle/#footnote-1" id="footnote-reference-1" role="doc-noteref"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;1&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section id="kosmos-mid-cycle"&gt;
 &lt;h2&gt;Kosmos Mid Cycle&lt;/h2&gt;
 &lt;p&gt;We sat down in Seattle last week to plan out how we were going to kick start
 progess on Kosmos&lt;/p&gt;
@@ -12,10 +12,10 @@ progess on Kosmos&lt;/p&gt;
 &lt;p&gt;We have the basic design up on our specs repo &lt;a class="reference external" href="https://github.com/openstack/kosmos-specs"&gt;here&lt;/a&gt; ( it is not publishing anywhere yet - I will fix that soon )&lt;/p&gt;
 &lt;p&gt;If anyone is interested in the project, give me a ping - be it for developing drivers, code, requirements or general interest. (But, really - if you want to write code, just jump in, or ping me for what the hot topics are)&lt;/p&gt;
 &lt;p&gt;In 2 weeks time I will be off the Designate Mid Cycle - a little closer to home this time - in Galway, Ireland.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
-&lt;colgroup&gt;&lt;col class="label"&gt;&lt;col&gt;&lt;/colgroup&gt;
-&lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="http://graham.hayes.ie/posts/kosmos-mid-cycle/#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;By Jeffery Hayes (Jeffery Hayes) [CC BY-SA 3.0 (&lt;a class="reference external" href="http://creativecommons.org/licenses/by-sa/3.0"&gt;http://creativecommons.org/licenses/by-sa/3.0&lt;/a&gt;)], via Wikimedia Commons&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>openstack</category><category>seattle</category><category>summit</category><category>travel</category><guid>http://graham.hayes.ie/posts/kosmos-mid-cycle/</guid><pubDate>Fri, 29 Jan 2016 18:14:05 GMT</pubDate></item></channel></rss>
+&lt;aside class="footnote-list brackets"&gt;
+&lt;aside class="footnote brackets" id="footnote-1" role="note"&gt;
+&lt;span class="label"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;&lt;a role="doc-backlink" href="http://graham.hayes.ie/posts/kosmos-mid-cycle/#footnote-reference-1"&gt;1&lt;/a&gt;&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/span&gt;
+&lt;p&gt;By Jeffery Hayes (Jeffery Hayes) [CC BY-SA 3.0 (&lt;a class="reference external" href="http://creativecommons.org/licenses/by-sa/3.0"&gt;http://creativecommons.org/licenses/by-sa/3.0&lt;/a&gt;)], via Wikimedia Commons&lt;/p&gt;
+&lt;/aside&gt;
+&lt;/aside&gt;
+&lt;/section&gt;</description><category>openstack</category><category>seattle</category><category>summit</category><category>travel</category><guid>http://graham.hayes.ie/posts/kosmos-mid-cycle/</guid><pubDate>Fri, 29 Jan 2016 18:14:05 GMT</pubDate></item></channel></rss>

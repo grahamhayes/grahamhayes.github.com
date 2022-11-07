@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (Posts about openstack, tc, elections)</title><link>http://graham.hayes.ie/</link><description></description><atom:link href="http://graham.hayes.ie/categories/cat_openstack-tc-elections.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 30 Mar 2020 16:49:46 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>OpenStack TC Nominations - Victoria</title><link>http://graham.hayes.ie/posts/openstack-tc-nominations-victoria/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://graham.hayes.ie/images/me.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;Hello Everyone,&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (Posts about openstack, tc, elections)</title><link>http://graham.hayes.ie/</link><description></description><atom:link href="http://graham.hayes.ie/categories/cat_openstack-tc-elections.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 07 Nov 2022 17:53:50 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>OpenStack TC Nominations - Victoria</title><link>http://graham.hayes.ie/posts/openstack-tc-nominations-victoria/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://graham.hayes.ie/images/me.jpg"&gt;&lt;/figure&gt; &lt;section id="tc-nomination"&gt;
+&lt;h2&gt;TC Nomination&lt;/h2&gt;
+&lt;p&gt;Hello Everyone,&lt;/p&gt;
 &lt;p&gt;I have been a member of the TC for 2 terms now, and I am running again for
 another term on the TC.&lt;/p&gt;
 &lt;p&gt;I have been involved in OpenStack as a developer, operator, PTL, and TC member
@@ -47,5 +49,6 @@ ask me questions in the next week or so, but for everyone, please vote for
 whoever you think will be the best for OpenStack.&lt;/p&gt;
 &lt;p&gt;Thanks for taking the time to read this,&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;Graham&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;</description><guid>http://graham.hayes.ie/posts/openstack-tc-nominations-victoria/</guid><pubDate>Mon, 30 Mar 2020 16:48:26 GMT</pubDate></item></channel></rss>
+&lt;li&gt;&lt;p&gt;Graham&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;</description><guid>http://graham.hayes.ie/posts/openstack-tc-nominations-victoria/</guid><pubDate>Mon, 30 Mar 2020 16:48:26 GMT</pubDate></item></channel></rss>

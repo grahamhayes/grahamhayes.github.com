@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html prefix="
-og: http://ogp.me/ns#
-article: http://ogp.me/ns/article#
-" lang="en">
+        og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+    " vocab="http://ogp.me/ns" lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="description" content="Why are we doing such a big refactor?">
 <meta name="viewport" content="width=device-width">
 <title>The Big Rename - why? | graham.hayes.ie</title>
-<link href="../../assets/css/bitter.css" rel="stylesheet" type="text/css">
-<link href="../../assets/css/main.css" rel="stylesheet" type="text/css">
-<link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link href="../../assets/css/baguetteBox.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/rst_base.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/nikola_rst.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link href="../../assets/css/theme.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
 <link rel="canonical" href="http://graham.hayes.ie/posts/the-big-rename/">
-<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="Graham Hayes">
+<link rel="me" href="https://mastodon.ie/@graham">
+<!--[if lt IE 9]><script src="../../assets/js/html5shiv-printshiv.min.js"></script><![endif]--><meta name="author" content="Graham Hayes">
+<link rel="prev" href="../openstack-summit-designate-report/" title="OpenStack Summit - Designate Report" type="text/html">
+<link rel="next" href="../big-rename-complete/" title="Big Rename - Complete!!" type="text/html">
 <meta property="og:site_name" content="graham.hayes.ie">
 <meta property="og:title" content="The Big Rename - why?">
 <meta property="og:url" content="http://graham.hayes.ie/posts/the-big-rename/">
@@ -29,64 +36,67 @@ article: http://ogp.me/ns/article#
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@grahamhayes">
 <meta name="twitter:creator" content="@grahamhayes">
-<meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/1/1a/Code.jpg">
 </head>
 <body>
+    <a href="#page-content" class="sr-only sr-only-focusable">Skip to main content</a>
+    
     <section class="social"><ul>
 <a href="../../"><img style="border-radius: 50%; margin-left: auto; margin-right: auto; display: block; margin-bottom: 20px" width="80" height="80" src="../../images/me.jpg"></a>
-                    <li><a href="../../" title="Home"><i class="icon-home"></i></a></li>
-            <li><a href="../../archive.html" title="Archives"><i class="icon-folder-open-alt"></i></a></li>
-            <li><a href="../../categories" title="Tags"><i class="icon-tags"></i></a></li>
-            <li><a href="../../projects" title="Projects"><i class="icon-briefcase"></i></a></li>
-            <li><a href="../../stories/about-me" title="About Me"><i class="icon-info"></i></a></li>
-            <li><a href="../../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
-            <li><a href="https://twitter.com/grahamhayes" title="My Twitter"><i class="icon-twitter"></i></a></li>
-            <li><a href="https://github.com/grahamhayes" title="My Github"><i class="icon-github"></i></a></li>
+                    <li><a href="../../" title="Home"><i class="fa fa-home"></i></a></li>
+            <li><a href="../../archive.html" title="Archives"><i class="fa fa-folder-open-alt"></i></a></li>
+            <li><a href="../../categories" title="Tags"><i class="fa fa-tags"></i></a></li>
+            <li><a href="../../projects" title="Projects"><i class="fa fa-briefcase"></i></a></li>
+            <li><a href="../../stories/about-me" title="About Me"><i class="fa fa-info"></i></a></li>
+            <li><a href="../../rss.xml" title="RSS"><i class="fa fa-rss"></i></a></li>
+            <li><a href="https://twitter.com/grahamhayes" title="My Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://github.com/grahamhayes" title="My Github"><i class="fab fa-github"></i></a></li>
+    
+    
 
         </ul></section><section class="page-content"><div class="content" rel="main">
-    <div class="post">
-        <h1 class="p-name entry-title" itemprop="headline name">The Big Rename - why?</h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">The Big Rename - why?</a></h1>
 
-        <div class="meta">
-            <div class="authordate">
-                <time class="timeago" datetime="2015-11-09T19:52:03+00:00">2015-11-09 19:52</time>
+        <div class="metadata">
+            <p class="dateline"><a href="." rel="bookmark"><i class="fa fa-clock"></i> <time class="published dt-published" datetime="2015-11-09T19:52:03Z" itemprop="datePublished" title="2015-11-09 19:52">2015-11-09 19:52</time></a></p>
+            <p class="byline author vcard"> <i class="fa fa-user"></i> <span class="byline-name fn" itemprop="author">
+                    Graham Hayes
+            </span></p>
+                <p class="commentline"><i class="far fa-comment"></i>        <a href="#disqus_thread" data-disqus-identifier="cache/posts/the-big-rename-why.html">Comments</a>
+
+
+                    </p>
+<p class="sourceline"><a href="index.rst" class="sourcelink"><i class="fa fa-file-code"></i> Source</a></p>
+
             
-                      |  
-        <a href="index.rst" id="sourcelink">Source</a>
-
-            </div>
-                    <div itemprop="keywords" class="tags">
-        <ul>
-        Tags : 
-           <li><a class="tag p-category" href="../../categories/code/" rel="tag">code</a></li>
-           <li><a class="tag p-category" href="../../categories/designate/" rel="tag">designate</a></li>
-           <li><a class="tag p-category" href="../../categories/openstack/" rel="tag">openstack</a></li>
-           <li><a class="tag p-category" href="../../categories/refactor/" rel="tag">refactor</a></li>
+                <div class="tags">
+<h3 class="metadata-title">
+<i class="fa fa-tags"></i> Tags:</h3>
+        <ul itemprop="keywords" class="tags-ul">
+<li><a class="tag p-category" href="../../categories/code/" rel="tag">code</a></li>
+            <li><a class="tag p-category" href="../../categories/designate/" rel="tag">designate</a></li>
+            <li><a class="tag p-category" href="../../categories/openstack/" rel="tag">openstack</a></li>
+            <li><a class="tag p-category" href="../../categories/refactor/" rel="tag">refactor</a></li>
         </ul>
 </div>
 
         </div>
-        <div class="body">
-            <div>
-<div class="section" id="update">
-<h2>Update</h2>
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <section id="update"><h2>Update</h2>
 <p>Due to unforeseen circumstances I will not be able to continue work on this until
 Monday, so we will have to extend the freeze until Tuesday the 17th.</p>
 <p>The following message will be put on the patches affected by the freeze.</p>
 <p><a class="reference external" href="../../listings/big-rename-2-update-message.txt.html">big-rename-2-update-message.txt</a>  <a class="reference external" href="../../listings/big-rename-2-update-message.txt">(Source)</a></p>
-<pre class="code text"><a name="rest_code_55952025f4d2471cb27ebce6790c6d3e-1"></a>Due to unforeseen circumstances I will not be able to continue work on this until
-<a name="rest_code_55952025f4d2471cb27ebce6790c6d3e-2"></a>Monday, so we will have to extend the freeze until Tuesday the 17th.
-<a name="rest_code_55952025f4d2471cb27ebce6790c6d3e-3"></a>
-<a name="rest_code_55952025f4d2471cb27ebce6790c6d3e-4"></a>On Tuesday 2015-11-17 this -2 will be removed, and code review as normal will continue.
-<a name="rest_code_55952025f4d2471cb27ebce6790c6d3e-5"></a>
-<a name="rest_code_55952025f4d2471cb27ebce6790c6d3e-6"></a>I apologise for the delay, and will get this completed ASAP.
-<a name="rest_code_55952025f4d2471cb27ebce6790c6d3e-7"></a>
-<a name="rest_code_55952025f4d2471cb27ebce6790c6d3e-8"></a>Further updates will be posted to http://graham.hayes.ie/posts/the-big-rename/
-</pre>
-<img alt="https://upload.wikimedia.org/wikipedia/commons/1/1a/Code.jpg" src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Code.jpg"><p><a class="footnote-reference" href="#id2" id="id1">[1]</a></p>
-</div>
-<div class="section" id="the-big-rename">
-<h2>The Big Rename</h2>
+<div class="code"><pre class="code text"><a id="rest_code_00b28f623bab47e2999533b31652e185-1" name="rest_code_00b28f623bab47e2999533b31652e185-1" href="#rest_code_00b28f623bab47e2999533b31652e185-1"></a>Due to unforeseen circumstances I will not be able to continue work on this until
+<a id="rest_code_00b28f623bab47e2999533b31652e185-2" name="rest_code_00b28f623bab47e2999533b31652e185-2" href="#rest_code_00b28f623bab47e2999533b31652e185-2"></a>Monday, so we will have to extend the freeze until Tuesday the 17th.
+<a id="rest_code_00b28f623bab47e2999533b31652e185-3" name="rest_code_00b28f623bab47e2999533b31652e185-3" href="#rest_code_00b28f623bab47e2999533b31652e185-3"></a>
+<a id="rest_code_00b28f623bab47e2999533b31652e185-4" name="rest_code_00b28f623bab47e2999533b31652e185-4" href="#rest_code_00b28f623bab47e2999533b31652e185-4"></a>On Tuesday 2015-11-17 this -2 will be removed, and code review as normal will continue.
+<a id="rest_code_00b28f623bab47e2999533b31652e185-5" name="rest_code_00b28f623bab47e2999533b31652e185-5" href="#rest_code_00b28f623bab47e2999533b31652e185-5"></a>
+<a id="rest_code_00b28f623bab47e2999533b31652e185-6" name="rest_code_00b28f623bab47e2999533b31652e185-6" href="#rest_code_00b28f623bab47e2999533b31652e185-6"></a>I apologise for the delay, and will get this completed ASAP.
+<a id="rest_code_00b28f623bab47e2999533b31652e185-7" name="rest_code_00b28f623bab47e2999533b31652e185-7" href="#rest_code_00b28f623bab47e2999533b31652e185-7"></a>
+<a id="rest_code_00b28f623bab47e2999533b31652e185-8" name="rest_code_00b28f623bab47e2999533b31652e185-8" href="#rest_code_00b28f623bab47e2999533b31652e185-8"></a>Further updates will be posted to http://graham.hayes.ie/posts/the-big-rename/
+</pre></div>
+<img alt="https://upload.wikimedia.org/wikipedia/commons/1/1a/Code.jpg" src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Code.jpg"><p><a class="footnote-reference brackets" href="#footnote-1" id="footnote-reference-1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
+</section><section id="the-big-rename"><h2>The Big Rename</h2>
 <p>So from tomorrow (2015-11-10) until Friday (2015-11-13) Designate will be frozen for new code.</p>
 <p>I send an email to the openstack-dev list before the summit <a class="reference external" href="http://lists.openstack.org/pipermail/openstack-dev/2015-October/077442.html">[2]</a> so, it shouldn't be a surprise (I hope)</p>
 <p>So, why are we doing this?</p>
@@ -94,105 +104,96 @@ Monday, so we will have to extend the freeze until Tuesday the 17th.</p>
 <p>When we started the v2 API, we decided to avoid confusion and expose "Domains" as "Zones".</p>
 <p>This worked for a while, but as we worked on the V2 API, we had to write code to translate the internal code (which referenced Domains) to Zones. this caused code like:</p>
 <p><a class="reference external" href="../../listings/big-rename-render.py.html">big-rename-render.py</a>  <a class="reference external" href="../../listings/big-rename-render.py">(Source)</a></p>
-<pre class="code python"><a name="rest_code_fc67dbcb17d448f1af2ac98f37d8777f-1"></a><span class="k">def</span> <span class="nf">_render_object</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-<a name="rest_code_fc67dbcb17d448f1af2ac98f37d8777f-2"></a>    <span class="c1"># The dict we will return to be rendered to JSON / output format</span>
-<a name="rest_code_fc67dbcb17d448f1af2ac98f37d8777f-3"></a>    <span class="n">r_obj</span> <span class="o">=</span> <span class="p">{}</span>
-<a name="rest_code_fc67dbcb17d448f1af2ac98f37d8777f-4"></a>    <span class="c1"># Loop over all fields that are supposed to be output</span>
-<a name="rest_code_fc67dbcb17d448f1af2ac98f37d8777f-5"></a>    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">MODIFICATIONS</span><span class="p">[</span><span class="s1">'fields'</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-<a name="rest_code_fc67dbcb17d448f1af2ac98f37d8777f-6"></a>        <span class="c1"># Get properties for this field</span>
-<a name="rest_code_fc67dbcb17d448f1af2ac98f37d8777f-7"></a>        <span class="n">field_props</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">MODIFICATIONS</span><span class="p">[</span><span class="s1">'fields'</span><span class="p">][</span><span class="n">key</span><span class="p">]</span>
-<a name="rest_code_fc67dbcb17d448f1af2ac98f37d8777f-8"></a>        <span class="c1"># Check if it has to be renamed</span>
-<a name="rest_code_fc67dbcb17d448f1af2ac98f37d8777f-9"></a>        <span class="k">if</span> <span class="n">field_props</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rename'</span><span class="p">,</span> <span class="bp">False</span><span class="p">):</span>
-<a name="rest_code_fc67dbcb17d448f1af2ac98f37d8777f-10"></a>            <span class="n">obj</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">field_props</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rename'</span><span class="p">))</span>
-<a name="rest_code_fc67dbcb17d448f1af2ac98f37d8777f-11"></a>            <span class="c1"># if rename is specified we need to change the key</span>
-<a name="rest_code_fc67dbcb17d448f1af2ac98f37d8777f-12"></a>            <span class="n">obj_key</span> <span class="o">=</span> <span class="n">field_props</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rename'</span><span class="p">)</span>
-<a name="rest_code_fc67dbcb17d448f1af2ac98f37d8777f-13"></a>        <span class="k">else</span><span class="p">:</span>
-<a name="rest_code_fc67dbcb17d448f1af2ac98f37d8777f-14"></a>            <span class="c1"># if not, move on</span>
-<a name="rest_code_fc67dbcb17d448f1af2ac98f37d8777f-15"></a>            <span class="n">obj</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
-<a name="rest_code_fc67dbcb17d448f1af2ac98f37d8777f-16"></a>            <span class="n">obj_key</span> <span class="o">=</span> <span class="n">key</span>
-</pre>
+<div class="code"><pre class="code python"><a id="rest_code_7e08879dad7a45d68120be440487887c-1" name="rest_code_7e08879dad7a45d68120be440487887c-1" href="#rest_code_7e08879dad7a45d68120be440487887c-1"></a><span class="k">def</span> <span class="nf">_render_object</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<a id="rest_code_7e08879dad7a45d68120be440487887c-2" name="rest_code_7e08879dad7a45d68120be440487887c-2" href="#rest_code_7e08879dad7a45d68120be440487887c-2"></a>    <span class="c1"># The dict we will return to be rendered to JSON / output format</span>
+<a id="rest_code_7e08879dad7a45d68120be440487887c-3" name="rest_code_7e08879dad7a45d68120be440487887c-3" href="#rest_code_7e08879dad7a45d68120be440487887c-3"></a>    <span class="n">r_obj</span> <span class="o">=</span> <span class="p">{}</span>
+<a id="rest_code_7e08879dad7a45d68120be440487887c-4" name="rest_code_7e08879dad7a45d68120be440487887c-4" href="#rest_code_7e08879dad7a45d68120be440487887c-4"></a>    <span class="c1"># Loop over all fields that are supposed to be output</span>
+<a id="rest_code_7e08879dad7a45d68120be440487887c-5" name="rest_code_7e08879dad7a45d68120be440487887c-5" href="#rest_code_7e08879dad7a45d68120be440487887c-5"></a>    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">MODIFICATIONS</span><span class="p">[</span><span class="s1">'fields'</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<a id="rest_code_7e08879dad7a45d68120be440487887c-6" name="rest_code_7e08879dad7a45d68120be440487887c-6" href="#rest_code_7e08879dad7a45d68120be440487887c-6"></a>        <span class="c1"># Get properties for this field</span>
+<a id="rest_code_7e08879dad7a45d68120be440487887c-7" name="rest_code_7e08879dad7a45d68120be440487887c-7" href="#rest_code_7e08879dad7a45d68120be440487887c-7"></a>        <span class="n">field_props</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">MODIFICATIONS</span><span class="p">[</span><span class="s1">'fields'</span><span class="p">][</span><span class="n">key</span><span class="p">]</span>
+<a id="rest_code_7e08879dad7a45d68120be440487887c-8" name="rest_code_7e08879dad7a45d68120be440487887c-8" href="#rest_code_7e08879dad7a45d68120be440487887c-8"></a>        <span class="c1"># Check if it has to be renamed</span>
+<a id="rest_code_7e08879dad7a45d68120be440487887c-9" name="rest_code_7e08879dad7a45d68120be440487887c-9" href="#rest_code_7e08879dad7a45d68120be440487887c-9"></a>        <span class="k">if</span> <span class="n">field_props</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rename'</span><span class="p">,</span> <span class="kc">False</span><span class="p">):</span>
+<a id="rest_code_7e08879dad7a45d68120be440487887c-10" name="rest_code_7e08879dad7a45d68120be440487887c-10" href="#rest_code_7e08879dad7a45d68120be440487887c-10"></a>            <span class="n">obj</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">field_props</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rename'</span><span class="p">))</span>
+<a id="rest_code_7e08879dad7a45d68120be440487887c-11" name="rest_code_7e08879dad7a45d68120be440487887c-11" href="#rest_code_7e08879dad7a45d68120be440487887c-11"></a>            <span class="c1"># if rename is specified we need to change the key</span>
+<a id="rest_code_7e08879dad7a45d68120be440487887c-12" name="rest_code_7e08879dad7a45d68120be440487887c-12" href="#rest_code_7e08879dad7a45d68120be440487887c-12"></a>            <span class="n">obj_key</span> <span class="o">=</span> <span class="n">field_props</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rename'</span><span class="p">)</span>
+<a id="rest_code_7e08879dad7a45d68120be440487887c-13" name="rest_code_7e08879dad7a45d68120be440487887c-13" href="#rest_code_7e08879dad7a45d68120be440487887c-13"></a>        <span class="k">else</span><span class="p">:</span>
+<a id="rest_code_7e08879dad7a45d68120be440487887c-14" name="rest_code_7e08879dad7a45d68120be440487887c-14" href="#rest_code_7e08879dad7a45d68120be440487887c-14"></a>            <span class="c1"># if not, move on</span>
+<a id="rest_code_7e08879dad7a45d68120be440487887c-15" name="rest_code_7e08879dad7a45d68120be440487887c-15" href="#rest_code_7e08879dad7a45d68120be440487887c-15"></a>            <span class="n">obj</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<a id="rest_code_7e08879dad7a45d68120be440487887c-16" name="rest_code_7e08879dad7a45d68120be440487887c-16" href="#rest_code_7e08879dad7a45d68120be440487887c-16"></a>            <span class="n">obj_key</span> <span class="o">=</span> <span class="n">key</span>
+</pre></div>
 <p>and</p>
 <p><a class="reference external" href="../../listings/big-rename-error-render.py.html">big-rename-error-render.py</a>  <a class="reference external" href="../../listings/big-rename-error-render.py">(Source)</a></p>
-<pre class="code python"><a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-1"></a><span class="nd">@classmethod</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-2"></a><span class="k">def</span> <span class="nf">_rename_path_segment</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">obj_adapter</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="n">path_segment</span><span class="p">):</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-3"></a>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-4"></a>    <span class="c1"># Check if the object is a list - lists will just have an index as a</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-5"></a>    <span class="c1"># value, ands this can't be renamed</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-6"></a>    <span class="k">if</span> <span class="nb">issubclass</span><span class="p">(</span><span class="n">obj_adapter</span><span class="o">.</span><span class="n">ADAPTER_OBJECT</span><span class="p">,</span> <span class="n">objects</span><span class="o">.</span><span class="n">ListObjectMixin</span><span class="p">):</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-7"></a>        <span class="n">obj_adapter</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_object_adapter</span><span class="p">(</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-8"></a>            <span class="bp">cls</span><span class="o">.</span><span class="n">ADAPTER_FORMAT</span><span class="p">,</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-9"></a>            <span class="n">obj_adapter</span><span class="o">.</span><span class="n">ADAPTER_OBJECT</span><span class="o">.</span><span class="n">LIST_ITEM_TYPE</span><span class="o">.</span><span class="n">obj_name</span><span class="p">())</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-10"></a>        <span class="c1"># Return the segment as is, and the next adapter (which is the</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-11"></a>        <span class="c1"># LIST_ITEM_TYPE)</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-12"></a>        <span class="k">return</span> <span class="n">path_segment</span><span class="p">,</span> <span class="n">obj_adapter</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-13"></a>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-14"></a>    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">obj_adapter</span><span class="o">.</span><span class="n">MODIFICATIONS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-15"></a>            <span class="s1">'fields'</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-16"></a>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-17"></a>        <span class="c1"># Check if this field as actually a nested object</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-18"></a>        <span class="k">if</span> <span class="nb">object</span><span class="o">.</span><span class="n">FIELDS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">path_segment</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'relation'</span><span class="p">,</span> <span class="bp">False</span><span class="p">):</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-19"></a>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-20"></a>            <span class="n">obj_cls</span> <span class="o">=</span> <span class="nb">object</span><span class="o">.</span><span class="n">FIELDS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">path_segment</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'relation_cls'</span><span class="p">)</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-21"></a>            <span class="n">obj_adapter</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_object_adapter</span><span class="p">(</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-22"></a>                <span class="bp">cls</span><span class="o">.</span><span class="n">ADAPTER_FORMAT</span><span class="p">,</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-23"></a>                <span class="n">obj_cls</span><span class="p">)</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-24"></a>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-25"></a>            <span class="nb">object</span> <span class="o">=</span> <span class="n">objects</span><span class="o">.</span><span class="n">DesignateObject</span><span class="o">.</span><span class="n">obj_cls_from_name</span><span class="p">(</span><span class="n">obj_cls</span><span class="p">)()</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-26"></a>            <span class="c1"># Recurse down into this object</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-27"></a>            <span class="n">path_segment</span><span class="p">,</span> <span class="n">obj_adapter</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_rename_path_segment</span><span class="p">(</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-28"></a>                <span class="n">obj_adapter</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="n">path_segment</span><span class="p">)</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-29"></a>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-30"></a>            <span class="c1"># No need to continue the loop</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-31"></a>            <span class="k">break</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-32"></a>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-33"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-34"></a>            <span class="n">value</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-35"></a>                <span class="s1">'rename'</span><span class="p">,</span> <span class="n">NotSpecifiedSential</span><span class="p">()),</span> <span class="n">NotSpecifiedSential</span><span class="p">)</span>\
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-36"></a>                <span class="ow">and</span> <span class="n">path_segment</span> <span class="o">==</span> <span class="n">value</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rename'</span><span class="p">):</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-37"></a>            <span class="c1"># Just do the rename</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-38"></a>            <span class="n">path_segment</span> <span class="o">=</span> <span class="n">key</span>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-39"></a>
-<a name="rest_code_68d0462acfcd4733a3bb3b9dae25abac-40"></a>    <span class="k">return</span> <span class="n">path_segment</span><span class="p">,</span> <span class="n">obj_adapter</span>
-</pre>
+<div class="code"><pre class="code python"><a id="rest_code_520be60c1bcd4aa0b345a750839dd986-1" name="rest_code_520be60c1bcd4aa0b345a750839dd986-1" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-1"></a><span class="nd">@classmethod</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-2" name="rest_code_520be60c1bcd4aa0b345a750839dd986-2" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-2"></a><span class="k">def</span> <span class="nf">_rename_path_segment</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">obj_adapter</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="n">path_segment</span><span class="p">):</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-3" name="rest_code_520be60c1bcd4aa0b345a750839dd986-3" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-3"></a>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-4" name="rest_code_520be60c1bcd4aa0b345a750839dd986-4" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-4"></a>    <span class="c1"># Check if the object is a list - lists will just have an index as a</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-5" name="rest_code_520be60c1bcd4aa0b345a750839dd986-5" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-5"></a>    <span class="c1"># value, ands this can't be renamed</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-6" name="rest_code_520be60c1bcd4aa0b345a750839dd986-6" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-6"></a>    <span class="k">if</span> <span class="nb">issubclass</span><span class="p">(</span><span class="n">obj_adapter</span><span class="o">.</span><span class="n">ADAPTER_OBJECT</span><span class="p">,</span> <span class="n">objects</span><span class="o">.</span><span class="n">ListObjectMixin</span><span class="p">):</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-7" name="rest_code_520be60c1bcd4aa0b345a750839dd986-7" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-7"></a>        <span class="n">obj_adapter</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_object_adapter</span><span class="p">(</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-8" name="rest_code_520be60c1bcd4aa0b345a750839dd986-8" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-8"></a>            <span class="bp">cls</span><span class="o">.</span><span class="n">ADAPTER_FORMAT</span><span class="p">,</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-9" name="rest_code_520be60c1bcd4aa0b345a750839dd986-9" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-9"></a>            <span class="n">obj_adapter</span><span class="o">.</span><span class="n">ADAPTER_OBJECT</span><span class="o">.</span><span class="n">LIST_ITEM_TYPE</span><span class="o">.</span><span class="n">obj_name</span><span class="p">())</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-10" name="rest_code_520be60c1bcd4aa0b345a750839dd986-10" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-10"></a>        <span class="c1"># Return the segment as is, and the next adapter (which is the</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-11" name="rest_code_520be60c1bcd4aa0b345a750839dd986-11" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-11"></a>        <span class="c1"># LIST_ITEM_TYPE)</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-12" name="rest_code_520be60c1bcd4aa0b345a750839dd986-12" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-12"></a>        <span class="k">return</span> <span class="n">path_segment</span><span class="p">,</span> <span class="n">obj_adapter</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-13" name="rest_code_520be60c1bcd4aa0b345a750839dd986-13" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-13"></a>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-14" name="rest_code_520be60c1bcd4aa0b345a750839dd986-14" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-14"></a>    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">obj_adapter</span><span class="o">.</span><span class="n">MODIFICATIONS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-15" name="rest_code_520be60c1bcd4aa0b345a750839dd986-15" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-15"></a>            <span class="s1">'fields'</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-16" name="rest_code_520be60c1bcd4aa0b345a750839dd986-16" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-16"></a>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-17" name="rest_code_520be60c1bcd4aa0b345a750839dd986-17" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-17"></a>        <span class="c1"># Check if this field as actually a nested object</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-18" name="rest_code_520be60c1bcd4aa0b345a750839dd986-18" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-18"></a>        <span class="k">if</span> <span class="nb">object</span><span class="o">.</span><span class="n">FIELDS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">path_segment</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'relation'</span><span class="p">,</span> <span class="kc">False</span><span class="p">):</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-19" name="rest_code_520be60c1bcd4aa0b345a750839dd986-19" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-19"></a>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-20" name="rest_code_520be60c1bcd4aa0b345a750839dd986-20" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-20"></a>            <span class="n">obj_cls</span> <span class="o">=</span> <span class="nb">object</span><span class="o">.</span><span class="n">FIELDS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">path_segment</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'relation_cls'</span><span class="p">)</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-21" name="rest_code_520be60c1bcd4aa0b345a750839dd986-21" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-21"></a>            <span class="n">obj_adapter</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_object_adapter</span><span class="p">(</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-22" name="rest_code_520be60c1bcd4aa0b345a750839dd986-22" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-22"></a>                <span class="bp">cls</span><span class="o">.</span><span class="n">ADAPTER_FORMAT</span><span class="p">,</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-23" name="rest_code_520be60c1bcd4aa0b345a750839dd986-23" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-23"></a>                <span class="n">obj_cls</span><span class="p">)</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-24" name="rest_code_520be60c1bcd4aa0b345a750839dd986-24" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-24"></a>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-25" name="rest_code_520be60c1bcd4aa0b345a750839dd986-25" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-25"></a>            <span class="nb">object</span> <span class="o">=</span> <span class="n">objects</span><span class="o">.</span><span class="n">DesignateObject</span><span class="o">.</span><span class="n">obj_cls_from_name</span><span class="p">(</span><span class="n">obj_cls</span><span class="p">)()</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-26" name="rest_code_520be60c1bcd4aa0b345a750839dd986-26" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-26"></a>            <span class="c1"># Recurse down into this object</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-27" name="rest_code_520be60c1bcd4aa0b345a750839dd986-27" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-27"></a>            <span class="n">path_segment</span><span class="p">,</span> <span class="n">obj_adapter</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_rename_path_segment</span><span class="p">(</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-28" name="rest_code_520be60c1bcd4aa0b345a750839dd986-28" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-28"></a>                <span class="n">obj_adapter</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="n">path_segment</span><span class="p">)</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-29" name="rest_code_520be60c1bcd4aa0b345a750839dd986-29" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-29"></a>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-30" name="rest_code_520be60c1bcd4aa0b345a750839dd986-30" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-30"></a>            <span class="c1"># No need to continue the loop</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-31" name="rest_code_520be60c1bcd4aa0b345a750839dd986-31" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-31"></a>            <span class="k">break</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-32" name="rest_code_520be60c1bcd4aa0b345a750839dd986-32" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-32"></a>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-33" name="rest_code_520be60c1bcd4aa0b345a750839dd986-33" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-33"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-34" name="rest_code_520be60c1bcd4aa0b345a750839dd986-34" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-34"></a>            <span class="n">value</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-35" name="rest_code_520be60c1bcd4aa0b345a750839dd986-35" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-35"></a>                <span class="s1">'rename'</span><span class="p">,</span> <span class="n">NotSpecifiedSential</span><span class="p">()),</span> <span class="n">NotSpecifiedSential</span><span class="p">)</span>\
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-36" name="rest_code_520be60c1bcd4aa0b345a750839dd986-36" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-36"></a>                <span class="ow">and</span> <span class="n">path_segment</span> <span class="o">==</span> <span class="n">value</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'rename'</span><span class="p">):</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-37" name="rest_code_520be60c1bcd4aa0b345a750839dd986-37" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-37"></a>            <span class="c1"># Just do the rename</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-38" name="rest_code_520be60c1bcd4aa0b345a750839dd986-38" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-38"></a>            <span class="n">path_segment</span> <span class="o">=</span> <span class="n">key</span>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-39" name="rest_code_520be60c1bcd4aa0b345a750839dd986-39" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-39"></a>
+<a id="rest_code_520be60c1bcd4aa0b345a750839dd986-40" name="rest_code_520be60c1bcd4aa0b345a750839dd986-40" href="#rest_code_520be60c1bcd4aa0b345a750839dd986-40"></a>    <span class="k">return</span> <span class="n">path_segment</span><span class="p">,</span> <span class="n">obj_adapter</span>
+</pre></div>
 <p>which proved to be quite fragile. (Yes that last bit of code is trying to walk the error path of a JSONSchema Error and rename the path to the new terminology)</p>
 <p>We are also logging messages about domains - which could prove to be quite confusing when we remove the v1 API and users are only interacting with zones.</p>
 <p>So tomorrow morning-ish (UTC) we will start to rename every occurrence of "domain" in the code base to "zone" (without breaking Keystone domain support).</p>
 <p>Anything that does not have the "the-big-rename" topic on Gerrit will be getting a procedural -2 from me or the designate-core team.</p>
 <p><a class="reference external" href="../../listings/big-rename-2-message.txt.html">big-rename-2-message.txt</a>  <a class="reference external" href="../../listings/big-rename-2-message.txt">(Source)</a></p>
-<pre class="code text"><a name="rest_code_a1c40c77a22049559170dfa1c13f3458-1"></a>Currently Designate is undergoing a code freeze to allow us re-factor the code base,
-<a name="rest_code_a1c40c77a22049559170dfa1c13f3458-2"></a>as announced here: - http://lists.openstack.org/pipermail/openstack-dev/2015-October/077442.html
-<a name="rest_code_a1c40c77a22049559170dfa1c13f3458-3"></a>
-<a name="rest_code_a1c40c77a22049559170dfa1c13f3458-4"></a>All code that is not in the "the-big-rename" topic will be getting this procedural -2.
-<a name="rest_code_a1c40c77a22049559170dfa1c13f3458-5"></a>
-<a name="rest_code_a1c40c77a22049559170dfa1c13f3458-6"></a>More information can be found here: - http://graham.hayes.ie/posts/the-big-rename/
-<a name="rest_code_a1c40c77a22049559170dfa1c13f3458-7"></a>
-<a name="rest_code_a1c40c77a22049559170dfa1c13f3458-8"></a>On Friday 2015-11-13 this -2 will be removed, and code review as normal will continue.
-<a name="rest_code_a1c40c77a22049559170dfa1c13f3458-9"></a>
-<a name="rest_code_a1c40c77a22049559170dfa1c13f3458-10"></a>This re-factor will break the majority of patches that are outstanding, and you may need to manually
-<a name="rest_code_a1c40c77a22049559170dfa1c13f3458-11"></a>rebase your patch when we remove the -2.
-</pre>
-<table class="docutils footnote" frame="void" id="id2" rules="none">
-<colgroup>
-<col class="label">
-<col>
-</colgroup>
-<tbody valign="top"><tr>
-<td class="label"><a class="fn-backref" href="#id1">[1]</a></td>
-<td>By Crusher95 (Own work) [CC BY-SA 4.0 (<a class="reference external" href="http://creativecommons.org/licenses/by-sa/4.0">http://creativecommons.org/licenses/by-sa/4.0</a>)], via Wikimedia Commons</td>
-</tr></tbody>
-</table>
+<div class="code"><pre class="code text"><a id="rest_code_679c608087664fa886bce31e218e27b3-1" name="rest_code_679c608087664fa886bce31e218e27b3-1" href="#rest_code_679c608087664fa886bce31e218e27b3-1"></a>Currently Designate is undergoing a code freeze to allow us re-factor the code base,
+<a id="rest_code_679c608087664fa886bce31e218e27b3-2" name="rest_code_679c608087664fa886bce31e218e27b3-2" href="#rest_code_679c608087664fa886bce31e218e27b3-2"></a>as announced here: - http://lists.openstack.org/pipermail/openstack-dev/2015-October/077442.html
+<a id="rest_code_679c608087664fa886bce31e218e27b3-3" name="rest_code_679c608087664fa886bce31e218e27b3-3" href="#rest_code_679c608087664fa886bce31e218e27b3-3"></a>
+<a id="rest_code_679c608087664fa886bce31e218e27b3-4" name="rest_code_679c608087664fa886bce31e218e27b3-4" href="#rest_code_679c608087664fa886bce31e218e27b3-4"></a>All code that is not in the "the-big-rename" topic will be getting this procedural -2.
+<a id="rest_code_679c608087664fa886bce31e218e27b3-5" name="rest_code_679c608087664fa886bce31e218e27b3-5" href="#rest_code_679c608087664fa886bce31e218e27b3-5"></a>
+<a id="rest_code_679c608087664fa886bce31e218e27b3-6" name="rest_code_679c608087664fa886bce31e218e27b3-6" href="#rest_code_679c608087664fa886bce31e218e27b3-6"></a>More information can be found here: - http://graham.hayes.ie/posts/the-big-rename/
+<a id="rest_code_679c608087664fa886bce31e218e27b3-7" name="rest_code_679c608087664fa886bce31e218e27b3-7" href="#rest_code_679c608087664fa886bce31e218e27b3-7"></a>
+<a id="rest_code_679c608087664fa886bce31e218e27b3-8" name="rest_code_679c608087664fa886bce31e218e27b3-8" href="#rest_code_679c608087664fa886bce31e218e27b3-8"></a>On Friday 2015-11-13 this -2 will be removed, and code review as normal will continue.
+<a id="rest_code_679c608087664fa886bce31e218e27b3-9" name="rest_code_679c608087664fa886bce31e218e27b3-9" href="#rest_code_679c608087664fa886bce31e218e27b3-9"></a>
+<a id="rest_code_679c608087664fa886bce31e218e27b3-10" name="rest_code_679c608087664fa886bce31e218e27b3-10" href="#rest_code_679c608087664fa886bce31e218e27b3-10"></a>This re-factor will break the majority of patches that are outstanding, and you may need to manually
+<a id="rest_code_679c608087664fa886bce31e218e27b3-11" name="rest_code_679c608087664fa886bce31e218e27b3-11" href="#rest_code_679c608087664fa886bce31e218e27b3-11"></a>rebase your patch when we remove the -2.
+</pre></div>
+<aside class="footnote-list brackets"><aside class="footnote brackets" id="footnote-1" role="note"><span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#footnote-reference-1">1</a><span class="fn-bracket">]</span></span>
+<p>By Crusher95 (Own work) [CC BY-SA 4.0 (<a class="reference external" href="http://creativecommons.org/licenses/by-sa/4.0">http://creativecommons.org/licenses/by-sa/4.0</a>)], via Wikimedia Commons</p>
+</aside></aside></section>
 </div>
-</div>
-        </div>
-                <ul class="pager hidden-print">
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">
                 <a href="../openstack-summit-designate-report/" rel="prev" title="OpenStack Summit - Designate Report">Previous post</a>
             </li>
             <li class="next">
                 <a href="../big-rename-complete/" rel="next" title="Big Rename - Complete!!">Next post</a>
             </li>
-        </ul>
-<div id="disqus_thread"></div>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+                    <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="grahamhayesie",
             disqus_url="http://graham.hayes.ie/posts/the-big-rename/",
@@ -211,26 +212,16 @@ Monday, so we will have to extend the freeze until Tuesday the 17th.</p>
     <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
-            
-
-    </div>
-                    <footer id="footer"><p>Contents © 2020         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+        </section></article><script>var disqus_shortname="grahamhayesie";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><footer id="footer"><p>Contents © 2022         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>
-    </section><script src="../../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script><script src="../../assets/js/jquery.timeago.js" type="text/javascript"></script><script type="text/javascript">
-            $(function(){
-                $('.timeago').timeago();
-            });
-        </script><script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-23042579-7', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    </section><script src="../../assets/js/baguetteBox.min.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script>
 </body>
 </html>

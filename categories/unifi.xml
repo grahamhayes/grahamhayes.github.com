@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (Posts about unifi)</title><link>http://graham.hayes.ie/</link><description></description><atom:link href="http://graham.hayes.ie/categories/unifi.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 15 May 2019 17:54:21 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>WireGuard + UniFi</title><link>http://graham.hayes.ie/posts/wireguard-%2B-unifi/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://graham.hayes.ie/wireguard-logo.png"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;I have been looking around for a good VPN solution to use on the road recently. I have a few
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (Posts about unifi)</title><link>http://graham.hayes.ie/</link><description></description><atom:link href="http://graham.hayes.ie/categories/unifi.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 07 Nov 2022 17:52:21 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>WireGuard + UniFi</title><link>http://graham.hayes.ie/posts/wireguard-%2B-unifi/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="http://graham.hayes.ie/wireguard-logo.png"&gt;&lt;/figure&gt; &lt;section id="wireguard-unifi"&gt;
+&lt;h2&gt;WireGuard + UniFi&lt;/h2&gt;
+&lt;p&gt;I have been looking around for a good VPN solution to use on the road recently. I have a few
 services running at home, that I really don't want on the internet (OctoPrint etc), but I want to use
 remotely.&lt;/p&gt;
 &lt;p&gt;This is as much documentation for future me as it is for anyone who stumbles across this page :)&lt;/p&gt;
 &lt;p&gt;I had previously set up a L2TP Remote user VPN in the UniFi controller, but it had a few issues.&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;Roaming problems on mobile&lt;/li&gt;
-&lt;li&gt;Battery usage on mobile&lt;/li&gt;
-&lt;li&gt;Slow Speeds&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Roaming problems on mobile&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Battery usage on mobile&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Slow Speeds&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I had heard of Wireguard a while ago (I think they had a stall near the OpenStack stall in FOSDEM
 last year), but I had completely forgotten about them. It turns out some kind soul has created a
 deb package to install WireGuard on Vyatta (which is what the USG is based on).&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://graham.hayes.ie/posts/wireguard-%2B-unifi/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>networking</category><category>unifi</category><category>vpn</category><guid>http://graham.hayes.ie/posts/wireguard-%2B-unifi/</guid><pubDate>Thu, 07 Feb 2019 22:52:26 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="http://graham.hayes.ie/posts/wireguard-%2B-unifi/"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/section&gt;</description><category>networking</category><category>unifi</category><category>vpn</category><guid>http://graham.hayes.ie/posts/wireguard-%2B-unifi/</guid><pubDate>Thu, 07 Feb 2019 22:52:26 GMT</pubDate></item></channel></rss>

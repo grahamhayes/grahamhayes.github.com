@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html prefix="
-og: http://ogp.me/ns#
-article: http://ogp.me/ns/article#
-" lang="en">
+        og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+    " vocab="http://ogp.me/ns" lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>OpenStack Designate - Where we are. | graham.hayes.ie</title>
-<link href="../../assets/css/bitter.css" rel="stylesheet" type="text/css">
-<link href="../../assets/css/main.css" rel="stylesheet" type="text/css">
-<link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link href="../../assets/css/baguetteBox.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/rst_base.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/nikola_rst.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link href="../../assets/css/theme.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
 <link rel="canonical" href="http://graham.hayes.ie/posts/openstack-designate-where-we-are/">
-<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="Graham Hayes">
+<link rel="me" href="https://mastodon.ie/@graham">
+<!--[if lt IE 9]><script src="../../assets/js/html5shiv-printshiv.min.js"></script><![endif]--><meta name="author" content="Graham Hayes">
+<link rel="prev" href="../non-candidacy-for-designate-ptl/" title="Non Candidacy for Designate PTL" type="text/html">
+<link rel="next" href="../new-adventures/" title="New Adventures" type="text/html">
 <meta property="og:site_name" content="graham.hayes.ie">
 <meta property="og:title" content="OpenStack Designate - Where we are.">
 <meta property="og:url" content="http://graham.hayes.ie/posts/openstack-designate-where-we-are/">
-<meta property="og:description" content='I have been asked a few times recently "What is the state of the Designate
+<meta property="og:description" content='Designate: State of the Unio .. Project
+I have been asked a few times recently "What is the state of the Designate
 project?", "How is Designate getting on?", and by people who know what is
-happening "What are you going to do about Designate'>
+happening "'>
 <meta property="og:image" content="http://graham.hayes.ie/images/me.jpg">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2017-02-09T18:38:00Z">
@@ -30,56 +38,61 @@ happening "What are you going to do about Designate'>
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@grahamhayes">
 <meta name="twitter:creator" content="@grahamhayes">
-<meta name="twitter:image" content="http://graham.hayes.ie/images/me.jpg">
 </head>
 <body>
+    <a href="#page-content" class="sr-only sr-only-focusable">Skip to main content</a>
+    
     <section class="social"><ul>
 <a href="../../"><img style="border-radius: 50%; margin-left: auto; margin-right: auto; display: block; margin-bottom: 20px" width="80" height="80" src="../../images/me.jpg"></a>
-                    <li><a href="../../" title="Home"><i class="icon-home"></i></a></li>
-            <li><a href="../../archive.html" title="Archives"><i class="icon-folder-open-alt"></i></a></li>
-            <li><a href="../../categories" title="Tags"><i class="icon-tags"></i></a></li>
-            <li><a href="../../projects" title="Projects"><i class="icon-briefcase"></i></a></li>
-            <li><a href="../../stories/about-me" title="About Me"><i class="icon-info"></i></a></li>
-            <li><a href="../../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
-            <li><a href="https://twitter.com/grahamhayes" title="My Twitter"><i class="icon-twitter"></i></a></li>
-            <li><a href="https://github.com/grahamhayes" title="My Github"><i class="icon-github"></i></a></li>
+                    <li><a href="../../" title="Home"><i class="fa fa-home"></i></a></li>
+            <li><a href="../../archive.html" title="Archives"><i class="fa fa-folder-open-alt"></i></a></li>
+            <li><a href="../../categories" title="Tags"><i class="fa fa-tags"></i></a></li>
+            <li><a href="../../projects" title="Projects"><i class="fa fa-briefcase"></i></a></li>
+            <li><a href="../../stories/about-me" title="About Me"><i class="fa fa-info"></i></a></li>
+            <li><a href="../../rss.xml" title="RSS"><i class="fa fa-rss"></i></a></li>
+            <li><a href="https://twitter.com/grahamhayes" title="My Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://github.com/grahamhayes" title="My Github"><i class="fab fa-github"></i></a></li>
+    
+    
 
         </ul></section><section class="page-content"><div class="content" rel="main">
-    <div class="post">
-        <h1 class="p-name entry-title" itemprop="headline name">OpenStack Designate - Where we are.</h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">OpenStack Designate - Where we are.</a></h1>
 
-        <div class="meta">
-            <div class="authordate">
-                <time class="timeago" datetime="2017-02-09T18:38:00+00:00">2017-02-09 18:38</time>
+        <div class="metadata">
+            <p class="dateline"><a href="." rel="bookmark"><i class="fa fa-clock"></i> <time class="published dt-published" datetime="2017-02-09T18:38:00Z" itemprop="datePublished" title="2017-02-09 18:38">2017-02-09 18:38</time></a></p>
+            <p class="byline author vcard"> <i class="fa fa-user"></i> <span class="byline-name fn" itemprop="author">
+                    Graham Hayes
+            </span></p>
+                <p class="commentline"><i class="far fa-comment"></i>        <a href="#disqus_thread" data-disqus-identifier="cache/posts/openstack-designate-where-we-are.html">Comments</a>
+
+
+                    </p>
+<p class="sourceline"><a href="index.rst" class="sourcelink"><i class="fa fa-file-code"></i> Source</a></p>
+
             
-                      |  
-        <a href="index.rst" id="sourcelink">Source</a>
-
-            </div>
-                    <div itemprop="keywords" class="tags">
-        <ul>
-        Tags : 
-           <li><a class="tag p-category" href="../../categories/designate/" rel="tag">designate</a></li>
-           <li><a class="tag p-category" href="../../categories/openstack/" rel="tag">openstack</a></li>
-           <li><a class="tag p-category" href="../../categories/project-update/" rel="tag">project update</a></li>
-           <li><a class="tag p-category" href="../../categories/tc/" rel="tag">tc</a></li>
+                <div class="tags">
+<h3 class="metadata-title">
+<i class="fa fa-tags"></i> Tags:</h3>
+        <ul itemprop="keywords" class="tags-ul">
+<li><a class="tag p-category" href="../../categories/designate/" rel="tag">designate</a></li>
+            <li><a class="tag p-category" href="../../categories/openstack/" rel="tag">openstack</a></li>
+            <li><a class="tag p-category" href="../../categories/project-update/" rel="tag">project update</a></li>
+            <li><a class="tag p-category" href="../../categories/tc/" rel="tag">tc</a></li>
         </ul>
 </div>
 
         </div>
-        <div class="body">
-            <div>
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <section id="designate-state-of-the-unio-project"><h2>Designate: State of the Unio .. Project</h2>
 <p>I have been asked a few times recently "What is the state of the Designate
 project?", "How is Designate getting on?", and by people who know what is
 happening "What are you going to do about Designate?".</p>
 <p>Needless to say, all of this is depressing to me, and the people that I have
 worked with for the last number of years to make Designate a truly useful,
 feature rich project.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last"><em>TL;DR;</em> for this - Designate is not in a sustainable place.</p>
-</div>
-<p>To start out - Designate has always been a small project. DNS does not have
+<aside class="admonition note"><p class="admonition-title">Note</p>
+<p><em>TL;DR;</em> for this - Designate is not in a sustainable place.</p>
+</aside><p>To start out - Designate has always been a small project. DNS does not have
 massive <em>cool</em> appeal - its not shiny, pretty, or something you see on the
 front page of HackerNews (unless it breaks - then oh boy do people become DNS
 experts).</p>
@@ -106,51 +119,47 @@ sets - but they are (incredibly valuable and appreciated) tactical
 contributions. A project cannot survive on them, and we are no exception.</p>
 <p>So where does that leave us? Let have a look at how many actual commits we
 have had:</p>
-<table border="1" class="docutils">
+<table>
 <caption>Commits per cycle</caption>
-<colgroup>
-<col width="61%">
-<col width="39%">
-</colgroup>
-<tbody valign="top">
+<tbody>
 <tr>
-<td>Havana</td>
-<td>172</td>
+<td><p>Havana</p></td>
+<td><p>172</p></td>
 </tr>
 <tr>
-<td>Icehouse</td>
-<td>165</td>
+<td><p>Icehouse</p></td>
+<td><p>165</p></td>
 </tr>
 <tr>
-<td>Juno</td>
-<td>254</td>
+<td><p>Juno</p></td>
+<td><p>254</p></td>
 </tr>
 <tr>
-<td>Kilo</td>
-<td>340</td>
+<td><p>Kilo</p></td>
+<td><p>340</p></td>
 </tr>
 <tr>
-<td>Liberty</td>
-<td>327</td>
+<td><p>Liberty</p></td>
+<td><p>327</p></td>
 </tr>
 <tr>
-<td>Mitaka</td>
-<td>246</td>
+<td><p>Mitaka</p></td>
+<td><p>246</p></td>
 </tr>
 <tr>
-<td>Newton</td>
-<td>299</td>
+<td><p>Newton</p></td>
+<td><p>299</p></td>
 </tr>
 <tr>
-<td>Ocata</td>
-<td>98</td>
+<td><p>Ocata</p></td>
+<td><p>98</p></td>
 </tr>
 </tbody>
 </table>
 <p>Next cycle, we are going to have 2 community goals:</p>
 <ul class="simple">
-<li>Control Plane API endpoints deployment via WSGI</li>
-<li>Python 3.5 functional testing</li>
+<li><p>Control Plane API endpoints deployment via WSGI</p></li>
+<li><p>Python 3.5 functional testing</p></li>
 </ul>
 <p>We would have been actually OK for the tempest one - we were one of the first
 external repo based plug-ins with <a class="reference external" href="https://github.com/openstack/designate-tempest-plugin">designate-tempest-plugin</a></p>
@@ -162,11 +171,10 @@ eventlet imported - I am not sure how that affects running in a WSGI server)</p>
 3.5, so I suspect getting functional testing may be an issue. And, convincing
 management that re-factoring parts of the code base due to "community goals"
 or a future potential pay-off can be more difficult than it should.</p>
-<img alt="/images/oct-2016-projects-prod.jpg" src="../../images/oct-2016-projects-prod.jpg"><p>We now have a situation where the largest "non-core" project <a class="footnote-reference" href="#id6" id="id1">[1]</a> in the tent
+<img alt="/images/oct-2016-projects-prod.jpg" src="../../images/oct-2016-projects-prod.jpg"><p>We now have a situation where the largest "non-core" project <a class="footnote-reference brackets" href="#footnote-1" id="footnote-reference-1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> in the tent
 has a tiny number of developers working on it. 42% of deployers are evaluating
 Designate, so we should see this start to increase.</p>
-<div class="section" id="how-did-this-happen">
-<h2>How did this happen?</h2>
+<section id="how-did-this-happen"><h3>How did this happen?</h3>
 <p>Like most situations, there is no single cause.</p>
 <p>Certainly there may have been fault on the side of the Designate leadership.
 We had started out as a small team, and had built a huge amount of trust and
@@ -180,7 +188,7 @@ pretty quick feedback when we made a mistake, or caused a bug. All of this
 resulted in the major development cost being funded by two companies, which
 left us vulnerable to changes in direction from those companies. Then that
 shoe dropped. We are now one corporate change of direction from having no
-cores on the project being paid to work on the project. <a class="footnote-reference" href="#id7" id="id2">[2]</a></p>
+cores on the project being paid to work on the project. <a class="footnote-reference brackets" href="#footnote-2" id="footnote-reference-2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></p>
 <p>Preceding this, the governance of OpenStack changed to the <a class="reference external" href="https://governance.openstack.org/tc/resolutions/20141202-project-structure-reform-spec.html">Big Tent</a>
 While this change was a good thing for the OpenStack project as a
 whole it had quite a bad impact on us.</p>
@@ -217,11 +225,9 @@ while we still have a small amount of old functional tests that are not ported
 from our old non plug-in style.</p>
 <p>All of this adds up to make projects like Designate much less attractive
 to users - we just need to look at the <a class="reference external" href="https://www.openstack.org/software/releases/newton/components/designate">project navigator</a> to see what a bad
-image potential users get of us. <a class="footnote-reference" href="#id8" id="id3">[3]</a> This is for a project that was ran as a
-full (non beta) service in a public cloud. <a class="footnote-reference" href="#id9" id="id4">[4]</a></p>
-</div>
-<div class="section" id="where-too-now-then">
-<h2>Where too now then?</h2>
+image potential users get of us. <a class="footnote-reference brackets" href="#footnote-3" id="footnote-reference-3" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a> This is for a project that was ran as a
+full (non beta) service in a public cloud. <a class="footnote-reference brackets" href="#footnote-4" id="footnote-reference-4" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a></p>
+</section><section id="where-too-now-then"><h3>Where too now then?</h3>
 <p>Well, this is where I call out to people who actually use the project - don't
 jump ship and use something else because of the picture I have painted. We are
 a dedicated team, who cares about the project. We just need some help.</p>
@@ -242,7 +248,7 @@ teams who can dedicate people to the implementation of plugins / code.</p>
 <p>As someone I was talking to recently said - AWS is not winning public cloud
 because of commodity compute (that does help - a lot), but because of the
 added services that make using the cloud, well, cloud like. OpenStack needs to
-decide that either it is just compute, or if it wants the eco-system. <a class="footnote-reference" href="#id10" id="id5">[5]</a>
+decide that either it is just compute, or if it wants the eco-system. <a class="footnote-reference brackets" href="#footnote-5" id="footnote-reference-5" role="doc-noteref"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></a>
 Designate is far from alone in this.</p>
 <p>I am happy to talk to anyone about helping to fill in the needed resources -
 Designate is a project that started in the very office I am writing this blog
@@ -250,77 +256,36 @@ post in, and something I want to last.</p>
 <p>For a visual this is Designate team in Atlanta, just before we got incubated.</p>
 <img alt="/images/ATL.jpg" src="../../images/ATL.jpg"><p>and this was our last mid cycle:</p>
 <img alt="/images/mid-cycle.jpg" src="../../images/mid-cycle.jpg"><p>and in Atlanta at the PTG, there will be two of us.</p>
-<table class="docutils footnote" frame="void" id="id6" rules="none">
-<colgroup>
-<col class="label">
-<col>
-</colgroup>
-<tbody valign="top"><tr>
-<td class="label"><a class="fn-backref" href="#id1">[1]</a></td>
-<td>In the <a class="reference external" href="https://www.openstack.org/analytics">Oct-2016</a> User Survey Designate was deployed in 23% of clouds</td>
-</tr></tbody>
-</table>
-<table class="docutils footnote" frame="void" id="id7" rules="none">
-<colgroup>
-<col class="label">
-<col>
-</colgroup>
-<tbody valign="top"><tr>
-<td class="label"><a class="fn-backref" href="#id2">[2]</a></td>
-<td>I have been lucky to have a management chain that is OK with me
+<aside class="footnote-list brackets"><aside class="footnote brackets" id="footnote-1" role="note"><span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#footnote-reference-1">1</a><span class="fn-bracket">]</span></span>
+<p>In the <a class="reference external" href="https://www.openstack.org/analytics">Oct-2016</a> User Survey Designate was deployed in 23% of clouds</p>
+</aside><aside class="footnote brackets" id="footnote-2" role="note"><span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#footnote-reference-2">2</a><span class="fn-bracket">]</span></span>
+<p>I have been lucky to have a management chain that is OK with me
 spending some time on Designate, and have not asked me to take time off
 for Summits or Gatherings, but my day job is working on a completely
-different project.</td>
-</tr></tbody>
-</table>
-<table class="docutils footnote" frame="void" id="id8" rules="none">
-<colgroup>
-<col class="label">
-<col>
-</colgroup>
-<tbody valign="top"><tr>
-<td class="label"><a class="fn-backref" href="#id3">[3]</a></td>
-<td>I do have other issues with the metrics - mainly that we existed before
+different project.</p>
+</aside><aside class="footnote brackets" id="footnote-3" role="note"><span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#footnote-reference-3">3</a><span class="fn-bracket">]</span></span>
+<p>I do have other issues with the metrics - mainly that we existed before
 leaving stackforge, and some of the other stats are set so
-high, that non "core" projects will probably never meet them.</td>
-</tr></tbody>
-</table>
-<table class="docutils footnote" frame="void" id="id9" rules="none">
-<colgroup>
-<col class="label">
-<col>
-</colgroup>
-<tbody valign="top"><tr>
-<td class="label"><a class="fn-backref" href="#id4">[4]</a></td>
-<td>I recently went to an internal training talk, where they were talking
+high, that non "core" projects will probably never meet them.</p>
+</aside><aside class="footnote brackets" id="footnote-4" role="note"><span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#footnote-reference-4">4</a><span class="fn-bracket">]</span></span>
+<p>I recently went to an internal training talk, where they were talking
 about new features in Newton. There was a whole slide about how projects
 had improved, or gotten worse on these scores. A whole slide. With
-tables of scores, and I think there may have even been a graph.</td>
-</tr></tbody>
-</table>
-<table class="docutils footnote" frame="void" id="id10" rules="none">
-<colgroup>
-<col class="label">
-<col>
-</colgroup>
-<tbody valign="top"><tr>
-<td class="label"><a class="fn-backref" href="#id5">[5]</a></td>
-<td>Now, I am slightly biased, but I would argue that DNS is needed in
-commodity compute, but again, that is my view.</td>
-</tr></tbody>
-</table>
+tables of scores, and I think there may have even been a graph.</p>
+</aside><aside class="footnote brackets" id="footnote-5" role="note"><span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#footnote-reference-5">5</a><span class="fn-bracket">]</span></span>
+<p>Now, I am slightly biased, but I would argue that DNS is needed in
+commodity compute, but again, that is my view.</p>
+</aside></aside></section></section>
 </div>
-</div>
-        </div>
-                <ul class="pager hidden-print">
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">
                 <a href="../non-candidacy-for-designate-ptl/" rel="prev" title="Non Candidacy for Designate PTL">Previous post</a>
             </li>
             <li class="next">
                 <a href="../new-adventures/" rel="next" title="New Adventures">Next post</a>
             </li>
-        </ul>
-<div id="disqus_thread"></div>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+                    <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="grahamhayesie",
             disqus_url="http://graham.hayes.ie/posts/openstack-designate-where-we-are/",
@@ -339,26 +304,16 @@ commodity compute, but again, that is my view.</td>
     <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
-            
-
-    </div>
-                    <footer id="footer"><p>Contents © 2020         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+        </section></article><script>var disqus_shortname="grahamhayesie";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><footer id="footer"><p>Contents © 2022         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>
-    </section><script src="../../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script><script src="../../assets/js/jquery.timeago.js" type="text/javascript"></script><script type="text/javascript">
-            $(function(){
-                $('.timeago').timeago();
-            });
-        </script><script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-23042579-7', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    </section><script src="../../assets/js/baguetteBox.min.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script>
 </body>
 </html>

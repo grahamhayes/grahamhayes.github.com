@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html prefix="
-og: http://ogp.me/ns#
-article: http://ogp.me/ns/article#
-" lang="en">
+        og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+    " vocab="http://ogp.me/ns" lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="description" content="My overview of Tokyo, and what happened at the Mitaka Design Summit">
 <meta name="viewport" content="width=device-width">
 <title>OpenStack Summit - Designate Report | graham.hayes.ie</title>
-<link href="../../assets/css/bitter.css" rel="stylesheet" type="text/css">
-<link href="../../assets/css/main.css" rel="stylesheet" type="text/css">
-<link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link href="../../assets/css/baguetteBox.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/rst_base.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/nikola_rst.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link href="../../assets/css/theme.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
 <link rel="canonical" href="http://graham.hayes.ie/posts/openstack-summit-designate-report/">
-<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="Graham Hayes">
+<link rel="me" href="https://mastodon.ie/@graham">
+<!--[if lt IE 9]><script src="../../assets/js/html5shiv-printshiv.min.js"></script><![endif]--><meta name="author" content="Graham Hayes">
+<link rel="prev" href="../starting-blogging-again/" title="Starting Blogging (Again)" type="text/html">
+<link rel="next" href="../the-big-rename/" title="The Big Rename - why?" type="text/html">
 <meta property="og:site_name" content="graham.hayes.ie">
 <meta property="og:title" content="OpenStack Summit - Designate Report">
 <meta property="og:url" content="http://graham.hayes.ie/posts/openstack-summit-designate-report/">
@@ -29,103 +36,95 @@ article: http://ogp.me/ns/article#
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@grahamhayes">
 <meta name="twitter:creator" content="@grahamhayes">
-<meta name="twitter:image" content="https://c1.staticflickr.com/9/8209/8233073411_4b2c57a36d_b.jpg">
 </head>
 <body>
+    <a href="#page-content" class="sr-only sr-only-focusable">Skip to main content</a>
+    
     <section class="social"><ul>
 <a href="../../"><img style="border-radius: 50%; margin-left: auto; margin-right: auto; display: block; margin-bottom: 20px" width="80" height="80" src="../../images/me.jpg"></a>
-                    <li><a href="../../" title="Home"><i class="icon-home"></i></a></li>
-            <li><a href="../../archive.html" title="Archives"><i class="icon-folder-open-alt"></i></a></li>
-            <li><a href="../../categories" title="Tags"><i class="icon-tags"></i></a></li>
-            <li><a href="../../projects" title="Projects"><i class="icon-briefcase"></i></a></li>
-            <li><a href="../../stories/about-me" title="About Me"><i class="icon-info"></i></a></li>
-            <li><a href="../../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
-            <li><a href="https://twitter.com/grahamhayes" title="My Twitter"><i class="icon-twitter"></i></a></li>
-            <li><a href="https://github.com/grahamhayes" title="My Github"><i class="icon-github"></i></a></li>
+                    <li><a href="../../" title="Home"><i class="fa fa-home"></i></a></li>
+            <li><a href="../../archive.html" title="Archives"><i class="fa fa-folder-open-alt"></i></a></li>
+            <li><a href="../../categories" title="Tags"><i class="fa fa-tags"></i></a></li>
+            <li><a href="../../projects" title="Projects"><i class="fa fa-briefcase"></i></a></li>
+            <li><a href="../../stories/about-me" title="About Me"><i class="fa fa-info"></i></a></li>
+            <li><a href="../../rss.xml" title="RSS"><i class="fa fa-rss"></i></a></li>
+            <li><a href="https://twitter.com/grahamhayes" title="My Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://github.com/grahamhayes" title="My Github"><i class="fab fa-github"></i></a></li>
+    
+    
 
         </ul></section><section class="page-content"><div class="content" rel="main">
-    <div class="post">
-        <h1 class="p-name entry-title" itemprop="headline name">OpenStack Summit - Designate Report</h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">OpenStack Summit - Designate Report</a></h1>
 
-        <div class="meta">
-            <div class="authordate">
-                <time class="timeago" datetime="2015-11-04T21:18:41+00:00">2015-11-04 21:18</time>
+        <div class="metadata">
+            <p class="dateline"><a href="." rel="bookmark"><i class="fa fa-clock"></i> <time class="published dt-published" datetime="2015-11-04T21:18:41Z" itemprop="datePublished" title="2015-11-04 21:18">2015-11-04 21:18</time></a></p>
+            <p class="byline author vcard"> <i class="fa fa-user"></i> <span class="byline-name fn" itemprop="author">
+                    Graham Hayes
+            </span></p>
+                <p class="commentline"><i class="far fa-comment"></i>        <a href="#disqus_thread" data-disqus-identifier="cache/posts/openstack-summit-designate-report.html">Comments</a>
+
+
+                    </p>
+<p class="sourceline"><a href="index.rst" class="sourcelink"><i class="fa fa-file-code"></i> Source</a></p>
+
             
-                      |  
-        <a href="index.rst" id="sourcelink">Source</a>
-
-            </div>
-                    <div itemprop="keywords" class="tags">
-        <ul>
-        Tags : 
-           <li><a class="tag p-category" href="../../categories/openstack/" rel="tag">openstack</a></li>
-           <li><a class="tag p-category" href="../../categories/summit/" rel="tag">summit</a></li>
-           <li><a class="tag p-category" href="../../categories/tokyo/" rel="tag">tokyo</a></li>
-           <li><a class="tag p-category" href="../../categories/travel/" rel="tag">travel</a></li>
+                <div class="tags">
+<h3 class="metadata-title">
+<i class="fa fa-tags"></i> Tags:</h3>
+        <ul itemprop="keywords" class="tags-ul">
+<li><a class="tag p-category" href="../../categories/openstack/" rel="tag">openstack</a></li>
+            <li><a class="tag p-category" href="../../categories/summit/" rel="tag">summit</a></li>
+            <li><a class="tag p-category" href="../../categories/tokyo/" rel="tag">tokyo</a></li>
+            <li><a class="tag p-category" href="../../categories/travel/" rel="tag">travel</a></li>
         </ul>
 </div>
 
         </div>
-        <div class="body">
-            <div>
-<img alt="https://upload.wikimedia.org/wikipedia/commons/7/70/Ginza_at_Night,_Tokyo.jpg" src="https://upload.wikimedia.org/wikipedia/commons/7/70/Ginza_at_Night,_Tokyo.jpg"><p><a class="footnote-reference" href="#id2" id="id1">[1]</a></p>
-<div class="section" id="tokyo">
-<h2>Tokyo</h2>
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <img alt="https://upload.wikimedia.org/wikipedia/commons/7/70/Ginza_at_Night,_Tokyo.jpg" src="https://upload.wikimedia.org/wikipedia/commons/7/70/Ginza_at_Night,_Tokyo.jpg"><p><a class="footnote-reference brackets" href="#footnote-1" id="footnote-reference-1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
+<section id="tokyo"><h2>Tokyo</h2>
 <p>Oh, what a place. I thought I was ready for the experience, but this city has
 to be visited to understand. From the 2 or 3 different metro systems that snake
 across the city, to the 9 story electronics stores, it is something else.</p>
 <p>Living in a city that has 3 metro lines that don't actually connect it was a nice
 change to be able to get reliable public transport :).</p>
-</div>
-<div class="section" id="design-summit">
-<h2>Design Summit</h2>
+</section><section id="design-summit"><h2>Design Summit</h2>
 <p>This was a much more relaxed summit for Designate. We had done a huge amount of
 work in Vancouver, and we were nailing down details and doing cross project work.</p>
 <p>We got a few major features discussed, and laid out our priorities for the next cycle.</p>
 <p>We decided on the following:</p>
 <ol class="arabic simple">
-<li>Nova / Neutron Integration</li>
-<li>Pool Scheduler</li>
-<li>Pool Configuration migration to database</li>
-<li>IXFR (Incremental Zone Transfer)</li>
-<li>ALIAS Record type (Allows for CNAME like records at the root of a DNS Zone)</li>
-<li>DNSSEC (this may drag on for a cycle or two)</li>
+<li><p>Nova / Neutron Integration</p></li>
+<li><p>Pool Scheduler</p></li>
+<li><p>Pool Configuration migration to database</p></li>
+<li><p>IXFR (Incremental Zone Transfer)</p></li>
+<li><p>ALIAS Record type (Allows for CNAME like records at the root of a DNS Zone)</p></li>
+<li><p>DNSSEC (this may drag on for a cycle or two)</p></li>
 </ol>
-<div class="section" id="nova-neutron-integration">
-<h3>Nova &amp; Neutron Integration</h3>
+<section id="nova-neutron-integration"><h3>Nova &amp; Neutron Integration</h3>
 <p>This is progressing pretty well, and Miguel Lavalle has patches up for this. He,
 Kiall Mac Innes and Carl Baldwin demoed this in a session on the Thursday. If
 you are interested in the idea, it is definitely worth a watch <a class="reference external" href="http://https://www.youtube.com/watch?v=AZbiARM9FPM">here</a></p>
-</div>
-<div class="section" id="pool-scheduler">
-<h3>Pool Scheduler</h3>
+</section><section id="pool-scheduler"><h3>Pool Scheduler</h3>
 <p>A vital piece of the pools re architecture that needs to be finished out.
 There is no great debate on what we need, and I have taken on the task of
 finishing this out.</p>
-</div>
-<div class="section" id="pool-configuration-migration-to-database">
-<h3>Pool Configuration migration to database</h3>
+</section><section id="pool-configuration-migration-to-database"><h3>Pool Configuration migration to database</h3>
 <p>Are current configuration file format is quite complex, and moving it to an API
 allows us to iterate on it much quicker, while reducing the complexity of the
 config file. I recently had to write an ansible play to write out this file, and
 it was not fun.</p>
 <p>Kiall had a patch up, so we should be able to continue based on that.</p>
-</div>
-<div class="section" id="ixfr">
-<h3>IXFR</h3>
+</section><section id="ixfr"><h3>IXFR</h3>
 <p>There was quite a lot of discussion on how this will be implemented, both in the
 work session, and the 1/2 day session on the Friday. Tim Simmons has stepped up,
 to continue the work on this.</p>
-</div>
-<div class="section" id="alias">
-<h3>ALIAS</h3>
+</section><section id="alias"><h3>ALIAS</h3>
 <p>This is quite a sort after feature - but is quite complex to implement.
 The DNS RFCs explicitly ban this behavior, so we have to work the solution
 around them. Eric Larson has been doing quite a lot of work on this in Liberty,
 and is going to continue in Mitaka.</p>
-</div>
-<div class="section" id="dnssec">
-<h3>DNSSEC</h3>
+</section><section id="dnssec"><h3>DNSSEC</h3>
 <p>This is a feature that we have been looking at for a while, but we started to plan
 out our roadmap for it recently.</p>
 <p>We (I) am allergic to storing private encryption keys in Designate, so we had a
@@ -133,29 +132,19 @@ good conversation with Barbican about implementing a signing endpoint that we wo
 post a hash to. This work is on me to now drive for Mitaka, so we can consume it in N.</p>
 <p>There is some raw notes in the <a class="reference external" href="https://etherpad.openstack.org/p/mitaka-designate-summit-roadmap">etherpad</a> and I expect we will soon be seeing
 specs building out of them.</p>
-<table class="docutils footnote" frame="void" id="id2" rules="none">
-<colgroup>
-<col class="label">
-<col>
-</colgroup>
-<tbody valign="top"><tr>
-<td class="label"><a class="fn-backref" href="#id1">[1]</a></td>
-<td>By Francisco Diez (Flickr: Ginza at Night, Tokyo) [CC BY 2.0 (<a class="reference external" href="http://creativecommons.org/licenses/by/2.0">http://creativecommons.org/licenses/by/2.0</a>)], via Wikimedia Commons</td>
-</tr></tbody>
-</table>
+<aside class="footnote-list brackets"><aside class="footnote brackets" id="footnote-1" role="note"><span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#footnote-reference-1">1</a><span class="fn-bracket">]</span></span>
+<p>By Francisco Diez (Flickr: Ginza at Night, Tokyo) [CC BY 2.0 (<a class="reference external" href="http://creativecommons.org/licenses/by/2.0">http://creativecommons.org/licenses/by/2.0</a>)], via Wikimedia Commons</p>
+</aside></aside></section></section>
 </div>
-</div>
-</div>
-        </div>
-                <ul class="pager hidden-print">
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">
                 <a href="../starting-blogging-again/" rel="prev" title="Starting Blogging (Again)">Previous post</a>
             </li>
             <li class="next">
                 <a href="../the-big-rename/" rel="next" title="The Big Rename - why?">Next post</a>
             </li>
-        </ul>
-<div id="disqus_thread"></div>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+                    <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="grahamhayesie",
             disqus_url="http://graham.hayes.ie/posts/openstack-summit-designate-report/",
@@ -174,26 +163,16 @@ specs building out of them.</p>
     <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
-            
-
-    </div>
-                    <footer id="footer"><p>Contents © 2020         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+        </section></article><script>var disqus_shortname="grahamhayesie";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><footer id="footer"><p>Contents © 2022         <a href="mailto:graham@hayes.ie">Graham Hayes</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>
-    </section><script src="../../assets/js/jquery-1.10.2.min.js" type="text/javascript"></script><script src="../../assets/js/jquery.timeago.js" type="text/javascript"></script><script type="text/javascript">
-            $(function(){
-                $('.timeago').timeago();
-            });
-        </script><script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-23042579-7', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    </section><script src="../../assets/js/baguetteBox.min.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script>
 </body>
 </html>

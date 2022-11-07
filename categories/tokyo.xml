@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (Posts about tokyo)</title><link>http://graham.hayes.ie/</link><description></description><atom:link href="http://graham.hayes.ie/categories/tokyo.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 08 Apr 2019 16:33:32 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Sydney OpenStack Summit</title><link>http://graham.hayes.ie/posts/sydney-openstack-summit/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;div&gt;&lt;img alt="https://lh3.googleusercontent.com/9v91EBE02VNZ1fSWcd8JoH7TgPLYhSKXuKrMkqQgSwMHcsw8Im71eM01j6zolH-GuP5XqrAeq4m-GT9Yx4dZXZ_DfND-XWgqvIP64oQwQC-vZgnoLZZ3O-mnOPhQRpouOBscymYBkNelPpg5g2RRy6mXnT9e6lAVy6HGewxRRTL0VOdNApenH_zr-FeRLu_rAOs6WArITF2EbvBsXH74b3EPIGO3BeKlejiC2kSp5Xdj5u7KADXphRazHEVuB8sHegnu0CbZZ2xVLynxvgoSUBPlcwtMUhr87J8_clj0aXIksl-PAWFbhgt7xYlzBkoA1DHsDs5Vw7Cuuah-nycRYRhcSzcFIOvW7L8qWpwHXoD7Xay-DXlqfIYEZjfZc0drpV4AEAnzIaKgIa2PJsFfpiq4hqMv9T59bSIj-EX_wdQ2vXCOzokeZp2t9xCtbIeync9QR_Ij7eXJh_2XHAlLXoR7XrLsY8RiDfrmXSQWVgjEiDGd7urFn6-r3kHLj8QsYRL3ehjfr7GlMtHWuXLkadhblQYpIhnSI-aeEe6NjlXicdMKC43tpWGZkELO9Xm6I82xxycCU68q_g5Sy7BW2_BF7ERp8rNOZg2W4WFJXoySa2fsJitydiJJUvlLSnopYp5GUytsxiMie9fEXQwriFItXlFnXtZsOB8=w1440-h691-no" src="https://lh3.googleusercontent.com/9v91EBE02VNZ1fSWcd8JoH7TgPLYhSKXuKrMkqQgSwMHcsw8Im71eM01j6zolH-GuP5XqrAeq4m-GT9Yx4dZXZ_DfND-XWgqvIP64oQwQC-vZgnoLZZ3O-mnOPhQRpouOBscymYBkNelPpg5g2RRy6mXnT9e6lAVy6HGewxRRTL0VOdNApenH_zr-FeRLu_rAOs6WArITF2EbvBsXH74b3EPIGO3BeKlejiC2kSp5Xdj5u7KADXphRazHEVuB8sHegnu0CbZZ2xVLynxvgoSUBPlcwtMUhr87J8_clj0aXIksl-PAWFbhgt7xYlzBkoA1DHsDs5Vw7Cuuah-nycRYRhcSzcFIOvW7L8qWpwHXoD7Xay-DXlqfIYEZjfZc0drpV4AEAnzIaKgIa2PJsFfpiq4hqMv9T59bSIj-EX_wdQ2vXCOzokeZp2t9xCtbIeync9QR_Ij7eXJh_2XHAlLXoR7XrLsY8RiDfrmXSQWVgjEiDGd7urFn6-r3kHLj8QsYRL3ehjfr7GlMtHWuXLkadhblQYpIhnSI-aeEe6NjlXicdMKC43tpWGZkELO9Xm6I82xxycCU68q_g5Sy7BW2_BF7ERp8rNOZg2W4WFJXoySa2fsJitydiJJUvlLSnopYp5GUytsxiMie9fEXQwriFItXlFnXtZsOB8=w1440-h691-no"&gt;
-&lt;div class="section" id="openstack-down-under"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>graham.hayes.ie (Posts about tokyo)</title><link>http://graham.hayes.ie/</link><description></description><atom:link href="http://graham.hayes.ie/categories/tokyo.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 07 Nov 2022 17:53:50 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Sydney OpenStack Summit</title><link>http://graham.hayes.ie/posts/sydney-openstack-summit/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;img alt="https://lh3.googleusercontent.com/9v91EBE02VNZ1fSWcd8JoH7TgPLYhSKXuKrMkqQgSwMHcsw8Im71eM01j6zolH-GuP5XqrAeq4m-GT9Yx4dZXZ_DfND-XWgqvIP64oQwQC-vZgnoLZZ3O-mnOPhQRpouOBscymYBkNelPpg5g2RRy6mXnT9e6lAVy6HGewxRRTL0VOdNApenH_zr-FeRLu_rAOs6WArITF2EbvBsXH74b3EPIGO3BeKlejiC2kSp5Xdj5u7KADXphRazHEVuB8sHegnu0CbZZ2xVLynxvgoSUBPlcwtMUhr87J8_clj0aXIksl-PAWFbhgt7xYlzBkoA1DHsDs5Vw7Cuuah-nycRYRhcSzcFIOvW7L8qWpwHXoD7Xay-DXlqfIYEZjfZc0drpV4AEAnzIaKgIa2PJsFfpiq4hqMv9T59bSIj-EX_wdQ2vXCOzokeZp2t9xCtbIeync9QR_Ij7eXJh_2XHAlLXoR7XrLsY8RiDfrmXSQWVgjEiDGd7urFn6-r3kHLj8QsYRL3ehjfr7GlMtHWuXLkadhblQYpIhnSI-aeEe6NjlXicdMKC43tpWGZkELO9Xm6I82xxycCU68q_g5Sy7BW2_BF7ERp8rNOZg2W4WFJXoySa2fsJitydiJJUvlLSnopYp5GUytsxiMie9fEXQwriFItXlFnXtZsOB8=w1440-h691-no" src="https://lh3.googleusercontent.com/9v91EBE02VNZ1fSWcd8JoH7TgPLYhSKXuKrMkqQgSwMHcsw8Im71eM01j6zolH-GuP5XqrAeq4m-GT9Yx4dZXZ_DfND-XWgqvIP64oQwQC-vZgnoLZZ3O-mnOPhQRpouOBscymYBkNelPpg5g2RRy6mXnT9e6lAVy6HGewxRRTL0VOdNApenH_zr-FeRLu_rAOs6WArITF2EbvBsXH74b3EPIGO3BeKlejiC2kSp5Xdj5u7KADXphRazHEVuB8sHegnu0CbZZ2xVLynxvgoSUBPlcwtMUhr87J8_clj0aXIksl-PAWFbhgt7xYlzBkoA1DHsDs5Vw7Cuuah-nycRYRhcSzcFIOvW7L8qWpwHXoD7Xay-DXlqfIYEZjfZc0drpV4AEAnzIaKgIa2PJsFfpiq4hqMv9T59bSIj-EX_wdQ2vXCOzokeZp2t9xCtbIeync9QR_Ij7eXJh_2XHAlLXoR7XrLsY8RiDfrmXSQWVgjEiDGd7urFn6-r3kHLj8QsYRL3ehjfr7GlMtHWuXLkadhblQYpIhnSI-aeEe6NjlXicdMKC43tpWGZkELO9Xm6I82xxycCU68q_g5Sy7BW2_BF7ERp8rNOZg2W4WFJXoySa2fsJitydiJJUvlLSnopYp5GUytsxiMie9fEXQwriFItXlFnXtZsOB8=w1440-h691-no"&gt;
+&lt;section id="openstack-down-under"&gt;
 &lt;h2&gt;OpenStack Down Under&lt;/h2&gt;
 &lt;p&gt;This year the travelling circus that is the OpenStack summit migrated to
 Sydney. A lot of us in Europe / North America found out exactly how far away
 from our normal venues it really is. (#openstacksummit on twitter for the days
 before the summit was an entertaining read :) )&lt;/p&gt;
-&lt;div class="section" id="sunday-board-joint-leadership-meeting"&gt;
+&lt;section id="sunday-board-joint-leadership-meeting"&gt;
 &lt;h3&gt;Sunday Board / Joint Leadership Meeting&lt;/h3&gt;
 &lt;p&gt;As I was in Sydney, and staying across the road from the meeting, I decided to
 drop in and listen. It was an interesting discussion, with a couple of
@@ -42,15 +42,15 @@ OpenStack, really I do, but a top down enforced "Roadmap" is not the way
 forward.
 Honestly, that two board members of an Open Source foundation think it
 is is worrying.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="designate"&gt;
+&lt;/section&gt;
+&lt;section id="designate"&gt;
 &lt;h3&gt;Designate&lt;/h3&gt;
 &lt;p&gt;Designate had 3 sessions in Sydney:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;Our project update&lt;/li&gt;
-&lt;li&gt;Project On Boarding&lt;/li&gt;
-&lt;li&gt;Ops Feedback&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Our project update&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Project On Boarding&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Ops Feedback&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;The project update was good - much improved from Boston, where the 2 presenters
@@ -62,24 +62,24 @@ effect of the summit being both smaller and far away.&lt;/p&gt;
 &lt;img alt="/images/small_far_away.gif" src="http://graham.hayes.ie/images/small_far_away.gif"&gt;
 &lt;p&gt;Ops feedback was great - we got a lot of bugs that were impacting our users and
 deployers, and collected it in our &lt;a class="reference external" href="https://etherpad.openstack.org/p/SYD-forum-designate-feedback"&gt;Feedback Etherpad&lt;/a&gt; (any comments welcome).&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="cross-project-work"&gt;
+&lt;/section&gt;
+&lt;section id="cross-project-work"&gt;
 &lt;h3&gt;Cross Project Work&lt;/h3&gt;
 &lt;p&gt;I went to quite a few cross project sessions - there was a good amount of
 discussion, and some useful work came out of it.&lt;/p&gt;
-&lt;div class="section" id="application-tokens"&gt;
+&lt;section id="application-tokens"&gt;
 &lt;h4&gt;Application Tokens&lt;/h4&gt;
 &lt;p&gt;This is something that had completely slipped past me until now, but the ideas
 were great, and it would have made things I have done in previous companies
 much much easier.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="healthchecks-per-service"&gt;
+&lt;/section&gt;
+&lt;section id="healthchecks-per-service"&gt;
 &lt;h4&gt;Healthchecks per service&lt;/h4&gt;
 &lt;p&gt;We came to a good agreement on how we can do standardised health checks across
 OpenStack, we now need to write a spec and start coding a new piece of
 middleware :)&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="edge-computing"&gt;
+&lt;/section&gt;
+&lt;section id="edge-computing"&gt;
 &lt;h4&gt;Edge Computing&lt;/h4&gt;
 &lt;p&gt;Not so sure this was worth a vist - it was much more crowded than any of the
 other Forum sessions I went to, and ended up Bike Shedding on where the Edge
@@ -92,66 +92,66 @@ VM.&lt;/p&gt;
 &lt;p&gt;Overall, it was a good summit - not too busy, and short. Looking forward to not
 traveling for the next PTG, I think the DUB -&amp;gt; DOH -&amp;gt; SYD and back drained the
 enthusiasm for flights for the next few months.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>openstack</category><category>summit</category><category>tokyo</category><category>travel</category><guid>http://graham.hayes.ie/posts/sydney-openstack-summit/</guid><pubDate>Wed, 22 Nov 2017 19:35:33 GMT</pubDate></item><item><title>OpenStack Summit - Designate Report</title><link>http://graham.hayes.ie/posts/openstack-summit-designate-report/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="https://c1.staticflickr.com/9/8209/8233073411_4b2c57a36d_b.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;img alt="https://upload.wikimedia.org/wikipedia/commons/7/70/Ginza_at_Night,_Tokyo.jpg" src="https://upload.wikimedia.org/wikipedia/commons/7/70/Ginza_at_Night,_Tokyo.jpg"&gt;
-&lt;p&gt;&lt;a class="footnote-reference" href="http://graham.hayes.ie/posts/openstack-summit-designate-report/#id2" id="id1"&gt;[1]&lt;/a&gt;&lt;/p&gt;
-&lt;div class="section" id="tokyo"&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;/section&gt;</description><category>openstack</category><category>summit</category><category>tokyo</category><category>travel</category><guid>http://graham.hayes.ie/posts/sydney-openstack-summit/</guid><pubDate>Wed, 22 Nov 2017 19:35:33 GMT</pubDate></item><item><title>OpenStack Summit - Designate Report</title><link>http://graham.hayes.ie/posts/openstack-summit-designate-report/</link><dc:creator>Graham Hayes</dc:creator><description>&lt;figure&gt;&lt;img src="https://c1.staticflickr.com/9/8209/8233073411_4b2c57a36d_b.jpg"&gt;&lt;/figure&gt; &lt;img alt="https://upload.wikimedia.org/wikipedia/commons/7/70/Ginza_at_Night,_Tokyo.jpg" src="https://upload.wikimedia.org/wikipedia/commons/7/70/Ginza_at_Night,_Tokyo.jpg"&gt;
+&lt;p&gt;&lt;a class="footnote-reference brackets" href="http://graham.hayes.ie/posts/openstack-summit-designate-report/#footnote-1" id="footnote-reference-1" role="doc-noteref"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;1&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;section id="tokyo"&gt;
 &lt;h2&gt;Tokyo&lt;/h2&gt;
 &lt;p&gt;Oh, what a place. I thought I was ready for the experience, but this city has
 to be visited to understand. From the 2 or 3 different metro systems that snake
 across the city, to the 9 story electronics stores, it is something else.&lt;/p&gt;
 &lt;p&gt;Living in a city that has 3 metro lines that don't actually connect it was a nice
 change to be able to get reliable public transport :).&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="design-summit"&gt;
+&lt;/section&gt;
+&lt;section id="design-summit"&gt;
 &lt;h2&gt;Design Summit&lt;/h2&gt;
 &lt;p&gt;This was a much more relaxed summit for Designate. We had done a huge amount of
 work in Vancouver, and we were nailing down details and doing cross project work.&lt;/p&gt;
 &lt;p&gt;We got a few major features discussed, and laid out our priorities for the next cycle.&lt;/p&gt;
 &lt;p&gt;We decided on the following:&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
-&lt;li&gt;Nova / Neutron Integration&lt;/li&gt;
-&lt;li&gt;Pool Scheduler&lt;/li&gt;
-&lt;li&gt;Pool Configuration migration to database&lt;/li&gt;
-&lt;li&gt;IXFR (Incremental Zone Transfer)&lt;/li&gt;
-&lt;li&gt;ALIAS Record type (Allows for CNAME like records at the root of a DNS Zone)&lt;/li&gt;
-&lt;li&gt;DNSSEC (this may drag on for a cycle or two)&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Nova / Neutron Integration&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Pool Scheduler&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Pool Configuration migration to database&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;IXFR (Incremental Zone Transfer)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;ALIAS Record type (Allows for CNAME like records at the root of a DNS Zone)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;DNSSEC (this may drag on for a cycle or two)&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class="section" id="nova-neutron-integration"&gt;
+&lt;section id="nova-neutron-integration"&gt;
 &lt;h3&gt;Nova &amp;amp; Neutron Integration&lt;/h3&gt;
 &lt;p&gt;This is progressing pretty well, and Miguel Lavalle has patches up for this. He,
 Kiall Mac Innes and Carl Baldwin demoed this in a session on the Thursday. If
 you are interested in the idea, it is definitely worth a watch &lt;a class="reference external" href="http://https://www.youtube.com/watch?v=AZbiARM9FPM"&gt;here&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="pool-scheduler"&gt;
+&lt;/section&gt;
+&lt;section id="pool-scheduler"&gt;
 &lt;h3&gt;Pool Scheduler&lt;/h3&gt;
 &lt;p&gt;A vital piece of the pools re architecture that needs to be finished out.
 There is no great debate on what we need, and I have taken on the task of
 finishing this out.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="pool-configuration-migration-to-database"&gt;
+&lt;/section&gt;
+&lt;section id="pool-configuration-migration-to-database"&gt;
 &lt;h3&gt;Pool Configuration migration to database&lt;/h3&gt;
 &lt;p&gt;Are current configuration file format is quite complex, and moving it to an API
 allows us to iterate on it much quicker, while reducing the complexity of the
 config file. I recently had to write an ansible play to write out this file, and
 it was not fun.&lt;/p&gt;
 &lt;p&gt;Kiall had a patch up, so we should be able to continue based on that.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="ixfr"&gt;
+&lt;/section&gt;
+&lt;section id="ixfr"&gt;
 &lt;h3&gt;IXFR&lt;/h3&gt;
 &lt;p&gt;There was quite a lot of discussion on how this will be implemented, both in the
 work session, and the 1/2 day session on the Friday. Tim Simmons has stepped up,
 to continue the work on this.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="alias"&gt;
+&lt;/section&gt;
+&lt;section id="alias"&gt;
 &lt;h3&gt;ALIAS&lt;/h3&gt;
 &lt;p&gt;This is quite a sort after feature - but is quite complex to implement.
 The DNS RFCs explicitly ban this behavior, so we have to work the solution
 around them. Eric Larson has been doing quite a lot of work on this in Liberty,
 and is going to continue in Mitaka.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="dnssec"&gt;
+&lt;/section&gt;
+&lt;section id="dnssec"&gt;
 &lt;h3&gt;DNSSEC&lt;/h3&gt;
 &lt;p&gt;This is a feature that we have been looking at for a while, but we started to plan
 out our roadmap for it recently.&lt;/p&gt;
@@ -160,11 +160,11 @@ good conversation with Barbican about implementing a signing endpoint that we wo
 post a hash to. This work is on me to now drive for Mitaka, so we can consume it in N.&lt;/p&gt;
 &lt;p&gt;There is some raw notes in the &lt;a class="reference external" href="https://etherpad.openstack.org/p/mitaka-designate-summit-roadmap"&gt;etherpad&lt;/a&gt; and I expect we will soon be seeing
 specs building out of them.&lt;/p&gt;
-&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
-&lt;colgroup&gt;&lt;col class="label"&gt;&lt;col&gt;&lt;/colgroup&gt;
-&lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="http://graham.hayes.ie/posts/openstack-summit-designate-report/#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;By Francisco Diez (Flickr: Ginza at Night, Tokyo) [CC BY 2.0 (&lt;a class="reference external" href="http://creativecommons.org/licenses/by/2.0"&gt;http://creativecommons.org/licenses/by/2.0&lt;/a&gt;)], via Wikimedia Commons&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>openstack</category><category>summit</category><category>tokyo</category><category>travel</category><guid>http://graham.hayes.ie/posts/openstack-summit-designate-report/</guid><pubDate>Wed, 04 Nov 2015 21:18:41 GMT</pubDate></item></channel></rss>
+&lt;aside class="footnote-list brackets"&gt;
+&lt;aside class="footnote brackets" id="footnote-1" role="note"&gt;
+&lt;span class="label"&gt;&lt;span class="fn-bracket"&gt;[&lt;/span&gt;&lt;a role="doc-backlink" href="http://graham.hayes.ie/posts/openstack-summit-designate-report/#footnote-reference-1"&gt;1&lt;/a&gt;&lt;span class="fn-bracket"&gt;]&lt;/span&gt;&lt;/span&gt;
+&lt;p&gt;By Francisco Diez (Flickr: Ginza at Night, Tokyo) [CC BY 2.0 (&lt;a class="reference external" href="http://creativecommons.org/licenses/by/2.0"&gt;http://creativecommons.org/licenses/by/2.0&lt;/a&gt;)], via Wikimedia Commons&lt;/p&gt;
+&lt;/aside&gt;
+&lt;/aside&gt;
+&lt;/section&gt;
+&lt;/section&gt;</description><category>openstack</category><category>summit</category><category>tokyo</category><category>travel</category><guid>http://graham.hayes.ie/posts/openstack-summit-designate-report/</guid><pubDate>Wed, 04 Nov 2015 21:18:41 GMT</pubDate></item></channel></rss>
