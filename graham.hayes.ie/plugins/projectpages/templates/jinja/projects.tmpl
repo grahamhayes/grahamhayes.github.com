@@ -7,11 +7,11 @@
     </header>
 
 {% if featured %}
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<div id="project-carousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     {% for p in featured %}
-    <li data-target="#carousel-example-generic" data-slide-to="{{ loop.index0 }}"
+    <li data-target="#project-carousel" data-slide-to="{{ loop.index0 }}"
 {% if loop.index0 == 0 %}
  class="active"
 {% endif %}
@@ -22,16 +22,16 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     {% for p in featured %}
-    <div class="item
+    <div class="carousel-item
 {% if loop.index0 == 0 %}
 active
 {% endif %}
 ">
     <a href="{{ p.permalink() }}">
-      <img src="{{ p.meta('previewimage') }}" alt="{{ p.title() }}">
+      <img class="d-block w-100" style="max-width: 100%" src="{{ p.meta('previewimage') }}" alt="{{ p.title() }}">
     </a>
-      <div class="carousel-caption">
-        <h3>{{ p.title() }} {{ project.status(p.meta('status')) }}</h3>
+      <div class="carousel-caption d-none d-md-block">
+        <h3>{{ p.title() }} {{ project.devstatus(p.meta('devstatus')) }}</h3>
         <p>{{ p.description() }}</p>
         <a href="{{ p.permalink() }}" class="btn btn-primary"><i class="fa fa-info-circle"></i> View details</a>
       </div>
@@ -39,21 +39,22 @@ active
     {% endfor %}
   </div>
 
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
+  <a class="carousel-control-prev" href="#project-carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
   </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
+  <a class="carousel-control-next" href="#project-carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
   </a>
 </div>
 {% endif %}
 
 <h2>All projects</h2>
 
-    <ul>
+    <ul class="project-list">
     {% for p in projects %}
-        <li><a href="{{ p.permalink() }}">{{ p.title() }}</a> {{ project.status(p.meta('status')) }}</a></li>
+        <li class="project project-sort-{{ p.meta('sort') }}"><a href="{{ p.permalink() }}">{{ p.title() }}</a> {{ project.devstatus(p.meta('devstatus')) }}</a></li>
     {% endfor %}
     </ul>
 {% endblock %}

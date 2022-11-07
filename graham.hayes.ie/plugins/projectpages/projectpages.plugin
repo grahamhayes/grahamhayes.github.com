@@ -3,10 +3,11 @@ Name = projectpages
 Module = projectpages
 
 [Nikola]
-MinVersion = 7.1.0+
+PluginCategory = Task
+MinVersion = 8.0.0
 
 [Documentation]
 Author = Chris Warrick
-Version = 0.1.6
+Version = 0.1.12
 Website = https://chriswarrick.com/projects/
 Description = Generate project pages

@@ -128,15 +128,17 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ('/', 'Home', 'icon-home'),
-        ('/archive.html', 'Archives', 'icon-folder-open-alt'),
-        ('/categories', 'Tags', 'icon-tags'),
-        ('/projects', 'Projects', 'icon-briefcase'),
+        ('/', 'Home', 'fa fa-home'),
+        ('/archive.html', 'Archives', 'fa fa-folder-open-alt'),
+        ('/categories', 'Tags', 'fa fa-tags'),
+        ('/projects', 'Projects', 'fa fa-briefcase'),
         #('/talks', 'Talks', 'icon-microphone'),
-        ('/stories/about-me', 'About Me', 'icon-info'),
-        ('/rss.xml', 'RSS', 'icon-rss'),
-        ('https://twitter.com/grahamhayes', 'My Twitter', 'icon-twitter'),
-        ('https://github.com/grahamhayes', 'My Github', 'icon-github'),
+        ('/stories/about-me', 'About Me', 'fa fa-info'),
+        ('/rss.xml', 'RSS', 'fa fa-rss'),
+        ('https://twitter.com/grahamhayes', 'My Twitter', 'fab fa-twitter'),
+        ('https://github.com/grahamhayes', 'My Github', 'fab fa-github'),
+        ('https://mastodon.ie/@graham', 'My Mastodon', 'fab fa-mastodon'),
+        #('<a rel="me" href="https://mastodon.ie/@graham">Mastodon</a>')
     )
 }
 
@@ -1117,7 +1119,7 @@ TWITTER_CARD = {
 USE_BUNDLES = False
 
 # Plugins you don't want to use. Be careful :-)
-# DISABLED_PLUGINS = ["render_galleries"]
+DISABLED_PLUGINS = ["projectpages"]
 
 # Add the absolute paths to directories containing plugins to use them.
 # For example, the `plugins` directory of your clone of the Nikola plugins
